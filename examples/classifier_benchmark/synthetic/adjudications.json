@@ -1,0 +1,74 @@
+[
+  {
+    "gate_digest": "48d4cebc51cafbaf948dc8f6c057240cab42b524121aeb742765b13e326ebb91",
+    "item_id": "test_021",
+    "rationale": "Reviewed the invented generation rule after the human-agreement gate",
+    "reference_label": "beta",
+    "reviewed_at": "2026-10-03T00:00:00Z",
+    "reviewers": [
+      "reviewer_1",
+      "reviewer_2"
+    ],
+    "task_version": "1"
+  },
+  {
+    "gate_digest": "48d4cebc51cafbaf948dc8f6c057240cab42b524121aeb742765b13e326ebb91",
+    "item_id": "test_023",
+    "rationale": "Reviewed the invented generation rule after the human-agreement gate",
+    "reference_label": "beta",
+    "reviewed_at": "2026-10-03T00:00:00Z",
+    "reviewers": [
+      "reviewer_1",
+      "reviewer_2"
+    ],
+    "task_version": "1"
+  },
+  {
+    "gate_digest": "48d4cebc51cafbaf948dc8f6c057240cab42b524121aeb742765b13e326ebb91",
+    "item_id": "test_025",
+    "rationale": "Reviewed the invented generation rule after the human-agreement gate",
+    "reference_label": "beta",
+    "reviewed_at": "2026-10-03T00:00:00Z",
+    "reviewers": [
+      "reviewer_1",
+      "reviewer_2"
+    ],
+    "task_version": "1"
+  },
+  {
+    "gate_digest": "48d4cebc51cafbaf948dc8f6c057240cab42b524121aeb742765b13e326ebb91",
+    "item_id": "test_055",
+    "rationale": "Reviewed the invented generation rule after the human-agreement gate",
+    "reference_label": "beta",
+    "reviewed_at": "2026-10-03T00:00:00Z",
+    "reviewers": [
+      "reviewer_1",
+      "reviewer_2"
+    ],
+    "task_version": "1"
+  },
+  {
+    "gate_digest": "48d4cebc51cafbaf948dc8f6c057240cab42b524121aeb742765b13e326ebb91",
+    "item_id": "test_061",
+    "rationale": "Reviewed the invented generation rule after the human-agreement gate",
+    "reference_label": "beta",
+    "reviewed_at": "2026-10-03T00:00:00Z",
+    "reviewers": [
+      "reviewer_1",
+      "reviewer_2"
+    ],
+    "task_version": "1"
+  },
+  {
+    "gate_digest": "48d4cebc51cafbaf948dc8f6c057240cab42b524121aeb742765b13e326ebb91",
+    "item_id": "test_065",
+    "rationale": "Reviewed the invented generation rule after the human-agreement gate",
+    "reference_label": "beta",
+    "reviewed_at": "2026-10-03T00:00:00Z",
+    "reviewers": [
+      "reviewer_1",
+      "reviewer_2"
+    ],
+    "task_version": "1"
+  }
+]

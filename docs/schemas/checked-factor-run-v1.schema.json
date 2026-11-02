@@ -1,0 +1,6959 @@
+{
+  "$defs": {
+    "AcceptabilityEstimate": {
+      "additionalProperties": false,
+      "description": "How often an event occurred in the draws, with its exact (Clopper-Pearson) interval; or,\nunder exact enumeration, its probability with no count and no interval.",
+      "properties": {
+        "count": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Count"
+        },
+        "frequency": {
+          "title": "Frequency",
+          "type": "number"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Lower"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Upper"
+        }
+      },
+      "required": [
+        "count",
+        "frequency",
+        "lower",
+        "upper"
+      ],
+      "title": "AcceptabilityEstimate",
+      "type": "object"
+    },
+    "AhpAlternativePriority": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "ideal_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Ideal Score"
+        },
+        "local_priorities": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Local Priorities",
+          "type": "object"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "priority": {
+          "title": "Priority",
+          "type": "number"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "weighted_parts": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Weighted Parts",
+          "type": "object"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "name",
+        "rank",
+        "priority",
+        "ideal_score",
+        "local_priorities",
+        "weighted_parts"
+      ],
+      "title": "AhpAlternativePriority",
+      "type": "object"
+    },
+    "AhpAnalysisRecord": {
+      "additionalProperties": false,
+      "description": "AHP: the priorities and every matrix's consistency; no value-model context.",
+      "properties": {
+        "alternative_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Alternative Order",
+          "type": "array"
+        },
+        "calculation_path": {
+          "const": "ahp.eigen_power.v1",
+          "default": "ahp.eigen_power.v1",
+          "title": "Calculation Path",
+          "type": "string"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "csv_text_policy": {
+          "const": "text-prefix-controls-v1",
+          "default": "text-prefix-controls-v1",
+          "title": "Csv Text Policy",
+          "type": "string"
+        },
+        "method": {
+          "const": "ahp",
+          "default": "ahp",
+          "title": "Method",
+          "type": "string"
+        },
+        "method_label": {
+          "title": "Method Label",
+          "type": "string"
+        },
+        "numerical_tolerance": {
+          "title": "Numerical Tolerance",
+          "type": "number"
+        },
+        "project_title": {
+          "title": "Project Title",
+          "type": "string"
+        },
+        "record_digest": {
+          "title": "Record Digest",
+          "type": "string"
+        },
+        "record_version": {
+          "const": "2",
+          "default": "2",
+          "title": "Record Version",
+          "type": "string"
+        },
+        "resolved_profile_name": {
+          "title": "Resolved Profile Name",
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/$defs/AhpResult"
+        },
+        "scenario_name": {
+          "title": "Scenario Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_digest",
+        "method_label",
+        "numerical_tolerance",
+        "project_title",
+        "scenario_name",
+        "resolved_profile_name",
+        "alternative_order",
+        "configuration",
+        "result"
+      ],
+      "title": "AhpAnalysisRecord",
+      "type": "object"
+    },
+    "AhpMatrixResult": {
+      "additionalProperties": false,
+      "properties": {
+        "consistency_index": {
+          "title": "Consistency Index",
+          "type": "number"
+        },
+        "consistency_ratio": {
+          "title": "Consistency Ratio",
+          "type": "number"
+        },
+        "group_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Group Id"
+        },
+        "inconsistent": {
+          "title": "Inconsistent",
+          "type": "boolean"
+        },
+        "items": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "iterations": {
+          "title": "Iterations",
+          "type": "integer"
+        },
+        "judgements": {
+          "items": {
+            "$ref": "#/$defs/PairwiseJudgement"
+          },
+          "title": "Judgements",
+          "type": "array"
+        },
+        "kind": {
+          "enum": [
+            "criteria",
+            "alternatives"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "lambda_max": {
+          "title": "Lambda Max",
+          "type": "number"
+        },
+        "most_inconsistent_triad": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AhpTriad"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "priorities": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Priorities",
+          "type": "object"
+        },
+        "random_index": {
+          "title": "Random Index",
+          "type": "number"
+        }
+      },
+      "required": [
+        "items",
+        "priorities",
+        "lambda_max",
+        "consistency_index",
+        "random_index",
+        "consistency_ratio",
+        "inconsistent",
+        "most_inconsistent_triad",
+        "iterations",
+        "kind",
+        "group_id",
+        "judgements"
+      ],
+      "title": "AhpMatrixResult",
+      "type": "object"
+    },
+    "AhpModel": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/AlternativeJudgements"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriteriaJudgements"
+          },
+          "title": "Criteria",
+          "type": "array"
+        }
+      },
+      "title": "AhpModel",
+      "type": "object"
+    },
+    "AhpResult": {
+      "additionalProperties": false,
+      "description": "AHP priorities from pairwise judgements. ``ranking`` holds the overall priorities;\n``weight_profile_id`` and ``scenario_id`` are None, because AHP reads neither.",
+      "properties": {
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/AhpAlternativePriority"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "consistency_threshold": {
+          "title": "Consistency Threshold",
+          "type": "number"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "global_priorities": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Global Priorities",
+          "type": "object"
+        },
+        "label": {
+          "const": "AHP priorities under these pairwise judgements: shares of the goal that sum to one, not MAVT values or swing weights",
+          "default": "AHP priorities under these pairwise judgements: shares of the goal that sum to one, not MAVT values or swing weights",
+          "title": "Label",
+          "type": "string"
+        },
+        "leaf_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Leaf Order",
+          "type": "array"
+        },
+        "local_priorities": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Local Priorities",
+          "type": "object"
+        },
+        "matrices": {
+          "items": {
+            "$ref": "#/$defs/AhpMatrixResult"
+          },
+          "title": "Matrices",
+          "type": "array"
+        },
+        "max_iterations": {
+          "title": "Max Iterations",
+          "type": "integer"
+        },
+        "method": {
+          "const": "ahp",
+          "default": "ahp",
+          "title": "Method",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "random_index_table": {
+          "const": "saaty-tran-2007",
+          "default": "saaty-tran-2007",
+          "title": "Random Index Table",
+          "type": "string"
+        },
+        "random_indices": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Random Indices",
+          "type": "array"
+        },
+        "ranking": {
+          "items": {
+            "$ref": "#/$defs/RankedAlternative"
+          },
+          "title": "Ranking",
+          "type": "array"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "schema_version": {
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "synthesis": {
+          "enum": [
+            "distributive",
+            "ideal"
+          ],
+          "title": "Synthesis",
+          "type": "string"
+        },
+        "tolerance": {
+          "title": "Tolerance",
+          "type": "number"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "schema_version",
+        "project_id",
+        "project_fingerprint",
+        "configuration",
+        "weight_profile_id",
+        "scenario_id",
+        "ranking",
+        "synthesis",
+        "random_indices",
+        "consistency_threshold",
+        "tolerance",
+        "max_iterations",
+        "leaf_order",
+        "local_priorities",
+        "global_priorities",
+        "matrices",
+        "alternatives"
+      ],
+      "title": "AhpResult",
+      "type": "object"
+    },
+    "AhpTriad": {
+      "additionalProperties": false,
+      "description": "The most inconsistent triple of a matrix by Koczkodaj's index; a hint, never applied.",
+      "properties": {
+        "consistent_value": {
+          "title": "Consistent Value",
+          "type": "number"
+        },
+        "index": {
+          "title": "Index",
+          "type": "number"
+        },
+        "items": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            }
+          ],
+          "title": "Items",
+          "type": "array"
+        },
+        "judgements": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Judgements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "items",
+        "judgements",
+        "index",
+        "consistent_value"
+      ],
+      "title": "AhpTriad",
+      "type": "object"
+    },
+    "Alternative": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Alternative",
+      "type": "object"
+    },
+    "AlternativeAcceptability": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "classes": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "$ref": "#/$defs/AcceptabilityEstimate"
+            }
+          },
+          "title": "Classes",
+          "type": "object"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "ranks": {
+          "items": {
+            "$ref": "#/$defs/AcceptabilityEstimate"
+          },
+          "title": "Ranks",
+          "type": "array"
+        },
+        "sole_first": {
+          "$ref": "#/$defs/AcceptabilityEstimate"
+        },
+        "tied_first": {
+          "$ref": "#/$defs/AcceptabilityEstimate"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "name",
+        "ranks",
+        "sole_first",
+        "tied_first"
+      ],
+      "title": "AlternativeAcceptability",
+      "type": "object"
+    },
+    "AlternativeDetail": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "clamped_criteria": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Clamped Criteria",
+          "type": "array"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "overall_value": {
+          "title": "Overall Value",
+          "type": "number"
+        },
+        "partial_values": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Partial Values",
+          "type": "object"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "raw_measurements": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "title": "Raw Measurements",
+          "type": "object"
+        },
+        "weighted_contributions": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Weighted Contributions",
+          "type": "object"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "name",
+        "rank",
+        "overall_value",
+        "raw_measurements",
+        "partial_values",
+        "weighted_contributions"
+      ],
+      "title": "AlternativeDetail",
+      "type": "object"
+    },
+    "AlternativeFeasibility": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "checks": {
+          "items": {
+            "$ref": "#/$defs/RequirementCheck"
+          },
+          "title": "Checks",
+          "type": "array"
+        },
+        "failed": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Failed",
+          "type": "array"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "unknown": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Unknown",
+          "type": "array"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "name",
+        "status",
+        "checks",
+        "failed",
+        "unknown"
+      ],
+      "title": "AlternativeFeasibility",
+      "type": "object"
+    },
+    "AlternativeFlows": {
+      "additionalProperties": false,
+      "description": "One alternative's outranking flows, each normalised by n - 1.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_flows": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Criterion Flows",
+          "type": "object"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "negative_flow": {
+          "title": "Negative Flow",
+          "type": "number"
+        },
+        "net_flow": {
+          "title": "Net Flow",
+          "type": "number"
+        },
+        "positive_flow": {
+          "title": "Positive Flow",
+          "type": "number"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "name",
+        "rank",
+        "positive_flow",
+        "negative_flow",
+        "net_flow",
+        "criterion_flows"
+      ],
+      "title": "AlternativeFlows",
+      "type": "object"
+    },
+    "AlternativeJudgements": {
+      "additionalProperties": false,
+      "description": "The alternatives judged against each other on one leaf criterion.",
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "judgements": {
+          "items": {
+            "$ref": "#/$defs/PairwiseJudgement"
+          },
+          "title": "Judgements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "criterion_id"
+      ],
+      "title": "AlternativeJudgements",
+      "type": "object"
+    },
+    "AnalysisConfiguration": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "default": "mavt",
+          "title": "Method",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scenario Id"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Profile Id"
+        }
+      },
+      "title": "AnalysisConfiguration",
+      "type": "object"
+    },
+    "AnalysisRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Alternative Order",
+          "type": "array"
+        },
+        "calculation_path": {
+          "const": "mavt.math_fsum.v1",
+          "default": "mavt.math_fsum.v1",
+          "title": "Calculation Path",
+          "type": "string"
+        },
+        "comparison": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ScenarioComparison"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "comparison_calculation_path": {
+          "const": "mavt.math_fsum.v1",
+          "default": "mavt.math_fsum.v1",
+          "title": "Comparison Calculation Path",
+          "type": "string"
+        },
+        "comparison_diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Comparison Diagnostics",
+          "type": "array"
+        },
+        "contribution_totals": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Contribution Totals",
+          "type": "object"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriterionContext"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "csv_text_policy": {
+          "const": "text-prefix-controls-v1",
+          "default": "text-prefix-controls-v1",
+          "title": "Csv Text Policy",
+          "type": "string"
+        },
+        "dominance_enabled": {
+          "title": "Dominance Enabled",
+          "type": "boolean"
+        },
+        "dominance_relations": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "patternProperties": {
+                "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+                  "enum": [
+                    "same_alternative",
+                    "dominates",
+                    "dominated_by",
+                    "equal",
+                    "incomparable",
+                    "not_checked"
+                  ],
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "title": "Dominance Relations",
+          "type": "object"
+        },
+        "numerical_tolerance": {
+          "title": "Numerical Tolerance",
+          "type": "number"
+        },
+        "path_shares": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Path Shares",
+          "type": "object"
+        },
+        "project_title": {
+          "title": "Project Title",
+          "type": "string"
+        },
+        "record_digest": {
+          "title": "Record Digest",
+          "type": "string"
+        },
+        "record_version": {
+          "const": "1",
+          "default": "1",
+          "title": "Record Version",
+          "type": "string"
+        },
+        "resolved_profile_name": {
+          "title": "Resolved Profile Name",
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/$defs/MavtResult"
+        },
+        "scenario_name": {
+          "title": "Scenario Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_digest",
+        "project_title",
+        "scenario_name",
+        "resolved_profile_name",
+        "numerical_tolerance",
+        "alternative_order",
+        "criteria",
+        "path_shares",
+        "contribution_totals",
+        "dominance_enabled",
+        "dominance_relations",
+        "result",
+        "comparison"
+      ],
+      "title": "AnalysisRecord",
+      "type": "object"
+    },
+    "AnalysisSnapshot": {
+      "additionalProperties": false,
+      "description": "One requested configuration; an unavailable analysis is recorded, never dropped.",
+      "properties": {
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "record": {
+          "anyOf": [
+            {
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/AnalysisRecord"
+                },
+                {
+                  "$ref": "#/$defs/SortingAnalysisRecord"
+                },
+                {
+                  "$ref": "#/$defs/SmaaAnalysisRecord"
+                },
+                {
+                  "$ref": "#/$defs/PrometheeAnalysisRecord"
+                },
+                {
+                  "$ref": "#/$defs/AhpAnalysisRecord"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Record"
+        },
+        "status": {
+          "enum": [
+            "completed",
+            "unavailable"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "configuration",
+        "status",
+        "record",
+        "reason",
+        "issues"
+      ],
+      "title": "AnalysisSnapshot",
+      "type": "object"
+    },
+    "AnchorMode": {
+      "description": "Where the 0-and-1 anchors of a *linear* value function come from.\n\nFIXED: ``lower``/``upper`` are stated by the user and never depend on the alternatives.\nLOCAL: anchors are the min/max over the alternatives currently in the project. This is an\n       explicit, recorded choice because adding an alternative can then change every\n       existing alternative's score.",
+      "enum": [
+        "fixed",
+        "local"
+      ],
+      "title": "AnchorMode",
+      "type": "string"
+    },
+    "ArtifactAnchor": {
+      "additionalProperties": false,
+      "description": "Where an artifact's compiled project sits: the record's project, or the original project\nof another artifact in the record (a calculation compiled on top of compiled evidence).",
+      "properties": {
+        "anchor_artifact_digest": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Anchor Artifact Digest"
+        },
+        "anchored_to": {
+          "enum": [
+            "record_project",
+            "artifact_source"
+          ],
+          "title": "Anchored To",
+          "type": "string"
+        },
+        "artifact_digest": {
+          "title": "Artifact Digest",
+          "type": "string"
+        },
+        "artifact_kind": {
+          "enum": [
+            "evidence_compilation",
+            "calculation_bundle"
+          ],
+          "title": "Artifact Kind",
+          "type": "string"
+        },
+        "relationship": {
+          "enum": [
+            "compiled",
+            "verified_copy"
+          ],
+          "title": "Relationship",
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_digest",
+        "artifact_kind",
+        "relationship",
+        "anchored_to",
+        "anchor_artifact_digest"
+      ],
+      "title": "ArtifactAnchor",
+      "type": "object"
+    },
+    "AuditSample": {
+      "additionalProperties": false,
+      "description": "Alternatives sorted below a cut-off, chosen for manual review of possible false negatives.\n\nIt estimates nothing and never changes a class.",
+      "properties": {
+        "alternative_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Alternative Ids",
+          "type": "array"
+        },
+        "below_class_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Below Class Id",
+          "type": "string"
+        },
+        "pool_size": {
+          "title": "Pool Size",
+          "type": "integer"
+        },
+        "requested_size": {
+          "title": "Requested Size",
+          "type": "integer"
+        },
+        "seed": {
+          "title": "Seed",
+          "type": "integer"
+        },
+        "selection_rule": {
+          "const": "sha256(seed:alternative_id) ascending, then id",
+          "default": "sha256(seed:alternative_id) ascending, then id",
+          "title": "Selection Rule",
+          "type": "string"
+        }
+      },
+      "required": [
+        "below_class_id",
+        "seed",
+        "requested_size",
+        "pool_size",
+        "alternative_ids"
+      ],
+      "title": "AuditSample",
+      "type": "object"
+    },
+    "BoundRequirement": {
+      "additionalProperties": false,
+      "description": "A numeric leaf's measurement must lie within the stated limits, in the leaf's unit.",
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "bound",
+          "default": "bound",
+          "title": "Kind",
+          "type": "string"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "maximum_inclusive": {
+          "default": true,
+          "title": "Maximum Inclusive",
+          "type": "boolean"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "minimum_inclusive": {
+          "default": true,
+          "title": "Minimum Inclusive",
+          "type": "boolean"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "criterion_id",
+        "unit"
+      ],
+      "title": "BoundRequirement",
+      "type": "object"
+    },
+    "BoundaryContact": {
+      "additionalProperties": false,
+      "properties": {
+        "exact_lower": {
+          "title": "Exact Lower",
+          "type": "string"
+        },
+        "exact_upper": {
+          "title": "Exact Upper",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "rank",
+            "class"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "reference_id": {
+          "title": "Reference Id",
+          "type": "string"
+        },
+        "score_threshold": {
+          "title": "Score Threshold",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "kind",
+        "reference_id",
+        "lower",
+        "upper",
+        "exact_lower",
+        "exact_upper",
+        "score_threshold"
+      ],
+      "title": "BoundaryContact",
+      "type": "object"
+    },
+    "Calculation": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Alternative Id"
+        },
+        "before": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Before"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Criterion Id"
+        },
+        "dependencies": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Dependencies",
+          "type": "array"
+        },
+        "dimension": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Dimension",
+          "type": "object"
+        },
+        "expression": {
+          "title": "Expression",
+          "type": "string"
+        },
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "unit": {
+          "title": "Unit",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "id",
+        "expression",
+        "value",
+        "unit",
+        "dimension",
+        "dependencies",
+        "source_ids",
+        "alternative_id",
+        "criterion_id",
+        "before"
+      ],
+      "title": "Calculation",
+      "type": "object"
+    },
+    "CategoricalDistribution": {
+      "additionalProperties": false,
+      "description": "Listed labels of a labelled scale with their probabilities.",
+      "properties": {
+        "kind": {
+          "const": "categorical",
+          "default": "categorical",
+          "title": "Kind",
+          "type": "string"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "probabilities": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Probabilities",
+          "type": "array"
+        }
+      },
+      "required": [
+        "labels",
+        "probabilities"
+      ],
+      "title": "CategoricalDistribution",
+      "type": "object"
+    },
+    "CellRef": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id"
+      ],
+      "title": "CellRef",
+      "type": "object"
+    },
+    "CellUncertainty": {
+      "additionalProperties": false,
+      "description": "One measurement's distribution, used instead of its entered value in SMAA runs.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "distribution": {
+          "discriminator": {
+            "mapping": {
+              "categorical": "#/$defs/CategoricalDistribution",
+              "discrete": "#/$defs/DiscreteDistribution",
+              "triangular": "#/$defs/TriangularDistribution",
+              "uniform": "#/$defs/UniformDistribution"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UniformDistribution"
+            },
+            {
+              "$ref": "#/$defs/TriangularDistribution"
+            },
+            {
+              "$ref": "#/$defs/DiscreteDistribution"
+            },
+            {
+              "$ref": "#/$defs/CategoricalDistribution"
+            }
+          ],
+          "title": "Distribution"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "distribution"
+      ],
+      "title": "CellUncertainty",
+      "type": "object"
+    },
+    "Claim": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "outdated": {
+          "default": false,
+          "title": "Outdated",
+          "type": "boolean"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "uncertainty_lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty Lower"
+        },
+        "uncertainty_upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty Upper"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "id",
+        "alternative_id",
+        "criterion_id",
+        "value",
+        "unit",
+        "source",
+        "origin"
+      ],
+      "title": "Claim",
+      "type": "object"
+    },
+    "ClaimReview": {
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "review": {
+          "$ref": "#/$defs/Review"
+        }
+      },
+      "required": [
+        "claim_id",
+        "review"
+      ],
+      "title": "ClaimReview",
+      "type": "object"
+    },
+    "ClassAssignment": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "class_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Class Id",
+          "type": "string"
+        },
+        "class_rank": {
+          "title": "Class Rank",
+          "type": "integer"
+        },
+        "distance_to_nearest_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Distance To Nearest Boundary"
+        },
+        "nearest_boundary_class_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Nearest Boundary Class Id"
+        },
+        "on_boundary": {
+          "title": "On Boundary",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "class_id",
+        "class_rank",
+        "on_boundary",
+        "nearest_boundary_class_id",
+        "distance_to_nearest_boundary"
+      ],
+      "title": "ClassAssignment",
+      "type": "object"
+    },
+    "ClassBand": {
+      "additionalProperties": false,
+      "description": "One ordered class as a band on the overall value scale.",
+      "properties": {
+        "class_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Class Id",
+          "type": "string"
+        },
+        "lower_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Lower Boundary"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "upper_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Upper Boundary"
+        }
+      },
+      "required": [
+        "class_id",
+        "name",
+        "rank",
+        "lower_boundary",
+        "upper_boundary"
+      ],
+      "title": "ClassBand",
+      "type": "object"
+    },
+    "ClassSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Alternative Ids",
+          "type": "array"
+        },
+        "class_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Class Id",
+          "type": "string"
+        },
+        "lower_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Lower Boundary"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "upper_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Upper Boundary"
+        }
+      },
+      "required": [
+        "class_id",
+        "name",
+        "rank",
+        "lower_boundary",
+        "upper_boundary",
+        "alternative_ids"
+      ],
+      "title": "ClassSummary",
+      "type": "object"
+    },
+    "ControlPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "x": {
+          "title": "X",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "value"
+      ],
+      "title": "ControlPoint",
+      "type": "object"
+    },
+    "CriteriaJudgements": {
+      "additionalProperties": false,
+      "description": "The children of one criterion (``None``: the top level) judged against each other.",
+      "properties": {
+        "judgements": {
+          "items": {
+            "$ref": "#/$defs/PairwiseJudgement"
+          },
+          "title": "Judgements",
+          "type": "array"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        }
+      },
+      "required": [
+        "parent_id"
+      ],
+      "title": "CriteriaJudgements",
+      "type": "object"
+    },
+    "CriterionContext": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "function_source": {
+          "enum": [
+            "base",
+            "scenario_override"
+          ],
+          "title": "Function Source",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "path_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Path Ids",
+          "type": "array"
+        },
+        "path_names": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Path Names",
+          "type": "array"
+        },
+        "resolved_domain": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Domain"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "scale": {
+          "$ref": "#/$defs/Scale"
+        },
+        "value_function": {
+          "discriminator": {
+            "mapping": {
+              "direct_rating": "#/$defs/DirectRatingValueFunction",
+              "linear": "#/$defs/LinearValueFunction",
+              "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+              "qualitative": "#/$defs/QualitativeValueFunction"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/LinearValueFunction"
+            },
+            {
+              "$ref": "#/$defs/PiecewiseLinearValueFunction"
+            },
+            {
+              "$ref": "#/$defs/QualitativeValueFunction"
+            },
+            {
+              "$ref": "#/$defs/DirectRatingValueFunction"
+            }
+          ],
+          "title": "Value Function"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "name",
+        "description",
+        "path_ids",
+        "path_names",
+        "scale",
+        "value_function",
+        "function_source",
+        "resolved_domain"
+      ],
+      "title": "CriterionContext",
+      "type": "object"
+    },
+    "CriterionExplanation": {
+      "additionalProperties": false,
+      "description": "One criterion's part in a pair ordered differently, in each method's own units.",
+      "properties": {
+        "capped": {
+          "title": "Capped",
+          "type": "boolean"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "difference": {
+          "title": "Difference",
+          "type": "number"
+        },
+        "favours": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Favours"
+        },
+        "mavt_contribution": {
+          "title": "Mavt Contribution",
+          "type": "number"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "p": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "P"
+        },
+        "preference_degree": {
+          "title": "Preference Degree",
+          "type": "number"
+        },
+        "promethee_contribution": {
+          "title": "Promethee Contribution",
+          "type": "number"
+        },
+        "promethee_head_to_head": {
+          "title": "Promethee Head To Head",
+          "type": "number"
+        },
+        "q": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Q"
+        },
+        "zone": {
+          "enum": [
+            "no_preference",
+            "partial",
+            "full"
+          ],
+          "title": "Zone",
+          "type": "string"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "name",
+        "difference",
+        "favours",
+        "zone",
+        "preference_degree",
+        "capped",
+        "q",
+        "p",
+        "promethee_contribution",
+        "promethee_head_to_head",
+        "mavt_contribution"
+      ],
+      "title": "CriterionExplanation",
+      "type": "object"
+    },
+    "CriterionNode": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent Id"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Scale"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "value_function": {
+          "anyOf": [
+            {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value Function"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "CriterionNode",
+      "type": "object"
+    },
+    "DecisionDetails": {
+      "additionalProperties": false,
+      "description": "What the decision owner states for a version-2 record. ``alternatives_considered`` is a\ndeclaration only: every recorded analysis still uses all of the project's alternatives.",
+      "properties": {
+        "alternatives_considered": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 100,
+          "minItems": 1,
+          "title": "Alternatives Considered",
+          "type": "array"
+        },
+        "configurations": {
+          "items": {
+            "$ref": "#/$defs/AnalysisConfiguration"
+          },
+          "maxItems": 6,
+          "minItems": 1,
+          "title": "Configurations",
+          "type": "array"
+        },
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "selected",
+            "deferred"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "owner": {
+          "minLength": 1,
+          "title": "Owner",
+          "type": "string"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "review_triggers": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Review Triggers",
+          "type": "array"
+        },
+        "selected_alternative_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Selected Alternative Id"
+        },
+        "unresolved_assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 100,
+          "title": "Unresolved Assumptions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "owner",
+        "date",
+        "outcome",
+        "alternatives_considered",
+        "rationale",
+        "configurations"
+      ],
+      "title": "DecisionDetails",
+      "type": "object"
+    },
+    "DecisionRecordV2": {
+      "additionalProperties": false,
+      "properties": {
+        "analyses": {
+          "items": {
+            "$ref": "#/$defs/AnalysisSnapshot"
+          },
+          "title": "Analyses",
+          "type": "array"
+        },
+        "anchors": {
+          "items": {
+            "$ref": "#/$defs/ArtifactAnchor"
+          },
+          "title": "Anchors",
+          "type": "array"
+        },
+        "decision": {
+          "$ref": "#/$defs/DecisionDetails"
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "feasibility": {
+          "$ref": "#/$defs/FeasibilitySnapshot"
+        },
+        "measurement_trace": {
+          "items": {
+            "$ref": "#/$defs/MeasurementTrace"
+          },
+          "title": "Measurement Trace",
+          "type": "array"
+        },
+        "notices": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Notices",
+          "type": "array"
+        },
+        "predecessor": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PredecessorSummary"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "previous_digest": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Previous Digest"
+        },
+        "project": {
+          "$ref": "#/$defs/Project"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "supporting_artifacts": {
+          "items": {
+            "$ref": "#/$defs/SupportingArtifact"
+          },
+          "maxItems": 8,
+          "title": "Supporting Artifacts",
+          "type": "array"
+        },
+        "version": {
+          "const": 2,
+          "default": 2,
+          "title": "Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "digest",
+        "previous_digest",
+        "predecessor",
+        "decision",
+        "project",
+        "project_fingerprint",
+        "analyses",
+        "feasibility",
+        "supporting_artifacts",
+        "anchors",
+        "measurement_trace",
+        "notices"
+      ],
+      "title": "DecisionRecordV2",
+      "type": "object"
+    },
+    "DerivedCompilation": {
+      "additionalProperties": false,
+      "description": "Reproducible static copy with the exact original assumptions and review context.",
+      "properties": {
+        "compilation_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Compilation Version",
+          "type": "integer"
+        },
+        "compiled_fingerprint": {
+          "title": "Compiled Fingerprint",
+          "type": "string"
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "preview": {
+          "$ref": "#/$defs/DerivedPreview"
+        },
+        "project": {
+          "$ref": "#/$defs/Project"
+        },
+        "source_project": {
+          "$ref": "#/$defs/Project"
+        }
+      },
+      "required": [
+        "source_project",
+        "preview",
+        "project",
+        "compiled_fingerprint",
+        "digest"
+      ],
+      "title": "DerivedCompilation",
+      "type": "object"
+    },
+    "DerivedFormula": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Alternative Id"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criterion Id"
+        },
+        "expression": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Expression",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "expression",
+        "unit",
+        "origin"
+      ],
+      "title": "DerivedFormula",
+      "type": "object"
+    },
+    "DerivedModel": {
+      "additionalProperties": false,
+      "properties": {
+        "formulas": {
+          "items": {
+            "$ref": "#/$defs/DerivedFormula"
+          },
+          "maxItems": 128,
+          "title": "Formulas",
+          "type": "array"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/SourceFactor"
+          },
+          "maxItems": 256,
+          "title": "Sources",
+          "type": "array"
+        },
+        "units": {
+          "additionalProperties": {
+            "patternProperties": {
+              "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+                "maximum": 16,
+                "minimum": -16,
+                "type": "integer"
+              }
+            },
+            "type": "object"
+          },
+          "maxProperties": 128,
+          "propertyNames": {
+            "maxLength": 64,
+            "minLength": 1
+          },
+          "title": "Units",
+          "type": "object"
+        }
+      },
+      "required": [
+        "project_fingerprint"
+      ],
+      "title": "DerivedModel",
+      "type": "object"
+    },
+    "DerivedPreview": {
+      "additionalProperties": false,
+      "properties": {
+        "calculations": {
+          "items": {
+            "$ref": "#/$defs/Calculation"
+          },
+          "title": "Calculations",
+          "type": "array"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "model": {
+          "$ref": "#/$defs/DerivedModel"
+        },
+        "model_digest": {
+          "title": "Model Digest",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "review_digest": {
+          "title": "Review Digest",
+          "type": "string"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "model_digest",
+        "review_digest",
+        "model",
+        "calculations",
+        "issues",
+        "limitations"
+      ],
+      "title": "DerivedPreview",
+      "type": "object"
+    },
+    "DirectRatingValueFunction": {
+      "additionalProperties": false,
+      "description": "The measurement *is* a rating on [min_rating, max_rating], rescaled linearly to [0, 1].",
+      "properties": {
+        "kind": {
+          "const": "direct_rating",
+          "default": "direct_rating",
+          "title": "Kind",
+          "type": "string"
+        },
+        "max_rating": {
+          "default": 100.0,
+          "title": "Max Rating",
+          "type": "number"
+        },
+        "min_rating": {
+          "default": 0.0,
+          "title": "Min Rating",
+          "type": "number"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "DirectRatingValueFunction",
+      "type": "object"
+    },
+    "Direction": {
+      "enum": [
+        "increasing",
+        "decreasing"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "DiscreteDistribution": {
+      "additionalProperties": false,
+      "description": "Listed numeric values with their probabilities.",
+      "properties": {
+        "kind": {
+          "const": "discrete",
+          "default": "discrete",
+          "title": "Kind",
+          "type": "string"
+        },
+        "probabilities": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Probabilities",
+          "type": "array"
+        },
+        "values": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "values",
+        "probabilities"
+      ],
+      "title": "DiscreteDistribution",
+      "type": "object"
+    },
+    "Domain": {
+      "additionalProperties": false,
+      "description": "The numeric interval over which a value function is defined, and where it came from.",
+      "properties": {
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "source": {
+          "enum": [
+            "fixed",
+            "local",
+            "control_points",
+            "rating_range"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "upper",
+        "source"
+      ],
+      "title": "Domain",
+      "type": "object"
+    },
+    "DominancePair": {
+      "additionalProperties": false,
+      "properties": {
+        "dominated_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Dominated Id",
+          "type": "string"
+        },
+        "dominator_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Dominator Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dominator_id",
+        "dominated_id"
+      ],
+      "title": "DominancePair",
+      "type": "object"
+    },
+    "EvidenceCell": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "title": "Criterion Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id"
+      ],
+      "title": "EvidenceCell",
+      "type": "object"
+    },
+    "EvidenceChange": {
+      "additionalProperties": false,
+      "properties": {
+        "after": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "After"
+        },
+        "alternative_id": {
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "before": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Before"
+        },
+        "claim_id": {
+          "title": "Claim Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "title": "Criterion Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "claim_id",
+        "before",
+        "after"
+      ],
+      "title": "EvidenceChange",
+      "type": "object"
+    },
+    "EvidenceCompilation": {
+      "additionalProperties": false,
+      "description": "The exact review history, the preview compiled from it and the separate project copy.\n\nThe effective dossier is not stored: replaying ``workspace`` derives it from the original\nproposals and appended reviews, so no independently editable current state can drift.",
+      "properties": {
+        "compilation_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Compilation Version",
+          "type": "integer"
+        },
+        "compiled_fingerprint": {
+          "title": "Compiled Fingerprint",
+          "type": "string"
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "preview": {
+          "$ref": "#/$defs/EvidencePreview"
+        },
+        "project": {
+          "$ref": "#/$defs/Project"
+        },
+        "workspace": {
+          "$ref": "#/$defs/EvidenceWorkspace"
+        }
+      },
+      "required": [
+        "workspace",
+        "preview",
+        "project",
+        "compiled_fingerprint",
+        "digest"
+      ],
+      "title": "EvidenceCompilation",
+      "type": "object"
+    },
+    "EvidenceDossier": {
+      "additionalProperties": false,
+      "properties": {
+        "claims": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Claims",
+          "type": "array"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint"
+      ],
+      "title": "EvidenceDossier",
+      "type": "object"
+    },
+    "EvidencePreview": {
+      "additionalProperties": false,
+      "properties": {
+        "changes": {
+          "items": {
+            "$ref": "#/$defs/EvidenceChange"
+          },
+          "title": "Changes",
+          "type": "array"
+        },
+        "conflicting_cells": {
+          "items": {
+            "$ref": "#/$defs/EvidenceCell"
+          },
+          "title": "Conflicting Cells",
+          "type": "array"
+        },
+        "evidence_digest": {
+          "title": "Evidence Digest",
+          "type": "string"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "missing_measurements": {
+          "items": {
+            "$ref": "#/$defs/EvidenceCell"
+          },
+          "title": "Missing Measurements",
+          "type": "array"
+        },
+        "outdated_claims": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Outdated Claims",
+          "type": "array"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "review_digest": {
+          "title": "Review Digest",
+          "type": "string"
+        },
+        "unreviewed_claims": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unreviewed Claims",
+          "type": "array"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "evidence_digest",
+        "review_digest",
+        "changes",
+        "issues",
+        "missing_measurements",
+        "unreviewed_claims",
+        "outdated_claims",
+        "conflicting_cells"
+      ],
+      "title": "EvidencePreview",
+      "type": "object"
+    },
+    "EvidenceWorkspace": {
+      "additionalProperties": false,
+      "properties": {
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "original_dossier": {
+          "$ref": "#/$defs/EvidenceDossier"
+        },
+        "reviews": {
+          "items": {
+            "$ref": "#/$defs/ClaimReview"
+          },
+          "maxItems": 2000,
+          "title": "Reviews",
+          "type": "array"
+        },
+        "source_project": {
+          "$ref": "#/$defs/Project"
+        },
+        "workspace_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Workspace Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "source_project",
+        "original_dossier",
+        "digest"
+      ],
+      "title": "EvidenceWorkspace",
+      "type": "object"
+    },
+    "FactorDistribution": {
+      "additionalProperties": false,
+      "description": "One factor's marginal, in the factor's own unit; no conversion or inference.",
+      "properties": {
+        "distribution": {
+          "discriminator": {
+            "mapping": {
+              "discrete": "#/$defs/DiscreteDistribution",
+              "triangular": "#/$defs/TriangularDistribution",
+              "uniform": "#/$defs/UniformDistribution"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UniformDistribution"
+            },
+            {
+              "$ref": "#/$defs/TriangularDistribution"
+            },
+            {
+              "$ref": "#/$defs/DiscreteDistribution"
+            }
+          ],
+          "title": "Distribution"
+        },
+        "factor_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Factor Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "factor_id",
+        "distribution",
+        "origin"
+      ],
+      "title": "FactorDistribution",
+      "type": "object"
+    },
+    "FactorDraw": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Classes",
+          "type": "object"
+        },
+        "factors": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Factors",
+          "type": "object"
+        },
+        "formulas": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Formulas",
+          "type": "object"
+        },
+        "index": {
+          "title": "Index",
+          "type": "integer"
+        },
+        "measurements": {
+          "additionalProperties": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "type": "object"
+          },
+          "title": "Measurements",
+          "type": "object"
+        },
+        "probability": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Probability"
+        },
+        "ranks": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Ranks",
+          "type": "object"
+        },
+        "values": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Values",
+          "type": "object"
+        }
+      },
+      "required": [
+        "index",
+        "probability",
+        "factors",
+        "formulas",
+        "measurements",
+        "values",
+        "ranks",
+        "classes"
+      ],
+      "title": "FactorDraw",
+      "type": "object"
+    },
+    "FactorRunParameters": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "default": 0.95,
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "draws": {
+          "default": 1000,
+          "maximum": 100000,
+          "minimum": 1,
+          "title": "Draws",
+          "type": "integer"
+        },
+        "evaluation": {
+          "default": "sampled",
+          "enum": [
+            "sampled",
+            "exact_enumeration"
+          ],
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "run": {
+          "default": "smaa2_factors",
+          "enum": [
+            "mavt",
+            "mavt_sorting",
+            "smaa2_factors"
+          ],
+          "title": "Run",
+          "type": "string"
+        },
+        "seed": {
+          "default": 7,
+          "exclusiveMaximum": 9223372036854775808,
+          "minimum": 0,
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "title": "FactorRunParameters",
+      "type": "object"
+    },
+    "FactorRunRecord": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_kind": {
+          "const": "factor_uncertainty_run",
+          "default": "factor_uncertainty_run",
+          "title": "Artifact Kind",
+          "type": "string"
+        },
+        "decision": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/DecisionRecordV2"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/$defs/DerivedModel"
+        },
+        "parameters": {
+          "$ref": "#/$defs/FactorRunParameters"
+        },
+        "result": {
+          "$ref": "#/$defs/FactorRunResult"
+        },
+        "source_project": {
+          "$ref": "#/$defs/Project"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/FactorUncertaintyModel"
+        },
+        "version": {
+          "const": 1,
+          "default": 1,
+          "title": "Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "source_project",
+        "model",
+        "uncertainty",
+        "parameters",
+        "result",
+        "digest"
+      ],
+      "title": "FactorRunRecord",
+      "type": "object"
+    },
+    "FactorRunResult": {
+      "additionalProperties": false,
+      "properties": {
+        "acceptability": {
+          "items": {
+            "$ref": "#/$defs/AlternativeAcceptability"
+          },
+          "title": "Acceptability",
+          "type": "array"
+        },
+        "algorithm": {
+          "const": "factor-mavt-smaa2.v1",
+          "default": "factor-mavt-smaa2.v1",
+          "title": "Algorithm",
+          "type": "string"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        },
+        "dependency_order": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Dependency Order",
+          "type": "array"
+        },
+        "deterministic_inputs": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Deterministic Inputs",
+          "type": "object"
+        },
+        "draw_columns": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Draw Columns",
+          "type": "array"
+        },
+        "draw_count": {
+          "title": "Draw Count",
+          "type": "integer"
+        },
+        "draws_digest": {
+          "title": "Draws Digest",
+          "type": "string"
+        },
+        "environment": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Environment",
+          "type": "object"
+        },
+        "evaluation": {
+          "enum": [
+            "sampled",
+            "exact_enumeration"
+          ],
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "feasibility": {
+          "$ref": "#/$defs/FeasibilitySnapshot"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "model_digest": {
+          "title": "Model Digest",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "questions": {
+          "items": {
+            "$ref": "#/$defs/Question"
+          },
+          "title": "Questions",
+          "type": "array"
+        },
+        "reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MavtResult"
+            },
+            {
+              "$ref": "#/$defs/MavtSortingResult"
+            }
+          ],
+          "title": "Reference"
+        },
+        "rng": {
+          "title": "Rng",
+          "type": "string"
+        },
+        "run": {
+          "enum": [
+            "mavt",
+            "mavt_sorting",
+            "smaa2_factors"
+          ],
+          "title": "Run",
+          "type": "string"
+        },
+        "sampler_algorithm": {
+          "const": "factor-sampling.v1",
+          "default": "factor-sampling.v1",
+          "title": "Sampler Algorithm",
+          "type": "string"
+        },
+        "seed": {
+          "title": "Seed",
+          "type": "integer"
+        },
+        "trace": {
+          "items": {
+            "$ref": "#/$defs/FactorDraw"
+          },
+          "title": "Trace",
+          "type": "array"
+        },
+        "uncertainty_digest": {
+          "title": "Uncertainty Digest",
+          "type": "string"
+        },
+        "warnings": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "run",
+        "rng",
+        "seed",
+        "draw_count",
+        "evaluation",
+        "confidence",
+        "project_fingerprint",
+        "model_digest",
+        "uncertainty_digest",
+        "environment",
+        "dependency_order",
+        "draw_columns",
+        "deterministic_inputs",
+        "reference",
+        "feasibility",
+        "acceptability",
+        "trace",
+        "draws_digest",
+        "questions",
+        "warnings",
+        "limitations"
+      ],
+      "title": "FactorRunResult",
+      "type": "object"
+    },
+    "FactorUncertaintyModel": {
+      "additionalProperties": false,
+      "properties": {
+        "distributions": {
+          "items": {
+            "$ref": "#/$defs/FactorDistribution"
+          },
+          "maxItems": 256,
+          "title": "Distributions",
+          "type": "array"
+        },
+        "groups": {
+          "items": {
+            "$ref": "#/$defs/QuantileGroup"
+          },
+          "maxItems": 64,
+          "title": "Groups",
+          "type": "array"
+        },
+        "model_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Model Digest",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "model_digest"
+      ],
+      "title": "FactorUncertaintyModel",
+      "type": "object"
+    },
+    "FeasibilityResult": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/AlternativeFeasibility"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "label": {
+          "const": "feasibility: each requirement is tested on its own measurement; no score offsets a failure",
+          "default": "feasibility: each requirement is tested on its own measurement; no score offsets a failure",
+          "title": "Label",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "requirements": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "bound": "#/$defs/BoundRequirement",
+                "labels": "#/$defs/LabelsRequirement"
+              },
+              "propertyName": "kind"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/BoundRequirement"
+              },
+              {
+                "$ref": "#/$defs/LabelsRequirement"
+              }
+            ]
+          },
+          "title": "Requirements",
+          "type": "array"
+        },
+        "summary": {
+          "items": {
+            "$ref": "#/$defs/RequirementSummary"
+          },
+          "title": "Summary",
+          "type": "array"
+        }
+      },
+      "required": [
+        "project_id",
+        "project_fingerprint",
+        "requirements",
+        "alternatives",
+        "summary"
+      ],
+      "title": "FeasibilityResult",
+      "type": "object"
+    },
+    "FeasibilitySnapshot": {
+      "additionalProperties": false,
+      "properties": {
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "result": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FeasibilityResult"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "enum": [
+            "checked",
+            "no_requirements",
+            "unavailable"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "result",
+        "issues"
+      ],
+      "title": "FeasibilitySnapshot",
+      "type": "object"
+    },
+    "GroupUncertainty": {
+      "additionalProperties": false,
+      "description": "Weight uncertainty in one sibling group; a group without an entry keeps its ratings.\n\n``unknown``: local weights uniform on the group's simplex, Dirichlet(1, ..., 1).\n``rating_intervals``: each child's raw swing rating uniform on its stated [lower, upper], then\nnormalised within the group.",
+      "properties": {
+        "intervals": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            }
+          },
+          "title": "Intervals",
+          "type": "object"
+        },
+        "kind": {
+          "enum": [
+            "unknown",
+            "rating_intervals"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        }
+      },
+      "required": [
+        "parent_id",
+        "kind"
+      ],
+      "title": "GroupUncertainty",
+      "type": "object"
+    },
+    "InputToCheck": {
+      "additionalProperties": false,
+      "description": "The leading alternative's rank-1 frequency with one input in its upper and lower half.",
+      "properties": {
+        "difference": {
+          "title": "Difference",
+          "type": "number"
+        },
+        "input": {
+          "title": "Input",
+          "type": "string"
+        },
+        "leader_rank1_lower_half": {
+          "title": "Leader Rank1 Lower Half",
+          "type": "number"
+        },
+        "leader_rank1_upper_half": {
+          "title": "Leader Rank1 Upper Half",
+          "type": "number"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        }
+      },
+      "required": [
+        "input",
+        "path",
+        "leader_rank1_upper_half",
+        "leader_rank1_lower_half",
+        "difference"
+      ],
+      "title": "InputToCheck",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "description": "A validation finding or an analysis diagnostic.",
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "path": {
+          "default": "",
+          "title": "Path",
+          "type": "string"
+        },
+        "severity": {
+          "$ref": "#/$defs/Severity"
+        }
+      },
+      "required": [
+        "severity",
+        "code",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "LabelsRequirement": {
+      "additionalProperties": false,
+      "description": "A labelled leaf's measurement must be one of the allowed labels.",
+      "properties": {
+        "allowed": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowed",
+          "type": "array"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "labels",
+          "default": "labels",
+          "title": "Kind",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "criterion_id",
+        "allowed"
+      ],
+      "title": "LabelsRequirement",
+      "type": "object"
+    },
+    "LinearPreferenceFunction": {
+      "additionalProperties": false,
+      "description": "No preference up to q, linear between q and p, full preference from p.",
+      "properties": {
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "p": {
+          "title": "P",
+          "type": "number"
+        },
+        "q": {
+          "title": "Q",
+          "type": "number"
+        }
+      },
+      "required": [
+        "q",
+        "p"
+      ],
+      "title": "LinearPreferenceFunction",
+      "type": "object"
+    },
+    "LinearValueFunction": {
+      "additionalProperties": false,
+      "description": "v(x) = (x-L)/(U-L) (increasing) or (U-x)/(U-L) (decreasing); L, U come from the scale.",
+      "properties": {
+        "direction": {
+          "$ref": "#/$defs/Direction",
+          "default": "increasing"
+        },
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "LinearValueFunction",
+      "type": "object"
+    },
+    "MavtResult": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/AlternativeDetail"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "dominance": {
+          "items": {
+            "$ref": "#/$defs/DominancePair"
+          },
+          "title": "Dominance",
+          "type": "array"
+        },
+        "global_weights": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Global Weights",
+          "type": "object"
+        },
+        "leaf_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Leaf Order",
+          "type": "array"
+        },
+        "local_weights": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Local Weights",
+          "type": "object"
+        },
+        "method": {
+          "const": "mavt",
+          "default": "mavt",
+          "title": "Method",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "ranking": {
+          "items": {
+            "$ref": "#/$defs/RankedAlternative"
+          },
+          "title": "Ranking",
+          "type": "array"
+        },
+        "resolved_domains": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Domain"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "title": "Resolved Domains",
+          "type": "object"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "schema_version": {
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "weight_basis": {
+          "title": "Weight Basis",
+          "type": "string"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "schema_version",
+        "project_id",
+        "project_fingerprint",
+        "configuration",
+        "weight_profile_id",
+        "scenario_id",
+        "ranking",
+        "leaf_order",
+        "local_weights",
+        "global_weights",
+        "resolved_domains",
+        "weight_basis",
+        "alternatives"
+      ],
+      "title": "MavtResult",
+      "type": "object"
+    },
+    "MavtSortingResult": {
+      "additionalProperties": false,
+      "description": "MAVT values sorted into ordered classes by fixed numeric boundaries.",
+      "properties": {
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/AlternativeDetail"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "assignments": {
+          "items": {
+            "$ref": "#/$defs/ClassAssignment"
+          },
+          "title": "Assignments",
+          "type": "array"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "audit_sample": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AuditSample"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "boundary_tolerance": {
+          "title": "Boundary Tolerance",
+          "type": "number"
+        },
+        "classes": {
+          "items": {
+            "$ref": "#/$defs/ClassSummary"
+          },
+          "title": "Classes",
+          "type": "array"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "dominance": {
+          "items": {
+            "$ref": "#/$defs/DominancePair"
+          },
+          "title": "Dominance",
+          "type": "array"
+        },
+        "global_weights": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Global Weights",
+          "type": "object"
+        },
+        "leaf_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Leaf Order",
+          "type": "array"
+        },
+        "local_weights": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Local Weights",
+          "type": "object"
+        },
+        "method": {
+          "const": "mavt_sorting",
+          "default": "mavt_sorting",
+          "title": "Method",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "ranking": {
+          "items": {
+            "$ref": "#/$defs/RankedAlternative"
+          },
+          "title": "Ranking",
+          "type": "array"
+        },
+        "resolved_domains": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Domain"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "title": "Resolved Domains",
+          "type": "object"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "schema_version": {
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "weight_basis": {
+          "title": "Weight Basis",
+          "type": "string"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "schema_version",
+        "project_id",
+        "project_fingerprint",
+        "configuration",
+        "weight_profile_id",
+        "scenario_id",
+        "ranking",
+        "leaf_order",
+        "local_weights",
+        "global_weights",
+        "resolved_domains",
+        "weight_basis",
+        "alternatives",
+        "boundary_tolerance",
+        "classes",
+        "assignments"
+      ],
+      "title": "MavtSortingResult",
+      "type": "object"
+    },
+    "MeasurementRangeResult": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "baseline_class_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Baseline Class Id"
+        },
+        "baseline_rank": {
+          "title": "Baseline Rank",
+          "type": "integer"
+        },
+        "boundary_contacts": {
+          "items": {
+            "$ref": "#/$defs/BoundaryContact"
+          },
+          "title": "Boundary Contacts",
+          "type": "array"
+        },
+        "class_can_change": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Class Can Change"
+        },
+        "criterion_id": {
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "limitations": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Limitations",
+          "type": "array"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "maximum_score_at": {
+          "title": "Maximum Score At",
+          "type": "number"
+        },
+        "minimum_score_at": {
+          "title": "Minimum Score At",
+          "type": "number"
+        },
+        "rank_can_change": {
+          "title": "Rank Can Change",
+          "type": "boolean"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        },
+        "witnesses": {
+          "items": {
+            "$ref": "#/$defs/MeasurementState"
+          },
+          "title": "Witnesses",
+          "type": "array"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "lower",
+        "upper",
+        "baseline_rank",
+        "rank_can_change",
+        "baseline_class_id",
+        "class_can_change",
+        "minimum_score_at",
+        "maximum_score_at",
+        "boundary_contacts",
+        "witnesses",
+        "limitations"
+      ],
+      "title": "MeasurementRangeResult",
+      "type": "object"
+    },
+    "MeasurementState": {
+      "additionalProperties": false,
+      "properties": {
+        "class_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Class Id"
+        },
+        "measurement": {
+          "title": "Measurement",
+          "type": "number"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "measurement",
+        "score",
+        "rank",
+        "class_id"
+      ],
+      "title": "MeasurementState",
+      "type": "object"
+    },
+    "MeasurementTrace": {
+      "additionalProperties": false,
+      "description": "Which retained artifact set each entered measurement, and what it replaced.",
+      "properties": {
+        "alternative_id": {
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "artifact_digest": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Artifact Digest"
+        },
+        "criterion_id": {
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "inputs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Inputs",
+          "type": "array"
+        },
+        "origin": {
+          "enum": [
+            "evidence",
+            "calculation",
+            "entered"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "original_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Original Value"
+        },
+        "reference_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reference Id"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "value",
+        "origin",
+        "artifact_digest",
+        "reference_id",
+        "inputs",
+        "original_value"
+      ],
+      "title": "MeasurementTrace",
+      "type": "object"
+    },
+    "ModelChecks": {
+      "additionalProperties": false,
+      "properties": {
+        "checks": {
+          "items": {
+            "$ref": "#/$defs/QuantityCheck"
+          },
+          "maxItems": 512,
+          "title": "Checks",
+          "type": "array"
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "model_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Model Digest",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "model_digest",
+        "origin",
+        "digest"
+      ],
+      "title": "ModelChecks",
+      "type": "object"
+    },
+    "Origin": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "human",
+            "tool"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "proposed_by": {
+          "minLength": 1,
+          "title": "Proposed By",
+          "type": "string"
+        },
+        "tool_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Id"
+        },
+        "tool_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Version"
+        }
+      },
+      "required": [
+        "kind",
+        "proposed_by"
+      ],
+      "title": "Origin",
+      "type": "object"
+    },
+    "OutrankingExplanation": {
+      "additionalProperties": false,
+      "description": "Why PROMETHEE II and MAVT order alternatives differently. The only cross-method operation\nis comparing orders; no number adds, averages or subtracts a value and a flow.",
+      "properties": {
+        "available": {
+          "title": "Available",
+          "type": "boolean"
+        },
+        "detail_limit": {
+          "title": "Detail Limit",
+          "type": "integer"
+        },
+        "pairs": {
+          "items": {
+            "$ref": "#/$defs/PairExplanation"
+          },
+          "title": "Pairs",
+          "type": "array"
+        },
+        "ranks": {
+          "items": {
+            "$ref": "#/$defs/RankComparison"
+          },
+          "title": "Ranks",
+          "type": "array"
+        },
+        "unavailable_codes": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unavailable Codes",
+          "type": "array"
+        },
+        "unavailable_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unavailable Reason"
+        }
+      },
+      "required": [
+        "available",
+        "unavailable_reason",
+        "unavailable_codes",
+        "detail_limit",
+        "ranks",
+        "pairs"
+      ],
+      "title": "OutrankingExplanation",
+      "type": "object"
+    },
+    "PairExplanation": {
+      "additionalProperties": false,
+      "description": "A pair the two methods order differently. ``alternative_a`` is the one MAVT places higher\n(or, when MAVT ties them, the one PROMETHEE II places lower).",
+      "properties": {
+        "alternative_a": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative A",
+          "type": "string"
+        },
+        "alternative_b": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative B",
+          "type": "string"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriterionExplanation"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "detailed": {
+          "title": "Detailed",
+          "type": "boolean"
+        },
+        "flow_gap": {
+          "title": "Flow Gap",
+          "type": "number"
+        },
+        "head_to_head": {
+          "title": "Head To Head",
+          "type": "number"
+        },
+        "mavt_rank_a": {
+          "title": "Mavt Rank A",
+          "type": "integer"
+        },
+        "mavt_rank_b": {
+          "title": "Mavt Rank B",
+          "type": "integer"
+        },
+        "promethee_rank_a": {
+          "title": "Promethee Rank A",
+          "type": "integer"
+        },
+        "promethee_rank_b": {
+          "title": "Promethee Rank B",
+          "type": "integer"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Reasons",
+          "type": "array"
+        },
+        "value_gap": {
+          "title": "Value Gap",
+          "type": "number"
+        },
+        "via_others": {
+          "title": "Via Others",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alternative_a",
+        "alternative_b",
+        "mavt_rank_a",
+        "mavt_rank_b",
+        "promethee_rank_a",
+        "promethee_rank_b",
+        "value_gap",
+        "flow_gap",
+        "head_to_head",
+        "via_others",
+        "detailed",
+        "criteria",
+        "reasons"
+      ],
+      "title": "PairExplanation",
+      "type": "object"
+    },
+    "PairwiseJudgement": {
+      "additionalProperties": false,
+      "description": "``row`` is ``value`` times as important, or preferred, as ``column`` (1 <= value <= 9).",
+      "properties": {
+        "column": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Column",
+          "type": "string"
+        },
+        "row": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Row",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "row",
+        "column",
+        "value"
+      ],
+      "title": "PairwiseJudgement",
+      "type": "object"
+    },
+    "PartialOrderPair": {
+      "additionalProperties": false,
+      "description": "One unordered pair under PROMETHEE I. For a preference, ``alternative_a`` is preferred.",
+      "properties": {
+        "alternative_a": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative A",
+          "type": "string"
+        },
+        "alternative_b": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative B",
+          "type": "string"
+        },
+        "relation": {
+          "enum": [
+            "preferred",
+            "indifferent",
+            "incomparable"
+          ],
+          "title": "Relation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "alternative_a",
+        "alternative_b",
+        "relation"
+      ],
+      "title": "PartialOrderPair",
+      "type": "object"
+    },
+    "Performance": {
+      "additionalProperties": false,
+      "description": "One cell of the performance table: how an alternative performs on a leaf criterion.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "value"
+      ],
+      "title": "Performance",
+      "type": "object"
+    },
+    "PiecewiseLinearValueFunction": {
+      "additionalProperties": false,
+      "description": "Interpolates linearly between ordered (x, value) points; domain = [x_first, x_last].",
+      "properties": {
+        "kind": {
+          "const": "piecewise_linear",
+          "default": "piecewise_linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "$ref": "#/$defs/ControlPoint"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "points"
+      ],
+      "title": "PiecewiseLinearValueFunction",
+      "type": "object"
+    },
+    "PredecessorSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "selected",
+            "deferred"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "owner": {
+          "title": "Owner",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "selected_alternative_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Selected Alternative Id"
+        },
+        "version": {
+          "title": "Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "version",
+        "digest",
+        "owner",
+        "date",
+        "outcome",
+        "selected_alternative_id",
+        "rationale",
+        "project_fingerprint"
+      ],
+      "title": "PredecessorSummary",
+      "type": "object"
+    },
+    "Project": {
+      "additionalProperties": false,
+      "properties": {
+        "ahp": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AhpModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/Alternative"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "analysis": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriterionNode"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "decision_maker": {
+          "default": "",
+          "title": "Decision Maker",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "performances": {
+          "items": {
+            "$ref": "#/$defs/Performance"
+          },
+          "title": "Performances",
+          "type": "array"
+        },
+        "promethee": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PrometheeModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "requirements": {
+          "anyOf": [
+            {
+              "items": {
+                "discriminator": {
+                  "mapping": {
+                    "bound": "#/$defs/BoundRequirement",
+                    "labels": "#/$defs/LabelsRequirement"
+                  },
+                  "propertyName": "kind"
+                },
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/BoundRequirement"
+                  },
+                  {
+                    "$ref": "#/$defs/LabelsRequirement"
+                  }
+                ]
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Requirements"
+        },
+        "scenarios": {
+          "items": {
+            "$ref": "#/$defs/Scenario"
+          },
+          "title": "Scenarios",
+          "type": "array"
+        },
+        "schema_version": {
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "smaa": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SmaaModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sorting": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SortingModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "weight_profiles": {
+          "items": {
+            "$ref": "#/$defs/WeightProfile"
+          },
+          "title": "Weight Profiles",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title"
+      ],
+      "title": "Project",
+      "type": "object"
+    },
+    "ProjectCopyReceipt": {
+      "additionalProperties": false,
+      "description": "Issued when an import stores a project under a new ID because the original ID exists.\n\n``new_project_id`` means exactly one change: ``id`` was replaced. Every other field, and\ntherefore every measurement and judgement, is byte-identical in canonical JSON.",
+      "properties": {
+        "copy_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Copy Fingerprint",
+          "type": "string"
+        },
+        "copy_project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Copy Project Id",
+          "type": "string"
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "original_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Original Fingerprint",
+          "type": "string"
+        },
+        "original_project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Original Project Id",
+          "type": "string"
+        },
+        "receipt_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Receipt Version",
+          "type": "integer"
+        },
+        "transformation": {
+          "const": "new_project_id",
+          "default": "new_project_id",
+          "title": "Transformation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "original_project_id",
+        "original_fingerprint",
+        "copy_project_id",
+        "copy_fingerprint",
+        "digest"
+      ],
+      "title": "ProjectCopyReceipt",
+      "type": "object"
+    },
+    "PrometheeAnalysisRecord": {
+      "additionalProperties": false,
+      "description": "PROMETHEE II: the flows, the partial order and the explanation; no value-model context.",
+      "properties": {
+        "alternative_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Alternative Order",
+          "type": "array"
+        },
+        "calculation_path": {
+          "const": "promethee2.v1",
+          "default": "promethee2.v1",
+          "title": "Calculation Path",
+          "type": "string"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "csv_text_policy": {
+          "const": "text-prefix-controls-v1",
+          "default": "text-prefix-controls-v1",
+          "title": "Csv Text Policy",
+          "type": "string"
+        },
+        "method": {
+          "const": "promethee2",
+          "default": "promethee2",
+          "title": "Method",
+          "type": "string"
+        },
+        "method_label": {
+          "title": "Method Label",
+          "type": "string"
+        },
+        "numerical_tolerance": {
+          "title": "Numerical Tolerance",
+          "type": "number"
+        },
+        "project_title": {
+          "title": "Project Title",
+          "type": "string"
+        },
+        "record_digest": {
+          "title": "Record Digest",
+          "type": "string"
+        },
+        "record_version": {
+          "const": "2",
+          "default": "2",
+          "title": "Record Version",
+          "type": "string"
+        },
+        "resolved_profile_name": {
+          "title": "Resolved Profile Name",
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/$defs/PrometheeResult"
+        },
+        "scenario_name": {
+          "title": "Scenario Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_digest",
+        "method_label",
+        "numerical_tolerance",
+        "project_title",
+        "scenario_name",
+        "resolved_profile_name",
+        "alternative_order",
+        "configuration",
+        "result"
+      ],
+      "title": "PrometheeAnalysisRecord",
+      "type": "object"
+    },
+    "PrometheeCriterion": {
+      "additionalProperties": false,
+      "description": "PROMETHEE's inputs for one leaf; thresholds are in its units (its codes when labelled).",
+      "properties": {
+        "coding": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "number"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Coding"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "maximise",
+            "minimise"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "function": {
+          "discriminator": {
+            "mapping": {
+              "linear": "#/$defs/LinearPreferenceFunction",
+              "u_shape": "#/$defs/UShapeFunction",
+              "usual": "#/$defs/UsualFunction",
+              "v_shape": "#/$defs/VShapeFunction"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UsualFunction"
+            },
+            {
+              "$ref": "#/$defs/UShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/VShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/LinearPreferenceFunction"
+            }
+          ],
+          "title": "Function"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "direction",
+        "weight",
+        "function"
+      ],
+      "title": "PrometheeCriterion",
+      "type": "object"
+    },
+    "PrometheeCriterionUsed": {
+      "additionalProperties": false,
+      "description": "One leaf's PROMETHEE inputs as used: the stated weight and its normalised share.",
+      "properties": {
+        "coding": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "number"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Coding"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "maximise",
+            "minimise"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "function": {
+          "discriminator": {
+            "mapping": {
+              "linear": "#/$defs/LinearPreferenceFunction",
+              "u_shape": "#/$defs/UShapeFunction",
+              "usual": "#/$defs/UsualFunction",
+              "v_shape": "#/$defs/VShapeFunction"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UsualFunction"
+            },
+            {
+              "$ref": "#/$defs/UShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/VShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/LinearPreferenceFunction"
+            }
+          ],
+          "title": "Function"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "normalised_weight": {
+          "title": "Normalised Weight",
+          "type": "number"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "name",
+        "unit",
+        "direction",
+        "weight",
+        "normalised_weight",
+        "function",
+        "coding"
+      ],
+      "title": "PrometheeCriterionUsed",
+      "type": "object"
+    },
+    "PrometheeModel": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/PrometheeCriterion"
+          },
+          "title": "Criteria",
+          "type": "array"
+        }
+      },
+      "title": "PrometheeModel",
+      "type": "object"
+    },
+    "PrometheeResult": {
+      "additionalProperties": false,
+      "description": "PROMETHEE II net flows and the PROMETHEE I partial order. ``ranking`` holds the PROMETHEE II\norder and its ``value`` is the net flow, never a preference value. ``weight_profile_id`` and\n``scenario_id`` are those of the explanation's MAVT side; PROMETHEE's inputs ignore them.",
+      "properties": {
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/PrometheeCriterionUsed"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "explanation": {
+          "$ref": "#/$defs/OutrankingExplanation"
+        },
+        "flows": {
+          "items": {
+            "$ref": "#/$defs/AlternativeFlows"
+          },
+          "title": "Flows",
+          "type": "array"
+        },
+        "label": {
+          "const": "net outranking flows: these compare the alternatives with one another and are not preference values",
+          "default": "net outranking flows: these compare the alternatives with one another and are not preference values",
+          "title": "Label",
+          "type": "string"
+        },
+        "leaf_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Leaf Order",
+          "type": "array"
+        },
+        "method": {
+          "const": "promethee2",
+          "default": "promethee2",
+          "title": "Method",
+          "type": "string"
+        },
+        "partial_order": {
+          "items": {
+            "$ref": "#/$defs/PartialOrderPair"
+          },
+          "title": "Partial Order",
+          "type": "array"
+        },
+        "preference_matrix": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "patternProperties": {
+                "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+                  "type": "number"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "title": "Preference Matrix",
+          "type": "object"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "ranking": {
+          "items": {
+            "$ref": "#/$defs/RankedAlternative"
+          },
+          "title": "Ranking",
+          "type": "array"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "schema_version": {
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "threshold_tolerance": {
+          "const": "1e-12 * max(1, |x_a|, |x_b|)",
+          "default": "1e-12 * max(1, |x_a|, |x_b|)",
+          "title": "Threshold Tolerance",
+          "type": "string"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "schema_version",
+        "project_id",
+        "project_fingerprint",
+        "configuration",
+        "weight_profile_id",
+        "scenario_id",
+        "ranking",
+        "leaf_order",
+        "criteria",
+        "flows",
+        "preference_matrix",
+        "partial_order",
+        "explanation"
+      ],
+      "title": "PrometheeResult",
+      "type": "object"
+    },
+    "QualitativeValueFunction": {
+      "additionalProperties": false,
+      "description": "Explicit label -> preference value mapping. Spacing is a judgement, never assumed.",
+      "properties": {
+        "kind": {
+          "const": "qualitative",
+          "default": "qualitative",
+          "title": "Kind",
+          "type": "string"
+        },
+        "mapping": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Mapping",
+          "type": "object"
+        }
+      },
+      "required": [
+        "mapping"
+      ],
+      "title": "QualitativeValueFunction",
+      "type": "object"
+    },
+    "QuantileGroup": {
+      "additionalProperties": false,
+      "description": "Factors that share one uniform draw through their own quantile functions.\n\nThis states perfectly shared quantiles, not a correlation coefficient or covariance.",
+      "properties": {
+        "factor_ids": {
+          "items": {
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 2,
+          "title": "Factor Ids",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "rationale": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "factor_ids",
+        "rationale",
+        "origin"
+      ],
+      "title": "QuantileGroup",
+      "type": "object"
+    },
+    "QuantityCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower"
+        },
+        "lower_inclusive": {
+          "default": true,
+          "title": "Lower Inclusive",
+          "type": "boolean"
+        },
+        "quantity_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Quantity Id",
+          "type": "string"
+        },
+        "quantity_kind": {
+          "enum": [
+            "source",
+            "formula"
+          ],
+          "title": "Quantity Kind",
+          "type": "string"
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper"
+        },
+        "upper_inclusive": {
+          "default": true,
+          "title": "Upper Inclusive",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "quantity_kind",
+        "quantity_id",
+        "unit"
+      ],
+      "title": "QuantityCheck",
+      "type": "object"
+    },
+    "Question": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Alternative Id"
+        },
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criterion Id"
+        },
+        "evidence": {
+          "title": "Evidence",
+          "type": "string"
+        },
+        "group": {
+          "enum": [
+            "blocking",
+            "decision_sensitive",
+            "evidence_quality"
+          ],
+          "title": "Group",
+          "type": "string"
+        },
+        "measurement_range": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/MeasurementRangeResult"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "question": {
+          "title": "Question",
+          "type": "string"
+        },
+        "requirement_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Requirement Id"
+        },
+        "why": {
+          "title": "Why",
+          "type": "string"
+        }
+      },
+      "required": [
+        "group",
+        "code",
+        "question",
+        "why",
+        "evidence"
+      ],
+      "title": "Question",
+      "type": "object"
+    },
+    "RankComparison": {
+      "additionalProperties": false,
+      "description": "Ranks only: a value and a flow never share a column.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "mavt_rank": {
+          "title": "Mavt Rank",
+          "type": "integer"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "promethee_rank": {
+          "title": "Promethee Rank",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "name",
+        "mavt_rank",
+        "promethee_rank"
+      ],
+      "title": "RankComparison",
+      "type": "object"
+    },
+    "RankedAlternative": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "rank": {
+          "title": "Rank",
+          "type": "integer"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "name",
+        "value",
+        "rank"
+      ],
+      "title": "RankedAlternative",
+      "type": "object"
+    },
+    "RequirementCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "measurement": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Measurement"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "requirement_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Requirement Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "requirement_id",
+        "status",
+        "measurement",
+        "reason"
+      ],
+      "title": "RequirementCheck",
+      "type": "object"
+    },
+    "RequirementSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "failed": {
+          "title": "Failed",
+          "type": "integer"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "passed": {
+          "title": "Passed",
+          "type": "integer"
+        },
+        "requirement_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Requirement Id",
+          "type": "string"
+        },
+        "unknown": {
+          "title": "Unknown",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "requirement_id",
+        "name",
+        "criterion_id",
+        "passed",
+        "failed",
+        "unknown"
+      ],
+      "title": "RequirementSummary",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "corrected_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Corrected Value"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "format": "date-time",
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "minLength": 1,
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "corrected",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at"
+      ],
+      "title": "Review",
+      "type": "object"
+    },
+    "Scale": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_mode": {
+          "$ref": "#/$defs/AnchorMode",
+          "default": "fixed"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower"
+        },
+        "type": {
+          "$ref": "#/$defs/ScaleType"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "title": "Scale",
+      "type": "object"
+    },
+    "ScaleType": {
+      "enum": [
+        "categorical",
+        "ordinal",
+        "interval",
+        "ratio"
+      ],
+      "title": "ScaleType",
+      "type": "string"
+    },
+    "Scenario": {
+      "additionalProperties": false,
+      "description": "A named variation of the base model: another weight profile and/or other value functions.",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "value_function_overrides": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            }
+          },
+          "title": "Value Function Overrides",
+          "type": "object"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    },
+    "ScenarioComparison": {
+      "additionalProperties": false,
+      "properties": {
+        "baseline": {
+          "$ref": "#/$defs/ScenarioOutcome"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "scenario_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Scenario Ids",
+          "type": "array"
+        },
+        "scenarios": {
+          "items": {
+            "$ref": "#/$defs/ScenarioOutcome"
+          },
+          "title": "Scenarios",
+          "type": "array"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "configuration",
+        "scenario_ids",
+        "baseline",
+        "scenarios"
+      ],
+      "title": "ScenarioComparison",
+      "type": "object"
+    },
+    "ScenarioOutcome": {
+      "additionalProperties": false,
+      "properties": {
+        "applied_overrides": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            }
+          },
+          "title": "Applied Overrides",
+          "type": "object"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "delta_from_baseline": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Delta From Baseline",
+          "type": "object"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "rank_by_alternative": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "integer"
+            }
+          },
+          "title": "Rank By Alternative",
+          "type": "object"
+        },
+        "ranking": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Ranking",
+          "type": "array"
+        },
+        "ranking_differs_from_baseline": {
+          "title": "Ranking Differs From Baseline",
+          "type": "boolean"
+        },
+        "resolved_domains": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Domain"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "title": "Resolved Domains",
+          "type": "object"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "scenario_name": {
+          "title": "Scenario Name",
+          "type": "string"
+        },
+        "values": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Values",
+          "type": "object"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        },
+        "winner_differs_from_baseline": {
+          "title": "Winner Differs From Baseline",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "scenario_id",
+        "scenario_name",
+        "configuration",
+        "weight_profile_id",
+        "ranking",
+        "values",
+        "rank_by_alternative",
+        "ranking_differs_from_baseline",
+        "winner_differs_from_baseline"
+      ],
+      "title": "ScenarioOutcome",
+      "type": "object"
+    },
+    "Severity": {
+      "enum": [
+        "error",
+        "warning",
+        "info"
+      ],
+      "title": "Severity",
+      "type": "string"
+    },
+    "SharedDraw": {
+      "additionalProperties": false,
+      "description": "Cells from one source: they use one common uniform draw through their own quantiles.",
+      "properties": {
+        "cells": {
+          "items": {
+            "$ref": "#/$defs/CellRef"
+          },
+          "title": "Cells",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "cells"
+      ],
+      "title": "SharedDraw",
+      "type": "object"
+    },
+    "SmaaAnalysisRecord": {
+      "additionalProperties": false,
+      "description": "SMAA-2: the acceptabilities with their full provenance; no value-model context.",
+      "properties": {
+        "alternative_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Alternative Order",
+          "type": "array"
+        },
+        "calculation_path": {
+          "const": "smaa2.pcg64.v1",
+          "default": "smaa2.pcg64.v1",
+          "title": "Calculation Path",
+          "type": "string"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "csv_text_policy": {
+          "const": "text-prefix-controls-v1",
+          "default": "text-prefix-controls-v1",
+          "title": "Csv Text Policy",
+          "type": "string"
+        },
+        "method": {
+          "const": "smaa2",
+          "default": "smaa2",
+          "title": "Method",
+          "type": "string"
+        },
+        "method_label": {
+          "title": "Method Label",
+          "type": "string"
+        },
+        "numerical_tolerance": {
+          "title": "Numerical Tolerance",
+          "type": "number"
+        },
+        "project_title": {
+          "title": "Project Title",
+          "type": "string"
+        },
+        "record_digest": {
+          "title": "Record Digest",
+          "type": "string"
+        },
+        "record_version": {
+          "const": "2",
+          "default": "2",
+          "title": "Record Version",
+          "type": "string"
+        },
+        "resolved_profile_name": {
+          "title": "Resolved Profile Name",
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/$defs/SmaaResult"
+        },
+        "scenario_name": {
+          "title": "Scenario Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_digest",
+        "method_label",
+        "numerical_tolerance",
+        "project_title",
+        "scenario_name",
+        "resolved_profile_name",
+        "alternative_order",
+        "configuration",
+        "result"
+      ],
+      "title": "SmaaAnalysisRecord",
+      "type": "object"
+    },
+    "SmaaModel": {
+      "additionalProperties": false,
+      "properties": {
+        "cells": {
+          "items": {
+            "$ref": "#/$defs/CellUncertainty"
+          },
+          "title": "Cells",
+          "type": "array"
+        },
+        "dependence": {
+          "default": "independent",
+          "title": "Dependence",
+          "type": "string"
+        },
+        "groups": {
+          "items": {
+            "$ref": "#/$defs/GroupUncertainty"
+          },
+          "title": "Groups",
+          "type": "array"
+        },
+        "shared_draws": {
+          "items": {
+            "$ref": "#/$defs/SharedDraw"
+          },
+          "title": "Shared Draws",
+          "type": "array"
+        }
+      },
+      "title": "SmaaModel",
+      "type": "object"
+    },
+    "SmaaResult": {
+      "additionalProperties": false,
+      "description": "SMAA-2 acceptabilities. ``ranking`` is MAVT's reference ranking at the entered values and\nthe profile's ratings; the acceptabilities never enter it.",
+      "properties": {
+        "acceptability": {
+          "items": {
+            "$ref": "#/$defs/AlternativeAcceptability"
+          },
+          "title": "Acceptability",
+          "type": "array"
+        },
+        "algorithm": {
+          "const": "smaa2.pcg64.v1",
+          "default": "smaa2.pcg64.v1",
+          "title": "Algorithm",
+          "type": "string"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "classes": {
+          "items": {
+            "$ref": "#/$defs/ClassBand"
+          },
+          "title": "Classes",
+          "type": "array"
+        },
+        "confidence": {
+          "title": "Confidence",
+          "type": "number"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "dependence": {
+          "title": "Dependence",
+          "type": "string"
+        },
+        "diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Diagnostics",
+          "type": "array"
+        },
+        "environment": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Environment",
+          "type": "object"
+        },
+        "evaluation": {
+          "enum": [
+            "sampled",
+            "exact_enumeration"
+          ],
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "inputs_to_check": {
+          "items": {
+            "$ref": "#/$defs/InputToCheck"
+          },
+          "title": "Inputs To Check",
+          "type": "array"
+        },
+        "inputs_to_check_label": {
+          "const": "heuristic: association in these draws, not causation or value of information",
+          "default": "heuristic: association in these draws, not causation or value of information",
+          "title": "Inputs To Check Label",
+          "type": "string"
+        },
+        "interval_method": {
+          "const": "clopper-pearson",
+          "default": "clopper-pearson",
+          "title": "Interval Method",
+          "type": "string"
+        },
+        "label": {
+          "const": "sampled acceptability under these assumptions",
+          "default": "sampled acceptability under these assumptions",
+          "title": "Label",
+          "type": "string"
+        },
+        "leader_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Leader Id",
+          "type": "string"
+        },
+        "method": {
+          "const": "smaa2",
+          "default": "smaa2",
+          "title": "Method",
+          "type": "string"
+        },
+        "outcomes": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Outcomes"
+        },
+        "project_fingerprint": {
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "project_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Project Id",
+          "type": "string"
+        },
+        "ranking": {
+          "items": {
+            "$ref": "#/$defs/RankedAlternative"
+          },
+          "title": "Ranking",
+          "type": "array"
+        },
+        "run": {
+          "enum": [
+            "performance",
+            "preference",
+            "combined"
+          ],
+          "title": "Run",
+          "type": "string"
+        },
+        "samples": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Samples"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "schema_version": {
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "seed": {
+          "title": "Seed",
+          "type": "integer"
+        },
+        "uncertainty": {
+          "$ref": "#/$defs/SmaaModel"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "schema_version",
+        "project_id",
+        "project_fingerprint",
+        "configuration",
+        "weight_profile_id",
+        "scenario_id",
+        "ranking",
+        "run",
+        "evaluation",
+        "samples",
+        "outcomes",
+        "seed",
+        "confidence",
+        "dependence",
+        "uncertainty",
+        "environment",
+        "classes",
+        "leader_id",
+        "acceptability",
+        "inputs_to_check"
+      ],
+      "title": "SmaaResult",
+      "type": "object"
+    },
+    "SortingAnalysisRecord": {
+      "additionalProperties": false,
+      "description": "Value-based sorting: the sorted result and the value-model context its MAVT panels read.",
+      "properties": {
+        "alternative_order": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "title": "Alternative Order",
+          "type": "array"
+        },
+        "calculation_path": {
+          "const": "mavt_sorting.math_fsum.v1",
+          "default": "mavt_sorting.math_fsum.v1",
+          "title": "Calculation Path",
+          "type": "string"
+        },
+        "comparison": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ScenarioComparison"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "comparison_calculation_path": {
+          "const": "mavt.math_fsum.v1",
+          "default": "mavt.math_fsum.v1",
+          "title": "Comparison Calculation Path",
+          "type": "string"
+        },
+        "comparison_diagnostics": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Comparison Diagnostics",
+          "type": "array"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "contribution_totals": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Contribution Totals",
+          "type": "object"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriterionContext"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "csv_text_policy": {
+          "const": "text-prefix-controls-v1",
+          "default": "text-prefix-controls-v1",
+          "title": "Csv Text Policy",
+          "type": "string"
+        },
+        "dominance_enabled": {
+          "title": "Dominance Enabled",
+          "type": "boolean"
+        },
+        "dominance_relations": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "patternProperties": {
+                "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+                  "enum": [
+                    "same_alternative",
+                    "dominates",
+                    "dominated_by",
+                    "equal",
+                    "incomparable",
+                    "not_checked"
+                  ],
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          },
+          "title": "Dominance Relations",
+          "type": "object"
+        },
+        "method": {
+          "const": "mavt_sorting",
+          "default": "mavt_sorting",
+          "title": "Method",
+          "type": "string"
+        },
+        "method_label": {
+          "title": "Method Label",
+          "type": "string"
+        },
+        "numerical_tolerance": {
+          "title": "Numerical Tolerance",
+          "type": "number"
+        },
+        "path_shares": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Path Shares",
+          "type": "object"
+        },
+        "project_title": {
+          "title": "Project Title",
+          "type": "string"
+        },
+        "record_digest": {
+          "title": "Record Digest",
+          "type": "string"
+        },
+        "record_version": {
+          "const": "2",
+          "default": "2",
+          "title": "Record Version",
+          "type": "string"
+        },
+        "resolved_profile_name": {
+          "title": "Resolved Profile Name",
+          "type": "string"
+        },
+        "result": {
+          "$ref": "#/$defs/MavtSortingResult"
+        },
+        "scenario_name": {
+          "title": "Scenario Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "record_digest",
+        "method_label",
+        "numerical_tolerance",
+        "project_title",
+        "scenario_name",
+        "resolved_profile_name",
+        "alternative_order",
+        "configuration",
+        "criteria",
+        "path_shares",
+        "contribution_totals",
+        "dominance_enabled",
+        "dominance_relations",
+        "result",
+        "comparison"
+      ],
+      "title": "SortingAnalysisRecord",
+      "type": "object"
+    },
+    "SortingAudit": {
+      "additionalProperties": false,
+      "description": "A seed-keyed sample of alternatives sorted below ``below_class_id``, for manual review.",
+      "properties": {
+        "below_class_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Below Class Id",
+          "type": "string"
+        },
+        "sample_size": {
+          "title": "Sample Size",
+          "type": "integer"
+        },
+        "seed": {
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "below_class_id",
+        "sample_size",
+        "seed"
+      ],
+      "title": "SortingAudit",
+      "type": "object"
+    },
+    "SortingClass": {
+      "additionalProperties": false,
+      "description": "One ordered class. ``lower_boundary`` is the overall value needed to enter it.\n\nThe lowest class has no boundary: it takes every remaining value.",
+      "properties": {
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "lower_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Boundary"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "SortingClass",
+      "type": "object"
+    },
+    "SortingModel": {
+      "additionalProperties": false,
+      "properties": {
+        "audit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SortingAudit"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "classes": {
+          "items": {
+            "$ref": "#/$defs/SortingClass"
+          },
+          "title": "Classes",
+          "type": "array"
+        }
+      },
+      "title": "SortingModel",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "classification": {
+          "default": "unknown",
+          "enum": [
+            "independent",
+            "self_reported",
+            "unknown"
+          ],
+          "title": "Classification",
+          "type": "string"
+        },
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "location": {
+          "default": "",
+          "title": "Location",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "reference": {
+          "minLength": 1,
+          "title": "Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "reference",
+        "date",
+        "description"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SourceFactor": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        }
+      },
+      "required": [
+        "id",
+        "unit",
+        "source",
+        "origin"
+      ],
+      "title": "SourceFactor",
+      "type": "object"
+    },
+    "SupportingArtifact": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EvidenceCompilation"
+            },
+            {
+              "$ref": "#/$defs/DerivedCompilation"
+            }
+          ],
+          "title": "Artifact"
+        },
+        "copy_receipt": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProjectCopyReceipt"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "artifact"
+      ],
+      "title": "SupportingArtifact",
+      "type": "object"
+    },
+    "TriangularDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "triangular",
+          "default": "triangular",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "mode": {
+          "title": "Mode",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "mode",
+        "upper"
+      ],
+      "title": "TriangularDistribution",
+      "type": "object"
+    },
+    "UShapeFunction": {
+      "additionalProperties": false,
+      "description": "No preference up to the indifference threshold q, full preference beyond it.",
+      "properties": {
+        "kind": {
+          "const": "u_shape",
+          "default": "u_shape",
+          "title": "Kind",
+          "type": "string"
+        },
+        "q": {
+          "title": "Q",
+          "type": "number"
+        }
+      },
+      "required": [
+        "q"
+      ],
+      "title": "UShapeFunction",
+      "type": "object"
+    },
+    "UniformDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "uniform",
+          "default": "uniform",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "title": "UniformDistribution",
+      "type": "object"
+    },
+    "UsualFunction": {
+      "additionalProperties": false,
+      "description": "Any positive difference is full preference.",
+      "properties": {
+        "kind": {
+          "const": "usual",
+          "default": "usual",
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "title": "UsualFunction",
+      "type": "object"
+    },
+    "VShapeFunction": {
+      "additionalProperties": false,
+      "description": "Preference grows linearly from 0 to full at the preference threshold p.",
+      "properties": {
+        "kind": {
+          "const": "v_shape",
+          "default": "v_shape",
+          "title": "Kind",
+          "type": "string"
+        },
+        "p": {
+          "title": "P",
+          "type": "number"
+        }
+      },
+      "required": [
+        "p"
+      ],
+      "title": "VShapeFunction",
+      "type": "object"
+    },
+    "WeightProfile": {
+      "additionalProperties": false,
+      "description": "Raw swing ratings, one per criterion node, relative to that node's siblings.\n\nA rating expresses the importance of the swing from worst to best *over the scale range\nin use* - not abstract importance. Ratings need not sum to anything; they are normalised\nwithin each sibling group. An only child needs no rating (its local weight is 1).",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "judgements": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Judgements",
+          "type": "object"
+        },
+        "method": {
+          "default": "swing",
+          "title": "Method",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "WeightProfile",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifact_kind": {
+      "const": "checked_factor_run",
+      "default": "checked_factor_run",
+      "title": "Artifact Kind",
+      "type": "string"
+    },
+    "checks": {
+      "$ref": "#/$defs/ModelChecks"
+    },
+    "checks_digest": {
+      "title": "Checks Digest",
+      "type": "string"
+    },
+    "digest": {
+      "title": "Digest",
+      "type": "string"
+    },
+    "omitted_quantity_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Omitted Quantity Ids",
+      "type": "array"
+    },
+    "original_model": {
+      "$ref": "#/$defs/DerivedModel"
+    },
+    "original_uncertainty": {
+      "$ref": "#/$defs/FactorUncertaintyModel"
+    },
+    "record": {
+      "$ref": "#/$defs/FactorRunRecord"
+    },
+    "source_project": {
+      "$ref": "#/$defs/Project"
+    },
+    "version": {
+      "const": 1,
+      "default": 1,
+      "title": "Version",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "source_project",
+    "original_model",
+    "original_uncertainty",
+    "checks",
+    "checks_digest",
+    "omitted_quantity_ids",
+    "record",
+    "digest"
+  ],
+  "title": "CheckedFactorRun",
+  "type": "object"
+}

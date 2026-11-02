@@ -1,0 +1,1454 @@
+{
+  "$defs": {
+    "AhpModel": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriteriaJudgements"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/AlternativeJudgements"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        }
+      },
+      "title": "AhpModel",
+      "type": "object"
+    },
+    "Alternative": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Alternative",
+      "type": "object"
+    },
+    "AlternativeJudgements": {
+      "additionalProperties": false,
+      "description": "The alternatives judged against each other on one leaf criterion.",
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "judgements": {
+          "items": {
+            "$ref": "#/$defs/PairwiseJudgement"
+          },
+          "title": "Judgements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "criterion_id"
+      ],
+      "title": "AlternativeJudgements",
+      "type": "object"
+    },
+    "AnalysisConfiguration": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "default": "mavt",
+          "title": "Method",
+          "type": "string"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Profile Id"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scenario Id"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        }
+      },
+      "title": "AnalysisConfiguration",
+      "type": "object"
+    },
+    "AnchorMode": {
+      "description": "Where the 0-and-1 anchors of a *linear* value function come from.\n\nFIXED: ``lower``/``upper`` are stated by the user and never depend on the alternatives.\nLOCAL: anchors are the min/max over the alternatives currently in the project. This is an\n       explicit, recorded choice because adding an alternative can then change every\n       existing alternative's score.",
+      "enum": [
+        "fixed",
+        "local"
+      ],
+      "title": "AnchorMode",
+      "type": "string"
+    },
+    "BoundRequirement": {
+      "additionalProperties": false,
+      "description": "A numeric leaf's measurement must lie within the stated limits, in the leaf's unit.",
+      "properties": {
+        "kind": {
+          "const": "bound",
+          "default": "bound",
+          "title": "Kind",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "minimum_inclusive": {
+          "default": true,
+          "title": "Minimum Inclusive",
+          "type": "boolean"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "maximum_inclusive": {
+          "default": true,
+          "title": "Maximum Inclusive",
+          "type": "boolean"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "criterion_id",
+        "unit"
+      ],
+      "title": "BoundRequirement",
+      "type": "object"
+    },
+    "CategoricalDistribution": {
+      "additionalProperties": false,
+      "description": "Listed labels of a labelled scale with their probabilities.",
+      "properties": {
+        "kind": {
+          "const": "categorical",
+          "default": "categorical",
+          "title": "Kind",
+          "type": "string"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "probabilities": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Probabilities",
+          "type": "array"
+        }
+      },
+      "required": [
+        "labels",
+        "probabilities"
+      ],
+      "title": "CategoricalDistribution",
+      "type": "object"
+    },
+    "CellRef": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id"
+      ],
+      "title": "CellRef",
+      "type": "object"
+    },
+    "CellUncertainty": {
+      "additionalProperties": false,
+      "description": "One measurement's distribution, used instead of its entered value in SMAA runs.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "distribution": {
+          "discriminator": {
+            "mapping": {
+              "categorical": "#/$defs/CategoricalDistribution",
+              "discrete": "#/$defs/DiscreteDistribution",
+              "triangular": "#/$defs/TriangularDistribution",
+              "uniform": "#/$defs/UniformDistribution"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UniformDistribution"
+            },
+            {
+              "$ref": "#/$defs/TriangularDistribution"
+            },
+            {
+              "$ref": "#/$defs/DiscreteDistribution"
+            },
+            {
+              "$ref": "#/$defs/CategoricalDistribution"
+            }
+          ],
+          "title": "Distribution"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "distribution"
+      ],
+      "title": "CellUncertainty",
+      "type": "object"
+    },
+    "ControlPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "title": "X",
+          "type": "number"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "value"
+      ],
+      "title": "ControlPoint",
+      "type": "object"
+    },
+    "CriteriaJudgements": {
+      "additionalProperties": false,
+      "description": "The children of one criterion (``None``: the top level) judged against each other.",
+      "properties": {
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        },
+        "judgements": {
+          "items": {
+            "$ref": "#/$defs/PairwiseJudgement"
+          },
+          "title": "Judgements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "parent_id"
+      ],
+      "title": "CriteriaJudgements",
+      "type": "object"
+    },
+    "CriterionNode": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent Id"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Scale"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "value_function": {
+          "anyOf": [
+            {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value Function"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "CriterionNode",
+      "type": "object"
+    },
+    "DirectRatingValueFunction": {
+      "additionalProperties": false,
+      "description": "The measurement *is* a rating on [min_rating, max_rating], rescaled linearly to [0, 1].",
+      "properties": {
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "kind": {
+          "const": "direct_rating",
+          "default": "direct_rating",
+          "title": "Kind",
+          "type": "string"
+        },
+        "min_rating": {
+          "default": 0.0,
+          "title": "Min Rating",
+          "type": "number"
+        },
+        "max_rating": {
+          "default": 100.0,
+          "title": "Max Rating",
+          "type": "number"
+        }
+      },
+      "title": "DirectRatingValueFunction",
+      "type": "object"
+    },
+    "Direction": {
+      "enum": [
+        "increasing",
+        "decreasing"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "DiscreteDistribution": {
+      "additionalProperties": false,
+      "description": "Listed numeric values with their probabilities.",
+      "properties": {
+        "kind": {
+          "const": "discrete",
+          "default": "discrete",
+          "title": "Kind",
+          "type": "string"
+        },
+        "values": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Values",
+          "type": "array"
+        },
+        "probabilities": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Probabilities",
+          "type": "array"
+        }
+      },
+      "required": [
+        "values",
+        "probabilities"
+      ],
+      "title": "DiscreteDistribution",
+      "type": "object"
+    },
+    "GroupUncertainty": {
+      "additionalProperties": false,
+      "description": "Weight uncertainty in one sibling group; a group without an entry keeps its ratings.\n\n``unknown``: local weights uniform on the group's simplex, Dirichlet(1, ..., 1).\n``rating_intervals``: each child's raw swing rating uniform on its stated [lower, upper], then\nnormalised within the group.",
+      "properties": {
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        },
+        "kind": {
+          "enum": [
+            "unknown",
+            "rating_intervals"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "intervals": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            }
+          },
+          "title": "Intervals",
+          "type": "object"
+        }
+      },
+      "required": [
+        "parent_id",
+        "kind"
+      ],
+      "title": "GroupUncertainty",
+      "type": "object"
+    },
+    "LabelsRequirement": {
+      "additionalProperties": false,
+      "description": "A labelled leaf's measurement must be one of the allowed labels.",
+      "properties": {
+        "kind": {
+          "const": "labels",
+          "default": "labels",
+          "title": "Kind",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "allowed": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowed",
+          "type": "array"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "criterion_id",
+        "allowed"
+      ],
+      "title": "LabelsRequirement",
+      "type": "object"
+    },
+    "LinearPreferenceFunction": {
+      "additionalProperties": false,
+      "description": "No preference up to q, linear between q and p, full preference from p.",
+      "properties": {
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "q": {
+          "title": "Q",
+          "type": "number"
+        },
+        "p": {
+          "title": "P",
+          "type": "number"
+        }
+      },
+      "required": [
+        "q",
+        "p"
+      ],
+      "title": "LinearPreferenceFunction",
+      "type": "object"
+    },
+    "LinearValueFunction": {
+      "additionalProperties": false,
+      "description": "v(x) = (x-L)/(U-L) (increasing) or (U-x)/(U-L) (decreasing); L, U come from the scale.",
+      "properties": {
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "direction": {
+          "$ref": "#/$defs/Direction",
+          "default": "increasing"
+        }
+      },
+      "title": "LinearValueFunction",
+      "type": "object"
+    },
+    "PairwiseJudgement": {
+      "additionalProperties": false,
+      "description": "``row`` is ``value`` times as important, or preferred, as ``column`` (1 <= value <= 9).",
+      "properties": {
+        "row": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Row",
+          "type": "string"
+        },
+        "column": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Column",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "row",
+        "column",
+        "value"
+      ],
+      "title": "PairwiseJudgement",
+      "type": "object"
+    },
+    "Performance": {
+      "additionalProperties": false,
+      "description": "One cell of the performance table: how an alternative performs on a leaf criterion.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "value"
+      ],
+      "title": "Performance",
+      "type": "object"
+    },
+    "PiecewiseLinearValueFunction": {
+      "additionalProperties": false,
+      "description": "Interpolates linearly between ordered (x, value) points; domain = [x_first, x_last].",
+      "properties": {
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "kind": {
+          "const": "piecewise_linear",
+          "default": "piecewise_linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "$ref": "#/$defs/ControlPoint"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "points"
+      ],
+      "title": "PiecewiseLinearValueFunction",
+      "type": "object"
+    },
+    "PrometheeCriterion": {
+      "additionalProperties": false,
+      "description": "PROMETHEE's inputs for one leaf; thresholds are in its units (its codes when labelled).",
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "maximise",
+            "minimise"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        },
+        "function": {
+          "discriminator": {
+            "mapping": {
+              "linear": "#/$defs/LinearPreferenceFunction",
+              "u_shape": "#/$defs/UShapeFunction",
+              "usual": "#/$defs/UsualFunction",
+              "v_shape": "#/$defs/VShapeFunction"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UsualFunction"
+            },
+            {
+              "$ref": "#/$defs/UShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/VShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/LinearPreferenceFunction"
+            }
+          ],
+          "title": "Function"
+        },
+        "coding": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "number"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Coding"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "direction",
+        "weight",
+        "function"
+      ],
+      "title": "PrometheeCriterion",
+      "type": "object"
+    },
+    "PrometheeModel": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/PrometheeCriterion"
+          },
+          "title": "Criteria",
+          "type": "array"
+        }
+      },
+      "title": "PrometheeModel",
+      "type": "object"
+    },
+    "QualitativeValueFunction": {
+      "additionalProperties": false,
+      "description": "Explicit label -> preference value mapping. Spacing is a judgement, never assumed.",
+      "properties": {
+        "kind": {
+          "const": "qualitative",
+          "default": "qualitative",
+          "title": "Kind",
+          "type": "string"
+        },
+        "mapping": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Mapping",
+          "type": "object"
+        }
+      },
+      "required": [
+        "mapping"
+      ],
+      "title": "QualitativeValueFunction",
+      "type": "object"
+    },
+    "Scale": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/ScaleType"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper"
+        },
+        "anchor_mode": {
+          "$ref": "#/$defs/AnchorMode",
+          "default": "fixed"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "title": "Scale",
+      "type": "object"
+    },
+    "ScaleType": {
+      "enum": [
+        "categorical",
+        "ordinal",
+        "interval",
+        "ratio"
+      ],
+      "title": "ScaleType",
+      "type": "string"
+    },
+    "Scenario": {
+      "additionalProperties": false,
+      "description": "A named variation of the base model: another weight profile and/or other value functions.",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Profile Id"
+        },
+        "value_function_overrides": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            }
+          },
+          "title": "Value Function Overrides",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    },
+    "SharedDraw": {
+      "additionalProperties": false,
+      "description": "Cells from one source: they use one common uniform draw through their own quantiles.",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "cells": {
+          "items": {
+            "$ref": "#/$defs/CellRef"
+          },
+          "title": "Cells",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "cells"
+      ],
+      "title": "SharedDraw",
+      "type": "object"
+    },
+    "SmaaModel": {
+      "additionalProperties": false,
+      "properties": {
+        "dependence": {
+          "default": "independent",
+          "title": "Dependence",
+          "type": "string"
+        },
+        "cells": {
+          "items": {
+            "$ref": "#/$defs/CellUncertainty"
+          },
+          "title": "Cells",
+          "type": "array"
+        },
+        "groups": {
+          "items": {
+            "$ref": "#/$defs/GroupUncertainty"
+          },
+          "title": "Groups",
+          "type": "array"
+        },
+        "shared_draws": {
+          "items": {
+            "$ref": "#/$defs/SharedDraw"
+          },
+          "title": "Shared Draws",
+          "type": "array"
+        }
+      },
+      "title": "SmaaModel",
+      "type": "object"
+    },
+    "SortingAudit": {
+      "additionalProperties": false,
+      "description": "A seed-keyed sample of alternatives sorted below ``below_class_id``, for manual review.",
+      "properties": {
+        "below_class_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Below Class Id",
+          "type": "string"
+        },
+        "sample_size": {
+          "title": "Sample Size",
+          "type": "integer"
+        },
+        "seed": {
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "below_class_id",
+        "sample_size",
+        "seed"
+      ],
+      "title": "SortingAudit",
+      "type": "object"
+    },
+    "SortingClass": {
+      "additionalProperties": false,
+      "description": "One ordered class. ``lower_boundary`` is the overall value needed to enter it.\n\nThe lowest class has no boundary: it takes every remaining value.",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "lower_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Boundary"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "SortingClass",
+      "type": "object"
+    },
+    "SortingModel": {
+      "additionalProperties": false,
+      "properties": {
+        "classes": {
+          "items": {
+            "$ref": "#/$defs/SortingClass"
+          },
+          "title": "Classes",
+          "type": "array"
+        },
+        "audit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SortingAudit"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "title": "SortingModel",
+      "type": "object"
+    },
+    "TriangularDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "triangular",
+          "default": "triangular",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "mode": {
+          "title": "Mode",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "mode",
+        "upper"
+      ],
+      "title": "TriangularDistribution",
+      "type": "object"
+    },
+    "UShapeFunction": {
+      "additionalProperties": false,
+      "description": "No preference up to the indifference threshold q, full preference beyond it.",
+      "properties": {
+        "kind": {
+          "const": "u_shape",
+          "default": "u_shape",
+          "title": "Kind",
+          "type": "string"
+        },
+        "q": {
+          "title": "Q",
+          "type": "number"
+        }
+      },
+      "required": [
+        "q"
+      ],
+      "title": "UShapeFunction",
+      "type": "object"
+    },
+    "UniformDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "uniform",
+          "default": "uniform",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "title": "UniformDistribution",
+      "type": "object"
+    },
+    "UsualFunction": {
+      "additionalProperties": false,
+      "description": "Any positive difference is full preference.",
+      "properties": {
+        "kind": {
+          "const": "usual",
+          "default": "usual",
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "title": "UsualFunction",
+      "type": "object"
+    },
+    "VShapeFunction": {
+      "additionalProperties": false,
+      "description": "Preference grows linearly from 0 to full at the preference threshold p.",
+      "properties": {
+        "kind": {
+          "const": "v_shape",
+          "default": "v_shape",
+          "title": "Kind",
+          "type": "string"
+        },
+        "p": {
+          "title": "P",
+          "type": "number"
+        }
+      },
+      "required": [
+        "p"
+      ],
+      "title": "VShapeFunction",
+      "type": "object"
+    },
+    "WeightProfile": {
+      "additionalProperties": false,
+      "description": "Raw swing ratings, one per criterion node, relative to that node's siblings.\n\nA rating expresses the importance of the swing from worst to best *over the scale range\nin use* - not abstract importance. Ratings need not sum to anything; they are normalised\nwithin each sibling group. An only child needs no rating (its local weight is 1).",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "method": {
+          "default": "swing",
+          "title": "Method",
+          "type": "string"
+        },
+        "judgements": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Judgements",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "WeightProfile",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+      "title": "Id",
+      "type": "string"
+    },
+    "title": {
+      "minLength": 1,
+      "title": "Title",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "title": "Description",
+      "type": "string"
+    },
+    "decision_maker": {
+      "default": "",
+      "title": "Decision Maker",
+      "type": "string"
+    },
+    "alternatives": {
+      "items": {
+        "$ref": "#/$defs/Alternative"
+      },
+      "title": "Alternatives",
+      "type": "array"
+    },
+    "criteria": {
+      "items": {
+        "$ref": "#/$defs/CriterionNode"
+      },
+      "title": "Criteria",
+      "type": "array"
+    },
+    "performances": {
+      "items": {
+        "$ref": "#/$defs/Performance"
+      },
+      "title": "Performances",
+      "type": "array"
+    },
+    "weight_profiles": {
+      "items": {
+        "$ref": "#/$defs/WeightProfile"
+      },
+      "title": "Weight Profiles",
+      "type": "array"
+    },
+    "scenarios": {
+      "items": {
+        "$ref": "#/$defs/Scenario"
+      },
+      "title": "Scenarios",
+      "type": "array"
+    },
+    "analysis": {
+      "$ref": "#/$defs/AnalysisConfiguration"
+    },
+    "sorting": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SortingModel"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "smaa": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SmaaModel"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "promethee": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/PrometheeModel"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "ahp": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/AhpModel"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "requirements": {
+      "anyOf": [
+        {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "bound": "#/$defs/BoundRequirement",
+                "labels": "#/$defs/LabelsRequirement"
+              },
+              "propertyName": "kind"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/BoundRequirement"
+              },
+              {
+                "$ref": "#/$defs/LabelsRequirement"
+              }
+            ]
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Requirements"
+    }
+  },
+  "required": [
+    "id",
+    "title"
+  ],
+  "title": "Project",
+  "type": "object"
+}

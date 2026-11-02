@@ -1,0 +1,200 @@
+[
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "48c6e09293f7837e930b4fd00e67136bf7022ff823b0be985245287a93ae61b4"
+      }
+    ],
+    "description": "Define your alternatives, criteria, measurements and swing judgements.",
+    "digest": "e848300e730393e08d131e866504e9fd44e614051d188b650cf8df090f5ef270",
+    "id": "blank",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Create alternatives and criteria",
+      "Enter measurements and swing ratings"
+    ],
+    "title": "Blank",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "e3ea526d32db7eb1ffbbaf98903c7f9fd0964918029c4feb42f55374d8be2b20"
+      }
+    ],
+    "description": "Illustrative alternatives, criteria, measurements, two profiles and one scenario.",
+    "digest": "fd3c33a9a4b69840ffc7446e701394f08cb608eb2fbc811f3cd12b8be09bb3e3",
+    "id": "infrastructure_procurement",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Review procurement costs and service trade-offs",
+      "Compare balanced and consent-led profiles and a scenario"
+    ],
+    "title": "Infrastructure procurement",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "a44e3c7ef4425e8edb9d142cf052ef44054b60ac5aed8ab345d3176549577687"
+      }
+    ],
+    "description": "Illustrative alternatives, criteria, measurements, two profiles and one scenario.",
+    "digest": "9fc4db6f875059e51e13d07dd197c735b01aa668bc0187e1de7372a0c9579f32",
+    "id": "supplier_selection",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Review cost, quality and delivery inputs",
+      "Compare two preference profiles and a scenario"
+    ],
+    "title": "Supplier selection",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "b843613dc964a9e609cd9ff28a8ac092850e61dc03de58de71fb6e7fb2d88059"
+      },
+      {
+        "for_model": null,
+        "id": "market_model",
+        "kind": "derived_model",
+        "label": "Market model",
+        "optional": false,
+        "path": "market_model.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "5f66a3650bd0e1d80deff6b51c17329c0beb358746e81ffe9bd7e1bb44c9dc21"
+      },
+      {
+        "for_model": "market_model",
+        "id": "market_uncertainty",
+        "kind": "factor_uncertainty",
+        "label": "Market uncertainty",
+        "optional": false,
+        "path": "market_uncertainty.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "2c03dc6390500578cdd5c18edd2c74d98edef79591306444c740ca76d9218f65"
+      },
+      {
+        "for_model": "market_model",
+        "id": "market_checks",
+        "kind": "model_checks",
+        "label": "Market checks",
+        "optional": false,
+        "path": "market_checks.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "3c1e8a5044d3f8c01493490790fd1b2642cb614c780700995653be1d2123294c"
+      },
+      {
+        "for_model": null,
+        "id": "model_comparison",
+        "kind": "model_comparison",
+        "label": "Model comparison",
+        "optional": false,
+        "path": "model_comparison.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "711ed2104c84452c1297065609ef36cfdbee8ce65b9f88cc34587c7df5a28965"
+      },
+      {
+        "for_model": null,
+        "id": "external_proposals",
+        "kind": "external_proposals",
+        "label": "External proposals",
+        "optional": false,
+        "path": "external_proposals.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "60d071ecd17459db4990bcfa9a14206f056f2032f23d939bfb8fb0c27997e8eb"
+      },
+      {
+        "for_model": null,
+        "id": "ownership_model",
+        "kind": "derived_model",
+        "label": "Ownership model",
+        "optional": true,
+        "path": "ownership_model.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "ee5456ba8e68ed0dc58c7af9d97ecc3000cbae17f3333ea86960b65f602b2b5f"
+      },
+      {
+        "for_model": "ownership_model",
+        "id": "ownership_checks",
+        "kind": "model_checks",
+        "label": "Ownership checks",
+        "optional": true,
+        "path": "ownership_checks.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "17ccbf288c92ef918f801a2cf245d7f808bc14bcc09374c1179d4679400babbf"
+      },
+      {
+        "for_model": null,
+        "id": "model_output",
+        "kind": "model_output_run",
+        "label": "Model output",
+        "optional": false,
+        "path": "model_output.json",
+        "reset_policy": "omit",
+        "schema_version": 1,
+        "sha256": "a59681548b9638f1efa74e72b67a19bb4cf1c711286097fb9f303ea682b7af0d"
+      }
+    ],
+    "description": "Review invented classifier proposals, explicit factor uncertainty, bottom-up and top-down models; choose one reviewed output.",
+    "digest": "01ac5a4f48e6540b24438544bdca459be8bab0705c70e0f697ff3b4d045ac752",
+    "id": "venture_screening",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Accept, correct or reject external proposals",
+      "Inspect two labelled market model ranges and their disagreement",
+      "Review factor assumptions and select one compatible model output",
+      "Optionally inspect unattached simple-round arithmetic"
+    ],
+    "title": "Venture screening",
+    "version": "1"
+  }
+]

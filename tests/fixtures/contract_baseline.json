@@ -1,0 +1,1273 @@
+{
+  "schemas": {
+    "Alternative-Input": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Alternative",
+      "type": "object"
+    },
+    "Alternative-Output": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "metadata"
+      ],
+      "title": "Alternative",
+      "type": "object"
+    },
+    "AnalysisConfiguration-Input": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "default": "mavt",
+          "title": "Method",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "title": "AnalysisConfiguration",
+      "type": "object"
+    },
+    "AnalysisConfiguration-Output": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "default": "mavt",
+          "title": "Method",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scenario Id"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "method",
+        "weight_profile_id",
+        "scenario_id",
+        "parameters"
+      ],
+      "title": "AnalysisConfiguration",
+      "type": "object"
+    },
+    "AnchorMode": {
+      "description": "Where the 0-and-1 anchors of a *linear* value function come from.\n\nFIXED: ``lower``/``upper`` are stated by the user and never depend on the alternatives.\nLOCAL: anchors are the min/max over the alternatives currently in the project. This is an\n       explicit, recorded choice because adding an alternative can then change every\n       existing alternative's score.",
+      "enum": [
+        "fixed",
+        "local"
+      ],
+      "title": "AnchorMode",
+      "type": "string"
+    },
+    "ControlPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "x": {
+          "title": "X",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "value"
+      ],
+      "title": "ControlPoint",
+      "type": "object"
+    },
+    "CriterionNode-Input": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/Scale-Input"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value_function": {
+          "anyOf": [
+            {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/components/schemas/DirectRatingValueFunction-Input",
+                  "linear": "#/components/schemas/LinearValueFunction-Input",
+                  "piecewise_linear": "#/components/schemas/PiecewiseLinearValueFunction-Input",
+                  "qualitative": "#/components/schemas/QualitativeValueFunction-Input"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/LinearValueFunction-Input"
+                },
+                {
+                  "$ref": "#/components/schemas/PiecewiseLinearValueFunction-Input"
+                },
+                {
+                  "$ref": "#/components/schemas/QualitativeValueFunction-Input"
+                },
+                {
+                  "$ref": "#/components/schemas/DirectRatingValueFunction-Input"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value Function"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "CriterionNode",
+      "type": "object"
+    },
+    "CriterionNode-Output": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/Scale-Output"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "value_function": {
+          "anyOf": [
+            {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/components/schemas/DirectRatingValueFunction-Output",
+                  "linear": "#/components/schemas/LinearValueFunction-Output",
+                  "piecewise_linear": "#/components/schemas/PiecewiseLinearValueFunction-Output",
+                  "qualitative": "#/components/schemas/QualitativeValueFunction-Output"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/LinearValueFunction-Output"
+                },
+                {
+                  "$ref": "#/components/schemas/PiecewiseLinearValueFunction-Output"
+                },
+                {
+                  "$ref": "#/components/schemas/QualitativeValueFunction-Output"
+                },
+                {
+                  "$ref": "#/components/schemas/DirectRatingValueFunction-Output"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Value Function"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "parent_id",
+        "order",
+        "description",
+        "scale",
+        "value_function"
+      ],
+      "title": "CriterionNode",
+      "type": "object"
+    },
+    "DirectRatingValueFunction-Input": {
+      "additionalProperties": false,
+      "description": "The measurement *is* a rating on [min_rating, max_rating], rescaled linearly to [0, 1].",
+      "properties": {
+        "kind": {
+          "const": "direct_rating",
+          "default": "direct_rating",
+          "title": "Kind",
+          "type": "string"
+        },
+        "max_rating": {
+          "default": 100.0,
+          "title": "Max Rating",
+          "type": "number"
+        },
+        "min_rating": {
+          "default": 0.0,
+          "title": "Min Rating",
+          "type": "number"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "DirectRatingValueFunction",
+      "type": "object"
+    },
+    "DirectRatingValueFunction-Output": {
+      "additionalProperties": false,
+      "description": "The measurement *is* a rating on [min_rating, max_rating], rescaled linearly to [0, 1].",
+      "properties": {
+        "kind": {
+          "const": "direct_rating",
+          "default": "direct_rating",
+          "title": "Kind",
+          "type": "string"
+        },
+        "max_rating": {
+          "default": 100.0,
+          "title": "Max Rating",
+          "type": "number"
+        },
+        "min_rating": {
+          "default": 0.0,
+          "title": "Min Rating",
+          "type": "number"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "required": [
+        "out_of_domain",
+        "kind",
+        "min_rating",
+        "max_rating"
+      ],
+      "title": "DirectRatingValueFunction",
+      "type": "object"
+    },
+    "Direction": {
+      "enum": [
+        "increasing",
+        "decreasing"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "LinearValueFunction-Input": {
+      "additionalProperties": false,
+      "description": "v(x) = (x-L)/(U-L) (increasing) or (U-x)/(U-L) (decreasing); L, U come from the scale.",
+      "properties": {
+        "direction": {
+          "$ref": "#/components/schemas/Direction",
+          "default": "increasing"
+        },
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "LinearValueFunction",
+      "type": "object"
+    },
+    "LinearValueFunction-Output": {
+      "additionalProperties": false,
+      "description": "v(x) = (x-L)/(U-L) (increasing) or (U-x)/(U-L) (decreasing); L, U come from the scale.",
+      "properties": {
+        "direction": {
+          "$ref": "#/components/schemas/Direction",
+          "default": "increasing"
+        },
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "required": [
+        "out_of_domain",
+        "kind",
+        "direction"
+      ],
+      "title": "LinearValueFunction",
+      "type": "object"
+    },
+    "Performance": {
+      "additionalProperties": false,
+      "description": "One cell of the performance table: how an alternative performs on a leaf criterion.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "value"
+      ],
+      "title": "Performance",
+      "type": "object"
+    },
+    "PiecewiseLinearValueFunction-Input": {
+      "additionalProperties": false,
+      "description": "Interpolates linearly between ordered (x, value) points; domain = [x_first, x_last].",
+      "properties": {
+        "kind": {
+          "const": "piecewise_linear",
+          "default": "piecewise_linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "$ref": "#/components/schemas/ControlPoint"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "points"
+      ],
+      "title": "PiecewiseLinearValueFunction",
+      "type": "object"
+    },
+    "PiecewiseLinearValueFunction-Output": {
+      "additionalProperties": false,
+      "description": "Interpolates linearly between ordered (x, value) points; domain = [x_first, x_last].",
+      "properties": {
+        "kind": {
+          "const": "piecewise_linear",
+          "default": "piecewise_linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "$ref": "#/components/schemas/ControlPoint"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "out_of_domain",
+        "kind",
+        "points"
+      ],
+      "title": "PiecewiseLinearValueFunction",
+      "type": "object"
+    },
+    "Project-Input": {
+      "additionalProperties": false,
+      "properties": {
+        "ahp": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/AhpModel-Input"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "alternatives": {
+          "items": {
+            "$ref": "#/components/schemas/Alternative-Input"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "analysis": {
+          "$ref": "#/components/schemas/AnalysisConfiguration-Input"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/components/schemas/CriterionNode-Input"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "decision_maker": {
+          "default": "",
+          "title": "Decision Maker",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "performances": {
+          "items": {
+            "$ref": "#/components/schemas/Performance"
+          },
+          "title": "Performances",
+          "type": "array"
+        },
+        "promethee": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/PrometheeModel-Input"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requirements": {
+          "anyOf": [
+            {
+              "items": {
+                "discriminator": {
+                  "mapping": {
+                    "bound": "#/components/schemas/BoundRequirement-Input",
+                    "labels": "#/components/schemas/LabelsRequirement-Input"
+                  },
+                  "propertyName": "kind"
+                },
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/BoundRequirement-Input"
+                  },
+                  {
+                    "$ref": "#/components/schemas/LabelsRequirement-Input"
+                  }
+                ]
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Requirements"
+        },
+        "scenarios": {
+          "items": {
+            "$ref": "#/components/schemas/Scenario-Input"
+          },
+          "title": "Scenarios",
+          "type": "array"
+        },
+        "schema_version": {
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "smaa": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/SmaaModel-Input"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sorting": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/SortingModel-Input"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "weight_profiles": {
+          "items": {
+            "$ref": "#/components/schemas/WeightProfile-Input"
+          },
+          "title": "Weight Profiles",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title"
+      ],
+      "title": "Project",
+      "type": "object"
+    },
+    "Project-Output": {
+      "additionalProperties": false,
+      "properties": {
+        "ahp": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/AhpModel-Output"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "alternatives": {
+          "items": {
+            "$ref": "#/components/schemas/Alternative-Output"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "analysis": {
+          "$ref": "#/components/schemas/AnalysisConfiguration-Output"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/components/schemas/CriterionNode-Output"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "decision_maker": {
+          "default": "",
+          "title": "Decision Maker",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "performances": {
+          "items": {
+            "$ref": "#/components/schemas/Performance"
+          },
+          "title": "Performances",
+          "type": "array"
+        },
+        "promethee": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/PrometheeModel-Output"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "requirements": {
+          "anyOf": [
+            {
+              "items": {
+                "discriminator": {
+                  "mapping": {
+                    "bound": "#/components/schemas/BoundRequirement-Output",
+                    "labels": "#/components/schemas/LabelsRequirement-Output"
+                  },
+                  "propertyName": "kind"
+                },
+                "oneOf": [
+                  {
+                    "$ref": "#/components/schemas/BoundRequirement-Output"
+                  },
+                  {
+                    "$ref": "#/components/schemas/LabelsRequirement-Output"
+                  }
+                ]
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Requirements"
+        },
+        "scenarios": {
+          "items": {
+            "$ref": "#/components/schemas/Scenario-Output"
+          },
+          "title": "Scenarios",
+          "type": "array"
+        },
+        "schema_version": {
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "smaa": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/SmaaModel-Output"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sorting": {
+          "anyOf": [
+            {
+              "$ref": "#/components/schemas/SortingModel-Output"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "weight_profiles": {
+          "items": {
+            "$ref": "#/components/schemas/WeightProfile-Output"
+          },
+          "title": "Weight Profiles",
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "title",
+        "description",
+        "decision_maker",
+        "alternatives",
+        "criteria",
+        "performances",
+        "weight_profiles",
+        "scenarios",
+        "analysis"
+      ],
+      "title": "Project",
+      "type": "object"
+    },
+    "QualitativeValueFunction-Input": {
+      "additionalProperties": false,
+      "description": "Explicit label -> preference value mapping. Spacing is a judgement, never assumed.",
+      "properties": {
+        "kind": {
+          "const": "qualitative",
+          "default": "qualitative",
+          "title": "Kind",
+          "type": "string"
+        },
+        "mapping": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Mapping",
+          "type": "object"
+        }
+      },
+      "required": [
+        "mapping"
+      ],
+      "title": "QualitativeValueFunction",
+      "type": "object"
+    },
+    "QualitativeValueFunction-Output": {
+      "additionalProperties": false,
+      "description": "Explicit label -> preference value mapping. Spacing is a judgement, never assumed.",
+      "properties": {
+        "kind": {
+          "const": "qualitative",
+          "default": "qualitative",
+          "title": "Kind",
+          "type": "string"
+        },
+        "mapping": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Mapping",
+          "type": "object"
+        }
+      },
+      "required": [
+        "kind",
+        "mapping"
+      ],
+      "title": "QualitativeValueFunction",
+      "type": "object"
+    },
+    "Scale-Input": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_mode": {
+          "$ref": "#/components/schemas/AnchorMode",
+          "default": "fixed"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Lower"
+        },
+        "type": {
+          "$ref": "#/components/schemas/ScaleType"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Upper"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "title": "Scale",
+      "type": "object"
+    },
+    "Scale-Output": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_mode": {
+          "$ref": "#/components/schemas/AnchorMode",
+          "default": "fixed"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Lower"
+        },
+        "type": {
+          "$ref": "#/components/schemas/ScaleType"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Upper"
+        }
+      },
+      "required": [
+        "type",
+        "unit",
+        "lower",
+        "upper",
+        "anchor_mode",
+        "labels"
+      ],
+      "title": "Scale",
+      "type": "object"
+    },
+    "ScaleType": {
+      "enum": [
+        "categorical",
+        "ordinal",
+        "interval",
+        "ratio"
+      ],
+      "title": "ScaleType",
+      "type": "string"
+    },
+    "Scenario-Input": {
+      "additionalProperties": false,
+      "description": "A named variation of the base model: another weight profile and/or other value functions.",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "value_function_overrides": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/components/schemas/DirectRatingValueFunction-Input",
+                  "linear": "#/components/schemas/LinearValueFunction-Input",
+                  "piecewise_linear": "#/components/schemas/PiecewiseLinearValueFunction-Input",
+                  "qualitative": "#/components/schemas/QualitativeValueFunction-Input"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/LinearValueFunction-Input"
+                },
+                {
+                  "$ref": "#/components/schemas/PiecewiseLinearValueFunction-Input"
+                },
+                {
+                  "$ref": "#/components/schemas/QualitativeValueFunction-Input"
+                },
+                {
+                  "$ref": "#/components/schemas/DirectRatingValueFunction-Input"
+                }
+              ]
+            }
+          },
+          "title": "Value Function Overrides",
+          "type": "object"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    },
+    "Scenario-Output": {
+      "additionalProperties": false,
+      "description": "A named variation of the base model: another weight profile and/or other value functions.",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "value_function_overrides": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/components/schemas/DirectRatingValueFunction-Output",
+                  "linear": "#/components/schemas/LinearValueFunction-Output",
+                  "piecewise_linear": "#/components/schemas/PiecewiseLinearValueFunction-Output",
+                  "qualitative": "#/components/schemas/QualitativeValueFunction-Output"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/components/schemas/LinearValueFunction-Output"
+                },
+                {
+                  "$ref": "#/components/schemas/PiecewiseLinearValueFunction-Output"
+                },
+                {
+                  "$ref": "#/components/schemas/QualitativeValueFunction-Output"
+                },
+                {
+                  "$ref": "#/components/schemas/DirectRatingValueFunction-Output"
+                }
+              ]
+            }
+          },
+          "title": "Value Function Overrides",
+          "type": "object"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "weight_profile_id",
+        "value_function_overrides"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    },
+    "WeightProfile-Input": {
+      "additionalProperties": false,
+      "description": "Raw swing ratings, one per criterion node, relative to that node's siblings.\n\nA rating expresses the importance of the swing from worst to best *over the scale range\nin use* - not abstract importance. Ratings need not sum to anything; they are normalised\nwithin each sibling group. An only child needs no rating (its local weight is 1).",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "judgements": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Judgements",
+          "type": "object"
+        },
+        "method": {
+          "default": "swing",
+          "title": "Method",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "WeightProfile",
+      "type": "object"
+    },
+    "WeightProfile-Output": {
+      "additionalProperties": false,
+      "description": "Raw swing ratings, one per criterion node, relative to that node's siblings.\n\nA rating expresses the importance of the swing from worst to best *over the scale range\nin use* - not abstract importance. Ratings need not sum to anything; they are normalised\nwithin each sibling group. An only child needs no rating (its local weight is 1).",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "judgements": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Judgements",
+          "type": "object"
+        },
+        "method": {
+          "default": "swing",
+          "title": "Method",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "method",
+        "judgements"
+      ],
+      "title": "WeightProfile",
+      "type": "object"
+    }
+  },
+  "sha256": {
+    "examples/nz_deeptech_vc/project.json": "3b0c36c6c118f223a5d84ad131083c26d1adaadc0442e86d9dfe956ba9a1eaef",
+    "examples/infrastructure_procurement/project.json": "afb08b1fffd593d060dd4c1e8d64af4967f00ef2fa1494ed3b2a358142f39943",
+    "examples/supplier_selection/project.json": "42c1f92ac06c86a0cf692ec13eb8323b97971aae128805c6fedff3505e50b1ff",
+    "examples/supplier_qualification/project.json": "84c70888206d4add22786da0be3ae12654392d7071c6f14755b9b5e9719b1554"
+  }
+}

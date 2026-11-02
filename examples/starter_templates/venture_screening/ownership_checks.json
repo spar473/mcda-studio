@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "id": "positive_denominator",
+      "lower": 0.0,
+      "lower_inclusive": false,
+      "quantity_id": "post_money",
+      "quantity_kind": "formula",
+      "unit": "money",
+      "upper": null,
+      "upper_inclusive": true
+    },
+    {
+      "id": "pre_money",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "pre_money",
+      "quantity_kind": "source",
+      "unit": "money",
+      "upper": null,
+      "upper_inclusive": true
+    },
+    {
+      "id": "new_cash",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "new_cash",
+      "quantity_kind": "source",
+      "unit": "money",
+      "upper": null,
+      "upper_inclusive": true
+    },
+    {
+      "id": "prior_share",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "prior_share",
+      "quantity_kind": "source",
+      "unit": "1",
+      "upper": 1.0,
+      "upper_inclusive": true
+    },
+    {
+      "id": "new_share",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "new_share",
+      "quantity_kind": "formula",
+      "unit": "1",
+      "upper": 1.0,
+      "upper_inclusive": true
+    },
+    {
+      "id": "diluted_share",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "diluted_share",
+      "quantity_kind": "formula",
+      "unit": "1",
+      "upper": 1.0,
+      "upper_inclusive": true
+    }
+  ],
+  "digest": "cd4d2765347dfe780379dce1210faddb80e0ce30d0337c6c24145e3c3a56a230",
+  "model_digest": "c3794c1714b5fa00a4ec5b1619c53542d40248db83d04255e483161ed81c26c7",
+  "origin": {
+    "kind": "human",
+    "proposed_by": "Illustrative modeller",
+    "tool_id": null,
+    "tool_version": null
+  },
+  "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+  "review": {
+    "corrected_value": null,
+    "note": "Reviewed invented assumptions",
+    "reviewed_at": "2026-11-01T12:00:00Z",
+    "reviewer": "Illustrative reviewer",
+    "status": "accepted"
+  },
+  "schema_version": 1
+}

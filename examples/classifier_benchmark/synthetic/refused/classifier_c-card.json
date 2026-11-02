@@ -1,0 +1,6 @@
+{
+  "limitations": "Synthetic inputs and outputs; no model was executed",
+  "model_version": "model-1",
+  "purpose": "Invented nominal-label fixture",
+  "version": 1
+}

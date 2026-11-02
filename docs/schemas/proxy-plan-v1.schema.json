@@ -1,0 +1,840 @@
+{
+  "$defs": {
+    "AnchorMode": {
+      "description": "Where the 0-and-1 anchors of a *linear* value function come from.\n\nFIXED: ``lower``/``upper`` are stated by the user and never depend on the alternatives.\nLOCAL: anchors are the min/max over the alternatives currently in the project. This is an\n       explicit, recorded choice because adding an alternative can then change every\n       existing alternative's score.",
+      "enum": [
+        "fixed",
+        "local"
+      ],
+      "title": "AnchorMode",
+      "type": "string"
+    },
+    "ControlPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "x": {
+          "title": "X",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "value"
+      ],
+      "title": "ControlPoint",
+      "type": "object"
+    },
+    "CriterionNode": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent Id"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Scale"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "value_function": {
+          "anyOf": [
+            {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value Function"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "CriterionNode",
+      "type": "object"
+    },
+    "DirectRatingValueFunction": {
+      "additionalProperties": false,
+      "description": "The measurement *is* a rating on [min_rating, max_rating], rescaled linearly to [0, 1].",
+      "properties": {
+        "kind": {
+          "const": "direct_rating",
+          "default": "direct_rating",
+          "title": "Kind",
+          "type": "string"
+        },
+        "max_rating": {
+          "default": 100.0,
+          "title": "Max Rating",
+          "type": "number"
+        },
+        "min_rating": {
+          "default": 0.0,
+          "title": "Min Rating",
+          "type": "number"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "DirectRatingValueFunction",
+      "type": "object"
+    },
+    "Direction": {
+      "enum": [
+        "increasing",
+        "decreasing"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "LinearValueFunction": {
+      "additionalProperties": false,
+      "description": "v(x) = (x-L)/(U-L) (increasing) or (U-x)/(U-L) (decreasing); L, U come from the scale.",
+      "properties": {
+        "direction": {
+          "$ref": "#/$defs/Direction",
+          "default": "increasing"
+        },
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "LinearValueFunction",
+      "type": "object"
+    },
+    "PiecewiseLinearValueFunction": {
+      "additionalProperties": false,
+      "description": "Interpolates linearly between ordered (x, value) points; domain = [x_first, x_last].",
+      "properties": {
+        "kind": {
+          "const": "piecewise_linear",
+          "default": "piecewise_linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "$ref": "#/$defs/ControlPoint"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "points"
+      ],
+      "title": "PiecewiseLinearValueFunction",
+      "type": "object"
+    },
+    "ProxyCardFact": {
+      "additionalProperties": false,
+      "properties": {
+        "reason": {
+          "default": "",
+          "maxLength": 2000,
+          "title": "Reason",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "unknown": {
+          "default": false,
+          "title": "Unknown",
+          "type": "boolean"
+        },
+        "value": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "title": "ProxyCardFact",
+      "type": "object"
+    },
+    "ProxyFeature": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Criterion Ids",
+          "type": "array"
+        },
+        "description": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "factor_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 256,
+          "title": "Factor Ids",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "observed_at": {
+          "format": "date",
+          "title": "Observed At",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "title": "Source Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "description",
+        "source_ids",
+        "observed_at"
+      ],
+      "title": "ProxyFeature",
+      "type": "object"
+    },
+    "ProxyOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Enabled"
+        },
+        "id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Id"
+        },
+        "kind": {
+          "enum": [
+            "edit",
+            "review_card_fact",
+            "review_feature",
+            "review_overlap",
+            "review_licence",
+            "review_plan",
+            "set_enabled",
+            "bind_scores"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "licence_compatible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Licence Compatible"
+        },
+        "review": {
+          "$ref": "#/$defs/Review"
+        },
+        "state": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProxyPlanState"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "workspace_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Workspace Digest"
+        }
+      },
+      "required": [
+        "kind",
+        "review"
+      ],
+      "title": "ProxyOperation",
+      "type": "object"
+    },
+    "ProxyOverlap": {
+      "additionalProperties": false,
+      "properties": {
+        "feature_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Feature Id",
+          "type": "string"
+        },
+        "rationale": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "relation": {
+          "enum": [
+            "same_concept",
+            "shared_evidence",
+            "possible_overlap",
+            "reviewed_distinct"
+          ],
+          "title": "Relation",
+          "type": "string"
+        },
+        "remove_criterion_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Remove Criterion Ids",
+          "type": "array"
+        },
+        "resolution": {
+          "enum": [
+            "baseline_only",
+            "retain_with_rationale",
+            "remove_criterion"
+          ],
+          "title": "Resolution",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "feature_id",
+        "relation",
+        "resolution",
+        "rationale"
+      ],
+      "title": "ProxyOverlap",
+      "type": "object"
+    },
+    "ProxyPlanState": {
+      "additionalProperties": false,
+      "properties": {
+        "card_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Card Digest"
+        },
+        "card_facts": {
+          "maxProperties": 64,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "$ref": "#/$defs/ProxyCardFact"
+            }
+          },
+          "title": "Card Facts",
+          "type": "object"
+        },
+        "card_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Card Id"
+        },
+        "compared_profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Compared Profile Ids",
+          "type": "array"
+        },
+        "criterion": {
+          "$ref": "#/$defs/CriterionNode"
+        },
+        "enabled": {
+          "default": false,
+          "title": "Enabled",
+          "type": "boolean"
+        },
+        "features": {
+          "items": {
+            "$ref": "#/$defs/ProxyFeature"
+          },
+          "maxItems": 128,
+          "title": "Features",
+          "type": "array"
+        },
+        "licence_compatible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Licence Compatible"
+        },
+        "licence_review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "overlaps": {
+          "items": {
+            "$ref": "#/$defs/ProxyOverlap"
+          },
+          "maxItems": 128,
+          "title": "Overlaps",
+          "type": "array"
+        },
+        "plan_review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "score_meaning": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Score Meaning",
+          "type": "string"
+        },
+        "score_workspace_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Score Workspace Digest"
+        },
+        "swing_ratings": {
+          "maxProperties": 64,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "title": "Swing Ratings",
+          "type": "object"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "criterion",
+        "score_meaning"
+      ],
+      "title": "ProxyPlanState",
+      "type": "object"
+    },
+    "ProxyRevision": {
+      "additionalProperties": false,
+      "properties": {
+        "operation": {
+          "$ref": "#/$defs/ProxyOperation"
+        },
+        "previous_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Previous Digest",
+          "type": "string"
+        }
+      },
+      "required": [
+        "previous_digest",
+        "operation"
+      ],
+      "title": "ProxyRevision",
+      "type": "object"
+    },
+    "QualitativeValueFunction": {
+      "additionalProperties": false,
+      "description": "Explicit label -> preference value mapping. Spacing is a judgement, never assumed.",
+      "properties": {
+        "kind": {
+          "const": "qualitative",
+          "default": "qualitative",
+          "title": "Kind",
+          "type": "string"
+        },
+        "mapping": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Mapping",
+          "type": "object"
+        }
+      },
+      "required": [
+        "mapping"
+      ],
+      "title": "QualitativeValueFunction",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "corrected_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Corrected Value"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "format": "date-time",
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "minLength": 1,
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "corrected",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at"
+      ],
+      "title": "Review",
+      "type": "object"
+    },
+    "Scale": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_mode": {
+          "$ref": "#/$defs/AnchorMode",
+          "default": "fixed"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower"
+        },
+        "type": {
+          "$ref": "#/$defs/ScaleType"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "title": "Scale",
+      "type": "object"
+    },
+    "ScaleType": {
+      "enum": [
+        "categorical",
+        "ordinal",
+        "interval",
+        "ratio"
+      ],
+      "title": "ScaleType",
+      "type": "string"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "digest": {
+      "title": "Digest",
+      "type": "string"
+    },
+    "initial": {
+      "$ref": "#/$defs/ProxyPlanState"
+    },
+    "revisions": {
+      "items": {
+        "$ref": "#/$defs/ProxyRevision"
+      },
+      "maxItems": 2000,
+      "title": "Revisions",
+      "type": "array"
+    },
+    "version": {
+      "const": 1,
+      "default": 1,
+      "title": "Version",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "initial",
+    "digest"
+  ],
+  "title": "ProxyCriterionPlan",
+  "type": "object"
+}

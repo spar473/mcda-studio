@@ -1,0 +1,61 @@
+{
+  "human_dossier": {
+    "claims": [
+      {
+        "alternative_id": "a",
+        "criterion_id": "supply_risk",
+        "id": "human_a",
+        "origin": {
+          "kind": "human",
+          "proposed_by": "Illustrative reviewer",
+          "tool_id": null,
+          "tool_version": null
+        },
+        "outdated": false,
+        "review": null,
+        "source": {
+          "classification": "self_reported",
+          "date": "2026-11-01",
+          "description": "Every statement and value is invented for this demonstration.",
+          "location": "table 1",
+          "name": "Invented brief A",
+          "reference": "local:invented-brief-a"
+        },
+        "uncertainty_lower": null,
+        "uncertainty_upper": null,
+        "unit": null,
+        "value": "medium"
+      }
+    ],
+    "project_fingerprint": "9881dd3fe2116ceacdd90ed1d555114f9b18dc2f1773e72c257fc1576493b050",
+    "schema_version": 1
+  },
+  "model_cards": {
+    "card": {
+      "details": {},
+      "limitations": "Invented outputs; no accuracy, calibration or outcome claim.",
+      "model_version": "1",
+      "purpose": "Propose labels and local measurements for review",
+      "version": 1
+    }
+  },
+  "project_fingerprint": "9881dd3fe2116ceacdd90ed1d555114f9b18dc2f1773e72c257fc1576493b050",
+  "sources": {
+    "brief_a": {
+      "classification": "self_reported",
+      "date": "2026-11-01",
+      "description": "Every statement and value is invented for this demonstration.",
+      "location": "table 1",
+      "name": "Invented brief A",
+      "reference": "local:invented-brief-a"
+    },
+    "brief_b": {
+      "classification": "independent",
+      "date": "2026-11-01",
+      "description": "Every statement and value is invented for this demonstration.",
+      "location": "table 1",
+      "name": "Invented brief B",
+      "reference": "local:invented-brief-b"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "proposal_id": "cell_a_first",
+    "review": {
+      "status": "corrected",
+      "reviewer": "Illustrative reviewer",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "note": "Invented demonstration review",
+      "corrected_payload": {
+        "kind": "categorical_cell",
+        "value": "hardware",
+        "unit": null
+      },
+      "primary_source_id": "brief_a",
+      "supporting_source_ids": []
+    }
+  },
+  {
+    "proposal_id": "readiness_b",
+    "review": {
+      "status": "accepted",
+      "reviewer": "Illustrative reviewer",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "note": "Invented demonstration review",
+      "corrected_payload": null,
+      "primary_source_id": "brief_b",
+      "supporting_source_ids": []
+    }
+  },
+  {
+    "proposal_id": "numeric_b",
+    "review": {
+      "status": "rejected",
+      "reviewer": "Illustrative reviewer",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "note": "Invented demonstration review",
+      "corrected_payload": null,
+      "primary_source_id": null,
+      "supporting_source_ids": []
+    }
+  },
+  {
+    "proposal_id": "tag_a",
+    "review": {
+      "status": "rejected",
+      "reviewer": "Illustrative reviewer",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "note": "Invented demonstration review",
+      "corrected_payload": null,
+      "primary_source_id": null,
+      "supporting_source_ids": []
+    }
+  },
+  {
+    "proposal_id": "tag_b",
+    "review": {
+      "status": "accepted",
+      "reviewer": "Illustrative reviewer",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "note": "Invented demonstration review",
+      "corrected_payload": null,
+      "primary_source_id": "brief_b",
+      "supporting_source_ids": []
+    }
+  }
+]

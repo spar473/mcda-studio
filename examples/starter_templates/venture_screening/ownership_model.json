@@ -1,0 +1,151 @@
+{
+  "formulas": [
+    {
+      "alternative_id": null,
+      "criterion_id": null,
+      "expression": "pre_money + new_cash",
+      "id": "post_money",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "unit": "money"
+    },
+    {
+      "alternative_id": null,
+      "criterion_id": null,
+      "expression": "new_cash / post_money",
+      "id": "new_share",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "unit": "1"
+    },
+    {
+      "alternative_id": null,
+      "criterion_id": null,
+      "expression": "prior_share * pre_money / post_money",
+      "id": "diluted_share",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "unit": "1"
+    }
+  ],
+  "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "pre_money",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "unknown",
+        "date": "2026-11-01",
+        "description": "Illustrative simple primary round only; excludes option pools, convertibles, preferences, multiple rounds and contractual terms.",
+        "location": "",
+        "name": "Invented pre_money",
+        "reference": "local:invented-pre_money"
+      },
+      "unit": "money",
+      "value": 4000000.0
+    },
+    {
+      "id": "new_cash",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "unknown",
+        "date": "2026-11-01",
+        "description": "Illustrative simple primary round only; excludes option pools, convertibles, preferences, multiple rounds and contractual terms.",
+        "location": "",
+        "name": "Invented new_cash",
+        "reference": "local:invented-new_cash"
+      },
+      "unit": "money",
+      "value": 1000000.0
+    },
+    {
+      "id": "prior_share",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "unknown",
+        "date": "2026-11-01",
+        "description": "Illustrative simple primary round only; excludes option pools, convertibles, preferences, multiple rounds and contractual terms.",
+        "location": "",
+        "name": "Invented prior_share",
+        "reference": "local:invented-prior_share"
+      },
+      "unit": "1",
+      "value": 0.6
+    }
+  ],
+  "units": {
+    "money": {
+      "money": 1
+    }
+  }
+}

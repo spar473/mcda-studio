@@ -1,0 +1,2102 @@
+[
+  {
+    "item_id": "train_000",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_000",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_001",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_001",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_002",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_002",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_003",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_003",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_004",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_004",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_005",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_005",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_006",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_006",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_007",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_007",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_008",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_008",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_009",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_009",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_010",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_010",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_011",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_011",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_012",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_012",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_013",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_013",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_014",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_014",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_015",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_015",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_016",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_016",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_017",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_017",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_018",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_018",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_019",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "train_019",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_000",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_000",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_001",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_001",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_002",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_002",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_003",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_003",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_004",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_004",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_005",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_005",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_006",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_006",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_007",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_007",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_008",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_008",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_009",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "development_009",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_000",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_000",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_001",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_001",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_002",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_002",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_003",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_003",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_004",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_004",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_005",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_005",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_006",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_006",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_007",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_007",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_008",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_008",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_009",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_009",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_010",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_010",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_011",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_011",
+    "label": null,
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_012",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_012",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_013",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_013",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_014",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_014",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_015",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_015",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_016",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_016",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_017",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_017",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_018",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_018",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_019",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_019",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_020",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_020",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_021",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_021",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_022",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_022",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_023",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_023",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_024",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_024",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_025",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_025",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_026",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_026",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_027",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_027",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_028",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_028",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_029",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_029",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_030",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_030",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_031",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_031",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_032",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_032",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_033",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_033",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_034",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_034",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_035",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_035",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_036",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_036",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_037",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_037",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_038",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_038",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_039",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_039",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_040",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_040",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_041",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_041",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_042",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_042",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_043",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_043",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_044",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_044",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_045",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_045",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_046",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_046",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_047",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_047",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_048",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_048",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_049",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_049",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_050",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_050",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_051",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_051",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_052",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_052",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_053",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_053",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_054",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_054",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_055",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_055",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_056",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_056",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_057",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_057",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_058",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_058",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_059",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_059",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_060",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_060",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_061",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_061",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_062",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_062",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_063",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_063",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_064",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_064",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_065",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_065",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_066",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_066",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_067",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_067",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_068",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_068",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_069",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_069",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_070",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_070",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_071",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_071",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_072",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_072",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_073",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_073",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_074",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_074",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_075",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_075",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_076",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_076",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_077",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_077",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_078",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_078",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_079",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_079",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_080",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_080",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_081",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_081",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_082",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_082",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_083",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_083",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_084",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_084",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_085",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_085",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_086",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_086",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_087",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_087",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_088",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_088",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_089",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_089",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_090",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_090",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_091",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_091",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_092",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_092",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_093",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_093",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_094",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_094",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_095",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_095",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_096",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_096",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_097",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_097",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_098",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_098",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_099",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_099",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_100",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_100",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_101",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_101",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_102",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_102",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_103",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_103",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_104",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_104",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_105",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_105",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_106",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_106",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_107",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_107",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_108",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_108",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_109",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_109",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_110",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_110",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_111",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_111",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_112",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_112",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_113",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_113",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_114",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_114",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_115",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_115",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_116",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_116",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_117",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_117",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_118",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_118",
+    "label": "alpha",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_119",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_1",
+    "task_version": "1"
+  },
+  {
+    "item_id": "test_119",
+    "label": "beta",
+    "reviewed_at": "2026-10-01T00:00:00Z",
+    "reviewer": "reviewer_2",
+    "task_version": "1"
+  }
+]

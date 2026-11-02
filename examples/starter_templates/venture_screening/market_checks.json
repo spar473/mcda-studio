@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "id": "adoption_fraction",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "adoption",
+      "quantity_kind": "source",
+      "unit": "1",
+      "upper": 1.0,
+      "upper_inclusive": true
+    },
+    {
+      "id": "positive_price",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "price",
+      "quantity_kind": "source",
+      "unit": "money/customer/year",
+      "upper": null,
+      "upper_inclusive": true
+    },
+    {
+      "id": "customer_count",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "customers",
+      "quantity_kind": "source",
+      "unit": "customer",
+      "upper": null,
+      "upper_inclusive": true
+    },
+    {
+      "id": "output_bounds",
+      "lower": 0.0,
+      "lower_inclusive": true,
+      "quantity_id": "bottom_a",
+      "quantity_kind": "formula",
+      "unit": "money/year",
+      "upper": 2000000.0,
+      "upper_inclusive": true
+    }
+  ],
+  "digest": "e1dc3c86e4bc8825e26bd5b5de152e235c8f40365115cf1f620ec3009acafd13",
+  "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+  "origin": {
+    "kind": "human",
+    "proposed_by": "Illustrative modeller",
+    "tool_id": null,
+    "tool_version": null
+  },
+  "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+  "review": {
+    "corrected_value": null,
+    "note": "Reviewed invented assumptions",
+    "reviewed_at": "2026-11-01T12:00:00Z",
+    "reviewer": "Illustrative reviewer",
+    "status": "accepted"
+  },
+  "schema_version": 1
+}

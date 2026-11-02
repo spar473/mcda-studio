@@ -1,0 +1,5402 @@
+[
+  {
+    "item_id": "train_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_001",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_003",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_004",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_005",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_006",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_008",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_010",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.0,
+      "beta": 1.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_011",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_012",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_013",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_014",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_015",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_016",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_017",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_018",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_019",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_001",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_003",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_004",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_005",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_006",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_008",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_001",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_003",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_004",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_005",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_006",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_008",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_010",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_011",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_012",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_013",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_014",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_015",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_016",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_017",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_018",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_019",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_020",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_021",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_022",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_023",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_024",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_025",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_026",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_027",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_028",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_029",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_030",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_031",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_032",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_033",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_034",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_035",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_036",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_037",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_038",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_039",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_040",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.0,
+      "beta": 1.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_041",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_042",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_043",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_044",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_045",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_046",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_047",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_048",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_049",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_050",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_051",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_052",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_053",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_054",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_055",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_056",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_057",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_058",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_059",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_060",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_061",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_062",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_063",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_064",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_065",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_066",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_067",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_068",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_069",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_070",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_071",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_072",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_073",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_074",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_075",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_076",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_077",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_078",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_079",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_080",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_081",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_082",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_083",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_084",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_085",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_086",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_087",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_088",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_089",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_090",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_091",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_092",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_093",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_094",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_095",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_096",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_097",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_098",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_099",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_100",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 1.0,
+      "beta": 0.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_101",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_102",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_103",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_104",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_105",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_106",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_107",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_108",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_109",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_110",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.0,
+      "beta": 1.0
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_111",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_112",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_113",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_114",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_115",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_116",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_117",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_118",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.8,
+      "beta": 0.2
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_119",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": {
+      "alpha": 0.2,
+      "beta": 0.8
+    },
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_a",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_001",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_003",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_004",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_005",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_006",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_008",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_010",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_011",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_012",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_013",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_014",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_015",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_016",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_017",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_018",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_019",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_001",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_003",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_004",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_005",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_006",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_008",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_001",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_003",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_004",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_005",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_006",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_008",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_010",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_011",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_012",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_013",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_014",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_015",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_016",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_017",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_018",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_019",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_020",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_021",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_022",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_023",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_024",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_025",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_026",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_027",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_028",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_029",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_030",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_031",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_032",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_033",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_034",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_035",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_036",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_037",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_038",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_039",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_040",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_041",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_042",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_043",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_044",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_045",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_046",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_047",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_048",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_049",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_050",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_051",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_052",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_053",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_054",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_055",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_056",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_057",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_058",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_059",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_060",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_061",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_062",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_063",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_064",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_065",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_066",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_067",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_068",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_069",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_070",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_071",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_072",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_073",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_074",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_075",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_076",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_077",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_078",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_079",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_080",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_081",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_082",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_083",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_084",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_085",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_086",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_087",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_088",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_089",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_090",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_091",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_092",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_093",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_094",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_095",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_096",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_097",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_098",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_099",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_100",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_101",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_102",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_103",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_104",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_105",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_106",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_107",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_108",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_109",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_110",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_111",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_112",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_113",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": null,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_114",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_115",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_116",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_117",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_118",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.75,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_119",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0.5,
+    "task_version": "1",
+    "tool_id": "classifier_b",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_001",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 1,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 2,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_003",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 3,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_004",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 4,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_005",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 5,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_006",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 6,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 7,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_008",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 8,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 9,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_010",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 10,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_011",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 11,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_012",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 12,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_013",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 13,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_014",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 14,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_015",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 15,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_016",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 16,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_017",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 17,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_018",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 18,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "train_019",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 19,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 20,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_001",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 21,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 22,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_003",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 23,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_004",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 24,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_005",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 25,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_006",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 26,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 27,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_008",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 28,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "development_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 29,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_000",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 30,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_001",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 31,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_002",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 32,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_003",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 33,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_004",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 34,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_005",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 35,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_006",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 36,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_007",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 37,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_008",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 38,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_009",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 39,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_010",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 40,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_011",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 41,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_012",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 42,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_013",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 43,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_014",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 44,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_015",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 45,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_016",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 46,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_017",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 47,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_018",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 48,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_019",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 49,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_020",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 50,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_021",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 51,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_022",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 52,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_023",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 53,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_024",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 54,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_025",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 55,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_026",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 56,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_027",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 57,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_028",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 58,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_029",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 59,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_030",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 60,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_031",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 61,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_032",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 62,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_033",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 63,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_034",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 64,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_035",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 65,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_036",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 66,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_037",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 67,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_038",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 68,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_039",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 69,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_040",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 70,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_041",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 71,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_042",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 72,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_043",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 73,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_044",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 74,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_045",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 75,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_046",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 76,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_047",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 77,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_048",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 78,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_049",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 79,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_050",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 80,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_051",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 81,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_052",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 82,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_053",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 83,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_054",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 84,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_055",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 85,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_056",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 86,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_057",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 87,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_058",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 88,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_059",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 89,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_060",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 90,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_061",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 91,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_062",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 92,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_063",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 93,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_064",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 94,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_065",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 95,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_066",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 96,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_067",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 97,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_068",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 98,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_069",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 99,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_070",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 100,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_071",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 0,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_072",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 1,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_073",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 2,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_074",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 3,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_075",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 4,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_076",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 5,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_077",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 6,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_078",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 7,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_079",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 8,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_080",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 9,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_081",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 10,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_082",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 11,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_083",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 12,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_084",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 13,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_085",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 14,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_086",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 15,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_087",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 16,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_088",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 17,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_089",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 18,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_090",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 19,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_091",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 20,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_092",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 21,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_093",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 22,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_094",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 23,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_095",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 24,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_096",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 25,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_097",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 26,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_098",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 27,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_099",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 28,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_100",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 29,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_101",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 30,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_102",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 31,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_103",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 32,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_104",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 33,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_105",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 34,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_106",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 35,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_107",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 36,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_108",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 37,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_109",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 38,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_110",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 39,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_111",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 40,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_112",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 41,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_113",
+    "label": null,
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 42,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_114",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 43,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_115",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 44,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_116",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 45,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_117",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 46,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_118",
+    "label": "alpha",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 47,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  },
+  {
+    "item_id": "test_119",
+    "label": "beta",
+    "model_card_digest": "429a1a7d441f8290895e666d793d9b29f236ea33d8e26d5bb95f16c53b9569a8",
+    "probabilities": null,
+    "run_at": "2026-10-04T00:00:00Z",
+    "score": 48,
+    "task_version": "1",
+    "tool_id": "classifier_c",
+    "tool_version": "wrapper-1"
+  }
+]

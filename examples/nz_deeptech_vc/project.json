@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "id": "nz_deeptech_vc_study",
+  "title": "NZ deep-tech startups for VC due diligence",
+  "description": "Public-information screening model for prioritising four early-stage New Zealand deep-tech startups for further due diligence (not an investment recommendation). Transcribed from the original study report, September 2026.",
+  "decision_maker": "Seed-stage venture capital analyst or partner (hypothetical)",
+  "alternatives": [
+    {
+      "id": "hyades",
+      "name": "Hyades",
+      "metadata": {}
+    },
+    {
+      "id": "forever_harvest",
+      "name": "Forever Harvest",
+      "metadata": {}
+    },
+    {
+      "id": "kura_dynamics",
+      "name": "Kura Dynamics",
+      "metadata": {}
+    },
+    {
+      "id": "outlier_space",
+      "name": "Outlier Space",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "team",
+      "name": "Team",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "problem_solution",
+      "name": "Problem & Solution",
+      "parent_id": null,
+      "order": 1,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "market",
+      "name": "Market",
+      "parent_id": null,
+      "order": 2,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "traction",
+      "name": "Traction",
+      "parent_id": null,
+      "order": 3,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "founder_expertise",
+      "name": "Founder Expertise",
+      "parent_id": "team",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Very Low",
+          "Low",
+          "Moderate",
+          "High",
+          "Very High"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Very Low": 0.0,
+          "Low": 0.25,
+          "Moderate": 0.5,
+          "High": 0.75,
+          "Very High": 1.0
+        }
+      }
+    },
+    {
+      "id": "team_coverage",
+      "name": "Team Coverage",
+      "parent_id": "team",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Very Low",
+          "Low",
+          "Moderate",
+          "High",
+          "Very High"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Very Low": 0.0,
+          "Low": 0.25,
+          "Moderate": 0.5,
+          "High": 0.75,
+          "Very High": 1.0
+        }
+      }
+    },
+    {
+      "id": "problem_significance",
+      "name": "Problem Significance",
+      "parent_id": "problem_solution",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Very Low",
+          "Low",
+          "Moderate",
+          "High",
+          "Very High"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Very Low": 0.0,
+          "Low": 0.25,
+          "Moderate": 0.5,
+          "High": 0.75,
+          "Very High": 1.0
+        }
+      }
+    },
+    {
+      "id": "solution_viability",
+      "name": "Solution Viability",
+      "parent_id": "problem_solution",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Very Low",
+          "Low",
+          "Moderate",
+          "High",
+          "Very High"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Very Low": 0.0,
+          "Low": 0.25,
+          "Moderate": 0.5,
+          "High": 0.75,
+          "Very High": 1.0
+        }
+      }
+    },
+    {
+      "id": "market_size",
+      "name": "Market Size",
+      "parent_id": "market",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "US$ bn",
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "local",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "piecewise_linear",
+        "points": [
+          {
+            "x": 1.38,
+            "value": 0.0
+          },
+          {
+            "x": 2.552,
+            "value": 0.252
+          },
+          {
+            "x": 5.077,
+            "value": 0.5
+          },
+          {
+            "x": 10.037,
+            "value": 0.748
+          },
+          {
+            "x": 26.45,
+            "value": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "market_growth",
+      "name": "Market Growth",
+      "parent_id": "market",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "% CAGR",
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "local",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    },
+    {
+      "id": "customer_validation",
+      "name": "Customer Validation",
+      "parent_id": "traction",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Very Low",
+          "Low",
+          "Moderate",
+          "High",
+          "Very High"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Very Low": 0.0,
+          "Low": 0.25,
+          "Moderate": 0.5,
+          "High": 0.75,
+          "Very High": 1.0
+        }
+      }
+    },
+    {
+      "id": "execution_maturity",
+      "name": "Execution Maturity",
+      "parent_id": "traction",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Very Low",
+          "Low",
+          "Moderate",
+          "High",
+          "Very High"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Very Low": 0.0,
+          "Low": 0.25,
+          "Moderate": 0.5,
+          "High": 0.75,
+          "Very High": 1.0
+        }
+      }
+    }
+  ],
+  "performances": [
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "founder_expertise",
+      "value": "Moderate"
+    },
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "team_coverage",
+      "value": "High"
+    },
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "problem_significance",
+      "value": "High"
+    },
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "solution_viability",
+      "value": "Moderate"
+    },
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "market_size",
+      "value": 26.45
+    },
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "market_growth",
+      "value": 8.71
+    },
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "customer_validation",
+      "value": "Moderate"
+    },
+    {
+      "alternative_id": "hyades",
+      "criterion_id": "execution_maturity",
+      "value": "Moderate"
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "founder_expertise",
+      "value": "Very High"
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "team_coverage",
+      "value": "High"
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "problem_significance",
+      "value": "High"
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "solution_viability",
+      "value": "High"
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "market_size",
+      "value": 1.38
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "market_growth",
+      "value": 23.1
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "customer_validation",
+      "value": "High"
+    },
+    {
+      "alternative_id": "forever_harvest",
+      "criterion_id": "execution_maturity",
+      "value": "High"
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "founder_expertise",
+      "value": "Very High"
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "team_coverage",
+      "value": "High"
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "problem_significance",
+      "value": "Very High"
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "solution_viability",
+      "value": "Moderate"
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "market_size",
+      "value": 4.6
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "market_growth",
+      "value": 9.6
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "customer_validation",
+      "value": "Low"
+    },
+    {
+      "alternative_id": "kura_dynamics",
+      "criterion_id": "execution_maturity",
+      "value": "Moderate"
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "founder_expertise",
+      "value": "Very High"
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "team_coverage",
+      "value": "Very High"
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "problem_significance",
+      "value": "High"
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "solution_viability",
+      "value": "Moderate"
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "market_size",
+      "value": 1.7129
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "market_growth",
+      "value": 16.9
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "customer_validation",
+      "value": "High"
+    },
+    {
+      "alternative_id": "outlier_space",
+      "criterion_id": "execution_maturity",
+      "value": "Moderate"
+    }
+  ],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Default",
+      "method": "swing",
+      "judgements": {
+        "team": 100.0,
+        "problem_solution": 90.0,
+        "market": 80.0,
+        "traction": 70.0,
+        "founder_expertise": 100.0,
+        "team_coverage": 65.0,
+        "problem_significance": 90.0,
+        "solution_viability": 100.0,
+        "market_size": 100.0,
+        "market_growth": 80.0,
+        "customer_validation": 100.0,
+        "execution_maturity": 70.0
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "linear_market_size",
+      "name": "Linear Market Size (local range)",
+      "weight_profile_id": null,
+      "value_function_overrides": {
+        "market_size": {
+          "out_of_domain": "error",
+          "kind": "linear",
+          "direction": "increasing"
+        }
+      }
+    }
+  ],
+  "analysis": {
+    "method": "mavt",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "artifacts": [
+    {
+      "for_model": null,
+      "id": "project",
+      "kind": "project",
+      "label": "Project",
+      "optional": false,
+      "path": "project.json",
+      "reset_policy": "draft",
+      "schema_version": 1,
+      "sha256": "e3ea526d32db7eb1ffbbaf98903c7f9fd0964918029c4feb42f55374d8be2b20"
+    }
+  ],
+  "description": "Illustrative alternatives, criteria, measurements, two profiles and one scenario.",
+  "digest": "fd3c33a9a4b69840ffc7446e701394f08cb608eb2fbc811f3cd12b8be09bb3e3",
+  "id": "infrastructure_procurement",
+  "schema_version": 1,
+  "source_example": "invented local starter fixtures",
+  "source_version": "1",
+  "tasks": [
+    "Review procurement costs and service trade-offs",
+    "Compare balanced and consent-led profiles and a scenario"
+  ],
+  "title": "Infrastructure procurement",
+  "version": "1"
+}

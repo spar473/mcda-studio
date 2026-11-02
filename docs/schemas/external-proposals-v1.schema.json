@@ -1,0 +1,797 @@
+{
+  "$defs": {
+    "AlternativeTag": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "alternative_tag",
+          "default": "alternative_tag",
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Label",
+          "type": "string"
+        },
+        "namespace": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Namespace",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "namespace",
+        "label",
+        "text"
+      ],
+      "title": "AlternativeTag",
+      "type": "object"
+    },
+    "CategoricalProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "categorical_cell",
+          "default": "categorical_cell",
+          "title": "Kind",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "CategoricalProposal",
+      "type": "object"
+    },
+    "Claim": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "outdated": {
+          "default": false,
+          "title": "Outdated",
+          "type": "boolean"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "uncertainty_lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty Lower"
+        },
+        "uncertainty_upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty Upper"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "id",
+        "alternative_id",
+        "criterion_id",
+        "value",
+        "unit",
+        "source",
+        "origin"
+      ],
+      "title": "Claim",
+      "type": "object"
+    },
+    "ConfidenceBounds": {
+      "additionalProperties": false,
+      "properties": {
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "name": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Name",
+          "type": "string"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "lower",
+        "upper"
+      ],
+      "title": "ConfidenceBounds",
+      "type": "object"
+    },
+    "EvidenceDossier": {
+      "additionalProperties": false,
+      "properties": {
+        "claims": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Claims",
+          "type": "array"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint"
+      ],
+      "title": "EvidenceDossier",
+      "type": "object"
+    },
+    "ExternalProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProposalConfidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "model_card_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Model Card Digest",
+          "type": "string"
+        },
+        "model_card_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Model Card Id",
+          "type": "string"
+        },
+        "payload": {
+          "discriminator": {
+            "mapping": {
+              "alternative_tag": "#/$defs/AlternativeTag",
+              "categorical_cell": "#/$defs/CategoricalProposal",
+              "numeric_cell": "#/$defs/NumericProposal",
+              "source_claim": "#/$defs/SuggestedSourceClaim"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/NumericProposal"
+            },
+            {
+              "$ref": "#/$defs/CategoricalProposal"
+            },
+            {
+              "$ref": "#/$defs/AlternativeTag"
+            },
+            {
+              "$ref": "#/$defs/SuggestedSourceClaim"
+            }
+          ],
+          "title": "Payload"
+        },
+        "proposal_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Proposal Version",
+          "type": "integer"
+        },
+        "replaces_proposal_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Replaces Proposal Id"
+        },
+        "run_at": {
+          "format": "date-time",
+          "title": "Run At",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "subject": {
+          "$ref": "#/$defs/ProposalSubject"
+        },
+        "tool_id": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Tool Id",
+          "type": "string"
+        },
+        "tool_version": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Tool Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "subject",
+        "payload",
+        "tool_id",
+        "tool_version",
+        "model_card_id",
+        "model_card_digest",
+        "run_at"
+      ],
+      "title": "ExternalProposal",
+      "type": "object"
+    },
+    "LocalModelCard": {
+      "additionalProperties": false,
+      "properties": {
+        "details": {
+          "maxProperties": 64,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "maxLength": 2000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            }
+          },
+          "title": "Details",
+          "type": "object"
+        },
+        "limitations": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Limitations",
+          "type": "string"
+        },
+        "model_version": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Model Version",
+          "type": "string"
+        },
+        "purpose": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Purpose",
+          "type": "string"
+        },
+        "version": {
+          "const": 1,
+          "default": 1,
+          "title": "Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "purpose",
+        "limitations",
+        "model_version"
+      ],
+      "title": "LocalModelCard",
+      "type": "object"
+    },
+    "NumericProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "numeric_cell",
+          "default": "numeric_cell",
+          "title": "Kind",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "NumericProposal",
+      "type": "object"
+    },
+    "Origin": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "human",
+            "tool"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "proposed_by": {
+          "minLength": 1,
+          "title": "Proposed By",
+          "type": "string"
+        },
+        "tool_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Id"
+        },
+        "tool_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Version"
+        }
+      },
+      "required": [
+        "kind",
+        "proposed_by"
+      ],
+      "title": "Origin",
+      "type": "object"
+    },
+    "ProposalConfidence": {
+      "additionalProperties": false,
+      "properties": {
+        "meaning": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Meaning",
+          "type": "string"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "const": "unit_interval",
+              "type": "string"
+            },
+            {
+              "$ref": "#/$defs/ConfidenceBounds"
+            }
+          ],
+          "title": "Scale"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "scale",
+        "meaning"
+      ],
+      "title": "ProposalConfidence",
+      "type": "object"
+    },
+    "ProposalSubject": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criterion Id"
+        }
+      },
+      "required": [
+        "alternative_id"
+      ],
+      "title": "ProposalSubject",
+      "type": "object"
+    },
+    "ProposedMeasurement": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "ProposedMeasurement",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "corrected_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Corrected Value"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "format": "date-time",
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "minLength": 1,
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "corrected",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at"
+      ],
+      "title": "Review",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "classification": {
+          "default": "unknown",
+          "enum": [
+            "independent",
+            "self_reported",
+            "unknown"
+          ],
+          "title": "Classification",
+          "type": "string"
+        },
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "location": {
+          "default": "",
+          "title": "Location",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "reference": {
+          "minLength": 1,
+          "title": "Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "reference",
+        "date",
+        "description"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SuggestedSourceClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "assertion": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Assertion",
+          "type": "string"
+        },
+        "excerpt": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "kind": {
+          "const": "source_claim",
+          "default": "source_claim",
+          "title": "Kind",
+          "type": "string"
+        },
+        "location": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Location",
+          "type": "string"
+        },
+        "measurement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProposedMeasurement"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Source Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "assertion",
+        "excerpt",
+        "location"
+      ],
+      "title": "SuggestedSourceClaim",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "human_dossier": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/EvidenceDossier"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "model_cards": {
+      "maxProperties": 2000,
+      "patternProperties": {
+        "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+          "$ref": "#/$defs/LocalModelCard"
+        }
+      },
+      "title": "Model Cards",
+      "type": "object"
+    },
+    "project_fingerprint": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Project Fingerprint",
+      "type": "string"
+    },
+    "proposals": {
+      "items": {
+        "$ref": "#/$defs/ExternalProposal"
+      },
+      "maxItems": 2000,
+      "title": "Proposals",
+      "type": "array"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "sources": {
+      "maxProperties": 2000,
+      "patternProperties": {
+        "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+          "$ref": "#/$defs/Source"
+        }
+      },
+      "title": "Sources",
+      "type": "object"
+    }
+  },
+  "required": [
+    "project_fingerprint"
+  ],
+  "title": "ProposalIntake",
+  "type": "object"
+}

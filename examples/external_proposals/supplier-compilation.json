@@ -1,0 +1,894 @@
+{
+  "artifact_kind": "proposal_compilation",
+  "version": 1,
+  "workspace": {
+    "workspace_version": 1,
+    "source_project": {
+      "schema_version": 1,
+      "id": "proposal_supplier",
+      "title": "Invented supplier intake",
+      "description": "Invented Option A/B data and sources. Illustrative review, not factual evidence.",
+      "decision_maker": "",
+      "alternatives": [
+        {
+          "id": "a",
+          "name": "Option A",
+          "metadata": {}
+        },
+        {
+          "id": "b",
+          "name": "Option B",
+          "metadata": {}
+        }
+      ],
+      "criteria": [
+        {
+          "id": "supply_risk",
+          "name": "Supply risk",
+          "parent_id": null,
+          "order": 0,
+          "description": "",
+          "scale": {
+            "type": "categorical",
+            "unit": null,
+            "lower": null,
+            "upper": null,
+            "anchor_mode": "fixed",
+            "labels": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "low": 0.0,
+              "medium": 0.5,
+              "high": 1.0
+            }
+          }
+        },
+        {
+          "id": "readiness",
+          "name": "Readiness",
+          "parent_id": null,
+          "order": 1,
+          "description": "",
+          "scale": {
+            "type": "ordinal",
+            "unit": null,
+            "lower": null,
+            "upper": null,
+            "anchor_mode": "fixed",
+            "labels": [
+              "early",
+              "ready"
+            ]
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "early": 0.0,
+              "ready": 1.0
+            }
+          }
+        },
+        {
+          "id": "measure",
+          "name": "Reviewed numeric measure",
+          "parent_id": null,
+          "order": 2,
+          "description": "",
+          "scale": {
+            "type": "interval",
+            "unit": "1",
+            "lower": 0.0,
+            "upper": 1.0,
+            "anchor_mode": "fixed",
+            "labels": []
+          },
+          "value_function": {
+            "out_of_domain": "error",
+            "kind": "direct_rating",
+            "min_rating": 0.0,
+            "max_rating": 1.0
+          }
+        }
+      ],
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "supply_risk",
+          "value": "low"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "supply_risk",
+          "value": "low"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "measure",
+          "value": 0.5
+        }
+      ],
+      "weight_profiles": [
+        {
+          "id": "default",
+          "name": "Default",
+          "method": "swing",
+          "judgements": {
+            "supply_risk": 100.0,
+            "readiness": 70.0,
+            "measure": 40.0
+          }
+        }
+      ],
+      "scenarios": [],
+      "analysis": {
+        "method": "mavt",
+        "weight_profile_id": null,
+        "scenario_id": null,
+        "parameters": {}
+      }
+    },
+    "intake": {
+      "schema_version": 1,
+      "project_fingerprint": "9881dd3fe2116ceacdd90ed1d555114f9b18dc2f1773e72c257fc1576493b050",
+      "sources": {
+        "brief_a": {
+          "name": "Invented brief A",
+          "reference": "local:invented-brief-a",
+          "location": "table 1",
+          "date": "2026-11-01",
+          "description": "Every statement and value is invented for this demonstration.",
+          "classification": "self_reported"
+        },
+        "brief_b": {
+          "name": "Invented brief B",
+          "reference": "local:invented-brief-b",
+          "location": "table 1",
+          "date": "2026-11-01",
+          "description": "Every statement and value is invented for this demonstration.",
+          "classification": "independent"
+        }
+      },
+      "model_cards": {
+        "card": {
+          "version": 1,
+          "purpose": "Propose labels and local measurements for review",
+          "limitations": "Invented outputs; no accuracy, calibration or outcome claim.",
+          "model_version": "1",
+          "details": {}
+        }
+      },
+      "proposals": [
+        {
+          "proposal_version": 1,
+          "id": "cell_a_first",
+          "subject": {
+            "alternative_id": "a",
+            "criterion_id": "supply_risk"
+          },
+          "payload": {
+            "kind": "categorical_cell",
+            "value": "high",
+            "unit": null
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_a"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "cell_a_second",
+          "subject": {
+            "alternative_id": "a",
+            "criterion_id": "supply_risk"
+          },
+          "payload": {
+            "kind": "categorical_cell",
+            "value": "medium",
+            "unit": null
+          },
+          "tool_id": "external_b",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_a"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "numeric_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": "measure"
+          },
+          "payload": {
+            "kind": "numeric_cell",
+            "value": 0.91,
+            "unit": "1"
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "readiness_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": "readiness"
+          },
+          "payload": {
+            "kind": "categorical_cell",
+            "value": "early",
+            "unit": null
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "source_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": null
+          },
+          "payload": {
+            "kind": "source_claim",
+            "source_id": "brief_b",
+            "assertion": "A delivery window is reported",
+            "excerpt": "Invented statement",
+            "location": "table 1",
+            "measurement": null
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "tag_a",
+          "subject": {
+            "alternative_id": "a",
+            "criterion_id": null
+          },
+          "payload": {
+            "kind": "alternative_tag",
+            "namespace": "follow_up",
+            "label": "check",
+            "text": "Investigate the invented claim"
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_a"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "tag_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": null
+          },
+          "payload": {
+            "kind": "alternative_tag",
+            "namespace": "capacity",
+            "label": "check",
+            "text": "Reviewed annotation only"
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        }
+      ],
+      "human_dossier": {
+        "schema_version": 1,
+        "project_fingerprint": "9881dd3fe2116ceacdd90ed1d555114f9b18dc2f1773e72c257fc1576493b050",
+        "claims": [
+          {
+            "id": "human_a",
+            "alternative_id": "a",
+            "criterion_id": "supply_risk",
+            "value": "medium",
+            "unit": null,
+            "source": {
+              "name": "Invented brief A",
+              "reference": "local:invented-brief-a",
+              "location": "table 1",
+              "date": "2026-11-01",
+              "description": "Every statement and value is invented for this demonstration.",
+              "classification": "self_reported"
+            },
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative reviewer",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": null,
+            "uncertainty_lower": null,
+            "uncertainty_upper": null,
+            "outdated": false
+          }
+        ]
+      }
+    },
+    "reviews": [
+      {
+        "proposal_id": "cell_a_first",
+        "review": {
+          "status": "corrected",
+          "reviewer": "Illustrative reviewer",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "note": "Invented demonstration review",
+          "corrected_payload": {
+            "kind": "categorical_cell",
+            "value": "medium",
+            "unit": null
+          },
+          "primary_source_id": "brief_a",
+          "supporting_source_ids": []
+        }
+      },
+      {
+        "proposal_id": "readiness_b",
+        "review": {
+          "status": "accepted",
+          "reviewer": "Illustrative reviewer",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "note": "Invented demonstration review",
+          "corrected_payload": null,
+          "primary_source_id": "brief_b",
+          "supporting_source_ids": []
+        }
+      },
+      {
+        "proposal_id": "numeric_b",
+        "review": {
+          "status": "rejected",
+          "reviewer": "Illustrative reviewer",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "note": "Invented demonstration review",
+          "corrected_payload": null,
+          "primary_source_id": null,
+          "supporting_source_ids": []
+        }
+      },
+      {
+        "proposal_id": "tag_a",
+        "review": {
+          "status": "rejected",
+          "reviewer": "Illustrative reviewer",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "note": "Invented demonstration review",
+          "corrected_payload": null,
+          "primary_source_id": null,
+          "supporting_source_ids": []
+        }
+      },
+      {
+        "proposal_id": "tag_b",
+        "review": {
+          "status": "accepted",
+          "reviewer": "Illustrative reviewer",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "note": "Invented demonstration review",
+          "corrected_payload": null,
+          "primary_source_id": "brief_b",
+          "supporting_source_ids": []
+        }
+      }
+    ],
+    "registry_supplies": [],
+    "digest": "d43172d11f1579929a9ab99f2dc17a348d8ae88b6444387d983598785dcecd6e"
+  },
+  "evidence": {
+    "compilation_version": 1,
+    "workspace": {
+      "workspace_version": 1,
+      "source_project": {
+        "schema_version": 1,
+        "id": "proposal_supplier",
+        "title": "Invented supplier intake",
+        "description": "Invented Option A/B data and sources. Illustrative review, not factual evidence.",
+        "decision_maker": "",
+        "alternatives": [
+          {
+            "id": "a",
+            "name": "Option A",
+            "metadata": {}
+          },
+          {
+            "id": "b",
+            "name": "Option B",
+            "metadata": {}
+          }
+        ],
+        "criteria": [
+          {
+            "id": "supply_risk",
+            "name": "Supply risk",
+            "parent_id": null,
+            "order": 0,
+            "description": "",
+            "scale": {
+              "type": "categorical",
+              "unit": null,
+              "lower": null,
+              "upper": null,
+              "anchor_mode": "fixed",
+              "labels": [
+                "low",
+                "medium",
+                "high"
+              ]
+            },
+            "value_function": {
+              "kind": "qualitative",
+              "mapping": {
+                "low": 0.0,
+                "medium": 0.5,
+                "high": 1.0
+              }
+            }
+          },
+          {
+            "id": "readiness",
+            "name": "Readiness",
+            "parent_id": null,
+            "order": 1,
+            "description": "",
+            "scale": {
+              "type": "ordinal",
+              "unit": null,
+              "lower": null,
+              "upper": null,
+              "anchor_mode": "fixed",
+              "labels": [
+                "early",
+                "ready"
+              ]
+            },
+            "value_function": {
+              "kind": "qualitative",
+              "mapping": {
+                "early": 0.0,
+                "ready": 1.0
+              }
+            }
+          },
+          {
+            "id": "measure",
+            "name": "Reviewed numeric measure",
+            "parent_id": null,
+            "order": 2,
+            "description": "",
+            "scale": {
+              "type": "interval",
+              "unit": "1",
+              "lower": 0.0,
+              "upper": 1.0,
+              "anchor_mode": "fixed",
+              "labels": []
+            },
+            "value_function": {
+              "out_of_domain": "error",
+              "kind": "direct_rating",
+              "min_rating": 0.0,
+              "max_rating": 1.0
+            }
+          }
+        ],
+        "performances": [
+          {
+            "alternative_id": "a",
+            "criterion_id": "supply_risk",
+            "value": "low"
+          },
+          {
+            "alternative_id": "a",
+            "criterion_id": "readiness",
+            "value": "ready"
+          },
+          {
+            "alternative_id": "a",
+            "criterion_id": "measure",
+            "value": 0.5
+          },
+          {
+            "alternative_id": "b",
+            "criterion_id": "supply_risk",
+            "value": "low"
+          },
+          {
+            "alternative_id": "b",
+            "criterion_id": "readiness",
+            "value": "ready"
+          },
+          {
+            "alternative_id": "b",
+            "criterion_id": "measure",
+            "value": 0.5
+          }
+        ],
+        "weight_profiles": [
+          {
+            "id": "default",
+            "name": "Default",
+            "method": "swing",
+            "judgements": {
+              "supply_risk": 100.0,
+              "readiness": 70.0,
+              "measure": 40.0
+            }
+          }
+        ],
+        "scenarios": [],
+        "analysis": {
+          "method": "mavt",
+          "weight_profile_id": null,
+          "scenario_id": null,
+          "parameters": {}
+        }
+      },
+      "original_dossier": {
+        "schema_version": 1,
+        "project_fingerprint": "9881dd3fe2116ceacdd90ed1d555114f9b18dc2f1773e72c257fc1576493b050",
+        "claims": [
+          {
+            "id": "cell_a_first",
+            "alternative_id": "a",
+            "criterion_id": "supply_risk",
+            "value": "high",
+            "unit": null,
+            "source": {
+              "name": "Invented brief A",
+              "reference": "local:invented-brief-a",
+              "location": "table 1",
+              "date": "2026-11-01",
+              "description": "Every statement and value is invented for this demonstration.",
+              "classification": "self_reported"
+            },
+            "origin": {
+              "kind": "tool",
+              "proposed_by": "External proposal",
+              "tool_id": "external_a",
+              "tool_version": "1"
+            },
+            "review": {
+              "status": "corrected",
+              "reviewer": "Illustrative reviewer",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "corrected_value": "medium",
+              "note": "Invented demonstration review"
+            },
+            "uncertainty_lower": null,
+            "uncertainty_upper": null,
+            "outdated": false
+          },
+          {
+            "id": "readiness_b",
+            "alternative_id": "b",
+            "criterion_id": "readiness",
+            "value": "early",
+            "unit": null,
+            "source": {
+              "name": "Invented brief B",
+              "reference": "local:invented-brief-b",
+              "location": "table 1",
+              "date": "2026-11-01",
+              "description": "Every statement and value is invented for this demonstration.",
+              "classification": "independent"
+            },
+            "origin": {
+              "kind": "tool",
+              "proposed_by": "External proposal",
+              "tool_id": "external_a",
+              "tool_version": "1"
+            },
+            "review": {
+              "status": "accepted",
+              "reviewer": "Illustrative reviewer",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "corrected_value": null,
+              "note": "Invented demonstration review"
+            },
+            "uncertainty_lower": null,
+            "uncertainty_upper": null,
+            "outdated": false
+          }
+        ]
+      },
+      "reviews": [],
+      "digest": "0dc031622e88e02feb7c68ec08665ff00e0c6ae54e5f964ea41e9820da31a44e"
+    },
+    "preview": {
+      "project_fingerprint": "9881dd3fe2116ceacdd90ed1d555114f9b18dc2f1773e72c257fc1576493b050",
+      "evidence_digest": "000e9292262e29bcd355aece99b4cd04fe981c369526c9d49811314b05477e0a",
+      "review_digest": "079cd06296e5f5d4f44c1d1f96e998a971aa7bb1d5ef088ffb341e366c6c7db8",
+      "changes": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "supply_risk",
+          "claim_id": "cell_a_first",
+          "before": "low",
+          "after": "medium"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "readiness",
+          "claim_id": "readiness_b",
+          "before": "ready",
+          "after": "early"
+        }
+      ],
+      "issues": [],
+      "missing_measurements": [],
+      "unreviewed_claims": [],
+      "outdated_claims": [],
+      "conflicting_cells": []
+    },
+    "project": {
+      "schema_version": 1,
+      "id": "proposal_supplier",
+      "title": "Invented supplier intake",
+      "description": "Invented Option A/B data and sources. Illustrative review, not factual evidence.",
+      "decision_maker": "",
+      "alternatives": [
+        {
+          "id": "a",
+          "name": "Option A",
+          "metadata": {}
+        },
+        {
+          "id": "b",
+          "name": "Option B",
+          "metadata": {}
+        }
+      ],
+      "criteria": [
+        {
+          "id": "supply_risk",
+          "name": "Supply risk",
+          "parent_id": null,
+          "order": 0,
+          "description": "",
+          "scale": {
+            "type": "categorical",
+            "unit": null,
+            "lower": null,
+            "upper": null,
+            "anchor_mode": "fixed",
+            "labels": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "low": 0.0,
+              "medium": 0.5,
+              "high": 1.0
+            }
+          }
+        },
+        {
+          "id": "readiness",
+          "name": "Readiness",
+          "parent_id": null,
+          "order": 1,
+          "description": "",
+          "scale": {
+            "type": "ordinal",
+            "unit": null,
+            "lower": null,
+            "upper": null,
+            "anchor_mode": "fixed",
+            "labels": [
+              "early",
+              "ready"
+            ]
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "early": 0.0,
+              "ready": 1.0
+            }
+          }
+        },
+        {
+          "id": "measure",
+          "name": "Reviewed numeric measure",
+          "parent_id": null,
+          "order": 2,
+          "description": "",
+          "scale": {
+            "type": "interval",
+            "unit": "1",
+            "lower": 0.0,
+            "upper": 1.0,
+            "anchor_mode": "fixed",
+            "labels": []
+          },
+          "value_function": {
+            "out_of_domain": "error",
+            "kind": "direct_rating",
+            "min_rating": 0.0,
+            "max_rating": 1.0
+          }
+        }
+      ],
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "supply_risk",
+          "value": "low"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "supply_risk",
+          "value": "medium"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "readiness",
+          "value": "early"
+        }
+      ],
+      "weight_profiles": [
+        {
+          "id": "default",
+          "name": "Default",
+          "method": "swing",
+          "judgements": {
+            "supply_risk": 100.0,
+            "readiness": 70.0,
+            "measure": 40.0
+          }
+        }
+      ],
+      "scenarios": [],
+      "analysis": {
+        "method": "mavt",
+        "weight_profile_id": null,
+        "scenario_id": null,
+        "parameters": {}
+      }
+    },
+    "compiled_fingerprint": "9c5ca2dd36b2c9c8f7e296607b997a39884506ae51de5bcc8505016f21101163",
+    "digest": "f6d1de76481737f5cde75e7fec0c936337cce3df99a6ff15163f942ccdd0e59a"
+  },
+  "annotations": [
+    {
+      "proposal_id": "tag_b",
+      "subject_alternative_id": "b",
+      "payload": {
+        "kind": "alternative_tag",
+        "namespace": "capacity",
+        "label": "check",
+        "text": "Reviewed annotation only"
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Illustrative reviewer",
+        "reviewed_at": "2026-11-01T00:00:00Z",
+        "note": "Invented demonstration review",
+        "corrected_payload": null,
+        "primary_source_id": "brief_b",
+        "supporting_source_ids": []
+      }
+    }
+  ],
+  "digest": "1817826604c42c442629c69f5d067a2cf8fc25c93ab9608d2047466e94694e80"
+}

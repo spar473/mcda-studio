@@ -1,0 +1,140 @@
+{
+  "blank": {
+    "criteria": [],
+    "description": ""
+  },
+  "supplier-selection": {
+    "criteria": [
+      {
+        "description": "",
+        "id": "cost",
+        "name": "Cost",
+        "order": 0,
+        "parent_id": null,
+        "scale": null,
+        "value_function": null
+      },
+      {
+        "description": "",
+        "id": "unit_price",
+        "name": "Unit price",
+        "order": 0,
+        "parent_id": "cost",
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "ratio",
+          "unit": "NZD",
+          "upper": 100.0
+        },
+        "value_function": {
+          "direction": "decreasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "quality",
+        "name": "Quality",
+        "order": 1,
+        "parent_id": null,
+        "scale": null,
+        "value_function": null
+      },
+      {
+        "description": "",
+        "id": "defect_rate",
+        "name": "Defect rate",
+        "order": 0,
+        "parent_id": "quality",
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "ratio",
+          "unit": "%",
+          "upper": 10.0
+        },
+        "value_function": {
+          "kind": "piecewise_linear",
+          "out_of_domain": "error",
+          "points": [
+            {
+              "value": 1.0,
+              "x": 0.0
+            },
+            {
+              "value": 0.6,
+              "x": 2.0
+            },
+            {
+              "value": 0.0,
+              "x": 10.0
+            }
+          ]
+        }
+      },
+      {
+        "description": "",
+        "id": "delivery",
+        "name": "Delivery",
+        "order": 2,
+        "parent_id": null,
+        "scale": null,
+        "value_function": null
+      },
+      {
+        "description": "",
+        "id": "on_time",
+        "name": "On-time delivery",
+        "order": 0,
+        "parent_id": "delivery",
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 50.0,
+          "type": "ratio",
+          "unit": "%",
+          "upper": 100.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "responsiveness",
+        "name": "Responsiveness",
+        "order": 1,
+        "parent_id": "delivery",
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [
+            "poor",
+            "fair",
+            "good",
+            "excellent"
+          ],
+          "lower": null,
+          "type": "ordinal",
+          "unit": null,
+          "upper": null
+        },
+        "value_function": {
+          "kind": "qualitative",
+          "mapping": {
+            "excellent": 1.0,
+            "fair": 0.3,
+            "good": 0.7,
+            "poor": 0.0
+          }
+        }
+      }
+    ],
+    "description": "Supplier selection template: cost, quality, delivery."
+  }
+}

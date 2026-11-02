@@ -1,0 +1,80 @@
+{
+  "distributions": [
+    {
+      "distribution": {
+        "kind": "discrete",
+        "probabilities": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "values": [
+          8000.0,
+          10000.0,
+          12000.0
+        ]
+      },
+      "factor_id": "customers",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      }
+    },
+    {
+      "distribution": {
+        "kind": "uniform",
+        "lower": 0.04,
+        "upper": 0.06
+      },
+      "factor_id": "adoption",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      }
+    },
+    {
+      "distribution": {
+        "kind": "triangular",
+        "lower": 1000.0,
+        "mode": 1200.0,
+        "upper": 1400.0
+      },
+      "factor_id": "price",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      }
+    }
+  ],
+  "groups": [],
+  "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+  "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+  "schema_version": 1
+}

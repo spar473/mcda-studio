@@ -1,0 +1,3377 @@
+{
+  "$defs": {
+    "AhpModel": {
+      "additionalProperties": false,
+      "properties": {
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/AlternativeJudgements"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriteriaJudgements"
+          },
+          "title": "Criteria",
+          "type": "array"
+        }
+      },
+      "title": "AhpModel",
+      "type": "object"
+    },
+    "Alternative": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "metadata": {
+          "additionalProperties": true,
+          "title": "Metadata",
+          "type": "object"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Alternative",
+      "type": "object"
+    },
+    "AlternativeJudgements": {
+      "additionalProperties": false,
+      "description": "The alternatives judged against each other on one leaf criterion.",
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "judgements": {
+          "items": {
+            "$ref": "#/$defs/PairwiseJudgement"
+          },
+          "title": "Judgements",
+          "type": "array"
+        }
+      },
+      "required": [
+        "criterion_id"
+      ],
+      "title": "AlternativeJudgements",
+      "type": "object"
+    },
+    "AlternativeTag": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "alternative_tag",
+          "default": "alternative_tag",
+          "title": "Kind",
+          "type": "string"
+        },
+        "label": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Label",
+          "type": "string"
+        },
+        "namespace": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Namespace",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "namespace",
+        "label",
+        "text"
+      ],
+      "title": "AlternativeTag",
+      "type": "object"
+    },
+    "AnalysisConfiguration": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "default": "mavt",
+          "title": "Method",
+          "type": "string"
+        },
+        "parameters": {
+          "additionalProperties": true,
+          "title": "Parameters",
+          "type": "object"
+        },
+        "scenario_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scenario Id"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Profile Id"
+        }
+      },
+      "title": "AnalysisConfiguration",
+      "type": "object"
+    },
+    "AnchorMode": {
+      "description": "Where the 0-and-1 anchors of a *linear* value function come from.\n\nFIXED: ``lower``/``upper`` are stated by the user and never depend on the alternatives.\nLOCAL: anchors are the min/max over the alternatives currently in the project. This is an\n       explicit, recorded choice because adding an alternative can then change every\n       existing alternative's score.",
+      "enum": [
+        "fixed",
+        "local"
+      ],
+      "title": "AnchorMode",
+      "type": "string"
+    },
+    "BoundRequirement": {
+      "additionalProperties": false,
+      "description": "A numeric leaf's measurement must lie within the stated limits, in the leaf's unit.",
+      "properties": {
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "bound",
+          "default": "bound",
+          "title": "Kind",
+          "type": "string"
+        },
+        "maximum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum"
+        },
+        "maximum_inclusive": {
+          "default": true,
+          "title": "Maximum Inclusive",
+          "type": "boolean"
+        },
+        "minimum": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minimum"
+        },
+        "minimum_inclusive": {
+          "default": true,
+          "title": "Minimum Inclusive",
+          "type": "boolean"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "criterion_id",
+        "unit"
+      ],
+      "title": "BoundRequirement",
+      "type": "object"
+    },
+    "CategoricalDistribution": {
+      "additionalProperties": false,
+      "description": "Listed labels of a labelled scale with their probabilities.",
+      "properties": {
+        "kind": {
+          "const": "categorical",
+          "default": "categorical",
+          "title": "Kind",
+          "type": "string"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "probabilities": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Probabilities",
+          "type": "array"
+        }
+      },
+      "required": [
+        "labels",
+        "probabilities"
+      ],
+      "title": "CategoricalDistribution",
+      "type": "object"
+    },
+    "CategoricalProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "categorical_cell",
+          "default": "categorical_cell",
+          "title": "Kind",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "CategoricalProposal",
+      "type": "object"
+    },
+    "CellRef": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id"
+      ],
+      "title": "CellRef",
+      "type": "object"
+    },
+    "CellUncertainty": {
+      "additionalProperties": false,
+      "description": "One measurement's distribution, used instead of its entered value in SMAA runs.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "distribution": {
+          "discriminator": {
+            "mapping": {
+              "categorical": "#/$defs/CategoricalDistribution",
+              "discrete": "#/$defs/DiscreteDistribution",
+              "triangular": "#/$defs/TriangularDistribution",
+              "uniform": "#/$defs/UniformDistribution"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UniformDistribution"
+            },
+            {
+              "$ref": "#/$defs/TriangularDistribution"
+            },
+            {
+              "$ref": "#/$defs/DiscreteDistribution"
+            },
+            {
+              "$ref": "#/$defs/CategoricalDistribution"
+            }
+          ],
+          "title": "Distribution"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "distribution"
+      ],
+      "title": "CellUncertainty",
+      "type": "object"
+    },
+    "Claim": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "outdated": {
+          "default": false,
+          "title": "Outdated",
+          "type": "boolean"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "uncertainty_lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty Lower"
+        },
+        "uncertainty_upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uncertainty Upper"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "id",
+        "alternative_id",
+        "criterion_id",
+        "value",
+        "unit",
+        "source",
+        "origin"
+      ],
+      "title": "Claim",
+      "type": "object"
+    },
+    "ConfidenceBounds": {
+      "additionalProperties": false,
+      "properties": {
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "name": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Name",
+          "type": "string"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "lower",
+        "upper"
+      ],
+      "title": "ConfidenceBounds",
+      "type": "object"
+    },
+    "ControlPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "title": "Value",
+          "type": "number"
+        },
+        "x": {
+          "title": "X",
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "value"
+      ],
+      "title": "ControlPoint",
+      "type": "object"
+    },
+    "CriteriaJudgements": {
+      "additionalProperties": false,
+      "description": "The children of one criterion (``None``: the top level) judged against each other.",
+      "properties": {
+        "judgements": {
+          "items": {
+            "$ref": "#/$defs/PairwiseJudgement"
+          },
+          "title": "Judgements",
+          "type": "array"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        }
+      },
+      "required": [
+        "parent_id"
+      ],
+      "title": "CriteriaJudgements",
+      "type": "object"
+    },
+    "CriterionNode": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "order": {
+          "default": 0,
+          "title": "Order",
+          "type": "integer"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parent Id"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Scale"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "value_function": {
+          "anyOf": [
+            {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value Function"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "CriterionNode",
+      "type": "object"
+    },
+    "DerivedFormula": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Alternative Id"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criterion Id"
+        },
+        "expression": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Expression",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "expression",
+        "unit",
+        "origin"
+      ],
+      "title": "DerivedFormula",
+      "type": "object"
+    },
+    "DerivedModel": {
+      "additionalProperties": false,
+      "properties": {
+        "formulas": {
+          "items": {
+            "$ref": "#/$defs/DerivedFormula"
+          },
+          "maxItems": 128,
+          "title": "Formulas",
+          "type": "array"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/SourceFactor"
+          },
+          "maxItems": 256,
+          "title": "Sources",
+          "type": "array"
+        },
+        "units": {
+          "additionalProperties": {
+            "patternProperties": {
+              "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+                "maximum": 16,
+                "minimum": -16,
+                "type": "integer"
+              }
+            },
+            "type": "object"
+          },
+          "maxProperties": 128,
+          "propertyNames": {
+            "maxLength": 64,
+            "minLength": 1
+          },
+          "title": "Units",
+          "type": "object"
+        }
+      },
+      "required": [
+        "project_fingerprint"
+      ],
+      "title": "DerivedModel",
+      "type": "object"
+    },
+    "DirectRatingValueFunction": {
+      "additionalProperties": false,
+      "description": "The measurement *is* a rating on [min_rating, max_rating], rescaled linearly to [0, 1].",
+      "properties": {
+        "kind": {
+          "const": "direct_rating",
+          "default": "direct_rating",
+          "title": "Kind",
+          "type": "string"
+        },
+        "max_rating": {
+          "default": 100.0,
+          "title": "Max Rating",
+          "type": "number"
+        },
+        "min_rating": {
+          "default": 0.0,
+          "title": "Min Rating",
+          "type": "number"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "DirectRatingValueFunction",
+      "type": "object"
+    },
+    "Direction": {
+      "enum": [
+        "increasing",
+        "decreasing"
+      ],
+      "title": "Direction",
+      "type": "string"
+    },
+    "DiscreteDistribution": {
+      "additionalProperties": false,
+      "description": "Listed numeric values with their probabilities.",
+      "properties": {
+        "kind": {
+          "const": "discrete",
+          "default": "discrete",
+          "title": "Kind",
+          "type": "string"
+        },
+        "probabilities": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Probabilities",
+          "type": "array"
+        },
+        "values": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "values",
+        "probabilities"
+      ],
+      "title": "DiscreteDistribution",
+      "type": "object"
+    },
+    "EvidenceDossier": {
+      "additionalProperties": false,
+      "properties": {
+        "claims": {
+          "items": {
+            "$ref": "#/$defs/Claim"
+          },
+          "title": "Claims",
+          "type": "array"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint"
+      ],
+      "title": "EvidenceDossier",
+      "type": "object"
+    },
+    "ExternalProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProposalConfidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "model_card_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Model Card Digest",
+          "type": "string"
+        },
+        "model_card_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Model Card Id",
+          "type": "string"
+        },
+        "payload": {
+          "discriminator": {
+            "mapping": {
+              "alternative_tag": "#/$defs/AlternativeTag",
+              "categorical_cell": "#/$defs/CategoricalProposal",
+              "numeric_cell": "#/$defs/NumericProposal",
+              "source_claim": "#/$defs/SuggestedSourceClaim"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/NumericProposal"
+            },
+            {
+              "$ref": "#/$defs/CategoricalProposal"
+            },
+            {
+              "$ref": "#/$defs/AlternativeTag"
+            },
+            {
+              "$ref": "#/$defs/SuggestedSourceClaim"
+            }
+          ],
+          "title": "Payload"
+        },
+        "proposal_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Proposal Version",
+          "type": "integer"
+        },
+        "replaces_proposal_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Replaces Proposal Id"
+        },
+        "run_at": {
+          "format": "date-time",
+          "title": "Run At",
+          "type": "string"
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "subject": {
+          "$ref": "#/$defs/ProposalSubject"
+        },
+        "tool_id": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Tool Id",
+          "type": "string"
+        },
+        "tool_version": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Tool Version",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "subject",
+        "payload",
+        "tool_id",
+        "tool_version",
+        "model_card_id",
+        "model_card_digest",
+        "run_at"
+      ],
+      "title": "ExternalProposal",
+      "type": "object"
+    },
+    "ExternalProposals": {
+      "additionalProperties": false,
+      "description": "Original intake plus its exact source and separate, replayable review events.",
+      "properties": {
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "intake": {
+          "$ref": "#/$defs/ProposalIntake"
+        },
+        "registry_supplies": {
+          "items": {
+            "$ref": "#/$defs/ProposalRegistrySupply"
+          },
+          "maxItems": 2000,
+          "title": "Registry Supplies",
+          "type": "array"
+        },
+        "reviews": {
+          "items": {
+            "$ref": "#/$defs/ProposalReview"
+          },
+          "maxItems": 2000,
+          "title": "Reviews",
+          "type": "array"
+        },
+        "source_project": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Project"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "workspace_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Workspace Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "source_project",
+        "intake",
+        "digest"
+      ],
+      "title": "ExternalProposals",
+      "type": "object"
+    },
+    "FactorDistribution": {
+      "additionalProperties": false,
+      "description": "One factor's marginal, in the factor's own unit; no conversion or inference.",
+      "properties": {
+        "distribution": {
+          "discriminator": {
+            "mapping": {
+              "discrete": "#/$defs/DiscreteDistribution",
+              "triangular": "#/$defs/TriangularDistribution",
+              "uniform": "#/$defs/UniformDistribution"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UniformDistribution"
+            },
+            {
+              "$ref": "#/$defs/TriangularDistribution"
+            },
+            {
+              "$ref": "#/$defs/DiscreteDistribution"
+            }
+          ],
+          "title": "Distribution"
+        },
+        "factor_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Factor Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "factor_id",
+        "distribution",
+        "origin"
+      ],
+      "title": "FactorDistribution",
+      "type": "object"
+    },
+    "FactorRunParameters": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "default": 0.95,
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "configuration": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "draws": {
+          "default": 1000,
+          "maximum": 100000,
+          "minimum": 1,
+          "title": "Draws",
+          "type": "integer"
+        },
+        "evaluation": {
+          "default": "sampled",
+          "enum": [
+            "sampled",
+            "exact_enumeration"
+          ],
+          "title": "Evaluation",
+          "type": "string"
+        },
+        "run": {
+          "default": "smaa2_factors",
+          "enum": [
+            "mavt",
+            "mavt_sorting",
+            "smaa2_factors"
+          ],
+          "title": "Run",
+          "type": "string"
+        },
+        "seed": {
+          "default": 7,
+          "exclusiveMaximum": 9223372036854775808,
+          "minimum": 0,
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "title": "FactorRunParameters",
+      "type": "object"
+    },
+    "FactorUncertaintyModel": {
+      "additionalProperties": false,
+      "properties": {
+        "distributions": {
+          "items": {
+            "$ref": "#/$defs/FactorDistribution"
+          },
+          "maxItems": 256,
+          "title": "Distributions",
+          "type": "array"
+        },
+        "groups": {
+          "items": {
+            "$ref": "#/$defs/QuantileGroup"
+          },
+          "maxItems": 64,
+          "title": "Groups",
+          "type": "array"
+        },
+        "model_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Model Digest",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "model_digest"
+      ],
+      "title": "FactorUncertaintyModel",
+      "type": "object"
+    },
+    "GroupUncertainty": {
+      "additionalProperties": false,
+      "description": "Weight uncertainty in one sibling group; a group without an entry keeps its ratings.\n\n``unknown``: local weights uniform on the group's simplex, Dirichlet(1, ..., 1).\n``rating_intervals``: each child's raw swing rating uniform on its stated [lower, upper], then\nnormalised within the group.",
+      "properties": {
+        "intervals": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ],
+              "type": "array"
+            }
+          },
+          "title": "Intervals",
+          "type": "object"
+        },
+        "kind": {
+          "enum": [
+            "unknown",
+            "rating_intervals"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "parent_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Parent Id"
+        }
+      },
+      "required": [
+        "parent_id",
+        "kind"
+      ],
+      "title": "GroupUncertainty",
+      "type": "object"
+    },
+    "LabelsRequirement": {
+      "additionalProperties": false,
+      "description": "A labelled leaf's measurement must be one of the allowed labels.",
+      "properties": {
+        "allowed": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Allowed",
+          "type": "array"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "kind": {
+          "const": "labels",
+          "default": "labels",
+          "title": "Kind",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "criterion_id",
+        "allowed"
+      ],
+      "title": "LabelsRequirement",
+      "type": "object"
+    },
+    "LinearPreferenceFunction": {
+      "additionalProperties": false,
+      "description": "No preference up to q, linear between q and p, full preference from p.",
+      "properties": {
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "p": {
+          "title": "P",
+          "type": "number"
+        },
+        "q": {
+          "title": "Q",
+          "type": "number"
+        }
+      },
+      "required": [
+        "q",
+        "p"
+      ],
+      "title": "LinearPreferenceFunction",
+      "type": "object"
+    },
+    "LinearValueFunction": {
+      "additionalProperties": false,
+      "description": "v(x) = (x-L)/(U-L) (increasing) or (U-x)/(U-L) (decreasing); L, U come from the scale.",
+      "properties": {
+        "direction": {
+          "$ref": "#/$defs/Direction",
+          "default": "increasing"
+        },
+        "kind": {
+          "const": "linear",
+          "default": "linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        }
+      },
+      "title": "LinearValueFunction",
+      "type": "object"
+    },
+    "LocalModelCard": {
+      "additionalProperties": false,
+      "properties": {
+        "details": {
+          "maxProperties": 64,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "maxLength": 2000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            }
+          },
+          "title": "Details",
+          "type": "object"
+        },
+        "limitations": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Limitations",
+          "type": "string"
+        },
+        "model_version": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Model Version",
+          "type": "string"
+        },
+        "purpose": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Purpose",
+          "type": "string"
+        },
+        "version": {
+          "const": 1,
+          "default": 1,
+          "title": "Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "purpose",
+        "limitations",
+        "model_version"
+      ],
+      "title": "LocalModelCard",
+      "type": "object"
+    },
+    "NumericProposal": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "numeric_cell",
+          "default": "numeric_cell",
+          "title": "Kind",
+          "type": "string"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "NumericProposal",
+      "type": "object"
+    },
+    "Origin": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "human",
+            "tool"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "proposed_by": {
+          "minLength": 1,
+          "title": "Proposed By",
+          "type": "string"
+        },
+        "tool_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Id"
+        },
+        "tool_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Version"
+        }
+      },
+      "required": [
+        "kind",
+        "proposed_by"
+      ],
+      "title": "Origin",
+      "type": "object"
+    },
+    "PairwiseJudgement": {
+      "additionalProperties": false,
+      "description": "``row`` is ``value`` times as important, or preferred, as ``column`` (1 <= value <= 9).",
+      "properties": {
+        "column": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Column",
+          "type": "string"
+        },
+        "row": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Row",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "row",
+        "column",
+        "value"
+      ],
+      "title": "PairwiseJudgement",
+      "type": "object"
+    },
+    "Performance": {
+      "additionalProperties": false,
+      "description": "One cell of the performance table: how an alternative performs on a leaf criterion.",
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "alternative_id",
+        "criterion_id",
+        "value"
+      ],
+      "title": "Performance",
+      "type": "object"
+    },
+    "PiecewiseLinearValueFunction": {
+      "additionalProperties": false,
+      "description": "Interpolates linearly between ordered (x, value) points; domain = [x_first, x_last].",
+      "properties": {
+        "kind": {
+          "const": "piecewise_linear",
+          "default": "piecewise_linear",
+          "title": "Kind",
+          "type": "string"
+        },
+        "out_of_domain": {
+          "default": "error",
+          "enum": [
+            "error",
+            "clamp"
+          ],
+          "title": "Out Of Domain",
+          "type": "string"
+        },
+        "points": {
+          "items": {
+            "$ref": "#/$defs/ControlPoint"
+          },
+          "title": "Points",
+          "type": "array"
+        }
+      },
+      "required": [
+        "points"
+      ],
+      "title": "PiecewiseLinearValueFunction",
+      "type": "object"
+    },
+    "Project": {
+      "additionalProperties": false,
+      "properties": {
+        "ahp": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/AhpModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "alternatives": {
+          "items": {
+            "$ref": "#/$defs/Alternative"
+          },
+          "title": "Alternatives",
+          "type": "array"
+        },
+        "analysis": {
+          "$ref": "#/$defs/AnalysisConfiguration"
+        },
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/CriterionNode"
+          },
+          "title": "Criteria",
+          "type": "array"
+        },
+        "decision_maker": {
+          "default": "",
+          "title": "Decision Maker",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "performances": {
+          "items": {
+            "$ref": "#/$defs/Performance"
+          },
+          "title": "Performances",
+          "type": "array"
+        },
+        "promethee": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/PrometheeModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "requirements": {
+          "anyOf": [
+            {
+              "items": {
+                "discriminator": {
+                  "mapping": {
+                    "bound": "#/$defs/BoundRequirement",
+                    "labels": "#/$defs/LabelsRequirement"
+                  },
+                  "propertyName": "kind"
+                },
+                "oneOf": [
+                  {
+                    "$ref": "#/$defs/BoundRequirement"
+                  },
+                  {
+                    "$ref": "#/$defs/LabelsRequirement"
+                  }
+                ]
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Requirements"
+        },
+        "scenarios": {
+          "items": {
+            "$ref": "#/$defs/Scenario"
+          },
+          "title": "Scenarios",
+          "type": "array"
+        },
+        "schema_version": {
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "smaa": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SmaaModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "sorting": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SortingModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "weight_profiles": {
+          "items": {
+            "$ref": "#/$defs/WeightProfile"
+          },
+          "title": "Weight Profiles",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "title"
+      ],
+      "title": "Project",
+      "type": "object"
+    },
+    "PrometheeCriterion": {
+      "additionalProperties": false,
+      "description": "PROMETHEE's inputs for one leaf; thresholds are in its units (its codes when labelled).",
+      "properties": {
+        "coding": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "type": "number"
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Coding"
+        },
+        "criterion_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Criterion Id",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "maximise",
+            "minimise"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "function": {
+          "discriminator": {
+            "mapping": {
+              "linear": "#/$defs/LinearPreferenceFunction",
+              "u_shape": "#/$defs/UShapeFunction",
+              "usual": "#/$defs/UsualFunction",
+              "v_shape": "#/$defs/VShapeFunction"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UsualFunction"
+            },
+            {
+              "$ref": "#/$defs/UShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/VShapeFunction"
+            },
+            {
+              "$ref": "#/$defs/LinearPreferenceFunction"
+            }
+          ],
+          "title": "Function"
+        },
+        "weight": {
+          "title": "Weight",
+          "type": "number"
+        }
+      },
+      "required": [
+        "criterion_id",
+        "direction",
+        "weight",
+        "function"
+      ],
+      "title": "PrometheeCriterion",
+      "type": "object"
+    },
+    "PrometheeModel": {
+      "additionalProperties": false,
+      "properties": {
+        "criteria": {
+          "items": {
+            "$ref": "#/$defs/PrometheeCriterion"
+          },
+          "title": "Criteria",
+          "type": "array"
+        }
+      },
+      "title": "PrometheeModel",
+      "type": "object"
+    },
+    "ProposalConfidence": {
+      "additionalProperties": false,
+      "properties": {
+        "meaning": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Meaning",
+          "type": "string"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "const": "unit_interval",
+              "type": "string"
+            },
+            {
+              "$ref": "#/$defs/ConfidenceBounds"
+            }
+          ],
+          "title": "Scale"
+        },
+        "value": {
+          "title": "Value",
+          "type": "number"
+        }
+      },
+      "required": [
+        "value",
+        "scale",
+        "meaning"
+      ],
+      "title": "ProposalConfidence",
+      "type": "object"
+    },
+    "ProposalIntake": {
+      "additionalProperties": false,
+      "properties": {
+        "human_dossier": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EvidenceDossier"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "model_cards": {
+          "maxProperties": 2000,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "$ref": "#/$defs/LocalModelCard"
+            }
+          },
+          "title": "Model Cards",
+          "type": "object"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "proposals": {
+          "items": {
+            "$ref": "#/$defs/ExternalProposal"
+          },
+          "maxItems": 2000,
+          "title": "Proposals",
+          "type": "array"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "sources": {
+          "maxProperties": 2000,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "$ref": "#/$defs/Source"
+            }
+          },
+          "title": "Sources",
+          "type": "object"
+        }
+      },
+      "required": [
+        "project_fingerprint"
+      ],
+      "title": "ProposalIntake",
+      "type": "object"
+    },
+    "ProposalRegistrySupply": {
+      "additionalProperties": false,
+      "properties": {
+        "model_cards": {
+          "maxProperties": 2000,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "$ref": "#/$defs/LocalModelCard"
+            }
+          },
+          "title": "Model Cards",
+          "type": "object"
+        },
+        "note": {
+          "default": "",
+          "maxLength": 2000,
+          "title": "Note",
+          "type": "string"
+        },
+        "recorded_at": {
+          "format": "date-time",
+          "title": "Recorded At",
+          "type": "string"
+        },
+        "recorded_by": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Recorded By",
+          "type": "string"
+        },
+        "sources": {
+          "maxProperties": 2000,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "$ref": "#/$defs/Source"
+            }
+          },
+          "title": "Sources",
+          "type": "object"
+        }
+      },
+      "required": [
+        "recorded_by",
+        "recorded_at"
+      ],
+      "title": "ProposalRegistrySupply",
+      "type": "object"
+    },
+    "ProposalReview": {
+      "additionalProperties": false,
+      "properties": {
+        "proposal_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Proposal Id",
+          "type": "string"
+        },
+        "review": {
+          "$ref": "#/$defs/ProposalReviewDetails"
+        }
+      },
+      "required": [
+        "proposal_id",
+        "review"
+      ],
+      "title": "ProposalReview",
+      "type": "object"
+    },
+    "ProposalReviewDetails": {
+      "additionalProperties": false,
+      "properties": {
+        "corrected_payload": {
+          "anyOf": [
+            {
+              "discriminator": {
+                "mapping": {
+                  "alternative_tag": "#/$defs/AlternativeTag",
+                  "categorical_cell": "#/$defs/CategoricalProposal",
+                  "numeric_cell": "#/$defs/NumericProposal",
+                  "source_claim": "#/$defs/SuggestedSourceClaim"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/NumericProposal"
+                },
+                {
+                  "$ref": "#/$defs/CategoricalProposal"
+                },
+                {
+                  "$ref": "#/$defs/AlternativeTag"
+                },
+                {
+                  "$ref": "#/$defs/SuggestedSourceClaim"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Corrected Payload"
+        },
+        "note": {
+          "default": "",
+          "maxLength": 2000,
+          "title": "Note",
+          "type": "string"
+        },
+        "primary_source_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Primary Source Id"
+        },
+        "reviewed_at": {
+          "format": "date-time",
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "corrected",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "supporting_source_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Supporting Source Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at"
+      ],
+      "title": "ProposalReviewDetails",
+      "type": "object"
+    },
+    "ProposalSubject": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Alternative Id",
+          "type": "string"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criterion Id"
+        }
+      },
+      "required": [
+        "alternative_id"
+      ],
+      "title": "ProposalSubject",
+      "type": "object"
+    },
+    "ProposedMeasurement": {
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Unit"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "pattern": "\\S",
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ],
+      "title": "ProposedMeasurement",
+      "type": "object"
+    },
+    "ProxyCardFact": {
+      "additionalProperties": false,
+      "properties": {
+        "reason": {
+          "default": "",
+          "maxLength": 2000,
+          "title": "Reason",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Source Ids",
+          "type": "array"
+        },
+        "unknown": {
+          "default": false,
+          "title": "Unknown",
+          "type": "boolean"
+        },
+        "value": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Value",
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ],
+      "title": "ProxyCardFact",
+      "type": "object"
+    },
+    "ProxyCriterionPlan": {
+      "additionalProperties": false,
+      "properties": {
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "initial": {
+          "$ref": "#/$defs/ProxyPlanState"
+        },
+        "revisions": {
+          "items": {
+            "$ref": "#/$defs/ProxyRevision"
+          },
+          "maxItems": 2000,
+          "title": "Revisions",
+          "type": "array"
+        },
+        "version": {
+          "const": 1,
+          "default": 1,
+          "title": "Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "initial",
+        "digest"
+      ],
+      "title": "ProxyCriterionPlan",
+      "type": "object"
+    },
+    "ProxyFeature": {
+      "additionalProperties": false,
+      "properties": {
+        "criterion_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Criterion Ids",
+          "type": "array"
+        },
+        "description": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "factor_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 256,
+          "title": "Factor Ids",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "observed_at": {
+          "format": "date",
+          "title": "Observed At",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "title": "Source Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "description",
+        "source_ids",
+        "observed_at"
+      ],
+      "title": "ProxyFeature",
+      "type": "object"
+    },
+    "ProxyOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Enabled"
+        },
+        "id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Id"
+        },
+        "kind": {
+          "enum": [
+            "edit",
+            "review_card_fact",
+            "review_feature",
+            "review_overlap",
+            "review_licence",
+            "review_plan",
+            "set_enabled",
+            "bind_scores"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "licence_compatible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Licence Compatible"
+        },
+        "review": {
+          "$ref": "#/$defs/Review"
+        },
+        "state": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProxyPlanState"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "workspace_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Workspace Digest"
+        }
+      },
+      "required": [
+        "kind",
+        "review"
+      ],
+      "title": "ProxyOperation",
+      "type": "object"
+    },
+    "ProxyOverlap": {
+      "additionalProperties": false,
+      "properties": {
+        "feature_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Feature Id",
+          "type": "string"
+        },
+        "rationale": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "relation": {
+          "enum": [
+            "same_concept",
+            "shared_evidence",
+            "possible_overlap",
+            "reviewed_distinct"
+          ],
+          "title": "Relation",
+          "type": "string"
+        },
+        "remove_criterion_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 128,
+          "title": "Remove Criterion Ids",
+          "type": "array"
+        },
+        "resolution": {
+          "enum": [
+            "baseline_only",
+            "retain_with_rationale",
+            "remove_criterion"
+          ],
+          "title": "Resolution",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "feature_id",
+        "relation",
+        "resolution",
+        "rationale"
+      ],
+      "title": "ProxyOverlap",
+      "type": "object"
+    },
+    "ProxyPlanState": {
+      "additionalProperties": false,
+      "properties": {
+        "card_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Card Digest"
+        },
+        "card_facts": {
+          "maxProperties": 64,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "$ref": "#/$defs/ProxyCardFact"
+            }
+          },
+          "title": "Card Facts",
+          "type": "object"
+        },
+        "card_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Card Id"
+        },
+        "compared_profile_ids": {
+          "items": {
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Compared Profile Ids",
+          "type": "array"
+        },
+        "criterion": {
+          "$ref": "#/$defs/CriterionNode"
+        },
+        "enabled": {
+          "default": false,
+          "title": "Enabled",
+          "type": "boolean"
+        },
+        "features": {
+          "items": {
+            "$ref": "#/$defs/ProxyFeature"
+          },
+          "maxItems": 128,
+          "title": "Features",
+          "type": "array"
+        },
+        "licence_compatible": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Licence Compatible"
+        },
+        "licence_review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "overlaps": {
+          "items": {
+            "$ref": "#/$defs/ProxyOverlap"
+          },
+          "maxItems": 128,
+          "title": "Overlaps",
+          "type": "array"
+        },
+        "plan_review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "score_meaning": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Score Meaning",
+          "type": "string"
+        },
+        "score_workspace_digest": {
+          "anyOf": [
+            {
+              "pattern": "^[a-f0-9]{64}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Score Workspace Digest"
+        },
+        "swing_ratings": {
+          "maxProperties": 64,
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "title": "Swing Ratings",
+          "type": "object"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "criterion",
+        "score_meaning"
+      ],
+      "title": "ProxyPlanState",
+      "type": "object"
+    },
+    "ProxyRevision": {
+      "additionalProperties": false,
+      "properties": {
+        "operation": {
+          "$ref": "#/$defs/ProxyOperation"
+        },
+        "previous_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Previous Digest",
+          "type": "string"
+        }
+      },
+      "required": [
+        "previous_digest",
+        "operation"
+      ],
+      "title": "ProxyRevision",
+      "type": "object"
+    },
+    "QualitativeValueFunction": {
+      "additionalProperties": false,
+      "description": "Explicit label -> preference value mapping. Spacing is a judgement, never assumed.",
+      "properties": {
+        "kind": {
+          "const": "qualitative",
+          "default": "qualitative",
+          "title": "Kind",
+          "type": "string"
+        },
+        "mapping": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "title": "Mapping",
+          "type": "object"
+        }
+      },
+      "required": [
+        "mapping"
+      ],
+      "title": "QualitativeValueFunction",
+      "type": "object"
+    },
+    "QuantileGroup": {
+      "additionalProperties": false,
+      "description": "Factors that share one uniform draw through their own quantile functions.\n\nThis states perfectly shared quantiles, not a correlation coefficient or covariance.",
+      "properties": {
+        "factor_ids": {
+          "items": {
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 2,
+          "title": "Factor Ids",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "rationale": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "factor_ids",
+        "rationale",
+        "origin"
+      ],
+      "title": "QuantileGroup",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "corrected_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Corrected Value"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "format": "date-time",
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "minLength": 1,
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "corrected",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at"
+      ],
+      "title": "Review",
+      "type": "object"
+    },
+    "Scale": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_mode": {
+          "$ref": "#/$defs/AnchorMode",
+          "default": "fixed"
+        },
+        "labels": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Labels",
+          "type": "array"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower"
+        },
+        "type": {
+          "$ref": "#/$defs/ScaleType"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "title": "Scale",
+      "type": "object"
+    },
+    "ScaleType": {
+      "enum": [
+        "categorical",
+        "ordinal",
+        "interval",
+        "ratio"
+      ],
+      "title": "ScaleType",
+      "type": "string"
+    },
+    "Scenario": {
+      "additionalProperties": false,
+      "description": "A named variation of the base model: another weight profile and/or other value functions.",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "value_function_overrides": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "discriminator": {
+                "mapping": {
+                  "direct_rating": "#/$defs/DirectRatingValueFunction",
+                  "linear": "#/$defs/LinearValueFunction",
+                  "piecewise_linear": "#/$defs/PiecewiseLinearValueFunction",
+                  "qualitative": "#/$defs/QualitativeValueFunction"
+                },
+                "propertyName": "kind"
+              },
+              "oneOf": [
+                {
+                  "$ref": "#/$defs/LinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/PiecewiseLinearValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/QualitativeValueFunction"
+                },
+                {
+                  "$ref": "#/$defs/DirectRatingValueFunction"
+                }
+              ]
+            }
+          },
+          "title": "Value Function Overrides",
+          "type": "object"
+        },
+        "weight_profile_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Profile Id"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Scenario",
+      "type": "object"
+    },
+    "SharedDraw": {
+      "additionalProperties": false,
+      "description": "Cells from one source: they use one common uniform draw through their own quantiles.",
+      "properties": {
+        "cells": {
+          "items": {
+            "$ref": "#/$defs/CellRef"
+          },
+          "title": "Cells",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "cells"
+      ],
+      "title": "SharedDraw",
+      "type": "object"
+    },
+    "SmaaModel": {
+      "additionalProperties": false,
+      "properties": {
+        "cells": {
+          "items": {
+            "$ref": "#/$defs/CellUncertainty"
+          },
+          "title": "Cells",
+          "type": "array"
+        },
+        "dependence": {
+          "default": "independent",
+          "title": "Dependence",
+          "type": "string"
+        },
+        "groups": {
+          "items": {
+            "$ref": "#/$defs/GroupUncertainty"
+          },
+          "title": "Groups",
+          "type": "array"
+        },
+        "shared_draws": {
+          "items": {
+            "$ref": "#/$defs/SharedDraw"
+          },
+          "title": "Shared Draws",
+          "type": "array"
+        }
+      },
+      "title": "SmaaModel",
+      "type": "object"
+    },
+    "SortingAudit": {
+      "additionalProperties": false,
+      "description": "A seed-keyed sample of alternatives sorted below ``below_class_id``, for manual review.",
+      "properties": {
+        "below_class_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Below Class Id",
+          "type": "string"
+        },
+        "sample_size": {
+          "title": "Sample Size",
+          "type": "integer"
+        },
+        "seed": {
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "below_class_id",
+        "sample_size",
+        "seed"
+      ],
+      "title": "SortingAudit",
+      "type": "object"
+    },
+    "SortingClass": {
+      "additionalProperties": false,
+      "description": "One ordered class. ``lower_boundary`` is the overall value needed to enter it.\n\nThe lowest class has no boundary: it takes every remaining value.",
+      "properties": {
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "lower_boundary": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower Boundary"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "SortingClass",
+      "type": "object"
+    },
+    "SortingModel": {
+      "additionalProperties": false,
+      "properties": {
+        "audit": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SortingAudit"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "classes": {
+          "items": {
+            "$ref": "#/$defs/SortingClass"
+          },
+          "title": "Classes",
+          "type": "array"
+        }
+      },
+      "title": "SortingModel",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "classification": {
+          "default": "unknown",
+          "enum": [
+            "independent",
+            "self_reported",
+            "unknown"
+          ],
+          "title": "Classification",
+          "type": "string"
+        },
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "location": {
+          "default": "",
+          "title": "Location",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "reference": {
+          "minLength": 1,
+          "title": "Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "reference",
+        "date",
+        "description"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SourceFactor": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        }
+      },
+      "required": [
+        "id",
+        "unit",
+        "source",
+        "origin"
+      ],
+      "title": "SourceFactor",
+      "type": "object"
+    },
+    "SuggestedSourceClaim": {
+      "additionalProperties": false,
+      "properties": {
+        "assertion": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Assertion",
+          "type": "string"
+        },
+        "excerpt": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Excerpt",
+          "type": "string"
+        },
+        "kind": {
+          "const": "source_claim",
+          "default": "source_claim",
+          "title": "Kind",
+          "type": "string"
+        },
+        "location": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "pattern": "\\S",
+          "title": "Location",
+          "type": "string"
+        },
+        "measurement": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ProposedMeasurement"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Source Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "assertion",
+        "excerpt",
+        "location"
+      ],
+      "title": "SuggestedSourceClaim",
+      "type": "object"
+    },
+    "TriangularDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "triangular",
+          "default": "triangular",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "mode": {
+          "title": "Mode",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "mode",
+        "upper"
+      ],
+      "title": "TriangularDistribution",
+      "type": "object"
+    },
+    "UShapeFunction": {
+      "additionalProperties": false,
+      "description": "No preference up to the indifference threshold q, full preference beyond it.",
+      "properties": {
+        "kind": {
+          "const": "u_shape",
+          "default": "u_shape",
+          "title": "Kind",
+          "type": "string"
+        },
+        "q": {
+          "title": "Q",
+          "type": "number"
+        }
+      },
+      "required": [
+        "q"
+      ],
+      "title": "UShapeFunction",
+      "type": "object"
+    },
+    "UniformDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "uniform",
+          "default": "uniform",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "title": "UniformDistribution",
+      "type": "object"
+    },
+    "UsualFunction": {
+      "additionalProperties": false,
+      "description": "Any positive difference is full preference.",
+      "properties": {
+        "kind": {
+          "const": "usual",
+          "default": "usual",
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "title": "UsualFunction",
+      "type": "object"
+    },
+    "VShapeFunction": {
+      "additionalProperties": false,
+      "description": "Preference grows linearly from 0 to full at the preference threshold p.",
+      "properties": {
+        "kind": {
+          "const": "v_shape",
+          "default": "v_shape",
+          "title": "Kind",
+          "type": "string"
+        },
+        "p": {
+          "title": "P",
+          "type": "number"
+        }
+      },
+      "required": [
+        "p"
+      ],
+      "title": "VShapeFunction",
+      "type": "object"
+    },
+    "WeightProfile": {
+      "additionalProperties": false,
+      "description": "Raw swing ratings, one per criterion node, relative to that node's siblings.\n\nA rating expresses the importance of the swing from worst to best *over the scale range\nin use* - not abstract importance. Ratings need not sum to anything; they are normalised\nwithin each sibling group. An only child needs no rating (its local weight is 1).",
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "judgements": {
+          "patternProperties": {
+            "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+              "type": "number"
+            }
+          },
+          "title": "Judgements",
+          "type": "object"
+        },
+        "method": {
+          "default": "swing",
+          "title": "Method",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "WeightProfile",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "configuration": {
+      "$ref": "#/$defs/AnalysisConfiguration"
+    },
+    "factor_parameters": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FactorRunParameters"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "model": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/DerivedModel"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "plan": {
+      "$ref": "#/$defs/ProxyCriterionPlan"
+    },
+    "project": {
+      "$ref": "#/$defs/Project"
+    },
+    "scores": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ExternalProposals"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "uncertainty": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FactorUncertaintyModel"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "project",
+    "plan"
+  ],
+  "title": "ProxyInputs",
+  "type": "object"
+}

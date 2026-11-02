@@ -1,0 +1,3156 @@
+{
+  "artifact_kind": "model_comparison_compilation",
+  "calculation": {
+    "compilation_version": 1,
+    "compiled_fingerprint": "ef371d1d004293eadef2e0e9dee967c48a376a67ebcf9fe2d8f6f7e541c2c915",
+    "digest": "2b34a78283e802799c267760513add930534688ecc53208ecd42dfd1a6bc729f",
+    "preview": {
+      "calculations": [
+        {
+          "alternative_id": null,
+          "before": null,
+          "criterion_id": null,
+          "dependencies": [
+            "adoption",
+            "customers",
+            "price"
+          ],
+          "dimension": {
+            "money": 1,
+            "time": -1
+          },
+          "expression": "customers * adoption * price",
+          "id": "bottom_a",
+          "source_ids": [
+            "adoption",
+            "customers",
+            "price"
+          ],
+          "unit": "money/year",
+          "value": 600000.0
+        },
+        {
+          "alternative_id": "a",
+          "before": 600000.0,
+          "criterion_id": "annual",
+          "dependencies": [
+            "share",
+            "total"
+          ],
+          "dimension": {
+            "money": 1,
+            "time": -1
+          },
+          "expression": "total * share",
+          "id": "top_a",
+          "source_ids": [
+            "share",
+            "total"
+          ],
+          "unit": "money/year",
+          "value": 1000000.0
+        }
+      ],
+      "issues": [],
+      "limitations": [
+        "Deterministic calculation only; no distribution is inferred or propagated.",
+        "Units have analyst-declared dimensions; no implicit scaling or conversion.",
+        "Shared sources are evaluated once and traced; uncertain factors are unsupported.",
+        "Compiling makes a static copy; retain this preview to preserve the formula trace."
+      ],
+      "model": {
+        "formulas": [
+          {
+            "alternative_id": null,
+            "criterion_id": null,
+            "expression": "customers * adoption * price",
+            "id": "bottom_a",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "unit": "money/year"
+          },
+          {
+            "alternative_id": "a",
+            "criterion_id": "annual",
+            "expression": "total * share",
+            "id": "top_a",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed target scope",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "unit": "money/year"
+          }
+        ],
+        "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+        "schema_version": 1,
+        "sources": [
+          {
+            "id": "customers",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "source": {
+              "classification": "independent",
+              "date": "2026-11-01",
+              "description": "Invented model input",
+              "location": "",
+              "name": "Invented customers",
+              "reference": "local:invented-customers"
+            },
+            "unit": "customer",
+            "value": 10000.0
+          },
+          {
+            "id": "adoption",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "source": {
+              "classification": "unknown",
+              "date": "2026-11-01",
+              "description": "Invented model input",
+              "location": "",
+              "name": "Invented adoption",
+              "reference": "local:invented-adoption"
+            },
+            "unit": "1",
+            "value": 0.05
+          },
+          {
+            "id": "price",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "source": {
+              "classification": "self_reported",
+              "date": "2026-11-01",
+              "description": "Invented model input",
+              "location": "",
+              "name": "Invented price",
+              "reference": "local:invented-price"
+            },
+            "unit": "money/customer/year",
+            "value": 1200.0
+          },
+          {
+            "id": "total",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "source": {
+              "classification": "unknown",
+              "date": "2026-11-01",
+              "description": "Invented model input",
+              "location": "",
+              "name": "Invented total",
+              "reference": "local:invented-total"
+            },
+            "unit": "money/year",
+            "value": 100000000.0
+          },
+          {
+            "id": "share",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "source": {
+              "classification": "unknown",
+              "date": "2026-11-01",
+              "description": "Invented model input",
+              "location": "",
+              "name": "Invented share",
+              "reference": "local:invented-share"
+            },
+            "unit": "1",
+            "value": 0.01
+          }
+        ],
+        "units": {
+          "customer": {
+            "customer": 1
+          },
+          "money/customer/year": {
+            "customer": -1,
+            "money": 1,
+            "time": -1
+          },
+          "money/year": {
+            "money": 1,
+            "time": -1
+          }
+        }
+      },
+      "model_digest": "926e8e44b72737fc8d810c5716f50ba58801510714d2d8f987a3da72a5676100",
+      "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+      "review_digest": "5901092d96a0af94bf229c5c63a2e5b622cad303cbf3d82ce58be03ac8aac18a"
+    },
+    "project": {
+      "alternatives": [
+        {
+          "id": "a",
+          "metadata": {},
+          "name": "Option A"
+        },
+        {
+          "id": "b",
+          "metadata": {},
+          "name": "Option B"
+        }
+      ],
+      "analysis": {
+        "method": "mavt",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "criteria": [
+        {
+          "description": "",
+          "id": "sector",
+          "name": "Sector",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [
+              "hardware",
+              "software"
+            ],
+            "lower": null,
+            "type": "categorical",
+            "unit": null,
+            "upper": null
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "hardware": 0.0,
+              "software": 1.0
+            }
+          }
+        },
+        {
+          "description": "",
+          "id": "readiness",
+          "name": "Stage",
+          "order": 1,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [
+              "early",
+              "ready"
+            ],
+            "lower": null,
+            "type": "ordinal",
+            "unit": null,
+            "upper": null
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "early": 0.0,
+              "ready": 1.0
+            }
+          }
+        },
+        {
+          "description": "",
+          "id": "measure",
+          "name": "Reviewed numeric measure",
+          "order": 2,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": "1",
+            "upper": 1.0
+          },
+          "value_function": {
+            "kind": "direct_rating",
+            "max_rating": 1.0,
+            "min_rating": 0.0,
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "annual",
+          "name": "Annual reachable quantity",
+          "order": 3,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "ratio",
+            "unit": "money/year",
+            "upper": 2000000.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        }
+      ],
+      "decision_maker": "",
+      "description": "Wholly invented Option A/B proposal review and two market models. Illustrative, not investment advice.",
+      "id": "venture_screening_starter",
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "sector",
+          "value": "hardware"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "sector",
+          "value": "hardware"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "annual",
+          "value": 480000.0
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "annual",
+          "value": 1000000.0
+        }
+      ],
+      "scenarios": [],
+      "schema_version": 1,
+      "title": "Venture screening",
+      "weight_profiles": [
+        {
+          "id": "default",
+          "judgements": {
+            "annual": 60.0,
+            "measure": 40.0,
+            "readiness": 70.0,
+            "sector": 100.0
+          },
+          "method": "swing",
+          "name": "Default"
+        }
+      ]
+    },
+    "source_project": {
+      "alternatives": [
+        {
+          "id": "a",
+          "metadata": {},
+          "name": "Option A"
+        },
+        {
+          "id": "b",
+          "metadata": {},
+          "name": "Option B"
+        }
+      ],
+      "analysis": {
+        "method": "mavt",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "criteria": [
+        {
+          "description": "",
+          "id": "sector",
+          "name": "Sector",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [
+              "hardware",
+              "software"
+            ],
+            "lower": null,
+            "type": "categorical",
+            "unit": null,
+            "upper": null
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "hardware": 0.0,
+              "software": 1.0
+            }
+          }
+        },
+        {
+          "description": "",
+          "id": "readiness",
+          "name": "Stage",
+          "order": 1,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [
+              "early",
+              "ready"
+            ],
+            "lower": null,
+            "type": "ordinal",
+            "unit": null,
+            "upper": null
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "early": 0.0,
+              "ready": 1.0
+            }
+          }
+        },
+        {
+          "description": "",
+          "id": "measure",
+          "name": "Reviewed numeric measure",
+          "order": 2,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": "1",
+            "upper": 1.0
+          },
+          "value_function": {
+            "kind": "direct_rating",
+            "max_rating": 1.0,
+            "min_rating": 0.0,
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "annual",
+          "name": "Annual reachable quantity",
+          "order": 3,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "ratio",
+            "unit": "money/year",
+            "upper": 2000000.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        }
+      ],
+      "decision_maker": "",
+      "description": "Wholly invented Option A/B proposal review and two market models. Illustrative, not investment advice.",
+      "id": "venture_screening_starter",
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "sector",
+          "value": "hardware"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "sector",
+          "value": "hardware"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "annual",
+          "value": 600000.0
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "annual",
+          "value": 480000.0
+        }
+      ],
+      "scenarios": [],
+      "schema_version": 1,
+      "title": "Venture screening",
+      "weight_profiles": [
+        {
+          "id": "default",
+          "judgements": {
+            "annual": 60.0,
+            "measure": 40.0,
+            "readiness": 70.0,
+            "sector": 100.0
+          },
+          "method": "swing",
+          "name": "Default"
+        }
+      ]
+    }
+  },
+  "digest": "950db88ece11cacf27f3ec4924bb350fce7e5cde6c148869ebe5894ff1ff2db0",
+  "inspection": {
+    "comparable": true,
+    "comparison": {
+      "digest": "134d4a96a2939c96d3a83e391b0d533795e6c0d92dfe3ecae30fdee1bad2cb0e",
+      "label": "Two invented estimates",
+      "left": {
+        "aggregation": null,
+        "checks": {
+          "checks": [
+            {
+              "id": "adoption_fraction",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "adoption",
+              "quantity_kind": "source",
+              "unit": "1",
+              "upper": 1.0,
+              "upper_inclusive": true
+            },
+            {
+              "id": "positive_price",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "price",
+              "quantity_kind": "source",
+              "unit": "money/customer/year",
+              "upper": null,
+              "upper_inclusive": true
+            },
+            {
+              "id": "customer_count",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "customers",
+              "quantity_kind": "source",
+              "unit": "customer",
+              "upper": null,
+              "upper_inclusive": true
+            },
+            {
+              "id": "output_bounds",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "bottom_a",
+              "quantity_kind": "formula",
+              "unit": "money/year",
+              "upper": 2000000.0,
+              "upper_inclusive": true
+            }
+          ],
+          "digest": "e1dc3c86e4bc8825e26bd5b5de152e235c8f40365115cf1f620ec3009acafd13",
+          "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+          "origin": {
+            "kind": "human",
+            "proposed_by": "Illustrative modeller",
+            "tool_id": null,
+            "tool_version": null
+          },
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "review": {
+            "corrected_value": null,
+            "note": "Reviewed invented assumptions",
+            "reviewed_at": "2026-11-01T12:00:00Z",
+            "reviewer": "Illustrative reviewer",
+            "status": "accepted"
+          },
+          "schema_version": 1
+        },
+        "formula_id": "bottom_a",
+        "id": "bottom",
+        "label": "Bottom-up formula",
+        "model": {
+          "formulas": [
+            {
+              "alternative_id": "a",
+              "criterion_id": "annual",
+              "expression": "customers * adoption * price",
+              "id": "bottom_a",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "annual",
+              "expression": "other_customers * adoption * price",
+              "id": "bottom_b",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            },
+            {
+              "alternative_id": null,
+              "criterion_id": null,
+              "expression": "total * share",
+              "id": "top_a",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            }
+          ],
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "schema_version": 1,
+          "sources": [
+            {
+              "id": "customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "independent",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented customers",
+                "reference": "local:invented-customers"
+              },
+              "unit": "customer",
+              "value": 10000.0
+            },
+            {
+              "id": "adoption",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented adoption",
+                "reference": "local:invented-adoption"
+              },
+              "unit": "1",
+              "value": 0.05
+            },
+            {
+              "id": "price",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "self_reported",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented price",
+                "reference": "local:invented-price"
+              },
+              "unit": "money/customer/year",
+              "value": 1200.0
+            },
+            {
+              "id": "other_customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "independent",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented other_customers",
+                "reference": "local:invented-other_customers"
+              },
+              "unit": "customer",
+              "value": 8000.0
+            },
+            {
+              "id": "total",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented total",
+                "reference": "local:invented-total"
+              },
+              "unit": "money/year",
+              "value": 100000000.0
+            },
+            {
+              "id": "share",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented share",
+                "reference": "local:invented-share"
+              },
+              "unit": "1",
+              "value": 0.01
+            }
+          ],
+          "units": {
+            "customer": {
+              "customer": 1
+            },
+            "money/customer/year": {
+              "customer": -1,
+              "money": 1,
+              "time": -1
+            },
+            "money/year": {
+              "money": 1,
+              "time": -1
+            }
+          }
+        },
+        "range": {
+          "kind": "support_enclosure"
+        },
+        "scope": {
+          "currency_basis": "Illustrative constant money",
+          "geography": "Illustrative region",
+          "period": "2026",
+          "population": "Illustrative population",
+          "unit": "money/year"
+        },
+        "uncertainty": {
+          "distributions": [
+            {
+              "distribution": {
+                "kind": "discrete",
+                "probabilities": [
+                  0.25,
+                  0.5,
+                  0.25
+                ],
+                "values": [
+                  8000.0,
+                  10000.0,
+                  12000.0
+                ]
+              },
+              "factor_id": "customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              }
+            },
+            {
+              "distribution": {
+                "kind": "uniform",
+                "lower": 0.04,
+                "upper": 0.06
+              },
+              "factor_id": "adoption",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              }
+            },
+            {
+              "distribution": {
+                "kind": "triangular",
+                "lower": 1000.0,
+                "mode": 1200.0,
+                "upper": 1400.0
+              },
+              "factor_id": "price",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              }
+            }
+          ],
+          "groups": [],
+          "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "schema_version": 1
+        }
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "right": {
+        "aggregation": null,
+        "checks": {
+          "checks": [
+            {
+              "id": "adoption_fraction",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "adoption",
+              "quantity_kind": "source",
+              "unit": "1",
+              "upper": 1.0,
+              "upper_inclusive": true
+            },
+            {
+              "id": "positive_price",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "price",
+              "quantity_kind": "source",
+              "unit": "money/customer/year",
+              "upper": null,
+              "upper_inclusive": true
+            },
+            {
+              "id": "customer_count",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "customers",
+              "quantity_kind": "source",
+              "unit": "customer",
+              "upper": null,
+              "upper_inclusive": true
+            },
+            {
+              "id": "output_bounds",
+              "lower": 0.0,
+              "lower_inclusive": true,
+              "quantity_id": "bottom_a",
+              "quantity_kind": "formula",
+              "unit": "money/year",
+              "upper": 2000000.0,
+              "upper_inclusive": true
+            }
+          ],
+          "digest": "e1dc3c86e4bc8825e26bd5b5de152e235c8f40365115cf1f620ec3009acafd13",
+          "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+          "origin": {
+            "kind": "human",
+            "proposed_by": "Illustrative modeller",
+            "tool_id": null,
+            "tool_version": null
+          },
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "review": {
+            "corrected_value": null,
+            "note": "Reviewed invented assumptions",
+            "reviewed_at": "2026-11-01T12:00:00Z",
+            "reviewer": "Illustrative reviewer",
+            "status": "accepted"
+          },
+          "schema_version": 1
+        },
+        "formula_id": "top_a",
+        "id": "top",
+        "label": "Top-down formula",
+        "model": {
+          "formulas": [
+            {
+              "alternative_id": "a",
+              "criterion_id": "annual",
+              "expression": "customers * adoption * price",
+              "id": "bottom_a",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "annual",
+              "expression": "other_customers * adoption * price",
+              "id": "bottom_b",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            },
+            {
+              "alternative_id": null,
+              "criterion_id": null,
+              "expression": "total * share",
+              "id": "top_a",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            }
+          ],
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "schema_version": 1,
+          "sources": [
+            {
+              "id": "customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "independent",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented customers",
+                "reference": "local:invented-customers"
+              },
+              "unit": "customer",
+              "value": 10000.0
+            },
+            {
+              "id": "adoption",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented adoption",
+                "reference": "local:invented-adoption"
+              },
+              "unit": "1",
+              "value": 0.05
+            },
+            {
+              "id": "price",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "self_reported",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented price",
+                "reference": "local:invented-price"
+              },
+              "unit": "money/customer/year",
+              "value": 1200.0
+            },
+            {
+              "id": "other_customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "independent",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented other_customers",
+                "reference": "local:invented-other_customers"
+              },
+              "unit": "customer",
+              "value": 8000.0
+            },
+            {
+              "id": "total",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented total",
+                "reference": "local:invented-total"
+              },
+              "unit": "money/year",
+              "value": 100000000.0
+            },
+            {
+              "id": "share",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented share",
+                "reference": "local:invented-share"
+              },
+              "unit": "1",
+              "value": 0.01
+            }
+          ],
+          "units": {
+            "customer": {
+              "customer": 1
+            },
+            "money/customer/year": {
+              "customer": -1,
+              "money": 1,
+              "time": -1
+            },
+            "money/year": {
+              "money": 1,
+              "time": -1
+            }
+          }
+        },
+        "range": {
+          "intervals": [
+            {
+              "factor_id": "total",
+              "lower": 80000000.0,
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year",
+              "upper": 120000000.0
+            }
+          ],
+          "kind": "source_interval"
+        },
+        "scope": {
+          "currency_basis": "Illustrative constant money",
+          "geography": "Illustrative region",
+          "period": "2026",
+          "population": "Illustrative population",
+          "unit": "money/year"
+        },
+        "uncertainty": null
+      },
+      "schema_version": 1
+    },
+    "current_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+    "left": {
+      "issues": [],
+      "reason": "",
+      "run": {
+        "algorithm": "checked-model-output.v1",
+        "artifact_kind": "model_output_run",
+        "checks_digest": "e1dc3c86e4bc8825e26bd5b5de152e235c8f40365115cf1f620ec3009acafd13",
+        "digest": "90ff40cc40c970ac33f9ff0998461bc6112c3b6633ca82a7016a1a5965b08af7",
+        "draw_count": 0,
+        "draws_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "environment": {
+          "numpy": "2.5.4",
+          "python": "3.12.15",
+          "system": "Darwin arm64"
+        },
+        "first_draws": [],
+        "limitations": [
+          "Frequencies describe the stated factor distributions, not the probability of any outcome in the world; no distribution is inferred from evidence or ranges.",
+          "Distinct factors are independent unless a quantile group states perfectly shared quantiles; no correlation coefficient, covariance or copula is supported.",
+          "Preflight intervals are conservative and not outward-rounded: a support that could reach a zero denominator or a negative ratio target is refused even at probability zero.",
+          "Only explicitly required quantities and quantile-group members are run; original drafts and omitted IDs remain retained.",
+          "Quantity-check preflight uses conservative support enclosures; a reused-factor image may fit when its enclosure does not.",
+          "No bounds are inferred from a unit, source classification or template name."
+        ],
+        "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+        "omitted_quantity_ids": [
+          "bottom_b",
+          "other_customers",
+          "share",
+          "top_a",
+          "total"
+        ],
+        "range": {
+          "interpretation": "Conservative support enclosure, not proven extrema or a confidence interval.",
+          "kind": "support_enclosure",
+          "lower": 320000.0,
+          "quantile_algorithm": null,
+          "upper": 1008000.0
+        },
+        "scoped_model": {
+          "formulas": [
+            {
+              "alternative_id": null,
+              "criterion_id": null,
+              "expression": "customers * adoption * price",
+              "id": "bottom_a",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            }
+          ],
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "schema_version": 1,
+          "sources": [
+            {
+              "id": "customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "independent",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented customers",
+                "reference": "local:invented-customers"
+              },
+              "unit": "customer",
+              "value": 10000.0
+            },
+            {
+              "id": "adoption",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented adoption",
+                "reference": "local:invented-adoption"
+              },
+              "unit": "1",
+              "value": 0.05
+            },
+            {
+              "id": "price",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "self_reported",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented price",
+                "reference": "local:invented-price"
+              },
+              "unit": "money/customer/year",
+              "value": 1200.0
+            }
+          ],
+          "units": {
+            "customer": {
+              "customer": 1
+            },
+            "money/customer/year": {
+              "customer": -1,
+              "money": 1,
+              "time": -1
+            },
+            "money/year": {
+              "money": 1,
+              "time": -1
+            }
+          }
+        },
+        "scoped_uncertainty": {
+          "distributions": [
+            {
+              "distribution": {
+                "kind": "discrete",
+                "probabilities": [
+                  0.25,
+                  0.5,
+                  0.25
+                ],
+                "values": [
+                  8000.0,
+                  10000.0,
+                  12000.0
+                ]
+              },
+              "factor_id": "customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              }
+            },
+            {
+              "distribution": {
+                "kind": "uniform",
+                "lower": 0.04,
+                "upper": 0.06
+              },
+              "factor_id": "adoption",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              }
+            },
+            {
+              "distribution": {
+                "kind": "triangular",
+                "lower": 1000.0,
+                "mode": 1200.0,
+                "upper": 1400.0
+              },
+              "factor_id": "price",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              }
+            }
+          ],
+          "groups": [],
+          "model_digest": "2505ff740b7bc7ed15471b5d9d88f95f743d1b198cb3f19c72bd01c2c681b893",
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "schema_version": 1
+        },
+        "seed": null,
+        "source_classifications": {
+          "adoption": "unknown",
+          "customers": "independent",
+          "price": "self_reported"
+        },
+        "source_project": {
+          "alternatives": [
+            {
+              "id": "a",
+              "metadata": {},
+              "name": "Option A"
+            },
+            {
+              "id": "b",
+              "metadata": {},
+              "name": "Option B"
+            }
+          ],
+          "analysis": {
+            "method": "mavt",
+            "parameters": {},
+            "scenario_id": null,
+            "weight_profile_id": null
+          },
+          "criteria": [
+            {
+              "description": "",
+              "id": "sector",
+              "name": "Sector",
+              "order": 0,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [
+                  "hardware",
+                  "software"
+                ],
+                "lower": null,
+                "type": "categorical",
+                "unit": null,
+                "upper": null
+              },
+              "value_function": {
+                "kind": "qualitative",
+                "mapping": {
+                  "hardware": 0.0,
+                  "software": 1.0
+                }
+              }
+            },
+            {
+              "description": "",
+              "id": "readiness",
+              "name": "Stage",
+              "order": 1,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [
+                  "early",
+                  "ready"
+                ],
+                "lower": null,
+                "type": "ordinal",
+                "unit": null,
+                "upper": null
+              },
+              "value_function": {
+                "kind": "qualitative",
+                "mapping": {
+                  "early": 0.0,
+                  "ready": 1.0
+                }
+              }
+            },
+            {
+              "description": "",
+              "id": "measure",
+              "name": "Reviewed numeric measure",
+              "order": 2,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [],
+                "lower": 0.0,
+                "type": "interval",
+                "unit": "1",
+                "upper": 1.0
+              },
+              "value_function": {
+                "kind": "direct_rating",
+                "max_rating": 1.0,
+                "min_rating": 0.0,
+                "out_of_domain": "error"
+              }
+            },
+            {
+              "description": "",
+              "id": "annual",
+              "name": "Annual reachable quantity",
+              "order": 3,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [],
+                "lower": 0.0,
+                "type": "ratio",
+                "unit": "money/year",
+                "upper": 2000000.0
+              },
+              "value_function": {
+                "direction": "increasing",
+                "kind": "linear",
+                "out_of_domain": "error"
+              }
+            }
+          ],
+          "decision_maker": "",
+          "description": "Wholly invented Option A/B proposal review and two market models. Illustrative, not investment advice.",
+          "id": "venture_screening_starter",
+          "performances": [
+            {
+              "alternative_id": "a",
+              "criterion_id": "sector",
+              "value": "hardware"
+            },
+            {
+              "alternative_id": "a",
+              "criterion_id": "readiness",
+              "value": "ready"
+            },
+            {
+              "alternative_id": "a",
+              "criterion_id": "measure",
+              "value": 0.5
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "sector",
+              "value": "hardware"
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "readiness",
+              "value": "ready"
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "measure",
+              "value": 0.5
+            },
+            {
+              "alternative_id": "a",
+              "criterion_id": "annual",
+              "value": 600000.0
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "annual",
+              "value": 480000.0
+            }
+          ],
+          "scenarios": [],
+          "schema_version": 1,
+          "title": "Venture screening",
+          "weight_profiles": [
+            {
+              "id": "default",
+              "judgements": {
+                "annual": 60.0,
+                "measure": 40.0,
+                "readiness": 70.0,
+                "sector": 100.0
+              },
+              "method": "swing",
+              "name": "Default"
+            }
+          ]
+        },
+        "specification": {
+          "aggregation": null,
+          "checks": {
+            "checks": [
+              {
+                "id": "adoption_fraction",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "adoption",
+                "quantity_kind": "source",
+                "unit": "1",
+                "upper": 1.0,
+                "upper_inclusive": true
+              },
+              {
+                "id": "positive_price",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "price",
+                "quantity_kind": "source",
+                "unit": "money/customer/year",
+                "upper": null,
+                "upper_inclusive": true
+              },
+              {
+                "id": "customer_count",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "customers",
+                "quantity_kind": "source",
+                "unit": "customer",
+                "upper": null,
+                "upper_inclusive": true
+              },
+              {
+                "id": "output_bounds",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "bottom_a",
+                "quantity_kind": "formula",
+                "unit": "money/year",
+                "upper": 2000000.0,
+                "upper_inclusive": true
+              }
+            ],
+            "digest": "e1dc3c86e4bc8825e26bd5b5de152e235c8f40365115cf1f620ec3009acafd13",
+            "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "schema_version": 1
+          },
+          "formula_id": "bottom_a",
+          "id": "bottom",
+          "label": "Bottom-up formula",
+          "model": {
+            "formulas": [
+              {
+                "alternative_id": "a",
+                "criterion_id": "annual",
+                "expression": "customers * adoption * price",
+                "id": "bottom_a",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "unit": "money/year"
+              },
+              {
+                "alternative_id": "b",
+                "criterion_id": "annual",
+                "expression": "other_customers * adoption * price",
+                "id": "bottom_b",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "unit": "money/year"
+              },
+              {
+                "alternative_id": null,
+                "criterion_id": null,
+                "expression": "total * share",
+                "id": "top_a",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "unit": "money/year"
+              }
+            ],
+            "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+            "schema_version": 1,
+            "sources": [
+              {
+                "id": "customers",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "independent",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented customers",
+                  "reference": "local:invented-customers"
+                },
+                "unit": "customer",
+                "value": 10000.0
+              },
+              {
+                "id": "adoption",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "unknown",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented adoption",
+                  "reference": "local:invented-adoption"
+                },
+                "unit": "1",
+                "value": 0.05
+              },
+              {
+                "id": "price",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "self_reported",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented price",
+                  "reference": "local:invented-price"
+                },
+                "unit": "money/customer/year",
+                "value": 1200.0
+              },
+              {
+                "id": "other_customers",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "independent",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented other_customers",
+                  "reference": "local:invented-other_customers"
+                },
+                "unit": "customer",
+                "value": 8000.0
+              },
+              {
+                "id": "total",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "unknown",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented total",
+                  "reference": "local:invented-total"
+                },
+                "unit": "money/year",
+                "value": 100000000.0
+              },
+              {
+                "id": "share",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "unknown",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented share",
+                  "reference": "local:invented-share"
+                },
+                "unit": "1",
+                "value": 0.01
+              }
+            ],
+            "units": {
+              "customer": {
+                "customer": 1
+              },
+              "money/customer/year": {
+                "customer": -1,
+                "money": 1,
+                "time": -1
+              },
+              "money/year": {
+                "money": 1,
+                "time": -1
+              }
+            }
+          },
+          "range": {
+            "kind": "support_enclosure"
+          },
+          "scope": {
+            "currency_basis": "Illustrative constant money",
+            "geography": "Illustrative region",
+            "period": "2026",
+            "population": "Illustrative population",
+            "unit": "money/year"
+          },
+          "uncertainty": {
+            "distributions": [
+              {
+                "distribution": {
+                  "kind": "discrete",
+                  "probabilities": [
+                    0.25,
+                    0.5,
+                    0.25
+                  ],
+                  "values": [
+                    8000.0,
+                    10000.0,
+                    12000.0
+                  ]
+                },
+                "factor_id": "customers",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                }
+              },
+              {
+                "distribution": {
+                  "kind": "uniform",
+                  "lower": 0.04,
+                  "upper": 0.06
+                },
+                "factor_id": "adoption",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                }
+              },
+              {
+                "distribution": {
+                  "kind": "triangular",
+                  "lower": 1000.0,
+                  "mode": 1200.0,
+                  "upper": 1400.0
+                },
+                "factor_id": "price",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                }
+              }
+            ],
+            "groups": [],
+            "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+            "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+            "schema_version": 1
+          }
+        },
+        "unit": "money/year",
+        "value": 600000.0,
+        "version": 1
+      },
+      "status": "completed"
+    },
+    "limitations": [
+      "A range describes its declared kind; source bounds, supports and sampled central ranges are not interchangeable.",
+      "Numeric overlap does not resolve a model disagreement, and no average or materiality threshold is calculated.",
+      "Scope, population partition and reviewer identities are local assertions, not independent factual validation."
+    ],
+    "questions": [
+      {
+        "alternative_id": null,
+        "code": "MODEL_DISAGREEMENT",
+        "criterion_id": null,
+        "evidence": "Open Calculated measurements → Model comparisons; review both exact inputs/runs. Never average the models.",
+        "group": "evidence_quality",
+        "measurement_range": null,
+        "question": "Which assumptions explain these model estimates?",
+        "requirement_id": null,
+        "why": "Two distinct model declarations remain side by side, including when their ranges overlap."
+      }
+    ],
+    "review_digest": "9bd0fd07963cc78c5e930609438610072454988d581ae89cc97612312d61cae4",
+    "right": {
+      "issues": [],
+      "reason": "",
+      "run": {
+        "algorithm": "checked-model-output.v1",
+        "artifact_kind": "model_output_run",
+        "checks_digest": "e1dc3c86e4bc8825e26bd5b5de152e235c8f40365115cf1f620ec3009acafd13",
+        "digest": "6a03bf14ea2d3d54c350e00ced9d7e7d4573b644cdf2075ca9643dea121848e0",
+        "draw_count": 0,
+        "draws_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "environment": {
+          "numpy": "2.5.4",
+          "python": "3.12.15",
+          "system": "Darwin arm64"
+        },
+        "first_draws": [],
+        "limitations": [
+          "Frequencies describe the stated factor distributions, not the probability of any outcome in the world; no distribution is inferred from evidence or ranges.",
+          "Distinct factors are independent unless a quantile group states perfectly shared quantiles; no correlation coefficient, covariance or copula is supported.",
+          "Preflight intervals are conservative and not outward-rounded: a support that could reach a zero denominator or a negative ratio target is refused even at probability zero.",
+          "Only explicitly required quantities and quantile-group members are run; original drafts and omitted IDs remain retained.",
+          "Quantity-check preflight uses conservative support enclosures; a reused-factor image may fit when its enclosure does not.",
+          "No bounds are inferred from a unit, source classification or template name."
+        ],
+        "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+        "omitted_quantity_ids": [
+          "bottom_b",
+          "other_customers"
+        ],
+        "range": {
+          "interpretation": "Reviewed source bounds propagated conservatively; no probability distribution or confidence interval.",
+          "kind": "source_interval",
+          "lower": 800000.0,
+          "quantile_algorithm": null,
+          "upper": 1200000.0
+        },
+        "scoped_model": {
+          "formulas": [
+            {
+              "alternative_id": null,
+              "criterion_id": null,
+              "expression": "customers * adoption * price",
+              "id": "bottom_a",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            },
+            {
+              "alternative_id": null,
+              "criterion_id": null,
+              "expression": "total * share",
+              "id": "top_a",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "unit": "money/year"
+            }
+          ],
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "schema_version": 1,
+          "sources": [
+            {
+              "id": "customers",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "independent",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented customers",
+                "reference": "local:invented-customers"
+              },
+              "unit": "customer",
+              "value": 10000.0
+            },
+            {
+              "id": "adoption",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented adoption",
+                "reference": "local:invented-adoption"
+              },
+              "unit": "1",
+              "value": 0.05
+            },
+            {
+              "id": "price",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "self_reported",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented price",
+                "reference": "local:invented-price"
+              },
+              "unit": "money/customer/year",
+              "value": 1200.0
+            },
+            {
+              "id": "total",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented total",
+                "reference": "local:invented-total"
+              },
+              "unit": "money/year",
+              "value": 100000000.0
+            },
+            {
+              "id": "share",
+              "origin": {
+                "kind": "human",
+                "proposed_by": "Illustrative modeller",
+                "tool_id": null,
+                "tool_version": null
+              },
+              "review": {
+                "corrected_value": null,
+                "note": "Reviewed invented assumptions",
+                "reviewed_at": "2026-11-01T12:00:00Z",
+                "reviewer": "Illustrative reviewer",
+                "status": "accepted"
+              },
+              "source": {
+                "classification": "unknown",
+                "date": "2026-11-01",
+                "description": "Invented model input",
+                "location": "",
+                "name": "Invented share",
+                "reference": "local:invented-share"
+              },
+              "unit": "1",
+              "value": 0.01
+            }
+          ],
+          "units": {
+            "customer": {
+              "customer": 1
+            },
+            "money/customer/year": {
+              "customer": -1,
+              "money": 1,
+              "time": -1
+            },
+            "money/year": {
+              "money": 1,
+              "time": -1
+            }
+          }
+        },
+        "scoped_uncertainty": {
+          "distributions": [],
+          "groups": [],
+          "model_digest": "cf7a277caaba0b0020f16620a5446f41c1820fd7f3551fc6c467e8c302ca0ccd",
+          "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+          "schema_version": 1
+        },
+        "seed": null,
+        "source_classifications": {
+          "adoption": "unknown",
+          "customers": "independent",
+          "price": "self_reported",
+          "share": "unknown",
+          "total": "unknown"
+        },
+        "source_project": {
+          "alternatives": [
+            {
+              "id": "a",
+              "metadata": {},
+              "name": "Option A"
+            },
+            {
+              "id": "b",
+              "metadata": {},
+              "name": "Option B"
+            }
+          ],
+          "analysis": {
+            "method": "mavt",
+            "parameters": {},
+            "scenario_id": null,
+            "weight_profile_id": null
+          },
+          "criteria": [
+            {
+              "description": "",
+              "id": "sector",
+              "name": "Sector",
+              "order": 0,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [
+                  "hardware",
+                  "software"
+                ],
+                "lower": null,
+                "type": "categorical",
+                "unit": null,
+                "upper": null
+              },
+              "value_function": {
+                "kind": "qualitative",
+                "mapping": {
+                  "hardware": 0.0,
+                  "software": 1.0
+                }
+              }
+            },
+            {
+              "description": "",
+              "id": "readiness",
+              "name": "Stage",
+              "order": 1,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [
+                  "early",
+                  "ready"
+                ],
+                "lower": null,
+                "type": "ordinal",
+                "unit": null,
+                "upper": null
+              },
+              "value_function": {
+                "kind": "qualitative",
+                "mapping": {
+                  "early": 0.0,
+                  "ready": 1.0
+                }
+              }
+            },
+            {
+              "description": "",
+              "id": "measure",
+              "name": "Reviewed numeric measure",
+              "order": 2,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [],
+                "lower": 0.0,
+                "type": "interval",
+                "unit": "1",
+                "upper": 1.0
+              },
+              "value_function": {
+                "kind": "direct_rating",
+                "max_rating": 1.0,
+                "min_rating": 0.0,
+                "out_of_domain": "error"
+              }
+            },
+            {
+              "description": "",
+              "id": "annual",
+              "name": "Annual reachable quantity",
+              "order": 3,
+              "parent_id": null,
+              "scale": {
+                "anchor_mode": "fixed",
+                "labels": [],
+                "lower": 0.0,
+                "type": "ratio",
+                "unit": "money/year",
+                "upper": 2000000.0
+              },
+              "value_function": {
+                "direction": "increasing",
+                "kind": "linear",
+                "out_of_domain": "error"
+              }
+            }
+          ],
+          "decision_maker": "",
+          "description": "Wholly invented Option A/B proposal review and two market models. Illustrative, not investment advice.",
+          "id": "venture_screening_starter",
+          "performances": [
+            {
+              "alternative_id": "a",
+              "criterion_id": "sector",
+              "value": "hardware"
+            },
+            {
+              "alternative_id": "a",
+              "criterion_id": "readiness",
+              "value": "ready"
+            },
+            {
+              "alternative_id": "a",
+              "criterion_id": "measure",
+              "value": 0.5
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "sector",
+              "value": "hardware"
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "readiness",
+              "value": "ready"
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "measure",
+              "value": 0.5
+            },
+            {
+              "alternative_id": "a",
+              "criterion_id": "annual",
+              "value": 600000.0
+            },
+            {
+              "alternative_id": "b",
+              "criterion_id": "annual",
+              "value": 480000.0
+            }
+          ],
+          "scenarios": [],
+          "schema_version": 1,
+          "title": "Venture screening",
+          "weight_profiles": [
+            {
+              "id": "default",
+              "judgements": {
+                "annual": 60.0,
+                "measure": 40.0,
+                "readiness": 70.0,
+                "sector": 100.0
+              },
+              "method": "swing",
+              "name": "Default"
+            }
+          ]
+        },
+        "specification": {
+          "aggregation": null,
+          "checks": {
+            "checks": [
+              {
+                "id": "adoption_fraction",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "adoption",
+                "quantity_kind": "source",
+                "unit": "1",
+                "upper": 1.0,
+                "upper_inclusive": true
+              },
+              {
+                "id": "positive_price",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "price",
+                "quantity_kind": "source",
+                "unit": "money/customer/year",
+                "upper": null,
+                "upper_inclusive": true
+              },
+              {
+                "id": "customer_count",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "customers",
+                "quantity_kind": "source",
+                "unit": "customer",
+                "upper": null,
+                "upper_inclusive": true
+              },
+              {
+                "id": "output_bounds",
+                "lower": 0.0,
+                "lower_inclusive": true,
+                "quantity_id": "bottom_a",
+                "quantity_kind": "formula",
+                "unit": "money/year",
+                "upper": 2000000.0,
+                "upper_inclusive": true
+              }
+            ],
+            "digest": "e1dc3c86e4bc8825e26bd5b5de152e235c8f40365115cf1f620ec3009acafd13",
+            "model_digest": "fccfbc0896660740ab0c69374be5bfa60c82cef0dc1ffa788d1cf16a7755cbbe",
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative modeller",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+            "review": {
+              "corrected_value": null,
+              "note": "Reviewed invented assumptions",
+              "reviewed_at": "2026-11-01T12:00:00Z",
+              "reviewer": "Illustrative reviewer",
+              "status": "accepted"
+            },
+            "schema_version": 1
+          },
+          "formula_id": "top_a",
+          "id": "top",
+          "label": "Top-down formula",
+          "model": {
+            "formulas": [
+              {
+                "alternative_id": "a",
+                "criterion_id": "annual",
+                "expression": "customers * adoption * price",
+                "id": "bottom_a",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "unit": "money/year"
+              },
+              {
+                "alternative_id": "b",
+                "criterion_id": "annual",
+                "expression": "other_customers * adoption * price",
+                "id": "bottom_b",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "unit": "money/year"
+              },
+              {
+                "alternative_id": null,
+                "criterion_id": null,
+                "expression": "total * share",
+                "id": "top_a",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "unit": "money/year"
+              }
+            ],
+            "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+            "schema_version": 1,
+            "sources": [
+              {
+                "id": "customers",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "independent",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented customers",
+                  "reference": "local:invented-customers"
+                },
+                "unit": "customer",
+                "value": 10000.0
+              },
+              {
+                "id": "adoption",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "unknown",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented adoption",
+                  "reference": "local:invented-adoption"
+                },
+                "unit": "1",
+                "value": 0.05
+              },
+              {
+                "id": "price",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "self_reported",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented price",
+                  "reference": "local:invented-price"
+                },
+                "unit": "money/customer/year",
+                "value": 1200.0
+              },
+              {
+                "id": "other_customers",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "independent",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented other_customers",
+                  "reference": "local:invented-other_customers"
+                },
+                "unit": "customer",
+                "value": 8000.0
+              },
+              {
+                "id": "total",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "unknown",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented total",
+                  "reference": "local:invented-total"
+                },
+                "unit": "money/year",
+                "value": 100000000.0
+              },
+              {
+                "id": "share",
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "source": {
+                  "classification": "unknown",
+                  "date": "2026-11-01",
+                  "description": "Invented model input",
+                  "location": "",
+                  "name": "Invented share",
+                  "reference": "local:invented-share"
+                },
+                "unit": "1",
+                "value": 0.01
+              }
+            ],
+            "units": {
+              "customer": {
+                "customer": 1
+              },
+              "money/customer/year": {
+                "customer": -1,
+                "money": 1,
+                "time": -1
+              },
+              "money/year": {
+                "money": 1,
+                "time": -1
+              }
+            }
+          },
+          "range": {
+            "intervals": [
+              {
+                "factor_id": "total",
+                "lower": 80000000.0,
+                "origin": {
+                  "kind": "human",
+                  "proposed_by": "Illustrative modeller",
+                  "tool_id": null,
+                  "tool_version": null
+                },
+                "review": {
+                  "corrected_value": null,
+                  "note": "Reviewed invented assumptions",
+                  "reviewed_at": "2026-11-01T12:00:00Z",
+                  "reviewer": "Illustrative reviewer",
+                  "status": "accepted"
+                },
+                "unit": "money/year",
+                "upper": 120000000.0
+              }
+            ],
+            "kind": "source_interval"
+          },
+          "scope": {
+            "currency_basis": "Illustrative constant money",
+            "geography": "Illustrative region",
+            "period": "2026",
+            "population": "Illustrative population",
+            "unit": "money/year"
+          },
+          "uncertainty": null
+        },
+        "unit": "money/year",
+        "value": 1000000.0,
+        "version": 1
+      },
+      "status": "completed"
+    },
+    "stale": false
+  },
+  "selection": {
+    "alternative_id": "a",
+    "criterion_id": "annual",
+    "review": {
+      "corrected_value": null,
+      "note": "Reviewed target scope",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "reviewer": "Illustrative reviewer",
+      "status": "accepted"
+    },
+    "side": "right",
+    "target_scope": {
+      "currency_basis": "Illustrative constant money",
+      "geography": "Illustrative region",
+      "period": "2026",
+      "population": "Illustrative population",
+      "unit": "money/year"
+    }
+  },
+  "source_project": {
+    "alternatives": [
+      {
+        "id": "a",
+        "metadata": {},
+        "name": "Option A"
+      },
+      {
+        "id": "b",
+        "metadata": {},
+        "name": "Option B"
+      }
+    ],
+    "analysis": {
+      "method": "mavt",
+      "parameters": {},
+      "scenario_id": null,
+      "weight_profile_id": null
+    },
+    "criteria": [
+      {
+        "description": "",
+        "id": "sector",
+        "name": "Sector",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [
+            "hardware",
+            "software"
+          ],
+          "lower": null,
+          "type": "categorical",
+          "unit": null,
+          "upper": null
+        },
+        "value_function": {
+          "kind": "qualitative",
+          "mapping": {
+            "hardware": 0.0,
+            "software": 1.0
+          }
+        }
+      },
+      {
+        "description": "",
+        "id": "readiness",
+        "name": "Stage",
+        "order": 1,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [
+            "early",
+            "ready"
+          ],
+          "lower": null,
+          "type": "ordinal",
+          "unit": null,
+          "upper": null
+        },
+        "value_function": {
+          "kind": "qualitative",
+          "mapping": {
+            "early": 0.0,
+            "ready": 1.0
+          }
+        }
+      },
+      {
+        "description": "",
+        "id": "measure",
+        "name": "Reviewed numeric measure",
+        "order": 2,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": "1",
+          "upper": 1.0
+        },
+        "value_function": {
+          "kind": "direct_rating",
+          "max_rating": 1.0,
+          "min_rating": 0.0,
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "annual",
+        "name": "Annual reachable quantity",
+        "order": 3,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "ratio",
+          "unit": "money/year",
+          "upper": 2000000.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      }
+    ],
+    "decision_maker": "",
+    "description": "Wholly invented Option A/B proposal review and two market models. Illustrative, not investment advice.",
+    "id": "venture_screening_starter",
+    "performances": [
+      {
+        "alternative_id": "a",
+        "criterion_id": "sector",
+        "value": "hardware"
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "readiness",
+        "value": "ready"
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "measure",
+        "value": 0.5
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "sector",
+        "value": "hardware"
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "readiness",
+        "value": "ready"
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "measure",
+        "value": 0.5
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "annual",
+        "value": 600000.0
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "annual",
+        "value": 480000.0
+      }
+    ],
+    "scenarios": [],
+    "schema_version": 1,
+    "title": "Venture screening",
+    "weight_profiles": [
+      {
+        "id": "default",
+        "judgements": {
+          "annual": 60.0,
+          "measure": 40.0,
+          "readiness": 70.0,
+          "sector": 100.0
+        },
+        "method": "swing",
+        "name": "Default"
+      }
+    ]
+  },
+  "version": 1
+}
