@@ -326,8 +326,9 @@ Every change runs through:
 TypeScript freshness checks were clean; the production build succeeded; the direct wheel and the wheel
 rebuilt from the source distribution were byte-identical; an offline installed-wheel smoke test passed;
 and the 969 recorded method outputs of the bundled examples hash to the same manifest as in
-development. Linux and Windows were not run, the mutation campaign was not re-run on this snapshot, and
-there has been no hosted CI run (see [scope and status](#scope-and-status)).
+development. The hosted CI workflow (Ubuntu 24.04, Python 3.12: the Python, contract, frontend, browser
+and installed-distribution checks) then passed on the published commit. Windows was not run, and the
+mutation campaign was not re-run on this snapshot (see [scope and status](#scope-and-status)).
 
 Every worked example is checked against oracles written independently of the engine: a sorting
 oracle, an exact and a sampling oracle for SMAA-2, a PROMETHEE II oracle that reproduces two published
@@ -351,7 +352,8 @@ What has **not** happened yet, stated plainly:
   agreement between methods that share measurements is not validation.
 - No second person has rated the venture material blind, so no model or classifier has any accuracy
   figure. Runs of local models are recorded as tool-side behaviour only.
-- This tree has had no hosted CI run yet.
+- Hosted CI runs only on Ubuntu 24.04 with Python 3.12 (it passed on this tree on 19 November 2026);
+  macOS was checked by hand and Windows has not been run.
 
 Not yet implemented:
 
