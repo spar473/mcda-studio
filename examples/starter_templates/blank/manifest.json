@@ -1,0 +1,27 @@
+{
+  "artifacts": [
+    {
+      "for_model": null,
+      "id": "project",
+      "kind": "project",
+      "label": "Project",
+      "optional": false,
+      "path": "project.json",
+      "reset_policy": "draft",
+      "schema_version": 1,
+      "sha256": "48c6e09293f7837e930b4fd00e67136bf7022ff823b0be985245287a93ae61b4"
+    }
+  ],
+  "description": "Define your alternatives, criteria, measurements and swing judgements.",
+  "digest": "e848300e730393e08d131e866504e9fd44e614051d188b650cf8df090f5ef270",
+  "id": "blank",
+  "schema_version": 1,
+  "source_example": "invented local starter fixtures",
+  "source_version": "1",
+  "tasks": [
+    "Create alternatives and criteria",
+    "Enter measurements and swing ratings"
+  ],
+  "title": "Blank",
+  "version": "1"
+}

@@ -1,0 +1,182 @@
+{
+  "$id": "classifier-agreement-report-v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "agreement": {
+      "required": [
+        "statistic",
+        "kappa",
+        "coverage",
+        "bootstrap",
+        "passed",
+        "refusal_reasons"
+      ],
+      "type": "object"
+    },
+    "algorithm": {
+      "const": "classifier-agreement.v1"
+    },
+    "arithmetic": {
+      "type": "object"
+    },
+    "digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "eligibility": {
+      "additionalProperties": false,
+      "properties": {
+        "excluded": {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "test_ids": {
+          "items": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "excluded",
+        "test_ids"
+      ],
+      "type": "object"
+    },
+    "environment": {
+      "type": "object"
+    },
+    "gate_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "input_digests": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "required": [
+        "manifest",
+        "items",
+        "human_labels",
+        "tool_outputs",
+        "adjudications"
+      ],
+      "type": "object"
+    },
+    "limitations": {
+      "items": {
+        "maxLength": 4000,
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "majority_baseline": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "manifest": {
+      "$ref": "classifier-agreement-manifest-v1.schema.json"
+    },
+    "raw_human_labels": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "complete_panel_reference_coverage": {
+          "type": "object"
+        },
+        "coverage": {
+          "type": "object"
+        },
+        "labels": {
+          "additionalProperties": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "object"
+        },
+        "unresolved_ids": {
+          "items": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "complete_panel_reference_coverage",
+        "coverage",
+        "labels",
+        "unresolved_ids"
+      ],
+      "type": "object"
+    },
+    "script_digest": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "reference accepted",
+        "reference unresolved",
+        "reference refused"
+      ]
+    },
+    "tools": {
+      "anyOf": [
+        {
+          "items": {
+            "type": "object"
+          },
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "agreement",
+    "algorithm",
+    "arithmetic",
+    "digest",
+    "eligibility",
+    "environment",
+    "gate_digest",
+    "input_digests",
+    "limitations",
+    "majority_baseline",
+    "manifest",
+    "raw_human_labels",
+    "reference",
+    "script_digest",
+    "status",
+    "tools",
+    "version"
+  ],
+  "title": "Classifier agreement benchmark sealed report, version 1",
+  "type": "object"
+}

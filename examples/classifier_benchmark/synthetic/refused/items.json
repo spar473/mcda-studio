@@ -1,0 +1,1802 @@
+[
+  {
+    "eligible": true,
+    "entity_id": "train_group_000",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_000",
+    "id": "train_000",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_000",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_000",
+    "id": "train_001",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_001",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_001",
+    "id": "train_002",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_001",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_001",
+    "id": "train_003",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_002",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_002",
+    "id": "train_004",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_002",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_002",
+    "id": "train_005",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_003",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_003",
+    "id": "train_006",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_003",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_003",
+    "id": "train_007",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_004",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_004",
+    "id": "train_008",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_004",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_004",
+    "id": "train_009",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_005",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_005",
+    "id": "train_010",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_005",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_005",
+    "id": "train_011",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_006",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_006",
+    "id": "train_012",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_006",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_006",
+    "id": "train_013",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_007",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_007",
+    "id": "train_014",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_007",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_007",
+    "id": "train_015",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_008",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_008",
+    "id": "train_016",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_008",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_008",
+    "id": "train_017",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_009",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_009",
+    "id": "train_018",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "train_group_009",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "train_group_009",
+    "id": "train_019",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "train"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_000",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_000",
+    "id": "development_000",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_000",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_000",
+    "id": "development_001",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_001",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_001",
+    "id": "development_002",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_001",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_001",
+    "id": "development_003",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_002",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_002",
+    "id": "development_004",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_002",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_002",
+    "id": "development_005",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_003",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_003",
+    "id": "development_006",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_003",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_003",
+    "id": "development_007",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_004",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_004",
+    "id": "development_008",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "development_group_004",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "development_group_004",
+    "id": "development_009",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "development"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_000",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_000",
+    "id": "test_000",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_000",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_000",
+    "id": "test_001",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_001",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_001",
+    "id": "test_002",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_001",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_001",
+    "id": "test_003",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_002",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_002",
+    "id": "test_004",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_002",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_002",
+    "id": "test_005",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_003",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_003",
+    "id": "test_006",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_003",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_003",
+    "id": "test_007",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_004",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_004",
+    "id": "test_008",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_004",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_004",
+    "id": "test_009",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_005",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_005",
+    "id": "test_010",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_005",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_005",
+    "id": "test_011",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_006",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_006",
+    "id": "test_012",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_006",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_006",
+    "id": "test_013",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_007",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_007",
+    "id": "test_014",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_007",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_007",
+    "id": "test_015",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_008",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_008",
+    "id": "test_016",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_008",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_008",
+    "id": "test_017",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_009",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_009",
+    "id": "test_018",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_009",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_009",
+    "id": "test_019",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_010",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_010",
+    "id": "test_020",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_010",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_010",
+    "id": "test_021",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_011",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_011",
+    "id": "test_022",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_011",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_011",
+    "id": "test_023",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_012",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_012",
+    "id": "test_024",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_012",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_012",
+    "id": "test_025",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_013",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_013",
+    "id": "test_026",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_013",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_013",
+    "id": "test_027",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_014",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_014",
+    "id": "test_028",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_014",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_014",
+    "id": "test_029",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_015",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_015",
+    "id": "test_030",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_015",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_015",
+    "id": "test_031",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_016",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_016",
+    "id": "test_032",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_016",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_016",
+    "id": "test_033",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_017",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_017",
+    "id": "test_034",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_017",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_017",
+    "id": "test_035",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_018",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_018",
+    "id": "test_036",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_018",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_018",
+    "id": "test_037",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_019",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_019",
+    "id": "test_038",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_019",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_019",
+    "id": "test_039",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_020",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_020",
+    "id": "test_040",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_020",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_020",
+    "id": "test_041",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_021",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_021",
+    "id": "test_042",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_021",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_021",
+    "id": "test_043",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_022",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_022",
+    "id": "test_044",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_022",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_022",
+    "id": "test_045",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_023",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_023",
+    "id": "test_046",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_023",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_023",
+    "id": "test_047",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_024",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_024",
+    "id": "test_048",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_024",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_024",
+    "id": "test_049",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_025",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_025",
+    "id": "test_050",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_025",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_025",
+    "id": "test_051",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_026",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_026",
+    "id": "test_052",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_026",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_026",
+    "id": "test_053",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_027",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_027",
+    "id": "test_054",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_027",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_027",
+    "id": "test_055",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_028",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_028",
+    "id": "test_056",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_028",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_028",
+    "id": "test_057",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_029",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_029",
+    "id": "test_058",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_029",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_029",
+    "id": "test_059",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_030",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_030",
+    "id": "test_060",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_030",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_030",
+    "id": "test_061",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_031",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_031",
+    "id": "test_062",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_031",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_031",
+    "id": "test_063",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_032",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_032",
+    "id": "test_064",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_032",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_032",
+    "id": "test_065",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_033",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_033",
+    "id": "test_066",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_033",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_033",
+    "id": "test_067",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_034",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_034",
+    "id": "test_068",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_034",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_034",
+    "id": "test_069",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_035",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_035",
+    "id": "test_070",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_035",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_035",
+    "id": "test_071",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_036",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_036",
+    "id": "test_072",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_036",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_036",
+    "id": "test_073",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_037",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_037",
+    "id": "test_074",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_037",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_037",
+    "id": "test_075",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_038",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_038",
+    "id": "test_076",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_038",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_038",
+    "id": "test_077",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_039",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_039",
+    "id": "test_078",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_039",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_039",
+    "id": "test_079",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_040",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_040",
+    "id": "test_080",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_040",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_040",
+    "id": "test_081",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_041",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_041",
+    "id": "test_082",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_041",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_041",
+    "id": "test_083",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_042",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_042",
+    "id": "test_084",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_042",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_042",
+    "id": "test_085",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_043",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_043",
+    "id": "test_086",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_043",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_043",
+    "id": "test_087",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_044",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_044",
+    "id": "test_088",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_044",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_044",
+    "id": "test_089",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_045",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_045",
+    "id": "test_090",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_045",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_045",
+    "id": "test_091",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_046",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_046",
+    "id": "test_092",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_046",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_046",
+    "id": "test_093",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_047",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_047",
+    "id": "test_094",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_047",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_047",
+    "id": "test_095",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_048",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_048",
+    "id": "test_096",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_048",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_048",
+    "id": "test_097",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_049",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_049",
+    "id": "test_098",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_049",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_049",
+    "id": "test_099",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_050",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_050",
+    "id": "test_100",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_050",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_050",
+    "id": "test_101",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_051",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_051",
+    "id": "test_102",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_051",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_051",
+    "id": "test_103",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_052",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_052",
+    "id": "test_104",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_052",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_052",
+    "id": "test_105",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_053",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_053",
+    "id": "test_106",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_053",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_053",
+    "id": "test_107",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_054",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_054",
+    "id": "test_108",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_054",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_054",
+    "id": "test_109",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_055",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_055",
+    "id": "test_110",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_055",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_055",
+    "id": "test_111",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_056",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_056",
+    "id": "test_112",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_056",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_056",
+    "id": "test_113",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_057",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_057",
+    "id": "test_114",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_057",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_057",
+    "id": "test_115",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_058",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_058",
+    "id": "test_116",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_058",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_058",
+    "id": "test_117",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_059",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_059",
+    "id": "test_118",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  },
+  {
+    "eligible": true,
+    "entity_id": "test_group_059",
+    "exclusion_reason": "",
+    "feature_dates": {
+      "invented_input": "2026-09-01T00:00:00Z"
+    },
+    "group_id": "test_group_059",
+    "id": "test_119",
+    "observed_at": "2026-09-01T00:00:00Z",
+    "split": "test"
+  }
+]

@@ -1,0 +1,537 @@
+{
+  "alternatives": [
+    {
+      "id": "option_a",
+      "metadata": {},
+      "name": "Option A"
+    },
+    {
+      "id": "option_b",
+      "metadata": {},
+      "name": "Option B"
+    },
+    {
+      "id": "option_c",
+      "metadata": {},
+      "name": "Option C"
+    },
+    {
+      "id": "option_d",
+      "metadata": {},
+      "name": "Option D"
+    },
+    {
+      "id": "option_e",
+      "metadata": {},
+      "name": "Option E"
+    }
+  ],
+  "analysis": {
+    "method": "mavt",
+    "parameters": {},
+    "scenario_id": null,
+    "weight_profile_id": null
+  },
+  "criteria": [
+    {
+      "description": "",
+      "id": "cost",
+      "name": "Cost",
+      "order": 0,
+      "parent_id": null,
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "unit_price",
+      "name": "Unit price",
+      "order": 0,
+      "parent_id": "cost",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 20.0,
+        "type": "ratio",
+        "unit": "NZD",
+        "upper": 60.0
+      },
+      "value_function": {
+        "direction": "decreasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "logistics_cost",
+      "name": "Logistics cost",
+      "order": 1,
+      "parent_id": "cost",
+      "scale": {
+        "anchor_mode": "local",
+        "labels": [],
+        "lower": null,
+        "type": "ratio",
+        "unit": "NZD/unit",
+        "upper": null
+      },
+      "value_function": {
+        "direction": "decreasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "performance",
+      "name": "Performance",
+      "order": 1,
+      "parent_id": null,
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "quality",
+      "name": "Quality",
+      "order": 0,
+      "parent_id": "performance",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "defect_rate",
+      "name": "Defect rate",
+      "order": 0,
+      "parent_id": "quality",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "ratio",
+        "unit": "%",
+        "upper": 10.0
+      },
+      "value_function": {
+        "kind": "piecewise_linear",
+        "out_of_domain": "error",
+        "points": [
+          {
+            "value": 1.0,
+            "x": 0.0
+          },
+          {
+            "value": 0.9,
+            "x": 1.0
+          },
+          {
+            "value": 0.5,
+            "x": 3.0
+          },
+          {
+            "value": 0.0,
+            "x": 8.0
+          }
+        ]
+      }
+    },
+    {
+      "description": "",
+      "id": "certification",
+      "name": "Certification",
+      "order": 1,
+      "parent_id": "quality",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [
+          "none",
+          "iso9001",
+          "iso9001_14001"
+        ],
+        "lower": null,
+        "type": "ordinal",
+        "unit": null,
+        "upper": null
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "iso9001": 0.55,
+          "iso9001_14001": 1.0,
+          "none": 0.0
+        }
+      }
+    },
+    {
+      "description": "",
+      "id": "delivery",
+      "name": "Delivery",
+      "order": 1,
+      "parent_id": "performance",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "on_time",
+      "name": "On-time delivery",
+      "order": 0,
+      "parent_id": "delivery",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 70.0,
+        "type": "ratio",
+        "unit": "%",
+        "upper": 100.0
+      },
+      "value_function": {
+        "direction": "increasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "lead_time",
+      "name": "Lead time",
+      "order": 1,
+      "parent_id": "delivery",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 3.0,
+        "type": "ratio",
+        "unit": "days",
+        "upper": 30.0
+      },
+      "value_function": {
+        "direction": "decreasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "risk",
+      "name": "Risk",
+      "order": 2,
+      "parent_id": null,
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "financial_stability",
+      "name": "Financial stability",
+      "order": 0,
+      "parent_id": "risk",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "interval",
+        "unit": null,
+        "upper": 100.0
+      },
+      "value_function": {
+        "kind": "direct_rating",
+        "max_rating": 100.0,
+        "min_rating": 0.0,
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "region",
+      "name": "Sourcing region",
+      "order": 1,
+      "parent_id": "risk",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [
+          "overseas",
+          "regional",
+          "domestic"
+        ],
+        "lower": null,
+        "type": "categorical",
+        "unit": null,
+        "upper": null
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "domestic": 1.0,
+          "overseas": 0.0,
+          "regional": 0.5
+        }
+      }
+    }
+  ],
+  "decision_maker": "Illustrative analyst",
+  "description": "Wholly invented inputs for reviewing a decision workflow.",
+  "id": "supplier_selection_starter",
+  "performances": [
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "unit_price",
+      "value": 42.0
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "logistics_cost",
+      "value": 1.8
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "defect_rate",
+      "value": 1.2
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "certification",
+      "value": "iso9001_14001"
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "on_time",
+      "value": 96.0
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "lead_time",
+      "value": 7.0
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "financial_stability",
+      "value": 80.0
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "region",
+      "value": "domestic"
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "unit_price",
+      "value": 35.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "logistics_cost",
+      "value": 3.5
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "defect_rate",
+      "value": 3.1
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "certification",
+      "value": "iso9001"
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "on_time",
+      "value": 91.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "lead_time",
+      "value": 12.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "financial_stability",
+      "value": 65.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "region",
+      "value": "regional"
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "unit_price",
+      "value": 28.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "logistics_cost",
+      "value": 5.9
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "defect_rate",
+      "value": 6.4
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "certification",
+      "value": "none"
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "on_time",
+      "value": 82.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "lead_time",
+      "value": 21.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "financial_stability",
+      "value": 45.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "region",
+      "value": "overseas"
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "unit_price",
+      "value": 51.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "logistics_cost",
+      "value": 1.1
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "defect_rate",
+      "value": 0.8
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "certification",
+      "value": "iso9001_14001"
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "on_time",
+      "value": 99.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "lead_time",
+      "value": 4.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "financial_stability",
+      "value": 90.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "region",
+      "value": "domestic"
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "unit_price",
+      "value": 38.0
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "logistics_cost",
+      "value": 2.7
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "defect_rate",
+      "value": 2.2
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "certification",
+      "value": "iso9001"
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "on_time",
+      "value": 88.0
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "lead_time",
+      "value": 9.0
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "financial_stability",
+      "value": 70.0
+    },
+    {
+      "alternative_id": "option_e",
+      "criterion_id": "region",
+      "value": "regional"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "linear_defects",
+      "name": "Defect rate as linear (0-10 %)",
+      "value_function_overrides": {
+        "defect_rate": {
+          "direction": "decreasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      "weight_profile_id": null
+    }
+  ],
+  "schema_version": 1,
+  "title": "Supplier selection",
+  "weight_profiles": [
+    {
+      "id": "default",
+      "judgements": {
+        "certification": 30.0,
+        "cost": 100.0,
+        "defect_rate": 100.0,
+        "delivery": 80.0,
+        "financial_stability": 100.0,
+        "lead_time": 60.0,
+        "logistics_cost": 40.0,
+        "on_time": 100.0,
+        "performance": 90.0,
+        "quality": 100.0,
+        "region": 25.0,
+        "risk": 50.0,
+        "unit_price": 100.0
+      },
+      "method": "swing",
+      "name": "Default"
+    },
+    {
+      "id": "cost_focus",
+      "judgements": {
+        "certification": 30.0,
+        "cost": 100.0,
+        "defect_rate": 100.0,
+        "delivery": 80.0,
+        "financial_stability": 100.0,
+        "lead_time": 60.0,
+        "logistics_cost": 40.0,
+        "on_time": 100.0,
+        "performance": 40.0,
+        "quality": 100.0,
+        "region": 25.0,
+        "risk": 20.0,
+        "unit_price": 100.0
+      },
+      "method": "swing",
+      "name": "Cost focus"
+    }
+  ]
+}

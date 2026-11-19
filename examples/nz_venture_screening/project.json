@@ -1,0 +1,3226 @@
+{
+  "schema_version": 6,
+  "id": "nz_venture_screening_study",
+  "title": "Venture screening: NZ startups for due diligence (public information)",
+  "description": "Which early-stage New Zealand startups should a hypothetical generalist seed/Series A fund prioritise for its next due-diligence slots? Eight real companies, public information as of 4 November 2026, rated by the study author against written rubrics. A screening and prioritisation model: not investment advice, not a prediction of success; the companies were not contacted and are not affiliated.",
+  "decision_maker": "Hypothetical fund partners (Technical/IP-led and Commercial/traction-led)",
+  "alternatives": [
+    {
+      "id": "captivate",
+      "name": "Captivate Technology",
+      "metadata": {}
+    },
+    {
+      "id": "wellumio",
+      "name": "Wellumio",
+      "metadata": {}
+    },
+    {
+      "id": "scentian_bio",
+      "name": "Scentian Bio",
+      "metadata": {}
+    },
+    {
+      "id": "hectre",
+      "name": "Hectre",
+      "metadata": {}
+    },
+    {
+      "id": "wych",
+      "name": "Wych",
+      "metadata": {}
+    },
+    {
+      "id": "upstock",
+      "name": "Upstock",
+      "metadata": {}
+    },
+    {
+      "id": "kea_aerospace",
+      "name": "Kea Aerospace",
+      "metadata": {}
+    },
+    {
+      "id": "hnry",
+      "name": "Hnry",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "mandate",
+      "name": "Mandate (screened, not scored)",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "team",
+      "name": "Team",
+      "parent_id": null,
+      "order": 1,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "problem_solution",
+      "name": "Problem and solution",
+      "parent_id": null,
+      "order": 2,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "market",
+      "name": "Market",
+      "parent_id": null,
+      "order": 3,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "traction",
+      "name": "Traction",
+      "parent_id": null,
+      "order": 4,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "hq_country",
+      "name": "HQ country",
+      "parent_id": "mandate",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "categorical",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Other",
+          "Australia",
+          "New Zealand"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Other": 0.0,
+          "Australia": 0.0,
+          "New Zealand": 1.0
+        }
+      }
+    },
+    {
+      "id": "stage",
+      "name": "Stage",
+      "parent_id": "mandate",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Pre-seed",
+          "Seed",
+          "Series A",
+          "Series B or later"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Pre-seed": 0.0,
+          "Seed": 0.3333333333333333,
+          "Series A": 0.6666666666666666,
+          "Series B or later": 1.0
+        }
+      }
+    },
+    {
+      "id": "sector",
+      "name": "Sector",
+      "parent_id": "mandate",
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "categorical",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Other",
+          "Climate and energy",
+          "Health and medtech",
+          "Agritech and food",
+          "Fintech and B2B software",
+          "Space and advanced hardware",
+          "Consumer and marketplaces"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Other": 0.0,
+          "Climate and energy": 1.0,
+          "Health and medtech": 1.0,
+          "Agritech and food": 1.0,
+          "Fintech and B2B software": 1.0,
+          "Space and advanced hardware": 1.0,
+          "Consumer and marketplaces": 1.0
+        }
+      }
+    },
+    {
+      "id": "founder_problem_fit",
+      "name": "Founder-problem expertise",
+      "parent_id": "team",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "No public evidence",
+          "Adjacent experience",
+          "3+ years in the domain",
+          "Recognised domain expert",
+          "Core inventor with commercial experience"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "No public evidence": 0.0,
+          "Adjacent experience": 0.25,
+          "3+ years in the domain": 0.5,
+          "Recognised domain expert": 0.75,
+          "Core inventor with commercial experience": 1.0
+        }
+      }
+    },
+    {
+      "id": "team_completeness",
+      "name": "Team completeness",
+      "parent_id": "team",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "One key role named",
+          "Two key roles named",
+          "All three, one part-time",
+          "All three full-time",
+          "Next-stage leads named"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "One key role named": 0.0,
+          "Two key roles named": 0.25,
+          "All three, one part-time": 0.5,
+          "All three full-time": 0.75,
+          "Next-stage leads named": 1.0
+        }
+      }
+    },
+    {
+      "id": "track_record",
+      "name": "Prior venture or operating track record",
+      "parent_id": "team",
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "None public",
+          "Prior venture or 5+ years operating",
+          "Senior role at scale or funded venture",
+          "Prior exit or scaled-company executive",
+          "Several founders at that level"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "None public": 0.0,
+          "Prior venture or 5+ years operating": 0.25,
+          "Senior role at scale or funded venture": 0.5,
+          "Prior exit or scaled-company executive": 0.75,
+          "Several founders at that level": 1.0
+        }
+      }
+    },
+    {
+      "id": "board_advisors",
+      "name": "Advisors, board and key hires",
+      "parent_id": "team",
+      "order": 3,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "None named",
+          "Named, not domain-relevant",
+          "Independent chair or domain advisor",
+          "Sector and investor directors",
+          "Directors plus senior industry hire"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "None named": 0.0,
+          "Named, not domain-relevant": 0.25,
+          "Independent chair or domain advisor": 0.5,
+          "Sector and investor directors": 0.75,
+          "Directors plus senior industry hire": 1.0
+        }
+      }
+    },
+    {
+      "id": "problem_severity",
+      "name": "Problem severity and willingness to pay",
+      "parent_id": "problem_solution",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Company statement only",
+          "Independently confirmed",
+          "Cost independently quantified",
+          "Quantified with a budget holder",
+          "Customers already pay for a substitute"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Company statement only": 0.0,
+          "Independently confirmed": 0.25,
+          "Cost independently quantified": 0.5,
+          "Quantified with a budget holder": 0.75,
+          "Customers already pay for a substitute": 1.0
+        }
+      }
+    },
+    {
+      "id": "defensibility",
+      "name": "Differentiation and defensibility",
+      "parent_id": "problem_solution",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "None stated",
+          "Claimed, no protectable asset",
+          "Filed patent or proprietary data",
+          "Granted patent or exclusive licence",
+          "Granted IP plus compounding advantage"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "None stated": 0.0,
+          "Claimed, no protectable asset": 0.25,
+          "Filed patent or proprietary data": 0.5,
+          "Granted patent or exclusive licence": 0.75,
+          "Granted IP plus compounding advantage": 1.0
+        }
+      }
+    },
+    {
+      "id": "readiness",
+      "name": "Product or technology readiness",
+      "parent_id": "problem_solution",
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Concept",
+          "Prototype",
+          "Pilot-ready",
+          "Commercial"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Concept": 0.0,
+          "Prototype": 0.3333333333333333,
+          "Pilot-ready": 0.6666666666666666,
+          "Commercial": 1.0
+        }
+      }
+    },
+    {
+      "id": "regulatory_burden",
+      "name": "Regulatory and certification burden (minimise)",
+      "parent_id": "problem_solution",
+      "order": 3,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Approval required, not started",
+          "Approval required, under way",
+          "Approved in one market or certification only",
+          "No approval required"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Approval required, not started": 0.0,
+          "Approval required, under way": 0.3333333333333333,
+          "Approved in one market or certification only": 0.6666666666666666,
+          "No approval required": 1.0
+        }
+      }
+    },
+    {
+      "id": "market_size",
+      "name": "Addressable market size",
+      "parent_id": "market",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "US$ bn",
+        "lower": 0.01,
+        "upper": 200.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "piecewise_linear",
+        "points": [
+          {
+            "x": 0.01,
+            "value": 0.0
+          },
+          {
+            "x": 0.1,
+            "value": 0.15
+          },
+          {
+            "x": 1.0,
+            "value": 0.35
+          },
+          {
+            "x": 5.0,
+            "value": 0.65
+          },
+          {
+            "x": 25.0,
+            "value": 0.9
+          },
+          {
+            "x": 200.0,
+            "value": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "market_growth",
+      "name": "Market growth",
+      "parent_id": "market",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "% CAGR",
+        "lower": 0.0,
+        "upper": 40.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    },
+    {
+      "id": "competitive_intensity",
+      "name": "Competitive intensity (minimise)",
+      "parent_id": "market",
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Several funded leaders",
+          "One or two funded leaders",
+          "Unfunded direct competitors",
+          "No direct competitor identified"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Several funded leaders": 0.0,
+          "One or two funded leaders": 0.3333333333333333,
+          "Unfunded direct competitors": 0.6666666666666666,
+          "No direct competitor identified": 1.0
+        }
+      }
+    },
+    {
+      "id": "route_to_market",
+      "name": "Route to global markets",
+      "parent_id": "market",
+      "order": 3,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "No offshore route stated",
+          "Offshore markets named",
+          "Offshore process under way",
+          "Offshore approval or entity",
+          "Operating in 2+ offshore markets"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "No offshore route stated": 0.0,
+          "Offshore markets named": 0.25,
+          "Offshore process under way": 0.5,
+          "Offshore approval or entity": 0.75,
+          "Operating in 2+ offshore markets": 1.0
+        }
+      }
+    },
+    {
+      "id": "customer_validation",
+      "name": "Customer validation",
+      "parent_id": "traction",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Company claim only",
+          "Unpaid trial",
+          "Paid pilot",
+          "Production customers"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Company claim only": 0.0,
+          "Unpaid trial": 0.3333333333333333,
+          "Paid pilot": 0.6666666666666666,
+          "Production customers": 1.0
+        }
+      }
+    },
+    {
+      "id": "commercial_stage",
+      "name": "Commercial stage",
+      "parent_id": "traction",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "Pre-revenue",
+          "First revenue",
+          "Repeatable revenue",
+          "Scaling"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "Pre-revenue": 0.0,
+          "First revenue": 0.3333333333333333,
+          "Repeatable revenue": 0.6666666666666666,
+          "Scaling": 1.0
+        }
+      }
+    },
+    {
+      "id": "partnerships",
+      "name": "Strategic partnerships and channels",
+      "parent_id": "traction",
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "None public",
+          "MoU or research collaboration",
+          "Partner in an active programme",
+          "Commercial agreement with an established firm",
+          "Two or more commercial agreements"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "None public": 0.0,
+          "MoU or research collaboration": 0.25,
+          "Partner in an active programme": 0.5,
+          "Commercial agreement with an established firm": 0.75,
+          "Two or more commercial agreements": 1.0
+        }
+      }
+    },
+    {
+      "id": "milestone_delivery",
+      "name": "Milestone delivery",
+      "parent_id": "traction",
+      "order": 3,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "No dated public milestone",
+          "Announced, none yet due",
+          "Delivered, some late or missed",
+          "Delivered on or near plan",
+          "Two or more delivered on plan"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "No dated public milestone": 0.0,
+          "Announced, none yet due": 0.25,
+          "Delivered, some late or missed": 0.5,
+          "Delivered on or near plan": 0.75,
+          "Two or more delivered on plan": 1.0
+        }
+      }
+    }
+  ],
+  "performances": [
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "stage",
+      "value": "Seed"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "sector",
+      "value": "Climate and energy"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "founder_problem_fit",
+      "value": "Recognised domain expert"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "team_completeness",
+      "value": "All three, one part-time"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "track_record",
+      "value": "Senior role at scale or funded venture"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "defensibility",
+      "value": "Filed patent or proprietary data"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "readiness",
+      "value": "Pilot-ready"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "route_to_market",
+      "value": "Offshore process under way"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "customer_validation",
+      "value": "Unpaid trial"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "commercial_stage",
+      "value": "Pre-revenue"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered, some late or missed"
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "market_size",
+      "value": 5.325
+    },
+    {
+      "alternative_id": "captivate",
+      "criterion_id": "market_growth",
+      "value": 14.95
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "stage",
+      "value": "Seed"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "sector",
+      "value": "Health and medtech"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "founder_problem_fit",
+      "value": "Recognised domain expert"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "team_completeness",
+      "value": "Next-stage leads named"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "track_record",
+      "value": "Senior role at scale or funded venture"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "problem_severity",
+      "value": "Cost independently quantified"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "defensibility",
+      "value": "Granted patent or exclusive licence"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "readiness",
+      "value": "Pilot-ready"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "regulatory_burden",
+      "value": "Approval required, under way"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "customer_validation",
+      "value": "Unpaid trial"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "commercial_stage",
+      "value": "Pre-revenue"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan"
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "market_size",
+      "value": 3.245
+    },
+    {
+      "alternative_id": "wellumio",
+      "criterion_id": "market_growth",
+      "value": 6.375
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "stage",
+      "value": "Seed"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "sector",
+      "value": "Agritech and food"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "founder_problem_fit",
+      "value": "Recognised domain expert"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "team_completeness",
+      "value": "Two key roles named"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "track_record",
+      "value": "Prior exit or scaled-company executive"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "defensibility",
+      "value": "Filed patent or proprietary data"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "readiness",
+      "value": "Pilot-ready"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "route_to_market",
+      "value": "Offshore markets named"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "customer_validation",
+      "value": "Paid pilot"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "commercial_stage",
+      "value": "First revenue"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "milestone_delivery",
+      "value": "Announced, none yet due"
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "market_size",
+      "value": 0.86314
+    },
+    {
+      "alternative_id": "scentian_bio",
+      "criterion_id": "market_growth",
+      "value": 11.18
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "stage",
+      "value": "Series A"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "sector",
+      "value": "Agritech and food"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "team_completeness",
+      "value": "All three full-time"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "track_record",
+      "value": "Prior exit or scaled-company executive"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "board_advisors",
+      "value": "None named"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "problem_severity",
+      "value": "Company statement only"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "defensibility",
+      "value": "Filed patent or proprietary data"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "readiness",
+      "value": "Commercial"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "customer_validation",
+      "value": "Production customers"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "commercial_stage",
+      "value": "Scaling"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "partnerships",
+      "value": "None public"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan"
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "market_size",
+      "value": 1.26
+    },
+    {
+      "alternative_id": "hectre",
+      "criterion_id": "market_growth",
+      "value": 7.12
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "stage",
+      "value": "Seed"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "sector",
+      "value": "Fintech and B2B software"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "team_completeness",
+      "value": "One key role named"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "track_record",
+      "value": "Prior venture or 5+ years operating"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "board_advisors",
+      "value": "None named"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "readiness",
+      "value": "Commercial"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "regulatory_burden",
+      "value": "Approved in one market or certification only"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "competitive_intensity",
+      "value": "Unfunded direct competitors"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "customer_validation",
+      "value": "Production customers"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "commercial_stage",
+      "value": "Repeatable revenue"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "partnerships",
+      "value": "Commercial agreement with an established firm"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan"
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "market_size",
+      "value": 35.72
+    },
+    {
+      "alternative_id": "wych",
+      "criterion_id": "market_growth",
+      "value": 22.8
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "stage",
+      "value": "Seed"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "sector",
+      "value": "Consumer and marketplaces"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "team_completeness",
+      "value": "All three, one part-time"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "track_record",
+      "value": "Several founders at that level"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "board_advisors",
+      "value": "Sector and investor directors"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "problem_severity",
+      "value": "Company statement only"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "readiness",
+      "value": "Commercial"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "customer_validation",
+      "value": "Production customers"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "commercial_stage",
+      "value": "Scaling"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "partnerships",
+      "value": "Commercial agreement with an established firm"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan"
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "market_size",
+      "value": 37.885000000000005
+    },
+    {
+      "alternative_id": "upstock",
+      "criterion_id": "market_growth",
+      "value": 16.85
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "stage",
+      "value": "Series A"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "sector",
+      "value": "Space and advanced hardware"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "team_completeness",
+      "value": "Two key roles named"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "track_record",
+      "value": "Prior exit or scaled-company executive"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "board_advisors",
+      "value": "None named"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "readiness",
+      "value": "Prototype"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "regulatory_burden",
+      "value": "Approval required, under way"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "route_to_market",
+      "value": "Offshore process under way"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "customer_validation",
+      "value": "Unpaid trial"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "commercial_stage",
+      "value": "Pre-revenue"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered, some late or missed"
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "market_size",
+      "value": 1.165
+    },
+    {
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "market_growth",
+      "value": 14.865
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "hq_country",
+      "value": "New Zealand"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "stage",
+      "value": "Series B or later"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "sector",
+      "value": "Fintech and B2B software"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "founder_problem_fit",
+      "value": "Adjacent experience"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "team_completeness",
+      "value": "Two key roles named"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "track_record",
+      "value": "None public"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "readiness",
+      "value": "Commercial"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "regulatory_burden",
+      "value": "Approved in one market or certification only"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "route_to_market",
+      "value": "Operating in 2+ offshore markets"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "customer_validation",
+      "value": "Production customers"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "commercial_stage",
+      "value": "Scaling"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "partnerships",
+      "value": "None public"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan"
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "market_size",
+      "value": 8.91
+    },
+    {
+      "alternative_id": "hnry",
+      "criterion_id": "market_growth",
+      "value": 8.36
+    }
+  ],
+  "weight_profiles": [
+    {
+      "id": "technical_ip",
+      "name": "Technical/IP-led",
+      "method": "swing",
+      "judgements": {
+        "mandate": 0.0,
+        "team": 90.0,
+        "problem_solution": 100.0,
+        "market": 60.0,
+        "traction": 50.0,
+        "hq_country": 100.0,
+        "stage": 100.0,
+        "sector": 100.0,
+        "founder_problem_fit": 100.0,
+        "team_completeness": 70.0,
+        "track_record": 50.0,
+        "board_advisors": 40.0,
+        "problem_severity": 60.0,
+        "defensibility": 100.0,
+        "readiness": 80.0,
+        "regulatory_burden": 50.0,
+        "market_size": 100.0,
+        "market_growth": 60.0,
+        "competitive_intensity": 70.0,
+        "route_to_market": 50.0,
+        "customer_validation": 100.0,
+        "commercial_stage": 50.0,
+        "partnerships": 80.0,
+        "milestone_delivery": 60.0
+      }
+    },
+    {
+      "id": "commercial_traction",
+      "name": "Commercial/traction-led",
+      "method": "swing",
+      "judgements": {
+        "mandate": 0.0,
+        "team": 80.0,
+        "problem_solution": 60.0,
+        "market": 80.0,
+        "traction": 100.0,
+        "hq_country": 100.0,
+        "stage": 100.0,
+        "sector": 100.0,
+        "founder_problem_fit": 80.0,
+        "team_completeness": 100.0,
+        "track_record": 70.0,
+        "board_advisors": 40.0,
+        "problem_severity": 100.0,
+        "defensibility": 70.0,
+        "readiness": 80.0,
+        "regulatory_burden": 60.0,
+        "market_size": 100.0,
+        "market_growth": 70.0,
+        "competitive_intensity": 60.0,
+        "route_to_market": 80.0,
+        "customer_validation": 90.0,
+        "commercial_stage": 100.0,
+        "partnerships": 50.0,
+        "milestone_delivery": 70.0
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "linear_market_size",
+      "name": "Linear market size (same fixed range)",
+      "weight_profile_id": null,
+      "value_function_overrides": {
+        "market_size": {
+          "out_of_domain": "error",
+          "kind": "linear",
+          "direction": "increasing"
+        }
+      }
+    }
+  ],
+  "analysis": {
+    "method": "mavt_sorting",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  },
+  "sorting": {
+    "classes": [
+      {
+        "id": "prioritise_for_diligence",
+        "name": "Prioritise for diligence",
+        "description": "",
+        "lower_boundary": 0.6
+      },
+      {
+        "id": "monitor",
+        "name": "Monitor",
+        "description": "",
+        "lower_boundary": 0.4
+      },
+      {
+        "id": "not_now",
+        "name": "Not now",
+        "description": "",
+        "lower_boundary": null
+      }
+    ],
+    "audit": {
+      "below_class_id": "monitor",
+      "sample_size": 1,
+      "seed": 2026
+    }
+  },
+  "smaa": {
+    "dependence": "independent",
+    "cells": [
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 3.45,
+          "upper": 7.2
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 14.6,
+          "upper": 15.3
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "founder_problem_fit",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "3+ years in the domain",
+            "Recognised domain expert",
+            "Core inventor with commercial experience"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "team_completeness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Two key roles named",
+            "All three, one part-time",
+            "All three full-time"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "track_record",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Prior venture or 5+ years operating",
+            "Senior role at scale or funded venture",
+            "Prior exit or scaled-company executive"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "board_advisors",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Named, not domain-relevant",
+            "Independent chair or domain advisor",
+            "Sector and investor directors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company statement only",
+            "Independently confirmed",
+            "Cost independently quantified"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "defensibility",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Claimed, no protectable asset",
+            "Filed patent or proprietary data",
+            "Granted patent or exclusive licence"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "regulatory_burden",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Approved in one market or certification only",
+            "No approval required"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Several funded leaders",
+            "One or two funded leaders",
+            "Unfunded direct competitors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "customer_validation",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company claim only",
+            "Unpaid trial",
+            "Paid pilot"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "commercial_stage",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Pre-revenue",
+            "First revenue"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "captivate",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Announced, none yet due",
+            "Delivered, some late or missed",
+            "Delivered on or near plan"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 0.47786,
+          "upper": 4.38
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 5.8,
+          "upper": 12.65
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "team_completeness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "All three full-time",
+            "Next-stage leads named"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "track_record",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Prior venture or 5+ years operating",
+            "Senior role at scale or funded venture",
+            "Prior exit or scaled-company executive"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "board_advisors",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Named, not domain-relevant",
+            "Independent chair or domain advisor",
+            "Sector and investor directors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Independently confirmed",
+            "Cost independently quantified",
+            "Quantified with a budget holder"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "readiness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Prototype",
+            "Pilot-ready",
+            "Commercial"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Several funded leaders",
+            "One or two funded leaders",
+            "Unfunded direct competitors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "customer_validation",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company claim only",
+            "Unpaid trial",
+            "Paid pilot"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wellumio",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Delivered, some late or missed",
+            "Delivered on or near plan",
+            "Two or more delivered on plan"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 0.0597,
+          "upper": 44.01
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 9.5,
+          "upper": 18.5
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "team_completeness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "One key role named",
+            "Two key roles named",
+            "All three, one part-time"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "board_advisors",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Named, not domain-relevant",
+            "Independent chair or domain advisor",
+            "Sector and investor directors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company statement only",
+            "Independently confirmed",
+            "Cost independently quantified"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "regulatory_burden",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Approved in one market or certification only",
+            "No approval required"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Several funded leaders",
+            "One or two funded leaders",
+            "Unfunded direct competitors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "route_to_market",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "No offshore route stated",
+            "Offshore markets named",
+            "Offshore process under way"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "commercial_stage",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Pre-revenue",
+            "First revenue",
+            "Repeatable revenue"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "scentian_bio",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "No dated public milestone",
+            "Announced, none yet due",
+            "Delivered, some late or missed"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 0.76252,
+          "upper": 2.1854
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 6.8,
+          "upper": 7.28
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "board_advisors",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None named",
+            "Named, not domain-relevant"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company statement only",
+            "Independently confirmed"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "regulatory_burden",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Approved in one market or certification only",
+            "No approval required"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Several funded leaders",
+            "One or two funded leaders",
+            "Unfunded direct competitors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "route_to_market",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Offshore process under way",
+            "Offshore approval or entity",
+            "Operating in 2+ offshore markets"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "partnerships",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None public",
+            "MoU or research collaboration"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "hectre",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Delivered, some late or missed",
+            "Delivered on or near plan",
+            "Two or more delivered on plan"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 27.85,
+          "upper": 39.8
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 21.0,
+          "upper": 28.2
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "founder_problem_fit",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Adjacent experience",
+            "3+ years in the domain",
+            "Recognised domain expert"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "team_completeness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "One key role named",
+            "Two key roles named"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "track_record",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None public",
+            "Prior venture or 5+ years operating",
+            "Senior role at scale or funded venture"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "board_advisors",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None named",
+            "Named, not domain-relevant"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company statement only",
+            "Independently confirmed",
+            "Cost independently quantified"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "defensibility",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None stated",
+            "Claimed, no protectable asset",
+            "Filed patent or proprietary data"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "One or two funded leaders",
+            "Unfunded direct competitors",
+            "No direct competitor identified"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "commercial_stage",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "First revenue",
+            "Repeatable revenue",
+            "Scaling"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "wych",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Delivered, some late or missed",
+            "Delivered on or near plan",
+            "Two or more delivered on plan"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 28.14,
+          "upper": 47.63
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 16.2,
+          "upper": 17.5
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "team_completeness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Two key roles named",
+            "All three, one part-time",
+            "All three full-time"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company statement only",
+            "Independently confirmed"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "defensibility",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None stated",
+            "Claimed, no protectable asset",
+            "Filed patent or proprietary data"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "regulatory_burden",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Approved in one market or certification only",
+            "No approval required"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Several funded leaders",
+            "One or two funded leaders",
+            "Unfunded direct competitors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "route_to_market",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Offshore process under way",
+            "Offshore approval or entity",
+            "Operating in 2+ offshore markets"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "commercial_stage",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Repeatable revenue",
+            "Scaling"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "upstock",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Delivered, some late or missed",
+            "Delivered on or near plan",
+            "Two or more delivered on plan"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 1.02,
+          "upper": 3.9
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 8.3,
+          "upper": 21.65
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "team_completeness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "One key role named",
+            "Two key roles named",
+            "All three, one part-time"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "board_advisors",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None named",
+            "Named, not domain-relevant"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company statement only",
+            "Independently confirmed",
+            "Cost independently quantified"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "defensibility",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None stated",
+            "Claimed, no protectable asset",
+            "Filed patent or proprietary data"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "regulatory_burden",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Approval required, not started",
+            "Approval required, under way",
+            "Approved in one market or certification only"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Several funded leaders",
+            "One or two funded leaders",
+            "Unfunded direct competitors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "route_to_market",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Offshore markets named",
+            "Offshore process under way",
+            "Offshore approval or entity"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "customer_validation",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company claim only",
+            "Unpaid trial",
+            "Paid pilot"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "commercial_stage",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Pre-revenue",
+            "First revenue"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "kea_aerospace",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Announced, none yet due",
+            "Delivered, some late or missed",
+            "Delivered on or near plan"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "market_size",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 8.22,
+          "upper": 9.6
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "market_growth",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 6.92,
+          "upper": 9.8
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "founder_problem_fit",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "No public evidence",
+            "Adjacent experience",
+            "3+ years in the domain"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "team_completeness",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "One key role named",
+            "Two key roles named",
+            "All three, one part-time"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "track_record",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None public",
+            "Prior venture or 5+ years operating"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "board_advisors",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Named, not domain-relevant",
+            "Independent chair or domain advisor",
+            "Sector and investor directors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "problem_severity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Company statement only",
+            "Independently confirmed",
+            "Cost independently quantified"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "defensibility",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None stated",
+            "Claimed, no protectable asset",
+            "Filed patent or proprietary data"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "regulatory_burden",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Approval required, under way",
+            "Approved in one market or certification only",
+            "No approval required"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "competitive_intensity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Several funded leaders",
+            "One or two funded leaders",
+            "Unfunded direct competitors"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "partnerships",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "None public",
+            "MoU or research collaboration"
+          ],
+          "probabilities": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      {
+        "alternative_id": "hnry",
+        "criterion_id": "milestone_delivery",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "Delivered, some late or missed",
+            "Delivered on or near plan",
+            "Two or more delivered on plan"
+          ],
+          "probabilities": [
+            0.25,
+            0.5,
+            0.25
+          ]
+        }
+      }
+    ],
+    "groups": [
+      {
+        "parent_id": null,
+        "kind": "rating_intervals",
+        "intervals": {
+          "mandate": [
+            0.0,
+            0.0
+          ],
+          "team": [
+            80.0,
+            90.0
+          ],
+          "problem_solution": [
+            60.0,
+            100.0
+          ],
+          "market": [
+            60.0,
+            80.0
+          ],
+          "traction": [
+            50.0,
+            100.0
+          ]
+        }
+      }
+    ],
+    "shared_draws": []
+  },
+  "promethee": {
+    "criteria": [
+      {
+        "criterion_id": "hq_country",
+        "direction": "maximise",
+        "weight": 0.0,
+        "function": {
+          "kind": "usual"
+        },
+        "coding": {
+          "Other": 1.0,
+          "Australia": 2.0,
+          "New Zealand": 3.0
+        }
+      },
+      {
+        "criterion_id": "stage",
+        "direction": "maximise",
+        "weight": 0.0,
+        "function": {
+          "kind": "usual"
+        },
+        "coding": {
+          "Pre-seed": 1.0,
+          "Seed": 2.0,
+          "Series A": 3.0,
+          "Series B or later": 4.0
+        }
+      },
+      {
+        "criterion_id": "sector",
+        "direction": "maximise",
+        "weight": 0.0,
+        "function": {
+          "kind": "usual"
+        },
+        "coding": {
+          "Other": 1.0,
+          "Climate and energy": 2.0,
+          "Health and medtech": 3.0,
+          "Agritech and food": 4.0,
+          "Fintech and B2B software": 5.0,
+          "Space and advanced hardware": 6.0,
+          "Consumer and marketplaces": 7.0
+        }
+      },
+      {
+        "criterion_id": "founder_problem_fit",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "No public evidence": 1.0,
+          "Adjacent experience": 2.0,
+          "3+ years in the domain": 3.0,
+          "Recognised domain expert": 4.0,
+          "Core inventor with commercial experience": 5.0
+        }
+      },
+      {
+        "criterion_id": "team_completeness",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "One key role named": 1.0,
+          "Two key roles named": 2.0,
+          "All three, one part-time": 3.0,
+          "All three full-time": 4.0,
+          "Next-stage leads named": 5.0
+        }
+      },
+      {
+        "criterion_id": "track_record",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "None public": 1.0,
+          "Prior venture or 5+ years operating": 2.0,
+          "Senior role at scale or funded venture": 3.0,
+          "Prior exit or scaled-company executive": 4.0,
+          "Several founders at that level": 5.0
+        }
+      },
+      {
+        "criterion_id": "board_advisors",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "None named": 1.0,
+          "Named, not domain-relevant": 2.0,
+          "Independent chair or domain advisor": 3.0,
+          "Sector and investor directors": 4.0,
+          "Directors plus senior industry hire": 5.0
+        }
+      },
+      {
+        "criterion_id": "problem_severity",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "Company statement only": 1.0,
+          "Independently confirmed": 2.0,
+          "Cost independently quantified": 3.0,
+          "Quantified with a budget holder": 4.0,
+          "Customers already pay for a substitute": 5.0
+        }
+      },
+      {
+        "criterion_id": "defensibility",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "None stated": 1.0,
+          "Claimed, no protectable asset": 2.0,
+          "Filed patent or proprietary data": 3.0,
+          "Granted patent or exclusive licence": 4.0,
+          "Granted IP plus compounding advantage": 5.0
+        }
+      },
+      {
+        "criterion_id": "readiness",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "Concept": 1.0,
+          "Prototype": 2.0,
+          "Pilot-ready": 3.0,
+          "Commercial": 4.0
+        }
+      },
+      {
+        "criterion_id": "regulatory_burden",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "Approval required, not started": 1.0,
+          "Approval required, under way": 2.0,
+          "Approved in one market or certification only": 3.0,
+          "No approval required": 4.0
+        }
+      },
+      {
+        "criterion_id": "market_size",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "linear",
+          "q": 1.0,
+          "p": 20.0
+        }
+      },
+      {
+        "criterion_id": "market_growth",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "linear",
+          "q": 2.0,
+          "p": 10.0
+        }
+      },
+      {
+        "criterion_id": "competitive_intensity",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "Several funded leaders": 1.0,
+          "One or two funded leaders": 2.0,
+          "Unfunded direct competitors": 3.0,
+          "No direct competitor identified": 4.0
+        }
+      },
+      {
+        "criterion_id": "route_to_market",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "No offshore route stated": 1.0,
+          "Offshore markets named": 2.0,
+          "Offshore process under way": 3.0,
+          "Offshore approval or entity": 4.0,
+          "Operating in 2+ offshore markets": 5.0
+        }
+      },
+      {
+        "criterion_id": "customer_validation",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "Company claim only": 1.0,
+          "Unpaid trial": 2.0,
+          "Paid pilot": 3.0,
+          "Production customers": 4.0
+        }
+      },
+      {
+        "criterion_id": "commercial_stage",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "Pre-revenue": 1.0,
+          "First revenue": 2.0,
+          "Repeatable revenue": 3.0,
+          "Scaling": 4.0
+        }
+      },
+      {
+        "criterion_id": "partnerships",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "None public": 1.0,
+          "MoU or research collaboration": 2.0,
+          "Partner in an active programme": 3.0,
+          "Commercial agreement with an established firm": 4.0,
+          "Two or more commercial agreements": 5.0
+        }
+      },
+      {
+        "criterion_id": "milestone_delivery",
+        "direction": "maximise",
+        "weight": 6.25,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "No dated public milestone": 1.0,
+          "Announced, none yet due": 2.0,
+          "Delivered, some late or missed": 3.0,
+          "Delivered on or near plan": 4.0,
+          "Two or more delivered on plan": 5.0
+        }
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "kind": "labels",
+      "id": "hq_in_nz",
+      "name": "Head office in New Zealand",
+      "criterion_id": "hq_country",
+      "allowed": [
+        "New Zealand"
+      ],
+      "rationale": "Fund mandate (hypothetical)."
+    },
+    {
+      "kind": "labels",
+      "id": "stage_at_most_series_a",
+      "name": "Stage at most Series A",
+      "criterion_id": "stage",
+      "allowed": [
+        "Pre-seed",
+        "Seed",
+        "Series A"
+      ],
+      "rationale": "Seed/Series A fund (hypothetical)."
+    },
+    {
+      "kind": "labels",
+      "id": "sector_in_fund_list",
+      "name": "Sector in the fund's list",
+      "criterion_id": "sector",
+      "allowed": [
+        "Climate and energy",
+        "Health and medtech",
+        "Agritech and food",
+        "Fintech and B2B software",
+        "Space and advanced hardware",
+        "Consumer and marketplaces"
+      ],
+      "rationale": "Generalist fund; 'Other' is outside the list."
+    }
+  ]
+}

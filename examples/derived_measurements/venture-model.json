@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "project_fingerprint": "065768abe2daf68fae5b4885053bea2735a98e5df9143dde43460a1d044588a0",
+  "units": {
+    "customers": {
+      "customer": 1
+    },
+    "NZD/customer/year": {
+      "NZD": 1,
+      "customer": -1,
+      "year": -1
+    },
+    "NZD/year": {
+      "NZD": 1,
+      "year": -1
+    }
+  },
+  "sources": [
+    {
+      "id": "addressable_customers",
+      "value": 10000.0,
+      "unit": "customers",
+      "source": {
+        "name": "Synthetic assumption",
+        "reference": "local:illustrative-example",
+        "location": "",
+        "date": "2026-10-31",
+        "description": "Invented data for testing, not market evidence",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Synthetic example author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Synthetic example reviewer",
+        "reviewed_at": "2026-10-31T00:00:00Z",
+        "corrected_value": null,
+        "note": ""
+      }
+    },
+    {
+      "id": "adoption_a",
+      "value": 0.05,
+      "unit": "1",
+      "source": {
+        "name": "Synthetic assumption",
+        "reference": "local:illustrative-example",
+        "location": "",
+        "date": "2026-10-31",
+        "description": "Invented data for testing, not market evidence",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Synthetic example author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Synthetic example reviewer",
+        "reviewed_at": "2026-10-31T00:00:00Z",
+        "corrected_value": null,
+        "note": ""
+      }
+    },
+    {
+      "id": "adoption_b",
+      "value": 0.08,
+      "unit": "1",
+      "source": {
+        "name": "Synthetic assumption",
+        "reference": "local:illustrative-example",
+        "location": "",
+        "date": "2026-10-31",
+        "description": "Invented data for testing, not market evidence",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Synthetic example author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Synthetic example reviewer",
+        "reviewed_at": "2026-10-31T00:00:00Z",
+        "corrected_value": null,
+        "note": ""
+      }
+    },
+    {
+      "id": "annual_price_a",
+      "value": 1200.0,
+      "unit": "NZD/customer/year",
+      "source": {
+        "name": "Synthetic assumption",
+        "reference": "local:illustrative-example",
+        "location": "",
+        "date": "2026-10-31",
+        "description": "Invented data for testing, not market evidence",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Synthetic example author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Synthetic example reviewer",
+        "reviewed_at": "2026-10-31T00:00:00Z",
+        "corrected_value": null,
+        "note": ""
+      }
+    },
+    {
+      "id": "annual_price_b",
+      "value": 800.0,
+      "unit": "NZD/customer/year",
+      "source": {
+        "name": "Synthetic assumption",
+        "reference": "local:illustrative-example",
+        "location": "",
+        "date": "2026-10-31",
+        "description": "Invented data for testing, not market evidence",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Synthetic example author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Synthetic example reviewer",
+        "reviewed_at": "2026-10-31T00:00:00Z",
+        "corrected_value": null,
+        "note": ""
+      }
+    }
+  ],
+  "formulas": [
+    {
+      "id": "market_a",
+      "expression": "addressable_customers * adoption_a * annual_price_a",
+      "unit": "NZD/year",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Synthetic example author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Synthetic example reviewer",
+        "reviewed_at": "2026-10-31T00:00:00Z",
+        "corrected_value": null,
+        "note": ""
+      },
+      "alternative_id": "a",
+      "criterion_id": "result"
+    },
+    {
+      "id": "market_b",
+      "expression": "addressable_customers * adoption_b * annual_price_b",
+      "unit": "NZD/year",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Synthetic example author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Synthetic example reviewer",
+        "reviewed_at": "2026-10-31T00:00:00Z",
+        "corrected_value": null,
+        "note": ""
+      },
+      "alternative_id": "b",
+      "criterion_id": "result"
+    }
+  ]
+}

@@ -1,0 +1,1969 @@
+{
+  "kind": "reference-cases",
+  "version": 1,
+  "id": "nz_first_round_retrospective_cases",
+  "title": "Five first-round snapshots",
+  "description": "Draft, author review pending; rated with hindsight. Five cases are not representative. The cases are the project's own companies: leave a company's own case out (exclude_same_id) to compare it with the other four. Similarity predicts nothing.",
+  "criteria_from": "nz_first_round_retrospective",
+  "cases": [
+    {
+      "id": "vertus_energy",
+      "name": "Vertus Energy",
+      "snapshot_date": "2022-04-25",
+      "context": [
+        {
+          "label": "Round announcement / anchor date",
+          "value": "2021-10-27"
+        },
+        {
+          "label": "Rating window",
+          "value": "2020-10-27 to 2022-04-25 inclusive; earlier own-site captures allowed"
+        }
+      ],
+      "claims": [
+        {
+          "id": "vertus_energy__hq_country",
+          "text": "Mandate: Auckland facilities and a South Auckland demonstration site are described.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__stage",
+          "text": "Mandate: the NZ$1.2m round is explicitly labelled pre-seed.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__sector",
+          "text": "Mandate: BRIO raises biofuel output inside anaerobic digesters.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__founder_problem_fit",
+          "text": "Step 4: Dr Danilo Perez is a biotechnology engineer with over a decade in methane microbial research.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__team_completeness",
+          "text": "Step 2: Howard is COO and Perez and Gonzales provide domain/technical expertise; a separately named commercial lead is not established. The former step-3 draft inferred a part-time role without support.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__problem_severity",
+          "text": "Step 1: the company describes low methane yields and high digester operating costs; its release is not independent confirmation.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__defensibility",
+          "text": "Step 2: BRIO has claimed performance advantages; no filed patent or exclusive licence is identified in this source.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__readiness",
+          "text": "Pilot-ready: funding will expand field pilots; a first demonstration plant is planned for early 2022.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__route_to_market",
+          "text": "Step 2: early discussions with digester operators in the US, Latin America and Europe are reported.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__customer_validation",
+          "text": "Step 1: favourable operator feedback is company-reported; independent validation is planned before securing customers.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__commercial_stage",
+          "text": "Step 1 (draft): the January 2022 account says validation precedes securing local and international customers; no commercial delivery is described.",
+          "source": "vertus_uoa",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__track_record",
+          "text": "Step 2: co-founder Freddy Gonzalez describes an earlier startup attempt ten years before Vertus; no outcome or outside capital is stated.",
+          "source": "vertus_uoa",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__board_advisors",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No director or advisor is named; NOAB Ventures' John Wood is described as an investor bringing energy experience, not as a director or advisor.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__regulatory_burden",
+          "text": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): BRIO is process technology inside anaerobic digesters; no product approval regime is identified in the sources read. Organism or site permits were not researched.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__competitive_intensity",
+          "text": "Judgement: the release compares BRIO with other digester systems on the market; the in-window publisher page names Air Liquide, Wartsila and EnviTec Biogas, all listed, among digester-system leaders. Broad: they build whole plants rather than in-digester boosters.",
+          "source": "vertus_gvr_page",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__partnerships",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Every named organisation is an investor or accelerator; the demonstration farm and research institute are unnamed.",
+          "source": "vertus_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__milestone_delivery",
+          "text": "Step 2: the October release scheduled a first demonstration plant for early 2022; the January account still describes expanding pilots, and no delivery is reported inside the window.",
+          "source": "vertus_uoa",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "vertus_energy__outcome",
+          "text": "A EUR 8.75m seed round led by Energy Capital Ventures was reported.",
+          "source": "vertus_energy__outcome_source",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "criterion_id": "hq_country",
+          "label": "New Zealand",
+          "claim_ids": [
+            "vertus_energy__hq_country"
+          ],
+          "note": "Mandate: Auckland facilities and a South Auckland demonstration site are described."
+        },
+        {
+          "criterion_id": "stage",
+          "label": "Pre-seed",
+          "claim_ids": [
+            "vertus_energy__stage"
+          ],
+          "note": "Mandate: the NZ$1.2m round is explicitly labelled pre-seed."
+        },
+        {
+          "criterion_id": "sector",
+          "label": "Climate and energy",
+          "claim_ids": [
+            "vertus_energy__sector"
+          ],
+          "note": "Mandate: BRIO raises biofuel output inside anaerobic digesters."
+        },
+        {
+          "criterion_id": "founder_problem_fit",
+          "label": "Recognised domain expert",
+          "claim_ids": [
+            "vertus_energy__founder_problem_fit"
+          ],
+          "note": "Step 4: Dr Danilo Perez is a biotechnology engineer with over a decade in methane microbial research."
+        },
+        {
+          "criterion_id": "team_completeness",
+          "label": "Two key roles named",
+          "claim_ids": [
+            "vertus_energy__team_completeness"
+          ],
+          "note": "Step 2: Howard is COO and Perez and Gonzales provide domain/technical expertise; a separately named commercial lead is not established. The former step-3 draft inferred a part-time role without support."
+        },
+        {
+          "criterion_id": "problem_severity",
+          "label": "Company statement only",
+          "claim_ids": [
+            "vertus_energy__problem_severity"
+          ],
+          "note": "Step 1: the company describes low methane yields and high digester operating costs; its release is not independent confirmation."
+        },
+        {
+          "criterion_id": "defensibility",
+          "label": "Claimed, no protectable asset",
+          "claim_ids": [
+            "vertus_energy__defensibility"
+          ],
+          "note": "Step 2: BRIO has claimed performance advantages; no filed patent or exclusive licence is identified in this source."
+        },
+        {
+          "criterion_id": "readiness",
+          "label": "Pilot-ready",
+          "claim_ids": [
+            "vertus_energy__readiness"
+          ],
+          "note": "Pilot-ready: funding will expand field pilots; a first demonstration plant is planned for early 2022."
+        },
+        {
+          "criterion_id": "route_to_market",
+          "label": "Offshore markets named",
+          "claim_ids": [
+            "vertus_energy__route_to_market"
+          ],
+          "note": "Step 2: early discussions with digester operators in the US, Latin America and Europe are reported."
+        },
+        {
+          "criterion_id": "customer_validation",
+          "label": "Company claim only",
+          "claim_ids": [
+            "vertus_energy__customer_validation"
+          ],
+          "note": "Step 1: favourable operator feedback is company-reported; independent validation is planned before securing customers."
+        },
+        {
+          "criterion_id": "commercial_stage",
+          "label": "Pre-revenue",
+          "claim_ids": [
+            "vertus_energy__commercial_stage"
+          ],
+          "note": "Step 1 (draft): the January 2022 account says validation precedes securing local and international customers; no commercial delivery is described."
+        },
+        {
+          "criterion_id": "track_record",
+          "label": "Prior venture or 5+ years operating",
+          "claim_ids": [
+            "vertus_energy__track_record"
+          ],
+          "note": "Step 2: co-founder Freddy Gonzalez describes an earlier startup attempt ten years before Vertus; no outcome or outside capital is stated."
+        },
+        {
+          "criterion_id": "board_advisors",
+          "label": "None named",
+          "claim_ids": [
+            "vertus_energy__board_advisors"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No director or advisor is named; NOAB Ventures' John Wood is described as an investor bringing energy experience, not as a director or advisor."
+        },
+        {
+          "criterion_id": "regulatory_burden",
+          "label": "No approval required",
+          "claim_ids": [
+            "vertus_energy__regulatory_burden"
+          ],
+          "note": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): BRIO is process technology inside anaerobic digesters; no product approval regime is identified in the sources read. Organism or site permits were not researched."
+        },
+        {
+          "criterion_id": "competitive_intensity",
+          "label": "Several funded leaders",
+          "claim_ids": [
+            "vertus_energy__competitive_intensity"
+          ],
+          "note": "Judgement: the release compares BRIO with other digester systems on the market; the in-window publisher page names Air Liquide, Wartsila and EnviTec Biogas, all listed, among digester-system leaders. Broad: they build whole plants rather than in-digester boosters."
+        },
+        {
+          "criterion_id": "partnerships",
+          "label": "None public",
+          "claim_ids": [
+            "vertus_energy__partnerships"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Every named organisation is an investor or accelerator; the demonstration farm and research institute are unnamed."
+        },
+        {
+          "criterion_id": "milestone_delivery",
+          "label": "Announced, none yet due",
+          "claim_ids": [
+            "vertus_energy__milestone_delivery"
+          ],
+          "note": "Step 2: the October release scheduled a first demonstration plant for early 2022; the January account still describes expanding pilots, and no delivery is reported inside the window."
+        }
+      ],
+      "outcome": {
+        "label": "Larger follow-on round raised",
+        "as_of": "2024-06-27",
+        "note": "A EUR 8.75m seed round led by Energy Capital Ventures was reported.",
+        "claim_ids": [
+          "vertus_energy__outcome"
+        ]
+      }
+    },
+    {
+      "id": "croptide",
+      "name": "Croptide",
+      "snapshot_date": "2022-06-12",
+      "context": [
+        {
+          "label": "Round announcement / anchor date",
+          "value": "2021-12-14"
+        },
+        {
+          "label": "Rating window",
+          "value": "2020-12-14 to 2022-06-12 inclusive; earlier own-site captures allowed"
+        }
+      ],
+      "claims": [
+        {
+          "id": "croptide__hq_country",
+          "text": "Mandate: the release places the company in Hawke's Bay, New Zealand.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__stage",
+          "text": "Mandate: the NZ$1m round is explicitly labelled pre-seed.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__sector",
+          "text": "Mandate: plant sensors support irrigation decisions for fruit and wine growers.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__founder_problem_fit",
+          "text": "Step 2: the founders were engineering students; the release does not establish three years in horticulture.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__team_completeness",
+          "text": "Step 2: technical co-founders and commercial director Nick Fitzpatrick are named; no separate domain/regulatory lead is established.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__track_record",
+          "text": "Step 2: Penny previously founded an electric-weeding venture in 2019; Fitzpatrick spent ten years establishing T&G offices. A qualifying senior role at scale is not explicitly established.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__problem_severity",
+          "text": "Step 2: named grower representative David Allen confirms the need, although his quotation is carried in a company release.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__defensibility",
+          "text": "Step 2: a more precise stem-tissue sensing approach is claimed; no filed patent or exclusive licence is named.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__readiness",
+          "text": "Pilot-ready: named growers have signed up for summer trials in three New Zealand regions.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__board_advisors",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No director or advisor is named; Icehouse Ventures, K1W1 and Masfen Group are investors.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__regulatory_burden",
+          "text": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Plant-mounted water sensors and software; no product approval regime is identified.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__competitive_intensity",
+          "text": "Judgement: the in-window publisher page names listed or listed-owned smart-irrigation leaders including The Toro Company, Netafim and Jain Irrigation. Broad: most sell irrigation control rather than stem sensors.",
+          "source": "croptide_mm_page",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__route_to_market",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The eligible release names New Zealand trial regions only; the NZ Herald's paywalled body is not used.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__customer_validation",
+          "text": "Step 2: T&G Global, Pernod Ricard Winemakers, Cloudy Bay, Indevin and Ngai Tukairangi Trust joined summer pilots, with Pernod Ricard quoted; payment is not stated, so the venture study's convention gives an unpaid trial.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__commercial_stage",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Only pilots are described; no revenue or paying customer is stated.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__partnerships",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The named organisations are pilot customers or investors, not non-customer partners.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__milestone_delivery",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Funds progress current pilots and development; no dated future milestone is stated.",
+          "source": "croptide_scoop",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "croptide__outcome",
+          "text": "A NZ$4.25m seed round with US investors and Icehouse Ventures was reported; lead not stated.",
+          "source": "croptide__outcome_source",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "criterion_id": "hq_country",
+          "label": "New Zealand",
+          "claim_ids": [
+            "croptide__hq_country"
+          ],
+          "note": "Mandate: the release places the company in Hawke's Bay, New Zealand."
+        },
+        {
+          "criterion_id": "stage",
+          "label": "Pre-seed",
+          "claim_ids": [
+            "croptide__stage"
+          ],
+          "note": "Mandate: the NZ$1m round is explicitly labelled pre-seed."
+        },
+        {
+          "criterion_id": "sector",
+          "label": "Agritech and food",
+          "claim_ids": [
+            "croptide__sector"
+          ],
+          "note": "Mandate: plant sensors support irrigation decisions for fruit and wine growers."
+        },
+        {
+          "criterion_id": "founder_problem_fit",
+          "label": "Adjacent experience",
+          "claim_ids": [
+            "croptide__founder_problem_fit"
+          ],
+          "note": "Step 2: the founders were engineering students; the release does not establish three years in horticulture."
+        },
+        {
+          "criterion_id": "team_completeness",
+          "label": "Two key roles named",
+          "claim_ids": [
+            "croptide__team_completeness"
+          ],
+          "note": "Step 2: technical co-founders and commercial director Nick Fitzpatrick are named; no separate domain/regulatory lead is established."
+        },
+        {
+          "criterion_id": "track_record",
+          "label": "Prior venture or 5+ years operating",
+          "claim_ids": [
+            "croptide__track_record"
+          ],
+          "note": "Step 2: Penny previously founded an electric-weeding venture in 2019; Fitzpatrick spent ten years establishing T&G offices. A qualifying senior role at scale is not explicitly established."
+        },
+        {
+          "criterion_id": "problem_severity",
+          "label": "Independently confirmed",
+          "claim_ids": [
+            "croptide__problem_severity"
+          ],
+          "note": "Step 2: named grower representative David Allen confirms the need, although his quotation is carried in a company release."
+        },
+        {
+          "criterion_id": "defensibility",
+          "label": "Claimed, no protectable asset",
+          "claim_ids": [
+            "croptide__defensibility"
+          ],
+          "note": "Step 2: a more precise stem-tissue sensing approach is claimed; no filed patent or exclusive licence is named."
+        },
+        {
+          "criterion_id": "readiness",
+          "label": "Pilot-ready",
+          "claim_ids": [
+            "croptide__readiness"
+          ],
+          "note": "Pilot-ready: named growers have signed up for summer trials in three New Zealand regions."
+        },
+        {
+          "criterion_id": "board_advisors",
+          "label": "None named",
+          "claim_ids": [
+            "croptide__board_advisors"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No director or advisor is named; Icehouse Ventures, K1W1 and Masfen Group are investors."
+        },
+        {
+          "criterion_id": "regulatory_burden",
+          "label": "No approval required",
+          "claim_ids": [
+            "croptide__regulatory_burden"
+          ],
+          "note": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Plant-mounted water sensors and software; no product approval regime is identified."
+        },
+        {
+          "criterion_id": "competitive_intensity",
+          "label": "Several funded leaders",
+          "claim_ids": [
+            "croptide__competitive_intensity"
+          ],
+          "note": "Judgement: the in-window publisher page names listed or listed-owned smart-irrigation leaders including The Toro Company, Netafim and Jain Irrigation. Broad: most sell irrigation control rather than stem sensors."
+        },
+        {
+          "criterion_id": "route_to_market",
+          "label": "No offshore route stated",
+          "claim_ids": [
+            "croptide__route_to_market"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The eligible release names New Zealand trial regions only; the NZ Herald's paywalled body is not used."
+        },
+        {
+          "criterion_id": "customer_validation",
+          "label": "Unpaid trial",
+          "claim_ids": [
+            "croptide__customer_validation"
+          ],
+          "note": "Step 2: T&G Global, Pernod Ricard Winemakers, Cloudy Bay, Indevin and Ngai Tukairangi Trust joined summer pilots, with Pernod Ricard quoted; payment is not stated, so the venture study's convention gives an unpaid trial."
+        },
+        {
+          "criterion_id": "commercial_stage",
+          "label": "Pre-revenue",
+          "claim_ids": [
+            "croptide__commercial_stage"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Only pilots are described; no revenue or paying customer is stated."
+        },
+        {
+          "criterion_id": "partnerships",
+          "label": "None public",
+          "claim_ids": [
+            "croptide__partnerships"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The named organisations are pilot customers or investors, not non-customer partners."
+        },
+        {
+          "criterion_id": "milestone_delivery",
+          "label": "No dated public milestone",
+          "claim_ids": [
+            "croptide__milestone_delivery"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Funds progress current pilots and development; no dated future milestone is stated."
+        }
+      ],
+      "outcome": {
+        "label": "Larger follow-on round raised",
+        "as_of": "2023-12-13",
+        "note": "A NZ$4.25m seed round with US investors and Icehouse Ventures was reported; lead not stated.",
+        "claim_ids": [
+          "croptide__outcome"
+        ]
+      }
+    },
+    {
+      "id": "rosterlab",
+      "name": "RosterLab",
+      "snapshot_date": "2022-06-15",
+      "context": [
+        {
+          "label": "Round announcement / anchor date",
+          "value": "2021-12-17"
+        },
+        {
+          "label": "Rating window",
+          "value": "2020-12-17 to 2022-06-15 inclusive; earlier own-site captures allowed"
+        }
+      ],
+      "claims": [
+        {
+          "id": "rosterlab__hq_country",
+          "text": "Mandate: the company is explicitly described as New Zealand-based.",
+          "source": "rosterlab_finsmes",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__stage",
+          "text": "Mandate: the total NZ$500k round is labelled pre-seed; Quidnet's share is NZ$150k.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__sector",
+          "text": "Mandate: rostering software sold to organisations, initially healthcare providers.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__founder_problem_fit",
+          "text": "Step 3 (draft): the website describes three years of rostering IP; the round release (https://www.prnewswire.com/news-releases/rosterlab-raises-500k-pre-seed-from-quidnet-ventures-mat-fund-and-the-university-of-auckland-investors-fund-to-enter-the-new-zealand-market-301447073.html, 2021-12-17) attributes the underlying work to co-founder Isaac Cleland's PhD. Commercial industry experience is not established.",
+          "source": "rosterlab_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__team_completeness",
+          "text": "Step 1: Cleland is identified with the technical work; co-founders Ge and Feng are named without commercial or domain-lead roles.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__problem_severity",
+          "text": "Step 1: the company states that healthcare staff lose time to administration; no independently quantified cost is supplied.",
+          "source": "rosterlab_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__defensibility",
+          "text": "Step 2: algorithmic IP and benchmark performance are claimed; no filed patent, exclusive licence or proprietary dataset is named.",
+          "source": "rosterlab_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__readiness",
+          "text": "Prototype (draft): existing research technology underlies software still funded for application development and initial product launch.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__customer_validation",
+          "text": "Step 1: rostering capabilities are company claims; no independently verifiable customer or trial is named.",
+          "source": "rosterlab_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__commercial_stage",
+          "text": "Step 1 (draft): funds support the initial product launch; this is not proof that no other revenue existed.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__track_record",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The three co-founders' research and competition wins are named; no earlier venture or 5+ years operating is stated.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__board_advisors",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Investors promise governance support, but no director or advisor is named.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__regulatory_burden",
+          "text": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Rostering software; no product approval regime is identified.",
+          "source": "rosterlab_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__competitive_intensity",
+          "text": "Judgement: the company says it is faster than current solutions; the in-window publisher page names Kronos, SAP, Oracle and Infor as prominent workforce-management players. Broad: general workforce management, not healthcare rostering alone.",
+          "source": "rosterlab_gvr_page",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__route_to_market",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Launch targets New Zealand healthcare; overseas expansion is mentioned without a named market or process.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__partnerships",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The University of Auckland origin and the completed VentureLab programme are not a current named partner; the others are investors.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__milestone_delivery",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): An initial product launch is planned without a date.",
+          "source": "rosterlab_prn",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "rosterlab__outcome",
+          "text": "A NZ$1.75m seed round led by Movac with Pacific Channel and UniServices was reported.",
+          "source": "rosterlab__outcome_source",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "criterion_id": "hq_country",
+          "label": "New Zealand",
+          "claim_ids": [
+            "rosterlab__hq_country"
+          ],
+          "note": "Mandate: the company is explicitly described as New Zealand-based."
+        },
+        {
+          "criterion_id": "stage",
+          "label": "Pre-seed",
+          "claim_ids": [
+            "rosterlab__stage"
+          ],
+          "note": "Mandate: the total NZ$500k round is labelled pre-seed; Quidnet's share is NZ$150k."
+        },
+        {
+          "criterion_id": "sector",
+          "label": "Fintech and B2B software",
+          "claim_ids": [
+            "rosterlab__sector"
+          ],
+          "note": "Mandate: rostering software sold to organisations, initially healthcare providers."
+        },
+        {
+          "criterion_id": "founder_problem_fit",
+          "label": "3+ years in the domain",
+          "claim_ids": [
+            "rosterlab__founder_problem_fit"
+          ],
+          "note": "Step 3 (draft): the website describes three years of rostering IP; the round release (https://www.prnewswire.com/news-releases/rosterlab-raises-500k-pre-seed-from-quidnet-ventures-mat-fund-and-the-university-of-auckland-investors-fund-to-enter-the-new-zealand-market-301447073.html, 2021-12-17) attributes the underlying work to co-founder Isaac Cleland's PhD. Commercial industry experience is not established."
+        },
+        {
+          "criterion_id": "team_completeness",
+          "label": "One key role named",
+          "claim_ids": [
+            "rosterlab__team_completeness"
+          ],
+          "note": "Step 1: Cleland is identified with the technical work; co-founders Ge and Feng are named without commercial or domain-lead roles."
+        },
+        {
+          "criterion_id": "problem_severity",
+          "label": "Company statement only",
+          "claim_ids": [
+            "rosterlab__problem_severity"
+          ],
+          "note": "Step 1: the company states that healthcare staff lose time to administration; no independently quantified cost is supplied."
+        },
+        {
+          "criterion_id": "defensibility",
+          "label": "Claimed, no protectable asset",
+          "claim_ids": [
+            "rosterlab__defensibility"
+          ],
+          "note": "Step 2: algorithmic IP and benchmark performance are claimed; no filed patent, exclusive licence or proprietary dataset is named."
+        },
+        {
+          "criterion_id": "readiness",
+          "label": "Prototype",
+          "claim_ids": [
+            "rosterlab__readiness"
+          ],
+          "note": "Prototype (draft): existing research technology underlies software still funded for application development and initial product launch."
+        },
+        {
+          "criterion_id": "customer_validation",
+          "label": "Company claim only",
+          "claim_ids": [
+            "rosterlab__customer_validation"
+          ],
+          "note": "Step 1: rostering capabilities are company claims; no independently verifiable customer or trial is named."
+        },
+        {
+          "criterion_id": "commercial_stage",
+          "label": "Pre-revenue",
+          "claim_ids": [
+            "rosterlab__commercial_stage"
+          ],
+          "note": "Step 1 (draft): funds support the initial product launch; this is not proof that no other revenue existed."
+        },
+        {
+          "criterion_id": "track_record",
+          "label": "None public",
+          "claim_ids": [
+            "rosterlab__track_record"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The three co-founders' research and competition wins are named; no earlier venture or 5+ years operating is stated."
+        },
+        {
+          "criterion_id": "board_advisors",
+          "label": "None named",
+          "claim_ids": [
+            "rosterlab__board_advisors"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Investors promise governance support, but no director or advisor is named."
+        },
+        {
+          "criterion_id": "regulatory_burden",
+          "label": "No approval required",
+          "claim_ids": [
+            "rosterlab__regulatory_burden"
+          ],
+          "note": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Rostering software; no product approval regime is identified."
+        },
+        {
+          "criterion_id": "competitive_intensity",
+          "label": "Several funded leaders",
+          "claim_ids": [
+            "rosterlab__competitive_intensity"
+          ],
+          "note": "Judgement: the company says it is faster than current solutions; the in-window publisher page names Kronos, SAP, Oracle and Infor as prominent workforce-management players. Broad: general workforce management, not healthcare rostering alone."
+        },
+        {
+          "criterion_id": "route_to_market",
+          "label": "No offshore route stated",
+          "claim_ids": [
+            "rosterlab__route_to_market"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Launch targets New Zealand healthcare; overseas expansion is mentioned without a named market or process."
+        },
+        {
+          "criterion_id": "partnerships",
+          "label": "None public",
+          "claim_ids": [
+            "rosterlab__partnerships"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The University of Auckland origin and the completed VentureLab programme are not a current named partner; the others are investors."
+        },
+        {
+          "criterion_id": "milestone_delivery",
+          "label": "No dated public milestone",
+          "claim_ids": [
+            "rosterlab__milestone_delivery"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): An initial product launch is planned without a date."
+        }
+      ],
+      "outcome": {
+        "label": "Larger follow-on round raised",
+        "as_of": "2024-11-27",
+        "note": "A NZ$1.75m seed round led by Movac with Pacific Channel and UniServices was reported.",
+        "claim_ids": [
+          "rosterlab__outcome"
+        ]
+      }
+    },
+    {
+      "id": "argo_navis",
+      "name": "Argo Navis Aerospace",
+      "snapshot_date": "2021-03-20",
+      "context": [
+        {
+          "label": "Round announcement / anchor date",
+          "value": "2020-09-21"
+        },
+        {
+          "label": "Rating window",
+          "value": "2019-09-21 to 2021-03-20 inclusive; earlier own-site captures allowed"
+        },
+        {
+          "label": "Anchor qualification",
+          "value": "Earliest saved website capture naming WNT Ventures; first-round date unconfirmed. No later round-label evidence used for ratings."
+        }
+      ],
+      "claims": [
+        {
+          "id": "argo_navis__hq_country",
+          "text": "Mandate: the company lists its contact address in Parnell, Auckland.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__sector",
+          "text": "Mandate: chemical propulsion systems for the space industry.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__founder_problem_fit",
+          "text": "Step 4: both founders have doctorates in rocket dynamics/control and Rocket Lab experience, including a senior mission-delivery role.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__team_completeness",
+          "text": "Step 2: CEO Avinash Rao and CTO Malcolm Snowdon are named; a separate domain/regulatory lead is not established.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__track_record",
+          "text": "Step 3 (draft): Rao led Electron guidance and became Rocket Lab's Director of Mission Delivery; the source does not establish a scaled-company executive role for step 4.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__defensibility",
+          "text": "Step 2: performance, cost, scalability and reliability differentiation is claimed; no protected asset is named.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__board_advisors",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Only the two co-founders are named; WNT Ventures and Callaghan Innovation are named as backers.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__problem_severity",
+          "text": "Step 1: the site claims an unmatched combination of performance, scalability, reliability and cost; no independent source confirms the problem.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__readiness",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The capture lists propulsion specialities but states no prototype, test or product status.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__regulatory_burden",
+          "text": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): A propulsion-system supplier; no product approval regime is identified for the component itself. Launch licences, propellant permits and export controls were not researched.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__competitive_intensity",
+          "text": "Judgement: the in-window publisher page names Safran, Aerojet Rocketdyne, Northrop Grumman, IHI and SpaceX as leading space-propulsion players; all are listed or heavily funded.",
+          "source": "argo_mm_page",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__route_to_market",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No offshore market, channel or entity is stated.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__customer_validation",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No customer, trial or pilot is named.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__commercial_stage",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No revenue or customer is stated.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__partnerships",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Callaghan Innovation is named as a backer; no programme or non-funding partnership is stated.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__milestone_delivery",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No dated plan is stated.",
+          "source": "argo_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "argo_navis__outcome",
+          "text": "The notice records a liquidator's appointment on 5 December 2023 by shareholder resolution.",
+          "source": "argo_navis__outcome_source",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "criterion_id": "hq_country",
+          "label": "New Zealand",
+          "claim_ids": [
+            "argo_navis__hq_country"
+          ],
+          "note": "Mandate: the company lists its contact address in Parnell, Auckland."
+        },
+        {
+          "criterion_id": "sector",
+          "label": "Space and advanced hardware",
+          "claim_ids": [
+            "argo_navis__sector"
+          ],
+          "note": "Mandate: chemical propulsion systems for the space industry."
+        },
+        {
+          "criterion_id": "founder_problem_fit",
+          "label": "Recognised domain expert",
+          "claim_ids": [
+            "argo_navis__founder_problem_fit"
+          ],
+          "note": "Step 4: both founders have doctorates in rocket dynamics/control and Rocket Lab experience, including a senior mission-delivery role."
+        },
+        {
+          "criterion_id": "team_completeness",
+          "label": "Two key roles named",
+          "claim_ids": [
+            "argo_navis__team_completeness"
+          ],
+          "note": "Step 2: CEO Avinash Rao and CTO Malcolm Snowdon are named; a separate domain/regulatory lead is not established."
+        },
+        {
+          "criterion_id": "track_record",
+          "label": "Senior role at scale or funded venture",
+          "claim_ids": [
+            "argo_navis__track_record"
+          ],
+          "note": "Step 3 (draft): Rao led Electron guidance and became Rocket Lab's Director of Mission Delivery; the source does not establish a scaled-company executive role for step 4."
+        },
+        {
+          "criterion_id": "defensibility",
+          "label": "Claimed, no protectable asset",
+          "claim_ids": [
+            "argo_navis__defensibility"
+          ],
+          "note": "Step 2: performance, cost, scalability and reliability differentiation is claimed; no protected asset is named."
+        },
+        {
+          "criterion_id": "board_advisors",
+          "label": "None named",
+          "claim_ids": [
+            "argo_navis__board_advisors"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Only the two co-founders are named; WNT Ventures and Callaghan Innovation are named as backers."
+        },
+        {
+          "criterion_id": "problem_severity",
+          "label": "Company statement only",
+          "claim_ids": [
+            "argo_navis__problem_severity"
+          ],
+          "note": "Step 1: the site claims an unmatched combination of performance, scalability, reliability and cost; no independent source confirms the problem."
+        },
+        {
+          "criterion_id": "readiness",
+          "label": "Concept",
+          "claim_ids": [
+            "argo_navis__readiness"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): The capture lists propulsion specialities but states no prototype, test or product status."
+        },
+        {
+          "criterion_id": "regulatory_burden",
+          "label": "No approval required",
+          "claim_ids": [
+            "argo_navis__regulatory_burden"
+          ],
+          "note": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): A propulsion-system supplier; no product approval regime is identified for the component itself. Launch licences, propellant permits and export controls were not researched."
+        },
+        {
+          "criterion_id": "competitive_intensity",
+          "label": "Several funded leaders",
+          "claim_ids": [
+            "argo_navis__competitive_intensity"
+          ],
+          "note": "Judgement: the in-window publisher page names Safran, Aerojet Rocketdyne, Northrop Grumman, IHI and SpaceX as leading space-propulsion players; all are listed or heavily funded."
+        },
+        {
+          "criterion_id": "route_to_market",
+          "label": "No offshore route stated",
+          "claim_ids": [
+            "argo_navis__route_to_market"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No offshore market, channel or entity is stated."
+        },
+        {
+          "criterion_id": "customer_validation",
+          "label": "Company claim only",
+          "claim_ids": [
+            "argo_navis__customer_validation"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No customer, trial or pilot is named."
+        },
+        {
+          "criterion_id": "commercial_stage",
+          "label": "Pre-revenue",
+          "claim_ids": [
+            "argo_navis__commercial_stage"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No revenue or customer is stated."
+        },
+        {
+          "criterion_id": "partnerships",
+          "label": "None public",
+          "claim_ids": [
+            "argo_navis__partnerships"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Callaghan Innovation is named as a backer; no programme or non-funding partnership is stated."
+        },
+        {
+          "criterion_id": "milestone_delivery",
+          "label": "No dated public milestone",
+          "claim_ids": [
+            "argo_navis__milestone_delivery"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No dated plan is stated."
+        }
+      ],
+      "outcome": {
+        "label": "Liquidator appointed",
+        "as_of": "2023-12-05",
+        "note": "The notice records a liquidator's appointment on 5 December 2023 by shareholder resolution.",
+        "claim_ids": [
+          "argo_navis__outcome"
+        ]
+      }
+    },
+    {
+      "id": "helico",
+      "name": "Helico",
+      "snapshot_date": "2022-11-05",
+      "context": [
+        {
+          "label": "Round announcement / anchor date",
+          "value": "2022-05-09"
+        },
+        {
+          "label": "Rating window",
+          "value": "2021-05-09 to 2022-11-05 inclusive; earlier own-site captures allowed"
+        },
+        {
+          "label": "Round label",
+          "value": "First round labelled seed, not pre-seed; AUD 1.8m."
+        }
+      ],
+      "claims": [
+        {
+          "id": "helico__hq_country",
+          "text": "Mandate: the company is described as Auckland, New Zealand-based.",
+          "source": "helico_finsmes",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__stage",
+          "text": "Mandate: AUD 1.8m is explicitly labelled seed, not pre-seed.",
+          "source": "helico_finsmes",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__sector",
+          "text": "Mandate: plant-based production of biopharmaceutical medicines.",
+          "source": "helico_finsmes",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__problem_severity",
+          "text": "Step 1: the company presents lower-cost access to medicines as its aim; independent cost evidence is not supplied.",
+          "source": "helico_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__defensibility",
+          "text": "Step 2: a proprietary computational platform is described, but no filed patent, exclusive licence or proprietary dataset is identified.",
+          "source": "helico_finsmes",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__customer_validation",
+          "text": "Step 1: services for pharmaceutical and biotech clients are offered without an independently verifiable named customer.",
+          "source": "helico_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__team_completeness",
+          "text": "Step 3: Vensky leads commercial work, Wang technical bioinformatics, and Marcel advises on manufacturing and CMC/regulatory work. This is the August 2022 team, not proof of appointments at the announcement.",
+          "source": "helico_about",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__track_record",
+          "text": "Step 2: VP Technology and Operation Coline Mei-Barker has five years of CRO scientific, project-management and business-development experience; founder-only experience is not established.",
+          "source": "helico_about",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__board_advisors",
+          "text": "Step 3: named advisors include plant-physiology scientist David Jackson and plant-made pharmaceutical manufacturing specialist Sylvain Marcel; their appointment dates are not stated.",
+          "source": "helico_about",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__founder_problem_fit",
+          "text": "Step 3: co-founder Wayman Puna is described with extensive biotechnology experience in plant synthetic biology and co-founder Xiaoming Wang holds a bioengineering PhD; 'extensive' is not quantified. August 2022 page.",
+          "source": "helico_about",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__readiness",
+          "text": "Step 1: the site says expression is still to be validated in plants on a path to proof of concept; stable-line services are offered without a delivered example.",
+          "source": "helico_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__regulatory_burden",
+          "text": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Plant-made therapeutic proteins need medicines approval before human use; the company holds only an EPA approval for GMO research and development.",
+          "source": "helico_finsmes",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__competitive_intensity",
+          "text": "Judgement: the in-window publisher page names iBio, Protalix, Medicago, Pfizer and Kentucky BioProcessing among plant-based biologics players; several are listed.",
+          "source": "helico_cmi_page",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__route_to_market",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Seed licensing 'anywhere in the world' is a vision; no offshore market, licensee or process is named.",
+          "source": "helico_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__commercial_stage",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Services are offered to pharmaceutical and biotech clients, but no client or revenue is stated.",
+          "source": "helico_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__partnerships",
+          "text": "Step 3: Callaghan Innovation supports Helico through grants, the HealthTech Activator market-validation programme, Beyond IP and its R&D Solutions team. The page states 8 Nov 2021; its metadata says 16 Aug 2023 and no earlier archive capture was found, so this date needs review.",
+          "source": "helico_callaghan",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__milestone_delivery",
+          "text": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No dated plan is stated in the eligible pages; a three-to-five-year vision is not a milestone.",
+          "source": "helico_site",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        },
+        {
+          "id": "helico__outcome",
+          "text": "Joint liquidators were appointed to Rau Bio Limited, trading as Helico Bio, on 19 December 2025.",
+          "source": "helico__outcome_source",
+          "origin": {
+            "kind": "tool",
+            "proposed_by": "Claude Code draft, extended and checked by Codex (draft; author review pending)",
+            "tool_id": "claude-code",
+            "tool_version": null
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "criterion_id": "hq_country",
+          "label": "New Zealand",
+          "claim_ids": [
+            "helico__hq_country"
+          ],
+          "note": "Mandate: the company is described as Auckland, New Zealand-based."
+        },
+        {
+          "criterion_id": "stage",
+          "label": "Seed",
+          "claim_ids": [
+            "helico__stage"
+          ],
+          "note": "Mandate: AUD 1.8m is explicitly labelled seed, not pre-seed."
+        },
+        {
+          "criterion_id": "sector",
+          "label": "Health and medtech",
+          "claim_ids": [
+            "helico__sector"
+          ],
+          "note": "Mandate: plant-based production of biopharmaceutical medicines."
+        },
+        {
+          "criterion_id": "problem_severity",
+          "label": "Company statement only",
+          "claim_ids": [
+            "helico__problem_severity"
+          ],
+          "note": "Step 1: the company presents lower-cost access to medicines as its aim; independent cost evidence is not supplied."
+        },
+        {
+          "criterion_id": "defensibility",
+          "label": "Claimed, no protectable asset",
+          "claim_ids": [
+            "helico__defensibility"
+          ],
+          "note": "Step 2: a proprietary computational platform is described, but no filed patent, exclusive licence or proprietary dataset is identified."
+        },
+        {
+          "criterion_id": "customer_validation",
+          "label": "Company claim only",
+          "claim_ids": [
+            "helico__customer_validation"
+          ],
+          "note": "Step 1: services for pharmaceutical and biotech clients are offered without an independently verifiable named customer."
+        },
+        {
+          "criterion_id": "team_completeness",
+          "label": "All three, one part-time",
+          "claim_ids": [
+            "helico__team_completeness"
+          ],
+          "note": "Step 3: Vensky leads commercial work, Wang technical bioinformatics, and Marcel advises on manufacturing and CMC/regulatory work. This is the August 2022 team, not proof of appointments at the announcement."
+        },
+        {
+          "criterion_id": "track_record",
+          "label": "Prior venture or 5+ years operating",
+          "claim_ids": [
+            "helico__track_record"
+          ],
+          "note": "Step 2: VP Technology and Operation Coline Mei-Barker has five years of CRO scientific, project-management and business-development experience; founder-only experience is not established."
+        },
+        {
+          "criterion_id": "board_advisors",
+          "label": "Independent chair or domain advisor",
+          "claim_ids": [
+            "helico__board_advisors"
+          ],
+          "note": "Step 3: named advisors include plant-physiology scientist David Jackson and plant-made pharmaceutical manufacturing specialist Sylvain Marcel; their appointment dates are not stated."
+        },
+        {
+          "criterion_id": "founder_problem_fit",
+          "label": "3+ years in the domain",
+          "claim_ids": [
+            "helico__founder_problem_fit"
+          ],
+          "note": "Step 3: co-founder Wayman Puna is described with extensive biotechnology experience in plant synthetic biology and co-founder Xiaoming Wang holds a bioengineering PhD; 'extensive' is not quantified. August 2022 page."
+        },
+        {
+          "criterion_id": "readiness",
+          "label": "Concept",
+          "claim_ids": [
+            "helico__readiness"
+          ],
+          "note": "Step 1: the site says expression is still to be validated in plants on a path to proof of concept; stable-line services are offered without a delivered example."
+        },
+        {
+          "criterion_id": "regulatory_burden",
+          "label": "Approval required, not started",
+          "claim_ids": [
+            "helico__regulatory_burden"
+          ],
+          "note": "Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Plant-made therapeutic proteins need medicines approval before human use; the company holds only an EPA approval for GMO research and development."
+        },
+        {
+          "criterion_id": "competitive_intensity",
+          "label": "Several funded leaders",
+          "claim_ids": [
+            "helico__competitive_intensity"
+          ],
+          "note": "Judgement: the in-window publisher page names iBio, Protalix, Medicago, Pfizer and Kentucky BioProcessing among plant-based biologics players; several are listed."
+        },
+        {
+          "criterion_id": "route_to_market",
+          "label": "No offshore route stated",
+          "claim_ids": [
+            "helico__route_to_market"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Seed licensing 'anywhere in the world' is a vision; no offshore market, licensee or process is named."
+        },
+        {
+          "criterion_id": "commercial_stage",
+          "label": "Pre-revenue",
+          "claim_ids": [
+            "helico__commercial_stage"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Services are offered to pharmaceutical and biotech clients, but no client or revenue is stated."
+        },
+        {
+          "criterion_id": "partnerships",
+          "label": "Partner in an active programme",
+          "claim_ids": [
+            "helico__partnerships"
+          ],
+          "note": "Step 3: Callaghan Innovation supports Helico through grants, the HealthTech Activator market-validation programme, Beyond IP and its R&D Solutions team. The page states 8 Nov 2021; its metadata says 16 Aug 2023 and no earlier archive capture was found, so this date needs review."
+        },
+        {
+          "criterion_id": "milestone_delivery",
+          "label": "No dated public milestone",
+          "claim_ids": [
+            "helico__milestone_delivery"
+          ],
+          "note": "Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No dated plan is stated in the eligible pages; a three-to-five-year vision is not a milestone."
+        }
+      ],
+      "outcome": {
+        "label": "Liquidator appointed",
+        "as_of": "2025-12-19",
+        "note": "Joint liquidators were appointed to Rau Bio Limited, trading as Helico Bio, on 19 December 2025.",
+        "claim_ids": [
+          "helico__outcome"
+        ]
+      }
+    }
+  ],
+  "sources": {
+    "vertus_scoop": {
+      "name": "Scoop (Vertus Energy company release)",
+      "reference": "https://www.scoop.co.nz/stories/BU2110/S00671/vertus-energy-raises-12m-to-boost-biofuel-production.htm",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-10-27",
+      "description": "Judgement: Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Every named organisation is an investor or accelerator; the demonstration farm and research institute are unnamed. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "vertus_uoa": {
+      "name": "University of Auckland news",
+      "reference": "https://www.auckland.ac.nz/en/news/2022/01/27/biofuel-start-up-make-fossil-fuels-extinct.html",
+      "location": "Relevant article body or archived company page",
+      "date": "2022-01-27",
+      "description": "Judgement: Step 2: the October release scheduled a first demonstration plant for early 2022; the January account still describes expanding pilots, and no delivery is reported inside the window. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "vertus_gvr_page": {
+      "name": "Grand View Research, biogas market (Wayback capture)",
+      "reference": "https://web.archive.org/web/20211029/https://www.grandviewresearch.com/industry-analysis/biogas-market",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-10-29",
+      "description": "Judgement: Judgement: the release compares BRIO with other digester systems on the market; the in-window publisher page names Air Liquide, Wartsila and EnviTec Biogas, all listed, among digester-system leaders. Broad: they build whole plants rather than in-digester boosters. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "independent"
+    },
+    "vertus_energy__outcome_source": {
+      "name": "Tech.eu",
+      "reference": "https://tech.eu/2024/06/27/vertus-energy-raises-eur875m-seed-funding-for-waste-to-x-biotech-solutions/",
+      "date": "2024-06-27",
+      "description": "Outcome context only; never a rating input. Read saved page on 13 November 2026.",
+      "classification": "independent"
+    },
+    "croptide_scoop": {
+      "name": "Scoop (Croptide company release)",
+      "reference": "https://www.scoop.co.nz/stories/BU2112/S00399.htm",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-12-15",
+      "description": "Judgement: Absence rule (owner decision, 14 Nov 2026; the venture study's convention): Funds progress current pilots and development; no dated future milestone is stated. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "croptide_mm_page": {
+      "name": "MarketsandMarkets, smart irrigation release (Wayback capture)",
+      "reference": "https://web.archive.org/web/20211201/https://www.marketsandmarkets.com/PressReleases/smart-irrigation.asp",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-12-01",
+      "description": "Judgement: Judgement: the in-window publisher page names listed or listed-owned smart-irrigation leaders including The Toro Company, Netafim and Jain Irrigation. Broad: most sell irrigation control rather than stem sensors. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "independent"
+    },
+    "croptide__outcome_source": {
+      "name": "Fruitnet",
+      "reference": "https://www.fruitnet.com/produce-plus/croptide-to-launch-commercial-pilots-following-seed-funding-raise/257555.article",
+      "date": "2023-12-13",
+      "description": "Outcome context only; never a rating input. Read saved page on 13 November 2026.",
+      "classification": "independent"
+    },
+    "rosterlab_finsmes": {
+      "name": "FinSMEs",
+      "reference": "https://www.finsmes.com/?p=214803",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-12-20",
+      "description": "Judgement: Mandate: the company is explicitly described as New Zealand-based. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "independent"
+    },
+    "rosterlab_prn": {
+      "name": "PR Newswire (Quidnet Ventures release)",
+      "reference": "https://www.prnewswire.com/news-releases/rosterlab-raises-500k-pre-seed-from-quidnet-ventures-mat-fund-and-the-university-of-auckland-investors-fund-to-enter-the-new-zealand-market-301447073.html",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-12-17",
+      "description": "Judgement: Absence rule (owner decision, 14 Nov 2026; the venture study's convention): An initial product launch is planned without a date. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "rosterlab_site": {
+      "name": "RosterLab website (Wayback capture)",
+      "reference": "https://web.archive.org/web/20220124/https://www.rosterlab.com/",
+      "location": "Relevant article body or archived company page",
+      "date": "2022-01-24",
+      "description": "Judgement: Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Rostering software; no product approval regime is identified. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "rosterlab_gvr_page": {
+      "name": "Grand View Research, workforce management market (Wayback capture)",
+      "reference": "https://web.archive.org/web/20211109/https://www.grandviewresearch.com/industry-analysis/workforce-management-market",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-11-09",
+      "description": "Judgement: Judgement: the company says it is faster than current solutions; the in-window publisher page names Kronos, SAP, Oracle and Infor as prominent workforce-management players. Broad: general workforce management, not healthcare rostering alone. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "independent"
+    },
+    "rosterlab__outcome_source": {
+      "name": "University of Auckland",
+      "reference": "https://www.auckland.ac.nz/en/news/2024/11/27/rosterlab-levels-support-healthcare-workers.html",
+      "date": "2024-11-27",
+      "description": "Outcome context only; never a rating input. Read saved page on 13 November 2026.",
+      "classification": "independent"
+    },
+    "argo_site": {
+      "name": "Argo Navis Aerospace website (Wayback capture)",
+      "reference": "https://web.archive.org/web/20200921113457/https://www.argonavis.aero/",
+      "location": "Relevant article body or archived company page",
+      "date": "2020-09-21",
+      "description": "Judgement: Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No dated plan is stated. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "argo_mm_page": {
+      "name": "MarketsandMarkets, space propulsion release (Wayback capture)",
+      "reference": "https://web.archive.org/web/20201013/https://www.marketsandmarkets.com/PressReleases/space-propulsion.asp",
+      "location": "Relevant article body or archived company page",
+      "date": "2020-10-13",
+      "description": "Judgement: Judgement: the in-window publisher page names Safran, Aerojet Rocketdyne, Northrop Grumman, IHI and SpaceX as leading space-propulsion players; all are listed or heavily funded. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "independent"
+    },
+    "argo_navis__outcome_source": {
+      "name": "New Zealand Gazette, 2023-al5719",
+      "reference": "https://gazette.govt.nz/notice/id/2023-al5719",
+      "date": "2023-12-08",
+      "description": "Outcome context only; never a rating input. Read saved page on 13 November 2026.",
+      "classification": "independent"
+    },
+    "helico_finsmes": {
+      "name": "FinSMEs",
+      "reference": "https://www.finsmes.com/?p=228095",
+      "location": "Relevant article body or archived company page",
+      "date": "2022-05-18",
+      "description": "Judgement: Sector judgement (owner decision, 14 Nov 2026; the venture study's convention): Plant-made therapeutic proteins need medicines approval before human use; the company holds only an EPA approval for GMO research and development. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "independent"
+    },
+    "helico_site": {
+      "name": "Helico website (Wayback capture)",
+      "reference": "https://web.archive.org/web/20220517/https://www.helico.bio/",
+      "location": "Relevant article body or archived company page",
+      "date": "2022-05-17",
+      "description": "Judgement: Absence rule (owner decision, 14 Nov 2026; the venture study's convention): No dated plan is stated in the eligible pages; a three-to-five-year vision is not a milestone. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "helico_about": {
+      "name": "Helico About page (Wayback capture)",
+      "reference": "https://web.archive.org/web/20220817231820/https://www.helico.bio/about",
+      "location": "Relevant article body or archived company page",
+      "date": "2022-08-17",
+      "description": "Judgement: Step 3: co-founder Wayman Puna is described with extensive biotechnology experience in plant synthetic biology and co-founder Xiaoming Wang holds a bioengineering PhD; 'extensive' is not quantified. August 2022 page. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "self_reported"
+    },
+    "helico_cmi_page": {
+      "name": "Coherent Market Insights, plant-based biologics market (Wayback capture)",
+      "reference": "https://web.archive.org/web/20220805124836/https://www.coherentmarketinsights.com/market-insight/plant-based-biologics-market-2394",
+      "location": "Relevant article body or archived company page",
+      "date": "2022-08-05",
+      "description": "Judgement: Judgement: the in-window publisher page names iBio, Protalix, Medicago, Pfizer and Kentucky BioProcessing among plant-based biologics players; several are listed. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "independent"
+    },
+    "helico_callaghan": {
+      "name": "Callaghan Innovation customer story",
+      "reference": "https://www.callaghaninnovation.govt.nz/stories/health-food/",
+      "location": "Relevant article body or archived company page",
+      "date": "2021-11-08",
+      "description": "Judgement: Step 3: Callaghan Innovation supports Helico through grants, the HealthTech Activator market-validation programme, Beyond IP and its R&D Solutions team. The page states 8 Nov 2021; its metadata says 16 Aug 2023 and no earlier archive capture was found, so this date needs review. Read from saved page on 13 November 2026. Draft; author review pending.",
+      "classification": "unknown"
+    },
+    "helico__outcome_source": {
+      "name": "New Zealand Gazette, 2026-al121",
+      "reference": "https://gazette.govt.nz/notice/id/2026-al121",
+      "date": "2026-01-13",
+      "description": "Outcome context only; never a rating input. Read saved page on 13 November 2026.",
+      "classification": "independent"
+    }
+  }
+}

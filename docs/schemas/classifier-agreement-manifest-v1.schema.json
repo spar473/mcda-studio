@@ -1,0 +1,427 @@
+{
+  "$id": "classifier-agreement-manifest-v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "data_kind": {
+      "enum": [
+        "synthetic",
+        "real",
+        "public"
+      ]
+    },
+    "data_provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "generation_seed": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "licence": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "snapshot_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "source": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "description"
+      ],
+      "type": "object"
+    },
+    "files": {
+      "additionalProperties": false,
+      "properties": {
+        "adjudications": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "maxLength": 4000,
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "human_labels": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "maxLength": 4000,
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "maxLength": 4000,
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        },
+        "tool_outputs": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "maxLength": 4000,
+              "minLength": 1,
+              "type": "string"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "sha256"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "adjudications",
+        "human_labels",
+        "items",
+        "tool_outputs"
+      ],
+      "type": "object"
+    },
+    "labels": {
+      "items": {
+        "maxLength": 4000,
+        "minLength": 1,
+        "not": {
+          "const": "__abstention__"
+        },
+        "type": "string"
+      },
+      "maxItems": 32,
+      "minItems": 2,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "panel": {
+      "items": {
+        "maxLength": 4000,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 20,
+      "minItems": 2,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "protocol": {
+      "additionalProperties": false,
+      "properties": {
+        "blind_adjudication": {
+          "const": true
+        },
+        "bootstrap": {
+          "additionalProperties": false,
+          "properties": {
+            "algorithm": {
+              "const": "pcg64-joint-unit-bootstrap.v1"
+            },
+            "quantile": {
+              "const": "linear.v1"
+            },
+            "replicates": {
+              "const": 10000
+            },
+            "seed": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "unit": {
+              "enum": [
+                "item",
+                "group"
+              ]
+            }
+          },
+          "required": [
+            "algorithm",
+            "quantile",
+            "replicates",
+            "seed",
+            "unit"
+          ],
+          "type": "object"
+        },
+        "confidence": {
+          "const": "0.95"
+        },
+        "frozen_at": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "gate_confirmed_at": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "independent_blind_reviews": {
+          "const": true
+        },
+        "lower_kappa": {
+          "const": "0.60"
+        },
+        "minimum_coverage": {
+          "const": "0.80"
+        },
+        "outputs_unblinded_at": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "reference_policy": {
+          "const": "unanimous-or-post-gate-adjudication.v1"
+        }
+      },
+      "required": [
+        "blind_adjudication",
+        "bootstrap",
+        "confidence",
+        "frozen_at",
+        "gate_confirmed_at",
+        "independent_blind_reviews",
+        "lower_kappa",
+        "minimum_coverage",
+        "outputs_unblinded_at",
+        "reference_policy"
+      ],
+      "type": "object"
+    },
+    "splits": {
+      "additionalProperties": false,
+      "properties": {
+        "development": {
+          "items": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "test": {
+          "items": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "train": {
+          "items": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "development",
+        "test",
+        "train"
+      ],
+      "type": "object"
+    },
+    "task": {
+      "additionalProperties": false,
+      "properties": {
+        "eligibility": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "exclusions": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "id": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "instructions": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "observation_cutoff": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "population": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "unit": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        },
+        "version": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "eligibility",
+        "exclusions",
+        "id",
+        "instructions",
+        "observation_cutoff",
+        "population",
+        "unit",
+        "version"
+      ],
+      "type": "object"
+    },
+    "tools": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "model_card": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "maxLength": 4000,
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "score_bounds": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "items": {
+                  "type": "number"
+                },
+                "maxItems": 2,
+                "minItems": 2,
+                "type": "array"
+              }
+            ]
+          },
+          "score_semantics": {
+            "enum": [
+              "none",
+              "arbitrary_score",
+              "chosen_label_confidence",
+              "probability_vector"
+            ]
+          },
+          "task_version": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "version": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "model_card",
+          "score_bounds",
+          "score_semantics",
+          "task_version",
+          "version"
+        ],
+        "type": "object"
+      },
+      "maxItems": 20,
+      "minItems": 1,
+      "type": "array"
+    },
+    "version": {
+      "const": 1
+    }
+  },
+  "required": [
+    "data_kind",
+    "data_provenance",
+    "files",
+    "labels",
+    "panel",
+    "protocol",
+    "splits",
+    "task",
+    "tools",
+    "version"
+  ],
+  "title": "Classifier agreement benchmark manifest, version 1",
+  "type": "object"
+}

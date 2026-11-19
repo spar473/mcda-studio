@@ -1,0 +1,1140 @@
+{
+  "$defs": {
+    "DerivedFormula": {
+      "additionalProperties": false,
+      "properties": {
+        "alternative_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Alternative Id"
+        },
+        "criterion_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Criterion Id"
+        },
+        "expression": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Expression",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "expression",
+        "unit",
+        "origin"
+      ],
+      "title": "DerivedFormula",
+      "type": "object"
+    },
+    "DerivedModel": {
+      "additionalProperties": false,
+      "properties": {
+        "formulas": {
+          "items": {
+            "$ref": "#/$defs/DerivedFormula"
+          },
+          "maxItems": 128,
+          "title": "Formulas",
+          "type": "array"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/$defs/SourceFactor"
+          },
+          "maxItems": 256,
+          "title": "Sources",
+          "type": "array"
+        },
+        "units": {
+          "additionalProperties": {
+            "patternProperties": {
+              "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$": {
+                "maximum": 16,
+                "minimum": -16,
+                "type": "integer"
+              }
+            },
+            "type": "object"
+          },
+          "maxProperties": 128,
+          "propertyNames": {
+            "maxLength": 64,
+            "minLength": 1
+          },
+          "title": "Units",
+          "type": "object"
+        }
+      },
+      "required": [
+        "project_fingerprint"
+      ],
+      "title": "DerivedModel",
+      "type": "object"
+    },
+    "DiscreteDistribution": {
+      "additionalProperties": false,
+      "description": "Listed numeric values with their probabilities.",
+      "properties": {
+        "kind": {
+          "const": "discrete",
+          "default": "discrete",
+          "title": "Kind",
+          "type": "string"
+        },
+        "probabilities": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Probabilities",
+          "type": "array"
+        },
+        "values": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Values",
+          "type": "array"
+        }
+      },
+      "required": [
+        "values",
+        "probabilities"
+      ],
+      "title": "DiscreteDistribution",
+      "type": "object"
+    },
+    "EnclosureRange": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "support_enclosure",
+          "default": "support_enclosure",
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "title": "EnclosureRange",
+      "type": "object"
+    },
+    "ExactRange": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "exact_discrete_support",
+          "default": "exact_discrete_support",
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "title": "ExactRange",
+      "type": "object"
+    },
+    "FactorDistribution": {
+      "additionalProperties": false,
+      "description": "One factor's marginal, in the factor's own unit; no conversion or inference.",
+      "properties": {
+        "distribution": {
+          "discriminator": {
+            "mapping": {
+              "discrete": "#/$defs/DiscreteDistribution",
+              "triangular": "#/$defs/TriangularDistribution",
+              "uniform": "#/$defs/UniformDistribution"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/UniformDistribution"
+            },
+            {
+              "$ref": "#/$defs/TriangularDistribution"
+            },
+            {
+              "$ref": "#/$defs/DiscreteDistribution"
+            }
+          ],
+          "title": "Distribution"
+        },
+        "factor_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Factor Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "factor_id",
+        "distribution",
+        "origin"
+      ],
+      "title": "FactorDistribution",
+      "type": "object"
+    },
+    "FactorUncertaintyModel": {
+      "additionalProperties": false,
+      "properties": {
+        "distributions": {
+          "items": {
+            "$ref": "#/$defs/FactorDistribution"
+          },
+          "maxItems": 256,
+          "title": "Distributions",
+          "type": "array"
+        },
+        "groups": {
+          "items": {
+            "$ref": "#/$defs/QuantileGroup"
+          },
+          "maxItems": 64,
+          "title": "Groups",
+          "type": "array"
+        },
+        "model_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Model Digest",
+          "type": "string"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "model_digest"
+      ],
+      "title": "FactorUncertaintyModel",
+      "type": "object"
+    },
+    "ModelChecks": {
+      "additionalProperties": false,
+      "properties": {
+        "checks": {
+          "items": {
+            "$ref": "#/$defs/QuantityCheck"
+          },
+          "maxItems": 512,
+          "title": "Checks",
+          "type": "array"
+        },
+        "digest": {
+          "title": "Digest",
+          "type": "string"
+        },
+        "model_digest": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Model Digest",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "project_fingerprint": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Project Fingerprint",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "schema_version": {
+          "const": 1,
+          "default": 1,
+          "title": "Schema Version",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "project_fingerprint",
+        "model_digest",
+        "origin",
+        "digest"
+      ],
+      "title": "ModelChecks",
+      "type": "object"
+    },
+    "ModelOutputSpec": {
+      "additionalProperties": false,
+      "properties": {
+        "aggregation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SegmentAggregation"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "checks": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/ModelChecks"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "formula_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Formula Id",
+          "type": "string"
+        },
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "label": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "model": {
+          "$ref": "#/$defs/DerivedModel"
+        },
+        "range": {
+          "discriminator": {
+            "mapping": {
+              "exact_discrete_support": "#/$defs/ExactRange",
+              "sampled_central95": "#/$defs/SampledRange",
+              "source_interval": "#/$defs/SourceRange",
+              "support_enclosure": "#/$defs/EnclosureRange"
+            },
+            "propertyName": "kind"
+          },
+          "oneOf": [
+            {
+              "$ref": "#/$defs/SourceRange"
+            },
+            {
+              "$ref": "#/$defs/EnclosureRange"
+            },
+            {
+              "$ref": "#/$defs/ExactRange"
+            },
+            {
+              "$ref": "#/$defs/SampledRange"
+            }
+          ],
+          "title": "Range"
+        },
+        "scope": {
+          "$ref": "#/$defs/ModelScope"
+        },
+        "uncertainty": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FactorUncertaintyModel"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "model",
+        "formula_id",
+        "scope",
+        "range"
+      ],
+      "title": "ModelOutputSpec",
+      "type": "object"
+    },
+    "ModelScope": {
+      "additionalProperties": false,
+      "properties": {
+        "currency_basis": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Currency Basis"
+        },
+        "geography": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Geography"
+        },
+        "period": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Period"
+        },
+        "population": {
+          "anyOf": [
+            {
+              "maxLength": 2000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Population"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        }
+      },
+      "title": "ModelScope",
+      "type": "object"
+    },
+    "Origin": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "human",
+            "tool"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "proposed_by": {
+          "minLength": 1,
+          "title": "Proposed By",
+          "type": "string"
+        },
+        "tool_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Id"
+        },
+        "tool_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tool Version"
+        }
+      },
+      "required": [
+        "kind",
+        "proposed_by"
+      ],
+      "title": "Origin",
+      "type": "object"
+    },
+    "PopulationSegment": {
+      "additionalProperties": false,
+      "properties": {
+        "definition": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Definition",
+          "type": "string"
+        },
+        "formula_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Formula Id",
+          "type": "string"
+        },
+        "population_key": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Population Key",
+          "type": "string"
+        }
+      },
+      "required": [
+        "formula_id",
+        "population_key",
+        "definition"
+      ],
+      "title": "PopulationSegment",
+      "type": "object"
+    },
+    "QuantileGroup": {
+      "additionalProperties": false,
+      "description": "Factors that share one uniform draw through their own quantile functions.\n\nThis states perfectly shared quantiles, not a correlation coefficient or covariance.",
+      "properties": {
+        "factor_ids": {
+          "items": {
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 2,
+          "title": "Factor Ids",
+          "type": "array"
+        },
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "rationale": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "id",
+        "factor_ids",
+        "rationale",
+        "origin"
+      ],
+      "title": "QuantileGroup",
+      "type": "object"
+    },
+    "QuantityCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.\\-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "lower": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Lower"
+        },
+        "lower_inclusive": {
+          "default": true,
+          "title": "Lower Inclusive",
+          "type": "boolean"
+        },
+        "quantity_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Quantity Id",
+          "type": "string"
+        },
+        "quantity_kind": {
+          "enum": [
+            "source",
+            "formula"
+          ],
+          "title": "Quantity Kind",
+          "type": "string"
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        },
+        "upper": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Upper"
+        },
+        "upper_inclusive": {
+          "default": true,
+          "title": "Upper Inclusive",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "quantity_kind",
+        "quantity_id",
+        "unit"
+      ],
+      "title": "QuantityCheck",
+      "type": "object"
+    },
+    "Review": {
+      "additionalProperties": false,
+      "properties": {
+        "corrected_value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Corrected Value"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "reviewed_at": {
+          "format": "date-time",
+          "title": "Reviewed At",
+          "type": "string"
+        },
+        "reviewer": {
+          "minLength": 1,
+          "title": "Reviewer",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "accepted",
+            "corrected",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at"
+      ],
+      "title": "Review",
+      "type": "object"
+    },
+    "SampledRange": {
+      "additionalProperties": false,
+      "properties": {
+        "draws": {
+          "default": 1000,
+          "maximum": 100000,
+          "minimum": 1,
+          "title": "Draws",
+          "type": "integer"
+        },
+        "kind": {
+          "const": "sampled_central95",
+          "default": "sampled_central95",
+          "title": "Kind",
+          "type": "string"
+        },
+        "quantile_algorithm": {
+          "const": "linear.v1",
+          "default": "linear.v1",
+          "title": "Quantile Algorithm",
+          "type": "string"
+        },
+        "seed": {
+          "default": 7,
+          "exclusiveMaximum": 9223372036854775808,
+          "minimum": 0,
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "title": "SampledRange",
+      "type": "object"
+    },
+    "SegmentAggregation": {
+      "additionalProperties": false,
+      "properties": {
+        "disjoint_populations": {
+          "title": "Disjoint Populations",
+          "type": "boolean"
+        },
+        "overlap_model_formula_id": {
+          "anyOf": [
+            {
+              "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overlap Model Formula Id"
+        },
+        "overlap_quantity_ids": {
+          "items": {
+            "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Overlap Quantity Ids",
+          "type": "array"
+        },
+        "rationale": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "segments": {
+          "items": {
+            "$ref": "#/$defs/PopulationSegment"
+          },
+          "maxItems": 64,
+          "minItems": 2,
+          "title": "Segments",
+          "type": "array"
+        }
+      },
+      "required": [
+        "segments",
+        "disjoint_populations",
+        "rationale"
+      ],
+      "title": "SegmentAggregation",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "classification": {
+          "default": "unknown",
+          "enum": [
+            "independent",
+            "self_reported",
+            "unknown"
+          ],
+          "title": "Classification",
+          "type": "string"
+        },
+        "date": {
+          "format": "date",
+          "title": "Date",
+          "type": "string"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "location": {
+          "default": "",
+          "title": "Location",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "reference": {
+          "minLength": 1,
+          "title": "Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "reference",
+        "date",
+        "description"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SourceFactor": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source": {
+          "$ref": "#/$defs/Source"
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        }
+      },
+      "required": [
+        "id",
+        "unit",
+        "source",
+        "origin"
+      ],
+      "title": "SourceFactor",
+      "type": "object"
+    },
+    "SourceInterval": {
+      "additionalProperties": false,
+      "properties": {
+        "factor_id": {
+          "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,63}$",
+          "title": "Factor Id",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "origin": {
+          "$ref": "#/$defs/Origin"
+        },
+        "review": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Review"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "unit": {
+          "maxLength": 64,
+          "minLength": 1,
+          "title": "Unit",
+          "type": "string"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "factor_id",
+        "unit",
+        "lower",
+        "upper",
+        "origin"
+      ],
+      "title": "SourceInterval",
+      "type": "object"
+    },
+    "SourceRange": {
+      "additionalProperties": false,
+      "properties": {
+        "intervals": {
+          "items": {
+            "$ref": "#/$defs/SourceInterval"
+          },
+          "maxItems": 256,
+          "minItems": 1,
+          "title": "Intervals",
+          "type": "array"
+        },
+        "kind": {
+          "const": "source_interval",
+          "default": "source_interval",
+          "title": "Kind",
+          "type": "string"
+        }
+      },
+      "required": [
+        "intervals"
+      ],
+      "title": "SourceRange",
+      "type": "object"
+    },
+    "TriangularDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "triangular",
+          "default": "triangular",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "mode": {
+          "title": "Mode",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "mode",
+        "upper"
+      ],
+      "title": "TriangularDistribution",
+      "type": "object"
+    },
+    "UniformDistribution": {
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "uniform",
+          "default": "uniform",
+          "title": "Kind",
+          "type": "string"
+        },
+        "lower": {
+          "title": "Lower",
+          "type": "number"
+        },
+        "upper": {
+          "title": "Upper",
+          "type": "number"
+        }
+      },
+      "required": [
+        "lower",
+        "upper"
+      ],
+      "title": "UniformDistribution",
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "digest": {
+      "title": "Digest",
+      "type": "string"
+    },
+    "label": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Label",
+      "type": "string"
+    },
+    "left": {
+      "$ref": "#/$defs/ModelOutputSpec"
+    },
+    "origin": {
+      "$ref": "#/$defs/Origin"
+    },
+    "project_fingerprint": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Project Fingerprint",
+      "type": "string"
+    },
+    "review": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Review"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "right": {
+      "$ref": "#/$defs/ModelOutputSpec"
+    },
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "project_fingerprint",
+    "label",
+    "left",
+    "right",
+    "origin",
+    "digest"
+  ],
+  "title": "ModelComparison",
+  "type": "object"
+}

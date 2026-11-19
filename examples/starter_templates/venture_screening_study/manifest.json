@@ -1,0 +1,40 @@
+{
+  "artifacts": [
+    {
+      "for_model": null,
+      "id": "project",
+      "kind": "project",
+      "label": "Project",
+      "optional": false,
+      "path": "project.json",
+      "reset_policy": "draft",
+      "schema_version": 6,
+      "sha256": "0e2a53782da25c61ba4bff98b8eb3655ec9a79235163f7eda6fcbc43d5ce1a35"
+    },
+    {
+      "for_model": null,
+      "id": "evidence",
+      "kind": "evidence_dossier",
+      "label": "Study evidence",
+      "optional": false,
+      "path": "evidence.json",
+      "reset_policy": "draft",
+      "schema_version": 1,
+      "sha256": "7ba5dea2655ff20924cd7d3cca608bed427754cda246e79d4f4f4fcd614db04f"
+    }
+  ],
+  "description": "Eight real New Zealand startups from public information (as of 4 November 2026): mandate check, two partner profiles, classes, SMAA-2, PROMETHEE II and sourced evidence. Not investment advice.",
+  "digest": "cfc9d04d013c94fd4e4a97447adce8a720804ed6edba8ad54e78f534be7bd84b",
+  "id": "venture_screening_study",
+  "schema_version": 1,
+  "source_example": "examples/nz_venture_screening",
+  "source_version": "1",
+  "tasks": [
+    "Read the screening summary and the requirements beside the ranking",
+    "Switch between the Technical/IP-led and Commercial/traction-led profiles",
+    "Compare classes, SMAA-2 acceptabilities and the PROMETHEE II cross-check",
+    "Review the study's evidence and its open questions"
+  ],
+  "title": "Venture screening",
+  "version": "1"
+}

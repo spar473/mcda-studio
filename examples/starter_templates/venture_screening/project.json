@@ -1,0 +1,174 @@
+{
+  "alternatives": [
+    {
+      "id": "a",
+      "metadata": {},
+      "name": "Option A"
+    },
+    {
+      "id": "b",
+      "metadata": {},
+      "name": "Option B"
+    }
+  ],
+  "analysis": {
+    "method": "mavt",
+    "parameters": {},
+    "scenario_id": null,
+    "weight_profile_id": null
+  },
+  "criteria": [
+    {
+      "description": "",
+      "id": "sector",
+      "name": "Sector",
+      "order": 0,
+      "parent_id": null,
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [
+          "hardware",
+          "software"
+        ],
+        "lower": null,
+        "type": "categorical",
+        "unit": null,
+        "upper": null
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "hardware": 0.0,
+          "software": 1.0
+        }
+      }
+    },
+    {
+      "description": "",
+      "id": "readiness",
+      "name": "Stage",
+      "order": 1,
+      "parent_id": null,
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [
+          "early",
+          "ready"
+        ],
+        "lower": null,
+        "type": "ordinal",
+        "unit": null,
+        "upper": null
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "early": 0.0,
+          "ready": 1.0
+        }
+      }
+    },
+    {
+      "description": "",
+      "id": "measure",
+      "name": "Reviewed numeric measure",
+      "order": 2,
+      "parent_id": null,
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "interval",
+        "unit": "1",
+        "upper": 1.0
+      },
+      "value_function": {
+        "kind": "direct_rating",
+        "max_rating": 1.0,
+        "min_rating": 0.0,
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "annual",
+      "name": "Annual reachable quantity",
+      "order": 3,
+      "parent_id": null,
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "ratio",
+        "unit": "money/year",
+        "upper": 2000000.0
+      },
+      "value_function": {
+        "direction": "increasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    }
+  ],
+  "decision_maker": "",
+  "description": "Wholly invented Option A/B proposal review and two market models. Illustrative, not investment advice.",
+  "id": "venture_screening_starter",
+  "performances": [
+    {
+      "alternative_id": "a",
+      "criterion_id": "sector",
+      "value": "hardware"
+    },
+    {
+      "alternative_id": "a",
+      "criterion_id": "readiness",
+      "value": "ready"
+    },
+    {
+      "alternative_id": "a",
+      "criterion_id": "measure",
+      "value": 0.5
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "sector",
+      "value": "hardware"
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "readiness",
+      "value": "ready"
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "measure",
+      "value": 0.5
+    },
+    {
+      "alternative_id": "a",
+      "criterion_id": "annual",
+      "value": 600000.0
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "annual",
+      "value": 480000.0
+    }
+  ],
+  "scenarios": [],
+  "schema_version": 1,
+  "title": "Venture screening",
+  "weight_profiles": [
+    {
+      "id": "default",
+      "judgements": {
+        "annual": 60.0,
+        "measure": 40.0,
+        "readiness": 70.0,
+        "sector": 100.0
+      },
+      "method": "swing",
+      "name": "Default"
+    }
+  ]
+}

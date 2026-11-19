@@ -1,0 +1,118 @@
+{
+  "alternatives": [
+    {
+      "id": "a0",
+      "metadata": {},
+      "name": "Equal name"
+    },
+    {
+      "id": "a1",
+      "metadata": {},
+      "name": "Equal name"
+    },
+    {
+      "id": "a2",
+      "metadata": {},
+      "name": "Third option"
+    }
+  ],
+  "analysis": {
+    "method": "mavt",
+    "parameters": {},
+    "scenario_id": null,
+    "weight_profile_id": null
+  },
+  "criteria": [
+    {
+      "description": "",
+      "id": "c0",
+      "name": "crit 0",
+      "order": 0,
+      "parent_id": null,
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "interval",
+        "unit": null,
+        "upper": 1.0
+      },
+      "value_function": {
+        "kind": "direct_rating",
+        "max_rating": 1.0,
+        "min_rating": 0.0,
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "c1",
+      "name": "crit 1",
+      "order": 1,
+      "parent_id": null,
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "interval",
+        "unit": null,
+        "upper": 1.0
+      },
+      "value_function": {
+        "kind": "direct_rating",
+        "max_rating": 1.0,
+        "min_rating": 0.0,
+        "out_of_domain": "error"
+      }
+    }
+  ],
+  "decision_maker": "",
+  "description": "",
+  "id": "b6_tied",
+  "performances": [
+    {
+      "alternative_id": "a0",
+      "criterion_id": "c0",
+      "value": 0.8
+    },
+    {
+      "alternative_id": "a0",
+      "criterion_id": "c1",
+      "value": 0.2
+    },
+    {
+      "alternative_id": "a1",
+      "criterion_id": "c0",
+      "value": 0.2
+    },
+    {
+      "alternative_id": "a1",
+      "criterion_id": "c1",
+      "value": 0.8
+    },
+    {
+      "alternative_id": "a2",
+      "criterion_id": "c0",
+      "value": 0.1
+    },
+    {
+      "alternative_id": "a2",
+      "criterion_id": "c1",
+      "value": 0.1
+    }
+  ],
+  "scenarios": [],
+  "schema_version": 1,
+  "title": "Tied results and partial dominance",
+  "weight_profiles": [
+    {
+      "id": "default",
+      "judgements": {
+        "c0": 1.0,
+        "c1": 1.0
+      },
+      "method": "swing",
+      "name": "Default"
+    }
+  ]
+}

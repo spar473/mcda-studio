@@ -1,0 +1,621 @@
+{
+  "schema_version": 5,
+  "id": "clinic_site_selection_example",
+  "title": "Clinic site selection (example)",
+  "description": "Invented AHP example: four candidate sites for a community health clinic, read through AHP pairwise judgements and, separately, MAVT swing weights. All names and figures are invented.",
+  "decision_maker": "Planning team",
+  "alternatives": [
+    {
+      "id": "town_centre",
+      "name": "Town centre site",
+      "metadata": {}
+    },
+    {
+      "id": "hospital_grounds",
+      "name": "Beside the hospital",
+      "metadata": {}
+    },
+    {
+      "id": "edge_of_town",
+      "name": "Edge-of-town site",
+      "metadata": {}
+    },
+    {
+      "id": "school_site",
+      "name": "Shared school site",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "access",
+      "name": "Access",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "travel_time",
+      "name": "Median travel time for the people served",
+      "parent_id": "access",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "min",
+        "lower": 5.0,
+        "upper": 40.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "bus_service",
+      "name": "Bus services per hour at the site",
+      "parent_id": "access",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "services/h",
+        "lower": 0.0,
+        "upper": 10.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    },
+    {
+      "id": "cost",
+      "name": "Cost",
+      "parent_id": null,
+      "order": 1,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "build_cost",
+      "name": "Land and build cost",
+      "parent_id": "cost",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD m",
+        "lower": 5.0,
+        "upper": 14.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "running_cost",
+      "name": "Annual running cost",
+      "parent_id": "cost",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD k/year",
+        "lower": 300.0,
+        "upper": 700.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "fit",
+      "name": "Fit",
+      "parent_id": null,
+      "order": 2,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "expansion",
+      "name": "Room to expand",
+      "parent_id": "fit",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "none",
+          "limited",
+          "ample"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "none": 0.0,
+          "limited": 0.5,
+          "ample": 1.0
+        }
+      }
+    },
+    {
+      "id": "support",
+      "name": "Community support",
+      "parent_id": "fit",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "low": 0.0,
+          "medium": 0.6,
+          "high": 1.0
+        }
+      }
+    }
+  ],
+  "performances": [
+    {
+      "alternative_id": "town_centre",
+      "criterion_id": "travel_time",
+      "value": 12.0
+    },
+    {
+      "alternative_id": "town_centre",
+      "criterion_id": "bus_service",
+      "value": 8.0
+    },
+    {
+      "alternative_id": "town_centre",
+      "criterion_id": "build_cost",
+      "value": 11.5
+    },
+    {
+      "alternative_id": "town_centre",
+      "criterion_id": "running_cost",
+      "value": 520.0
+    },
+    {
+      "alternative_id": "town_centre",
+      "criterion_id": "expansion",
+      "value": "none"
+    },
+    {
+      "alternative_id": "town_centre",
+      "criterion_id": "support",
+      "value": "high"
+    },
+    {
+      "alternative_id": "hospital_grounds",
+      "criterion_id": "travel_time",
+      "value": 18.0
+    },
+    {
+      "alternative_id": "hospital_grounds",
+      "criterion_id": "bus_service",
+      "value": 6.0
+    },
+    {
+      "alternative_id": "hospital_grounds",
+      "criterion_id": "build_cost",
+      "value": 9.0
+    },
+    {
+      "alternative_id": "hospital_grounds",
+      "criterion_id": "running_cost",
+      "value": 410.0
+    },
+    {
+      "alternative_id": "hospital_grounds",
+      "criterion_id": "expansion",
+      "value": "limited"
+    },
+    {
+      "alternative_id": "hospital_grounds",
+      "criterion_id": "support",
+      "value": "medium"
+    },
+    {
+      "alternative_id": "edge_of_town",
+      "criterion_id": "travel_time",
+      "value": 31.0
+    },
+    {
+      "alternative_id": "edge_of_town",
+      "criterion_id": "bus_service",
+      "value": 2.0
+    },
+    {
+      "alternative_id": "edge_of_town",
+      "criterion_id": "build_cost",
+      "value": 6.5
+    },
+    {
+      "alternative_id": "edge_of_town",
+      "criterion_id": "running_cost",
+      "value": 480.0
+    },
+    {
+      "alternative_id": "edge_of_town",
+      "criterion_id": "expansion",
+      "value": "ample"
+    },
+    {
+      "alternative_id": "edge_of_town",
+      "criterion_id": "support",
+      "value": "low"
+    },
+    {
+      "alternative_id": "school_site",
+      "criterion_id": "travel_time",
+      "value": 15.0
+    },
+    {
+      "alternative_id": "school_site",
+      "criterion_id": "bus_service",
+      "value": 4.0
+    },
+    {
+      "alternative_id": "school_site",
+      "criterion_id": "build_cost",
+      "value": 8.0
+    },
+    {
+      "alternative_id": "school_site",
+      "criterion_id": "running_cost",
+      "value": 390.0
+    },
+    {
+      "alternative_id": "school_site",
+      "criterion_id": "expansion",
+      "value": "limited"
+    },
+    {
+      "alternative_id": "school_site",
+      "criterion_id": "support",
+      "value": "high"
+    }
+  ],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Access-led",
+      "method": "swing",
+      "judgements": {
+        "access": 100.0,
+        "cost": 50.0,
+        "fit": 30.0,
+        "travel_time": 100.0,
+        "bus_service": 60.0,
+        "build_cost": 100.0,
+        "running_cost": 70.0,
+        "expansion": 60.0,
+        "support": 100.0
+      }
+    },
+    {
+      "id": "cost_led",
+      "name": "Cost-led",
+      "method": "swing",
+      "judgements": {
+        "access": 55.0,
+        "cost": 100.0,
+        "fit": 25.0,
+        "travel_time": 100.0,
+        "bus_service": 60.0,
+        "build_cost": 100.0,
+        "running_cost": 90.0,
+        "expansion": 60.0,
+        "support": 100.0
+      }
+    }
+  ],
+  "scenarios": [],
+  "analysis": {
+    "method": "ahp",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  },
+  "ahp": {
+    "criteria": [
+      {
+        "parent_id": null,
+        "judgements": [
+          {
+            "row": "access",
+            "column": "cost",
+            "value": 2.0
+          },
+          {
+            "row": "access",
+            "column": "fit",
+            "value": 3.0
+          },
+          {
+            "row": "cost",
+            "column": "fit",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "parent_id": "access",
+        "judgements": [
+          {
+            "row": "travel_time",
+            "column": "bus_service",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "parent_id": "cost",
+        "judgements": [
+          {
+            "row": "build_cost",
+            "column": "running_cost",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "parent_id": "fit",
+        "judgements": [
+          {
+            "row": "support",
+            "column": "expansion",
+            "value": 2.0
+          }
+        ]
+      }
+    ],
+    "alternatives": [
+      {
+        "criterion_id": "travel_time",
+        "judgements": [
+          {
+            "row": "town_centre",
+            "column": "school_site",
+            "value": 2.0
+          },
+          {
+            "row": "town_centre",
+            "column": "hospital_grounds",
+            "value": 3.0
+          },
+          {
+            "row": "town_centre",
+            "column": "edge_of_town",
+            "value": 7.0
+          },
+          {
+            "row": "school_site",
+            "column": "hospital_grounds",
+            "value": 2.0
+          },
+          {
+            "row": "school_site",
+            "column": "edge_of_town",
+            "value": 5.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "edge_of_town",
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "bus_service",
+        "judgements": [
+          {
+            "row": "town_centre",
+            "column": "hospital_grounds",
+            "value": 2.0
+          },
+          {
+            "row": "town_centre",
+            "column": "school_site",
+            "value": 3.0
+          },
+          {
+            "row": "town_centre",
+            "column": "edge_of_town",
+            "value": 7.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "school_site",
+            "value": 2.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "edge_of_town",
+            "value": 5.0
+          },
+          {
+            "row": "school_site",
+            "column": "edge_of_town",
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "build_cost",
+        "judgements": [
+          {
+            "row": "edge_of_town",
+            "column": "school_site",
+            "value": 2.0
+          },
+          {
+            "row": "edge_of_town",
+            "column": "hospital_grounds",
+            "value": 3.0
+          },
+          {
+            "row": "edge_of_town",
+            "column": "town_centre",
+            "value": 5.0
+          },
+          {
+            "row": "school_site",
+            "column": "hospital_grounds",
+            "value": 2.0
+          },
+          {
+            "row": "school_site",
+            "column": "town_centre",
+            "value": 4.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "town_centre",
+            "value": 3.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "running_cost",
+        "judgements": [
+          {
+            "row": "school_site",
+            "column": "hospital_grounds",
+            "value": 1.0
+          },
+          {
+            "row": "school_site",
+            "column": "edge_of_town",
+            "value": 3.0
+          },
+          {
+            "row": "school_site",
+            "column": "town_centre",
+            "value": 5.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "edge_of_town",
+            "value": 2.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "town_centre",
+            "value": 4.0
+          },
+          {
+            "row": "edge_of_town",
+            "column": "town_centre",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "expansion",
+        "judgements": [
+          {
+            "row": "edge_of_town",
+            "column": "hospital_grounds",
+            "value": 5.0
+          },
+          {
+            "row": "edge_of_town",
+            "column": "school_site",
+            "value": 5.0
+          },
+          {
+            "row": "edge_of_town",
+            "column": "town_centre",
+            "value": 9.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "school_site",
+            "value": 1.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "town_centre",
+            "value": 4.0
+          },
+          {
+            "row": "school_site",
+            "column": "town_centre",
+            "value": 4.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "support",
+        "judgements": [
+          {
+            "row": "town_centre",
+            "column": "school_site",
+            "value": 1.0
+          },
+          {
+            "row": "town_centre",
+            "column": "hospital_grounds",
+            "value": 3.0
+          },
+          {
+            "row": "town_centre",
+            "column": "edge_of_town",
+            "value": 9.0
+          },
+          {
+            "row": "school_site",
+            "column": "hospital_grounds",
+            "value": 3.0
+          },
+          {
+            "row": "school_site",
+            "column": "edge_of_town",
+            "value": 2.0
+          },
+          {
+            "row": "hospital_grounds",
+            "column": "edge_of_town",
+            "value": 5.0
+          }
+        ]
+      }
+    ]
+  }
+}

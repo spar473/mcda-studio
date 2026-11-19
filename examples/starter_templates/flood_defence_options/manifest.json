@@ -1,0 +1,28 @@
+{
+  "artifacts": [
+    {
+      "for_model": null,
+      "id": "project",
+      "kind": "project",
+      "label": "Project",
+      "optional": false,
+      "path": "project.json",
+      "reset_policy": "draft",
+      "schema_version": 6,
+      "sha256": "0a78cdae614b24da988b09b17e9b8e03fc0eb3614be0ce27beec6e248e741bf5"
+    }
+  ],
+  "description": "Invented feasibility and PROMETHEE II example: five flood defence options, seven criteria, a hard protection standard and a consent requirement checked beside every ranking, PROMETHEE II's own weights and thresholds, and two MAVT weight profiles. All names and figures are invented.",
+  "digest": "75406408f98aa2cf8169e575fe507fc1e39b93cc417937d6687aa912737a7c60",
+  "id": "flood_defence_options",
+  "schema_version": 1,
+  "source_example": "examples/flood_defence_options",
+  "source_version": "1",
+  "tasks": [
+    "Read each option's requirement status beside its ranking",
+    "Compare MAVT with PROMETHEE II and read why any pair differs",
+    "Check how a large cost advantage is capped by its preference threshold"
+  ],
+  "title": "Flood defence options",
+  "version": "1"
+}

@@ -1,0 +1,4768 @@
+{
+  "schema_version": 1,
+  "project_fingerprint": "4de10336353f1c969ce5a43187682504be152f2120e59b8affdb94a8373e627d",
+  "claims": [
+    {
+      "id": "captivate__hq_country",
+      "alternative_id": "captivate",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "Massey University news",
+        "reference": "https://www.massey.ac.nz/about/news/massey-spin-out-captivate-technology-appoints-ceo-following-seed-funding/",
+        "location": "Body",
+        "date": "2026-02-19",
+        "description": "Observed: Based in Palmerston North. Published 2026-02-19. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__stage",
+      "alternative_id": "captivate",
+      "criterion_id": "stage",
+      "value": "Seed",
+      "unit": null,
+      "source": {
+        "name": "Massey University news",
+        "reference": "https://www.massey.ac.nz/about/news/massey-spin-out-captivate-technology-appoints-ceo-following-seed-funding/",
+        "location": "Headline and body",
+        "date": "2026-02-19",
+        "description": "Observed: Closed a seed round led by WNT Ventures. Published 2026-02-19. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__sector",
+      "alternative_id": "captivate",
+      "criterion_id": "sector",
+      "value": "Climate and energy",
+      "unit": null,
+      "source": {
+        "name": "Massey University news",
+        "reference": "https://www.massey.ac.nz/about/news/massey-spin-out-captivate-technology-appoints-ceo-following-seed-funding/",
+        "location": "Body",
+        "date": "2026-02-19",
+        "description": "Judgement: Industrial carbon dioxide capture. Published 2026-02-19. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__founder_problem_fit",
+      "alternative_id": "captivate",
+      "criterion_id": "founder_problem_fit",
+      "value": "Recognised domain expert",
+      "unit": null,
+      "source": {
+        "name": "Massey University news",
+        "reference": "https://www.massey.ac.nz/about/news/massey-spin-out-captivate-technology-appoints-ceo-following-seed-funding/",
+        "location": "Body",
+        "date": "2026-02-19",
+        "description": "Judgement: Professor Shane Telfer founded the company from his Massey chemistry lab; no public commercial experience in the target industry. Published 2026-02-19. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__team_completeness",
+      "alternative_id": "captivate",
+      "criterion_id": "team_completeness",
+      "value": "All three, one part-time",
+      "unit": null,
+      "source": {
+        "name": "CEDA (Manawatū) success stories",
+        "reference": "https://ceda.nz/?p=240732",
+        "location": "Team",
+        "date": "2026-06-30",
+        "description": "Judgement: CEO (Salisbury), founder and CTO (Telfer) and a process engineer named; full-time status of the domain role not stated. Published 2026-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__track_record",
+      "alternative_id": "captivate",
+      "criterion_id": "track_record",
+      "value": "Senior role at scale or funded venture",
+      "unit": null,
+      "source": {
+        "name": "Massey University news",
+        "reference": "https://www.massey.ac.nz/about/news/massey-spin-out-captivate-technology-appoints-ceo-following-seed-funding/",
+        "location": "CEO appointment",
+        "date": "2026-02-19",
+        "description": "Judgement: New CEO has 20+ years of international strategy and transformation experience and is a chartered director. Published 2026-02-19. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__board_advisors",
+      "alternative_id": "captivate",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor",
+      "unit": null,
+      "source": {
+        "name": "Massey University news",
+        "reference": "https://www.massey.ac.nz/about/news/massey-spin-out-captivate-technology-appoints-ceo-following-seed-funding/",
+        "location": "Chair quote",
+        "date": "2026-02-19",
+        "description": "Judgement: A chair (Callum Streeter) is named; independence not stated. Published 2026-02-19. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__problem_severity",
+      "alternative_id": "captivate",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed",
+      "unit": null,
+      "source": {
+        "name": "KiwiNet success story",
+        "reference": "https://kiwinet.org.nz/SuccessStories/CaptivateTechnology",
+        "location": "Market section",
+        "date": "2026-11-04",
+        "description": "Judgement: Industrial emitters and biogas operators named as the problem holders; no independent cost figure on the pages read. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__defensibility",
+      "alternative_id": "captivate",
+      "criterion_id": "defensibility",
+      "value": "Filed patent or proprietary data",
+      "unit": null,
+      "source": {
+        "name": "KiwiNet success story",
+        "reference": "https://kiwinet.org.nz/SuccessStories/CaptivateTechnology",
+        "location": "Technology",
+        "date": "2026-11-04",
+        "description": "Judgement: Describes a patented MOF material (MUF-16); jurisdiction and grant status not stated. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__readiness",
+      "alternative_id": "captivate",
+      "criterion_id": "readiness",
+      "value": "Pilot-ready",
+      "unit": null,
+      "source": {
+        "name": "CEDA (Manawatū) success stories",
+        "reference": "https://ceda.nz/?p=240732",
+        "location": "Deployments",
+        "date": "2026-06-30",
+        "description": "Observed: Eight field demonstrations and a Canadian pilot at a gas processing site. Published 2026-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__regulatory_burden",
+      "alternative_id": "captivate",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required",
+      "unit": null,
+      "source": {
+        "name": "KiwiNet success story",
+        "reference": "https://kiwinet.org.nz/SuccessStories/CaptivateTechnology",
+        "location": "Technology",
+        "date": "2026-11-04",
+        "description": "Judgement: Capture equipment for industrial sites; no product approval regime identified. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__competitive_intensity",
+      "alternative_id": "captivate",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders",
+      "unit": null,
+      "source": {
+        "name": "Svante news release",
+        "reference": "https://svanteinc.com/2022/12/15/chevron-invests-in-carbon-capture-and-removal-technology-company-svante/",
+        "location": "Headline",
+        "date": "2022-12-15",
+        "description": "Judgement: Svante (US$318m Series E, solid-sorbent point-source capture); Carbon Clean also raised US$150m (World Cement, 13 May 2022). Published 2022-12-15. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "captivate__route_to_market",
+      "alternative_id": "captivate",
+      "criterion_id": "route_to_market",
+      "value": "Offshore process under way",
+      "unit": null,
+      "source": {
+        "name": "CEDA (Manawatū) success stories",
+        "reference": "https://ceda.nz/?p=240732",
+        "location": "Deployments",
+        "date": "2026-06-30",
+        "description": "Observed: Alberta pilot with North American partners CarbonQuest and Cielo. Published 2026-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__customer_validation",
+      "alternative_id": "captivate",
+      "criterion_id": "customer_validation",
+      "value": "Unpaid trial",
+      "unit": null,
+      "source": {
+        "name": "KiwiNet success story",
+        "reference": "https://kiwinet.org.nz/SuccessStories/CaptivateTechnology",
+        "location": "Pilots",
+        "date": "2026-11-04",
+        "description": "Judgement: Pilot hosts named (Contact Energy, Tourmaline); no paying customer named. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__commercial_stage",
+      "alternative_id": "captivate",
+      "criterion_id": "commercial_stage",
+      "value": "Pre-revenue",
+      "unit": null,
+      "source": {
+        "name": "KiwiNet success story",
+        "reference": "https://kiwinet.org.nz/SuccessStories/CaptivateTechnology",
+        "location": "Pilots",
+        "date": "2026-11-04",
+        "description": "Judgement: No commercial customers named. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__partnerships",
+      "alternative_id": "captivate",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme",
+      "unit": null,
+      "source": {
+        "name": "CEDA (Manawatū) success stories",
+        "reference": "https://ceda.nz/?p=240732",
+        "location": "Deployments",
+        "date": "2026-06-30",
+        "description": "Observed: CAD$4.2m project with Tourmaline, CarbonQuest and Cielo. Published 2026-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "captivate__milestone_delivery",
+      "alternative_id": "captivate",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered, some late or missed",
+      "unit": null,
+      "source": {
+        "name": "Massey Ventures news",
+        "reference": "https://www.masseyventures.co.nz/10112023",
+        "location": "Body",
+        "date": "2023-11-10",
+        "description": "Judgement: Announced a NZ$4m seed raise in November 2023; a NZ$3m seed closed in February 2026 (Massey University). Published 2023-11-10. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "captivate__market_size",
+      "alternative_id": "captivate",
+      "criterion_id": "market_size",
+      "value": 5.325,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 2 publisher estimates: Point-source carbon capture",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2026-03-16",
+        "description": "Observed (median rule): The Business Research Company (via GII) 3.45 (https://www.giiresearch.com/report/tbrc1985099-point-source-carbon-capture-device-pscd-global.html); Market Intelo 7.2 (https://marketintelo.com/report/point-source-carbon-capture-market/amp). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 3.45,
+      "uncertainty_upper": 7.2,
+      "outdated": false
+    },
+    {
+      "id": "captivate__market_growth",
+      "alternative_id": "captivate",
+      "criterion_id": "market_growth",
+      "value": 14.95,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 2 publisher estimates: Point-source carbon capture",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2026-03-16",
+        "description": "Observed (median rule): The Business Research Company (via GII) 14.6 (https://www.giiresearch.com/report/tbrc1985099-point-source-carbon-capture-device-pscd-global.html); Market Intelo 15.3 (https://marketintelo.com/report/point-source-carbon-capture-market/amp). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 14.6,
+      "uncertainty_upper": 15.3,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__hq_country",
+      "alternative_id": "wellumio",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "HLTH news",
+        "reference": "https://hlth.com/insights/news/wellumio-raises-7-28m-led-by-nuance-connected-capital-to-advance-portable-mri-for-stroke-care-2026-02-12",
+        "location": "First paragraph",
+        "date": "2026-02-12",
+        "description": "Observed: Described as New Zealand-based. Published 2026-02-12. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__stage",
+      "alternative_id": "wellumio",
+      "criterion_id": "stage",
+      "value": "Seed",
+      "unit": null,
+      "source": {
+        "name": "HIT Consultant",
+        "reference": "https://hitconsultant.net/2026/07/24/wellumio-closes-9m-pre-series-a-axana-portable-stroke-mri/",
+        "location": "Headline",
+        "date": "2026-07-24",
+        "description": "Observed: Pre-Series A closed July 2026 (maps to Seed). Published 2026-07-24. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__sector",
+      "alternative_id": "wellumio",
+      "criterion_id": "sector",
+      "value": "Health and medtech",
+      "unit": null,
+      "source": {
+        "name": "Wellumio website",
+        "reference": "https://www.wellumio.com/",
+        "location": "Product",
+        "date": "2026-11-04",
+        "description": "Judgement: Portable MRI brain scanner. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__founder_problem_fit",
+      "alternative_id": "wellumio",
+      "criterion_id": "founder_problem_fit",
+      "value": "Recognised domain expert",
+      "unit": null,
+      "source": {
+        "name": "Wellumio: Our Journey",
+        "reference": "https://www.wellumio.com/ourjourney",
+        "location": "Founders",
+        "date": "2026-11-04",
+        "description": "Observed: CEO is an MD PhD with a 15-year career in neuromonitoring research. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__team_completeness",
+      "alternative_id": "wellumio",
+      "criterion_id": "team_completeness",
+      "value": "Next-stage leads named",
+      "unit": null,
+      "source": {
+        "name": "Wellumio: Our Journey",
+        "reference": "https://www.wellumio.com/ourjourney",
+        "location": "2023-2024",
+        "date": "2026-11-04",
+        "description": "Judgement: Technical co-founders, a commercialisation lead, a general manager and a VP Product Development (ex-GE Healthcare) are named. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__track_record",
+      "alternative_id": "wellumio",
+      "criterion_id": "track_record",
+      "value": "Senior role at scale or funded venture",
+      "unit": null,
+      "source": {
+        "name": "Wellumio: Our Journey",
+        "reference": "https://www.wellumio.com/ourjourney",
+        "location": "2024",
+        "date": "2026-11-04",
+        "description": "Judgement: VP Product Development spent 8 years at GE Healthcare as a global product manager. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__board_advisors",
+      "alternative_id": "wellumio",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor",
+      "unit": null,
+      "source": {
+        "name": "Wellumio: Our Journey",
+        "reference": "https://www.wellumio.com/ourjourney",
+        "location": "2024",
+        "date": "2026-11-04",
+        "description": "Judgement: A clinical advisory board was formed; an investor director is named (Idealog). Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__problem_severity",
+      "alternative_id": "wellumio",
+      "criterion_id": "problem_severity",
+      "value": "Cost independently quantified",
+      "unit": null,
+      "source": {
+        "name": "Idealog",
+        "reference": "https://idealog.co.nz/venture/2026/02/kiwi-stroke-diagnostic-venture-secures-7m",
+        "location": "Body",
+        "date": "2026-02-11",
+        "description": "Judgement: Reports that under 5% of stroke patients are treated within the first hour. Published 2026-02-11. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__defensibility",
+      "alternative_id": "wellumio",
+      "criterion_id": "defensibility",
+      "value": "Granted patent or exclusive licence",
+      "unit": null,
+      "source": {
+        "name": "Idealog",
+        "reference": "https://idealog.co.nz/venture/2026/02/kiwi-stroke-diagnostic-venture-secures-7m",
+        "location": "Body",
+        "date": "2026-02-11",
+        "description": "Observed: A US patent for the underlying technique was granted in December 2025. Published 2026-02-11. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__readiness",
+      "alternative_id": "wellumio",
+      "criterion_id": "readiness",
+      "value": "Pilot-ready",
+      "unit": null,
+      "source": {
+        "name": "Idealog",
+        "reference": "https://idealog.co.nz/venture/2026/02/kiwi-stroke-diagnostic-venture-secures-7m",
+        "location": "Body",
+        "date": "2026-02-11",
+        "description": "Judgement: First-in-human feasibility trials and a hospital trial. Published 2026-02-11. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__regulatory_burden",
+      "alternative_id": "wellumio",
+      "criterion_id": "regulatory_burden",
+      "value": "Approval required, under way",
+      "unit": null,
+      "source": {
+        "name": "Wellumio product disclaimer",
+        "reference": "https://www.wellumio.com/disclaimer",
+        "location": "Statement",
+        "date": "2026-11-04",
+        "description": "Observed: Products are under clinical investigation and not for sale. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__competitive_intensity",
+      "alternative_id": "wellumio",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders",
+      "unit": null,
+      "source": {
+        "name": "University of Maryland ECE news",
+        "reference": "https://ece.umd.edu/news/story/hyperfine-begins-trading-on-the-nasdaq-global-market",
+        "location": "Body",
+        "date": "2021-12-23",
+        "description": "Judgement: Hyperfine (Swoop portable MRI) is Nasdaq-listed. Published 2021-12-23. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "wellumio__route_to_market",
+      "alternative_id": "wellumio",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity",
+      "unit": null,
+      "source": {
+        "name": "Wellumio website",
+        "reference": "https://www.wellumio.com/",
+        "location": "Contact",
+        "date": "2026-11-04",
+        "description": "Observed: Offices in Clayton (Australia) and Menlo Park (United States). Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__customer_validation",
+      "alternative_id": "wellumio",
+      "criterion_id": "customer_validation",
+      "value": "Unpaid trial",
+      "unit": null,
+      "source": {
+        "name": "Wellumio: Our Journey",
+        "reference": "https://www.wellumio.com/ourjourney",
+        "location": "2024",
+        "date": "2026-11-04",
+        "description": "Judgement: Trial partnership with the Royal Melbourne Hospital; not a sale. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__commercial_stage",
+      "alternative_id": "wellumio",
+      "criterion_id": "commercial_stage",
+      "value": "Pre-revenue",
+      "unit": null,
+      "source": {
+        "name": "Wellumio product disclaimer",
+        "reference": "https://www.wellumio.com/disclaimer",
+        "location": "Statement",
+        "date": "2026-11-04",
+        "description": "Observed: Not for sale. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__partnerships",
+      "alternative_id": "wellumio",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme",
+      "unit": null,
+      "source": {
+        "name": "Wellumio: Our Journey",
+        "reference": "https://www.wellumio.com/ourjourney",
+        "location": "2024",
+        "date": "2026-11-04",
+        "description": "Observed: Clinical trial partnership with the Royal Melbourne Hospital. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__milestone_delivery",
+      "alternative_id": "wellumio",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan",
+      "unit": null,
+      "source": {
+        "name": "HIT Consultant",
+        "reference": "https://hitconsultant.net/2026/07/24/wellumio-closes-9m-pre-series-a-axana-portable-stroke-mri/",
+        "location": "Body",
+        "date": "2026-07-24",
+        "description": "Judgement: First close in February 2026 followed by an oversubscribed final close in July 2026. Published 2026-07-24. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wellumio__market_size",
+      "alternative_id": "wellumio",
+      "criterion_id": "market_size",
+      "value": 3.245,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 4 publisher estimates: Portable magnetic resonance imaging",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2025-09-10",
+        "description": "Observed (median rule): Straits Research 2.71 (https://straitsresearch.com/report/portable-magnetic-resonance-imaging-market); The Business Research Company (via GII) 3.78 (https://gii.tw/report/tbrc1706115-portable-magnetic-resonance-imaging-mri-global.html); Mordor Intelligence 4.38 (https://www.mordorintelligence.com/industry-reports/portable-magnetic-resonance-imaging-market); Reportprime 0.47786 (https://www.reportprime.com/portable-mri-r9073.md). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 0.47786,
+      "uncertainty_upper": 4.38,
+      "outdated": true
+    },
+    {
+      "id": "wellumio__market_growth",
+      "alternative_id": "wellumio",
+      "criterion_id": "market_growth",
+      "value": 6.375,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 4 publisher estimates: Portable magnetic resonance imaging",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2025-09-10",
+        "description": "Observed (median rule): Straits Research 5.8 (https://straitsresearch.com/report/portable-magnetic-resonance-imaging-market); The Business Research Company (via GII) 6.7 (https://gii.tw/report/tbrc1706115-portable-magnetic-resonance-imaging-mri-global.html); Mordor Intelligence 6.05 (https://www.mordorintelligence.com/industry-reports/portable-magnetic-resonance-imaging-market); Reportprime 12.65 (https://www.reportprime.com/portable-mri-r9073.md). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 5.8,
+      "uncertainty_upper": 12.65,
+      "outdated": true
+    },
+    {
+      "id": "scentian_bio__hq_country",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Dateline",
+        "date": "2026-04-08",
+        "description": "Observed: Auckland, New Zealand. Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__stage",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "stage",
+      "value": "Seed",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Headline",
+        "date": "2026-04-08",
+        "description": "Observed: Pre-Series A, April 2026 (maps to Seed). Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__sector",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "sector",
+      "value": "Agritech and food",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Body",
+        "date": "2026-04-08",
+        "description": "Judgement: Initial market is food quality control. Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__founder_problem_fit",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "founder_problem_fit",
+      "value": "Recognised domain expert",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Observed: Scientific founder spent nearly two decades at Plant and Food Research. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__team_completeness",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "team_completeness",
+      "value": "Two key roles named",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Judgement: CEO and lead scientist named; no domain or regulatory lead named. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__track_record",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "track_record",
+      "value": "Prior exit or scaled-company executive",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Observed: CEO founded a Silicon Valley start-up later acquired by Ancestry.com. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__board_advisors",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor",
+      "unit": null,
+      "source": {
+        "name": "Global AgInvesting",
+        "reference": "https://globalaginvesting.com/?p=9588",
+        "location": "Body",
+        "date": "2023-09-27",
+        "description": "Judgement: An agrifood investor (Finistere Ventures) joined the board. Published 2023-09-27. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "scentian_bio__problem_severity",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Judgement: Zespri innovation-fund pilot on harvest timing. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__defensibility",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "defensibility",
+      "value": "Filed patent or proprietary data",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Observed: Patents filed; a library of 74 synthesised insect receptors. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__readiness",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "readiness",
+      "value": "Pilot-ready",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Body",
+        "date": "2026-04-08",
+        "description": "Observed: Preparing commercial launch; shipping expected within months of April 2026. Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__regulatory_burden",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Body",
+        "date": "2026-04-08",
+        "description": "Judgement: Food quality control first; health uses are later. Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__competitive_intensity",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders",
+      "unit": null,
+      "source": {
+        "name": "Cosmetics Business",
+        "reference": "https://cosmeticsbusiness.com/-digital-nose-creator-aryballe-raises-7m-to-meet-fragrance-technology-demand--167667",
+        "location": "Body",
+        "date": "2020-07-13",
+        "description": "Judgement: Aryballe (digital olfaction) had raised EUR17m by July 2020. Published 2020-07-13. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "scentian_bio__route_to_market",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "route_to_market",
+      "value": "Offshore markets named",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Body",
+        "date": "2026-04-08",
+        "description": "Judgement: Worked with some of the world's largest food companies; no offshore entity stated. Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__customer_validation",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "customer_validation",
+      "value": "Paid pilot",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Observed: Paid pilots with five major global food companies. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__commercial_stage",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "commercial_stage",
+      "value": "First revenue",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Judgement: Paid pilots; commercial launch pending. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__partnerships",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme",
+      "unit": null,
+      "source": {
+        "name": "University of Auckland news",
+        "reference": "https://www.auckland.ac.nz/en/news/2025/12/08/scentian-bio-reimagining-smell-as-sensors.html",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Observed: Pilot through Zespri's innovation fund; Gates Foundation grant. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__milestone_delivery",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "milestone_delivery",
+      "value": "Announced, none yet due",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Body",
+        "date": "2026-04-08",
+        "description": "Judgement: Shipping expected within months of April 2026; delivery not yet reported. Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "scentian_bio__market_size",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "market_size",
+      "value": 0.86314,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 4 publisher estimates: Electronic nose (e-nose)",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2025-07-22",
+        "description": "Observed (median rule): Global Market Insights 0.0597 (https://www.gminsights.com/industry-analysis/e-nose-electronic-nose-market); Mordor Intelligence 0.14628 (https://www.mordorintelligence.com/industry-reports/electronic-nose-market); Market Research Future 1.58 (https://www.marketresearchfuture.com/reports/electronic-nose-market-22638); Market.us 44.01 (https://scoop.market.us/?p=58472). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 0.0597,
+      "uncertainty_upper": 44.01,
+      "outdated": true
+    },
+    {
+      "id": "scentian_bio__market_growth",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "market_growth",
+      "value": 11.18,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 4 publisher estimates: Electronic nose (e-nose)",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2025-07-22",
+        "description": "Observed (median rule): Global Market Insights 9.5 (https://www.gminsights.com/industry-analysis/e-nose-electronic-nose-market); Mordor Intelligence 12.26 (https://www.mordorintelligence.com/industry-reports/electronic-nose-market); Market Research Future 10.1 (https://www.marketresearchfuture.com/reports/electronic-nose-market-22638); Market.us 18.5 (https://scoop.market.us/?p=58472). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 9.5,
+      "uncertainty_upper": 18.5,
+      "outdated": true
+    },
+    {
+      "id": "hectre__hq_country",
+      "alternative_id": "hectre",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "Fruitnet (Eurofruit)",
+        "reference": "https://www.fruitnet.com/eurofruit/orchard-tech-firm-hectre-secures-funding-for-ai-based-expansion/270555.article",
+        "location": "First paragraph",
+        "date": "2026-02-13",
+        "description": "Observed: Auckland-based. Published 2026-02-13. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__stage",
+      "alternative_id": "hectre",
+      "criterion_id": "stage",
+      "value": "Series A",
+      "unit": null,
+      "source": {
+        "name": "Punakaiki Fund announcement",
+        "reference": "https://punakaikifund.co.nz/hectre-welcomed-to-punakaiki-fund-portfolio-in-12m-series-a-capital-raise/",
+        "location": "Headline",
+        "date": "2026-02-12",
+        "description": "Observed: NZ$12m Series A, February 2026. Published 2026-02-12. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__sector",
+      "alternative_id": "hectre",
+      "criterion_id": "sector",
+      "value": "Agritech and food",
+      "unit": null,
+      "source": {
+        "name": "Punakaiki Fund announcement",
+        "reference": "https://punakaikifund.co.nz/hectre-welcomed-to-punakaiki-fund-portfolio-in-12m-series-a-capital-raise/",
+        "location": "Body",
+        "date": "2026-02-12",
+        "description": "Judgement: Fruit imaging and orchard software. Published 2026-02-12. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__founder_problem_fit",
+      "alternative_id": "hectre",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain",
+      "unit": null,
+      "source": {
+        "name": "Hectre: About us",
+        "reference": "https://hectre.com/about-us/",
+        "location": "Leadership",
+        "date": "2026-11-04",
+        "description": "Observed: CEO has 7+ years in the agriculture sector. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__team_completeness",
+      "alternative_id": "hectre",
+      "criterion_id": "team_completeness",
+      "value": "All three full-time",
+      "unit": null,
+      "source": {
+        "name": "Hectre: About us",
+        "reference": "https://hectre.com/about-us/",
+        "location": "Leadership",
+        "date": "2026-11-04",
+        "description": "Observed: CEO, CTO and a head of global sales with 10+ years in fruit post-harvest. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__track_record",
+      "alternative_id": "hectre",
+      "criterion_id": "track_record",
+      "value": "Prior exit or scaled-company executive",
+      "unit": null,
+      "source": {
+        "name": "Hectre: About us",
+        "reference": "https://hectre.com/about-us/",
+        "location": "Leadership",
+        "date": "2026-11-04",
+        "description": "Observed: CTO was GM of Product at Xero. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__board_advisors",
+      "alternative_id": "hectre",
+      "criterion_id": "board_advisors",
+      "value": "None named",
+      "unit": null,
+      "source": {
+        "name": "Hectre: About us",
+        "reference": "https://hectre.com/about-us/",
+        "location": "Whole page",
+        "date": "2026-11-04",
+        "description": "Judgement: No board or advisors named on the pages read. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__problem_severity",
+      "alternative_id": "hectre",
+      "criterion_id": "problem_severity",
+      "value": "Company statement only",
+      "unit": null,
+      "source": {
+        "name": "Hectre website",
+        "reference": "https://www.hectre.com/",
+        "location": "Testimonials",
+        "date": "2026-11-04",
+        "description": "Judgement: Customer outcomes appear only as testimonials on the company site. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__defensibility",
+      "alternative_id": "hectre",
+      "criterion_id": "defensibility",
+      "value": "Filed patent or proprietary data",
+      "unit": null,
+      "source": {
+        "name": "Punakaiki Fund announcement",
+        "reference": "https://punakaikifund.co.nz/hectre-welcomed-to-punakaiki-fund-portfolio-in-12m-series-a-capital-raise/",
+        "location": "Body",
+        "date": "2026-02-12",
+        "description": "Observed: Quality data on 17 billion apples and 37 billion cherries. Published 2026-02-12. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__readiness",
+      "alternative_id": "hectre",
+      "criterion_id": "readiness",
+      "value": "Commercial",
+      "unit": null,
+      "source": {
+        "name": "Hectre: About us",
+        "reference": "https://hectre.com/about-us/",
+        "location": "Milestones",
+        "date": "2026-11-04",
+        "description": "Observed: Products sold since 2016-2017. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__regulatory_burden",
+      "alternative_id": "hectre",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required",
+      "unit": null,
+      "source": {
+        "name": "Hectre website",
+        "reference": "https://www.hectre.com/",
+        "location": "Products",
+        "date": "2026-11-04",
+        "description": "Judgement: Software and imaging; no product approval regime identified. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__competitive_intensity",
+      "alternative_id": "hectre",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders",
+      "unit": null,
+      "source": {
+        "name": "DIResearch via MarketPublishers",
+        "reference": "https://marketpublishers.com/report/equipment/food-beverage-equipment/fruit-n-vegetable-sorting-machine-research-report-dir.html",
+        "location": "Manufacturer list",
+        "date": "2025-06-01",
+        "description": "Judgement: TOMRA, a listed company, is among the sorting-machine manufacturers profiled. Published 2025-06-01. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "hectre__route_to_market",
+      "alternative_id": "hectre",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity",
+      "unit": null,
+      "source": {
+        "name": "Hectre: About us",
+        "reference": "https://hectre.com/about-us/",
+        "location": "Milestones",
+        "date": "2026-11-04",
+        "description": "Judgement: Customers in the US, Canada, Italy, Chile and Mexico; no offshore entity confirmed. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__customer_validation",
+      "alternative_id": "hectre",
+      "criterion_id": "customer_validation",
+      "value": "Production customers",
+      "unit": null,
+      "source": {
+        "name": "Fruitnet (Eurofruit)",
+        "reference": "https://www.fruitnet.com/eurofruit/orchard-tech-firm-hectre-secures-funding-for-ai-based-expansion/270555.article",
+        "location": "Body",
+        "date": "2026-02-13",
+        "description": "Observed: Named customers in Italy, Spain and Washington State. Published 2026-02-13. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__commercial_stage",
+      "alternative_id": "hectre",
+      "criterion_id": "commercial_stage",
+      "value": "Scaling",
+      "unit": null,
+      "source": {
+        "name": "Punakaiki Fund announcement",
+        "reference": "https://punakaikifund.co.nz/hectre-welcomed-to-punakaiki-fund-portfolio-in-12m-series-a-capital-raise/",
+        "location": "Body",
+        "date": "2026-02-12",
+        "description": "Observed: Revenue growing about 100% a year; customers on three continents. Published 2026-02-12. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__partnerships",
+      "alternative_id": "hectre",
+      "criterion_id": "partnerships",
+      "value": "None public",
+      "unit": null,
+      "source": {
+        "name": "Hectre: About us",
+        "reference": "https://hectre.com/about-us/",
+        "location": "Whole page",
+        "date": "2026-11-04",
+        "description": "Judgement: No partners named; integrations mentioned without names. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__milestone_delivery",
+      "alternative_id": "hectre",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan",
+      "unit": null,
+      "source": {
+        "name": "Punakaiki Fund announcement",
+        "reference": "https://punakaikifund.co.nz/hectre-welcomed-to-punakaiki-fund-portfolio-in-12m-series-a-capital-raise/",
+        "location": "Body",
+        "date": "2026-02-12",
+        "description": "Judgement: Series A targeted at NZ$10m and extended to NZ$12m. Published 2026-02-12. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hectre__market_size",
+      "alternative_id": "hectre",
+      "criterion_id": "market_size",
+      "value": 1.26,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 3 publisher estimates: Fruit and vegetable sorting machines",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2025-06-01",
+        "description": "Observed (median rule): 360iResearch (via GII) 1.26 (https://www.giiresearch.com/report/ires2008217-fruit-vegetable-sorting-machine-market-by-machine.html); DIResearch (via MarketPublishers) 0.76252 (https://marketpublishers.com/report/equipment/food-beverage-equipment/fruit-n-vegetable-sorting-machine-research-report-dir.html); PW Consulting 2.1854 (https://pmarketresearch.com/worldwide-fruit-and-vegetable-sorting-machine-market-research). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 0.76252,
+      "uncertainty_upper": 2.1854,
+      "outdated": true
+    },
+    {
+      "id": "hectre__market_growth",
+      "alternative_id": "hectre",
+      "criterion_id": "market_growth",
+      "value": 7.12,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 3 publisher estimates: Fruit and vegetable sorting machines",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2025-06-01",
+        "description": "Observed (median rule): 360iResearch (via GII) 7.28 (https://www.giiresearch.com/report/ires2008217-fruit-vegetable-sorting-machine-market-by-machine.html); DIResearch (via MarketPublishers) 6.8 (https://marketpublishers.com/report/equipment/food-beverage-equipment/fruit-n-vegetable-sorting-machine-research-report-dir.html); PW Consulting 7.12 (https://pmarketresearch.com/worldwide-fruit-and-vegetable-sorting-machine-market-research). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 6.8,
+      "uncertainty_upper": 7.28,
+      "outdated": true
+    },
+    {
+      "id": "wych__hq_country",
+      "alternative_id": "wych",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/topic/funding/kiwi-data-fintech-wych-raises-nz1-5-million-for-open-banking/",
+        "location": "Body",
+        "date": "2025-09-30",
+        "description": "Observed: Founded in Auckland in 2018. Published 2025-09-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "wych__stage",
+      "alternative_id": "wych",
+      "criterion_id": "stage",
+      "value": "Seed",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/topic/funding/kiwi-data-fintech-wych-raises-nz1-5-million-for-open-banking/",
+        "location": "Body",
+        "date": "2025-09-30",
+        "description": "Judgement: First external round (NZ$1.5m) after bootstrapping; no label published. Published 2025-09-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "wych__sector",
+      "alternative_id": "wych",
+      "criterion_id": "sector",
+      "value": "Fintech and B2B software",
+      "unit": null,
+      "source": {
+        "name": "Wych website",
+        "reference": "https://www.wych.io/",
+        "location": "Products",
+        "date": "2026-11-04",
+        "description": "Judgement: Open banking infrastructure. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__founder_problem_fit",
+      "alternative_id": "wych",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/topic/funding/kiwi-data-fintech-wych-raises-nz1-5-million-for-open-banking/",
+        "location": "Body",
+        "date": "2025-09-30",
+        "description": "Judgement: Founder has run the open banking business since 2018. Published 2025-09-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "wych__team_completeness",
+      "alternative_id": "wych",
+      "criterion_id": "team_completeness",
+      "value": "One key role named",
+      "unit": null,
+      "source": {
+        "name": "Wych website",
+        "reference": "https://www.wych.io/",
+        "location": "Whole page",
+        "date": "2026-11-04",
+        "description": "Judgement: Only the founder is named in a leadership role. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__track_record",
+      "alternative_id": "wych",
+      "criterion_id": "track_record",
+      "value": "Prior venture or 5+ years operating",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/topic/funding/kiwi-data-fintech-wych-raises-nz1-5-million-for-open-banking/",
+        "location": "Body",
+        "date": "2025-09-30",
+        "description": "Judgement: Founder described as a tech entrepreneur; earlier ventures not named. Published 2025-09-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "wych__board_advisors",
+      "alternative_id": "wych",
+      "criterion_id": "board_advisors",
+      "value": "None named",
+      "unit": null,
+      "source": {
+        "name": "Wych website",
+        "reference": "https://www.wych.io/",
+        "location": "Whole page",
+        "date": "2026-11-04",
+        "description": "Judgement: No board or advisors named. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__problem_severity",
+      "alternative_id": "wych",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed",
+      "unit": null,
+      "source": {
+        "name": "Kiwibank media release",
+        "reference": "https://www.kiwibank.co.nz/about-us/news-and-updates/media-releases/kiwibank-leads-market-with-open-banking-for-individual-business-customers/",
+        "location": "Body",
+        "date": "2026-05-28",
+        "description": "Judgement: Kiwibank delivered open banking ahead of a regulatory deadline. Published 2026-05-28. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__defensibility",
+      "alternative_id": "wych",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset",
+      "unit": null,
+      "source": {
+        "name": "Wych website",
+        "reference": "https://www.wych.io/",
+        "location": "Accreditation",
+        "date": "2026-11-04",
+        "description": "Judgement: Accreditation and integrations; no patent or exclusive licence stated. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__readiness",
+      "alternative_id": "wych",
+      "criterion_id": "readiness",
+      "value": "Commercial",
+      "unit": null,
+      "source": {
+        "name": "Kiwibank media release",
+        "reference": "https://www.kiwibank.co.nz/about-us/news-and-updates/media-releases/kiwibank-leads-market-with-open-banking-for-individual-business-customers/",
+        "location": "Body",
+        "date": "2026-05-28",
+        "description": "Observed: Live with Kiwibank from 28 May 2026. Published 2026-05-28. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__regulatory_burden",
+      "alternative_id": "wych",
+      "criterion_id": "regulatory_burden",
+      "value": "Approved in one market or certification only",
+      "unit": null,
+      "source": {
+        "name": "Wych website",
+        "reference": "https://www.wych.io/",
+        "location": "Accreditation",
+        "date": "2026-11-04",
+        "description": "Observed: ACCC-accredited CDR provider in Australia; SOC 2. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__competitive_intensity",
+      "alternative_id": "wych",
+      "criterion_id": "competitive_intensity",
+      "value": "Unfunded direct competitors",
+      "unit": null,
+      "source": {
+        "name": "CFOtech Australia",
+        "reference": "https://cfotech.com.au/story/red-bird-ventures-leads-1-4m-investment-in-nz-fintech-akahu",
+        "location": "Body",
+        "date": "2023-10-13",
+        "description": "Judgement: Akahu raised NZ$1.4m; no direct competitor with US$10m+ identified. Published 2023-10-13. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "wych__route_to_market",
+      "alternative_id": "wych",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity",
+      "unit": null,
+      "source": {
+        "name": "Wych website",
+        "reference": "https://www.wych.io/",
+        "location": "Footer",
+        "date": "2026-11-04",
+        "description": "Observed: Wych Australia Pty Ltd with a North Sydney office and CDR accreditation. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__customer_validation",
+      "alternative_id": "wych",
+      "criterion_id": "customer_validation",
+      "value": "Production customers",
+      "unit": null,
+      "source": {
+        "name": "Kiwibank media release",
+        "reference": "https://www.kiwibank.co.nz/about-us/news-and-updates/media-releases/kiwibank-leads-market-with-open-banking-for-individual-business-customers/",
+        "location": "Body",
+        "date": "2026-05-28",
+        "description": "Observed: Kiwibank's first open banking partner. Published 2026-05-28. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__commercial_stage",
+      "alternative_id": "wych",
+      "criterion_id": "commercial_stage",
+      "value": "Repeatable revenue",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/topic/funding/kiwi-data-fintech-wych-raises-nz1-5-million-for-open-banking/",
+        "location": "Body",
+        "date": "2025-09-30",
+        "description": "Judgement: Clients include a tier-1 Australian bank, non-bank lenders and fintechs. Published 2025-09-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "wych__partnerships",
+      "alternative_id": "wych",
+      "criterion_id": "partnerships",
+      "value": "Commercial agreement with an established firm",
+      "unit": null,
+      "source": {
+        "name": "Kiwibank media release",
+        "reference": "https://www.kiwibank.co.nz/about-us/news-and-updates/media-releases/kiwibank-leads-market-with-open-banking-for-individual-business-customers/",
+        "location": "Body",
+        "date": "2026-05-28",
+        "description": "Observed: Integration partner connecting Kiwibank with accredited third parties. Published 2026-05-28. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__milestone_delivery",
+      "alternative_id": "wych",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan",
+      "unit": null,
+      "source": {
+        "name": "Kiwibank media release",
+        "reference": "https://www.kiwibank.co.nz/about-us/news-and-updates/media-releases/kiwibank-leads-market-with-open-banking-for-individual-business-customers/",
+        "location": "Body",
+        "date": "2026-05-28",
+        "description": "Judgement: Planned Kiwibank services from 2026 (Startup Daily, 2025); launched 28 May 2026. Published 2026-05-28. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "wych__market_size",
+      "alternative_id": "wych",
+      "criterion_id": "market_size",
+      "value": 35.72,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 3 publisher estimates: Open banking",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2026-06-01",
+        "description": "Observed (median rule): Grand View Research 39.8 (https://www.grandviewresearch.com/industry-analysis/open-banking-systems-market); Next Move Strategy Consulting 27.85 (https://www.nextmsc.com/report/open-banking-market-bf5510); Precedence Research 35.72 (https://www.precedenceresearch.com/open-banking-market). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 27.85,
+      "uncertainty_upper": 39.8,
+      "outdated": false
+    },
+    {
+      "id": "wych__market_growth",
+      "alternative_id": "wych",
+      "criterion_id": "market_growth",
+      "value": 22.8,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 3 publisher estimates: Open banking",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2026-06-01",
+        "description": "Observed (median rule): Grand View Research 28.2 (https://www.grandviewresearch.com/industry-analysis/open-banking-systems-market); Next Move Strategy Consulting 22.8 (https://www.nextmsc.com/report/open-banking-market-bf5510); Precedence Research 21.0 (https://www.precedenceresearch.com/open-banking-market). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 21.0,
+      "uncertainty_upper": 28.2,
+      "outdated": false
+    },
+    {
+      "id": "upstock__hq_country",
+      "alternative_id": "upstock",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/?p=112718",
+        "location": "First paragraph",
+        "date": "2023-06-30",
+        "description": "Observed: Described as a Kiwi B2B marketplace. Published 2023-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__stage",
+      "alternative_id": "upstock",
+      "criterion_id": "stage",
+      "value": "Seed",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/?p=112718",
+        "location": "Body",
+        "date": "2023-06-30",
+        "description": "Judgement: Raised NZ$6m in 2023; public pages give no round label. Published 2023-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__sector",
+      "alternative_id": "upstock",
+      "criterion_id": "sector",
+      "value": "Consumer and marketplaces",
+      "unit": null,
+      "source": {
+        "name": "Upstock: About",
+        "reference": "https://www.upstock.app/about",
+        "location": "Tagline",
+        "date": "2026-11-04",
+        "description": "Judgement: Wholesale ordering marketplace for foodservice. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "upstock__founder_problem_fit",
+      "alternative_id": "upstock",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain",
+      "unit": null,
+      "source": {
+        "name": "Upstock: About",
+        "reference": "https://www.upstock.app/about",
+        "location": "Founders",
+        "date": "2026-11-04",
+        "description": "Observed: Founder owns a soft-drink brand and built the tool for his own wholesale orders. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "upstock__team_completeness",
+      "alternative_id": "upstock",
+      "criterion_id": "team_completeness",
+      "value": "All three, one part-time",
+      "unit": null,
+      "source": {
+        "name": "Upstock: About",
+        "reference": "https://www.upstock.app/about",
+        "location": "Team",
+        "date": "2026-11-04",
+        "description": "Judgement: CEO and co-founder from Xero, a supplier-founder and a sales team named. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "upstock__track_record",
+      "alternative_id": "upstock",
+      "criterion_id": "track_record",
+      "value": "Several founders at that level",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/?p=112718",
+        "location": "Body",
+        "date": "2023-06-30",
+        "description": "Observed: Co-founder was on Xero's 2006 founding team; CEO was Xero's CPO. Published 2023-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__board_advisors",
+      "alternative_id": "upstock",
+      "criterion_id": "board_advisors",
+      "value": "Sector and investor directors",
+      "unit": null,
+      "source": {
+        "name": "Upstock: About",
+        "reference": "https://www.upstock.app/about",
+        "location": "Board",
+        "date": "2026-11-04",
+        "description": "Observed: Independent directors include an Icehouse Ventures executive and a Yelp SVP. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "upstock__problem_severity",
+      "alternative_id": "upstock",
+      "criterion_id": "problem_severity",
+      "value": "Company statement only",
+      "unit": null,
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/BU2206/S00121.htm",
+        "location": "Quote",
+        "date": "2022-06-08",
+        "description": "Judgement: Company says most hospitality businesses still order on paper. Published 2022-06-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__defensibility",
+      "alternative_id": "upstock",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset",
+      "unit": null,
+      "source": {
+        "name": "Inside FMCG (partnered content)",
+        "reference": "https://insidefmcg.com.au/2025/01/20/upstock-transforms-fmcg-by-automating-wholesale-ordering-and-logistics/",
+        "location": "Body",
+        "date": "2025-01-20",
+        "description": "Judgement: Claims the largest FMCG marketplace in New Zealand; no IP stated. Published 2025-01-20. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__readiness",
+      "alternative_id": "upstock",
+      "criterion_id": "readiness",
+      "value": "Commercial",
+      "unit": null,
+      "source": {
+        "name": "Inside FMCG (partnered content)",
+        "reference": "https://insidefmcg.com.au/2025/01/20/upstock-transforms-fmcg-by-automating-wholesale-ordering-and-logistics/",
+        "location": "Body",
+        "date": "2025-01-20",
+        "description": "Observed: Thousands of customers. Published 2025-01-20. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__regulatory_burden",
+      "alternative_id": "upstock",
+      "criterion_id": "regulatory_burden",
+      "value": "No approval required",
+      "unit": null,
+      "source": {
+        "name": "Upstock: About",
+        "reference": "https://www.upstock.app/about",
+        "location": "Tagline",
+        "date": "2026-11-04",
+        "description": "Judgement: Ordering software; no product approval regime identified. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "upstock__competitive_intensity",
+      "alternative_id": "upstock",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders",
+      "unit": null,
+      "source": {
+        "name": "Verdict Foodservice",
+        "reference": "https://www.verdictfoodservice.com/news/choco-funding/",
+        "location": "Body",
+        "date": "2021-07-21",
+        "description": "Judgement: Choco (restaurant-supplier ordering) raised US$100m in 2021. Published 2021-07-21. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__route_to_market",
+      "alternative_id": "upstock",
+      "criterion_id": "route_to_market",
+      "value": "Offshore approval or entity",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/?p=112718",
+        "location": "Body",
+        "date": "2023-06-30",
+        "description": "Judgement: Crossed to Australia after the 2023 raise. Published 2023-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__customer_validation",
+      "alternative_id": "upstock",
+      "criterion_id": "customer_validation",
+      "value": "Production customers",
+      "unit": null,
+      "source": {
+        "name": "Inside FMCG (partnered content)",
+        "reference": "https://insidefmcg.com.au/2025/01/20/upstock-transforms-fmcg-by-automating-wholesale-ordering-and-logistics/",
+        "location": "Body",
+        "date": "2025-01-20",
+        "description": "Observed: Thousands of customers across every Australian state (self-reported). Published 2025-01-20. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__commercial_stage",
+      "alternative_id": "upstock",
+      "criterion_id": "commercial_stage",
+      "value": "Scaling",
+      "unit": null,
+      "source": {
+        "name": "Inside FMCG (partnered content)",
+        "reference": "https://insidefmcg.com.au/2025/01/20/upstock-transforms-fmcg-by-automating-wholesale-ordering-and-logistics/",
+        "location": "Body",
+        "date": "2025-01-20",
+        "description": "Judgement: Revenue in New Zealand and Australia, growing rapidly (self-reported, January 2025). Published 2025-01-20. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__partnerships",
+      "alternative_id": "upstock",
+      "criterion_id": "partnerships",
+      "value": "Commercial agreement with an established firm",
+      "unit": null,
+      "source": {
+        "name": "FMCG Business",
+        "reference": "https://fmcgbusiness.co.nz/?p=47571",
+        "location": "Body",
+        "date": "2024-08-13",
+        "description": "Observed: Woolworths order automation for suppliers, August 2024. Published 2024-08-13. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__milestone_delivery",
+      "alternative_id": "upstock",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan",
+      "unit": null,
+      "source": {
+        "name": "Startup Daily",
+        "reference": "https://www.startupdaily.net/?p=112718",
+        "location": "Body",
+        "date": "2023-06-30",
+        "description": "Judgement: The 2022 raise targeted up to NZ$6m (Scoop); NZ$6m reported in 2023. Published 2023-06-30. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "upstock__market_size",
+      "alternative_id": "upstock",
+      "criterion_id": "market_size",
+      "value": 37.885000000000005,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 2 publisher estimates: B2B food marketplace platforms",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2026-07-31",
+        "description": "Observed (median rule): The Insight Partners 47.63 (https://www.theinsightpartners.com/reports/b2b-food-marketplace-platform-market); Verified Market Research 28.14 (https://www.verifiedmarketresearch.com/product/b2b-food-marketplace-platforms-market/). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 28.14,
+      "uncertainty_upper": 47.63,
+      "outdated": false
+    },
+    {
+      "id": "upstock__market_growth",
+      "alternative_id": "upstock",
+      "criterion_id": "market_growth",
+      "value": 16.85,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 2 publisher estimates: B2B food marketplace platforms",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2026-07-31",
+        "description": "Observed (median rule): The Insight Partners 17.5 (https://www.theinsightpartners.com/reports/b2b-food-marketplace-platform-market); Verified Market Research 16.2 (https://www.verifiedmarketresearch.com/product/b2b-food-marketplace-platforms-market/). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 16.2,
+      "uncertainty_upper": 17.5,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__hq_country",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "Newswire",
+        "reference": "https://newswire.co.nz/2026/08/kea-aerospace-17-5-million-christchurch-factory-solar-aircraft/",
+        "location": "Body",
+        "date": "2026-08-09",
+        "description": "Observed: Christchurch manufacturing and operations base. Published 2026-08-09. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__stage",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "stage",
+      "value": "Series A",
+      "unit": null,
+      "source": {
+        "name": "Newswire",
+        "reference": "https://newswire.co.nz/2026/08/kea-aerospace-17-5-million-christchurch-factory-solar-aircraft/",
+        "location": "Body",
+        "date": "2026-08-09",
+        "description": "Judgement: NZ$17.5m venture round for just under 20% of the company; no label published. Published 2026-08-09. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__sector",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "sector",
+      "value": "Space and advanced hardware",
+      "unit": null,
+      "source": {
+        "name": "Wikipedia: Kea Aerospace",
+        "reference": "https://en.wikipedia.org/wiki/Kea_Aerospace",
+        "location": "Lead",
+        "date": "2026-11-04",
+        "description": "Judgement: Solar-powered stratospheric aircraft. Undated page. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__founder_problem_fit",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "founder_problem_fit",
+      "value": "3+ years in the domain",
+      "unit": null,
+      "source": {
+        "name": "Wikipedia: Mark Rocket",
+        "reference": "https://en.wikipedia.org/wiki/Mark_Rocket",
+        "location": "Career",
+        "date": "2026-11-04",
+        "description": "Observed: Seed investor and co-director of Rocket Lab 2007-2011. Undated page. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__team_completeness",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "team_completeness",
+      "value": "Two key roles named",
+      "unit": null,
+      "source": {
+        "name": "Wikipedia: Kea Aerospace",
+        "reference": "https://en.wikipedia.org/wiki/Kea_Aerospace",
+        "location": "Infobox",
+        "date": "2026-11-04",
+        "description": "Judgement: Two co-founders named; roles beyond CEO not stated. Undated page. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__track_record",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "track_record",
+      "value": "Prior exit or scaled-company executive",
+      "unit": null,
+      "source": {
+        "name": "Wikipedia: Mark Rocket",
+        "reference": "https://en.wikipedia.org/wiki/Mark_Rocket",
+        "location": "Career",
+        "date": "2026-11-04",
+        "description": "Observed: Sold one of two internet companies he co-founded (2006). Undated page. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__board_advisors",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "board_advisors",
+      "value": "None named",
+      "unit": null,
+      "source": {
+        "name": "Kea Aerospace news and events",
+        "reference": "https://www.keaaerospace.com/news-and-events/",
+        "location": "Whole page",
+        "date": "2026-11-04",
+        "description": "Judgement: No board or advisors named. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__problem_severity",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed",
+      "unit": null,
+      "source": {
+        "name": "Newswire",
+        "reference": "https://newswire.co.nz/2026/08/kea-aerospace-17-5-million-christchurch-factory-solar-aircraft/",
+        "location": "Body",
+        "date": "2026-08-09",
+        "description": "Judgement: A government official pointed to value for agencies. Published 2026-08-09. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__defensibility",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset",
+      "unit": null,
+      "source": {
+        "name": "Wikipedia: Kea Aerospace",
+        "reference": "https://en.wikipedia.org/wiki/Kea_Aerospace",
+        "location": "Whole page",
+        "date": "2026-11-04",
+        "description": "Judgement: No patents or licences stated. Undated page. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__readiness",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "readiness",
+      "value": "Prototype",
+      "unit": null,
+      "source": {
+        "name": "Newswire",
+        "reference": "https://newswire.co.nz/2026/08/kea-aerospace-17-5-million-christchurch-factory-solar-aircraft/",
+        "location": "Body",
+        "date": "2026-08-09",
+        "description": "Observed: Mk1 flew to the stratosphere; the Mk2 is about three years away. Published 2026-08-09. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__regulatory_burden",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "regulatory_burden",
+      "value": "Approval required, under way",
+      "unit": null,
+      "source": {
+        "name": "Wikipedia: Kea Aerospace",
+        "reference": "https://en.wikipedia.org/wiki/Kea_Aerospace",
+        "location": "History",
+        "date": "2026-11-04",
+        "description": "Judgement: In the government's Airspace Integration Trials Programme. Undated page. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__competitive_intensity",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders",
+      "unit": null,
+      "source": {
+        "name": "Total Telecom",
+        "reference": "https://totaltele.com/ntt-docomo-and-space-compass-commit-100m-to-haps-specialist-aalto/",
+        "location": "Body",
+        "date": "2024-06-03",
+        "description": "Judgement: AALTO (Airbus Zephyr) received a US$100m commitment in 2024. Published 2024-06-03. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    },
+    {
+      "id": "kea_aerospace__route_to_market",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "route_to_market",
+      "value": "Offshore process under way",
+      "unit": null,
+      "source": {
+        "name": "Kea Aerospace news and events",
+        "reference": "https://www.keaaerospace.com/news-and-events/",
+        "location": "8 May 2026",
+        "date": "2026-11-04",
+        "description": "Judgement: Imagery work with German payload partners; NASA partnership. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__customer_validation",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "customer_validation",
+      "value": "Unpaid trial",
+      "unit": null,
+      "source": {
+        "name": "Kea Aerospace news and events",
+        "reference": "https://www.keaaerospace.com/news-and-events/",
+        "location": "25 Jun 2025",
+        "date": "2026-11-04",
+        "description": "Judgement: Government-funded NASA partnership; no customer named. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__commercial_stage",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "commercial_stage",
+      "value": "Pre-revenue",
+      "unit": null,
+      "source": {
+        "name": "Newswire",
+        "reference": "https://newswire.co.nz/2026/08/kea-aerospace-17-5-million-christchurch-factory-solar-aircraft/",
+        "location": "Body",
+        "date": "2026-08-09",
+        "description": "Judgement: No customers or contracts reported. Published 2026-08-09. Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__partnerships",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "partnerships",
+      "value": "Partner in an active programme",
+      "unit": null,
+      "source": {
+        "name": "Kea Aerospace news and events",
+        "reference": "https://www.keaaerospace.com/news-and-events/",
+        "location": "25 Mar and 25 Jun 2025",
+        "date": "2026-11-04",
+        "description": "Observed: NASA partnership and a Li-S Energy collaboration agreement. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__milestone_delivery",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered, some late or missed",
+      "unit": null,
+      "source": {
+        "name": "Kea Aerospace news and events",
+        "reference": "https://www.keaaerospace.com/news-and-events/",
+        "location": "12 Feb 2025",
+        "date": "2026-11-04",
+        "description": "Judgement: Stratospheric flight achieved February 2025; the round it was to catalyse closed August 2026. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "kea_aerospace__market_size",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "market_size",
+      "value": 1.165,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 4 publisher estimates: High-altitude pseudo-satellites (HAPS)",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2025-11-01",
+        "description": "Observed (median rule): Reanin 1.02 (https://www.reanin.com/reports/high-altitude-pseudo-satellites-market); SNS Insider 1.2 (https://www.snsinsider.com/press-release/global-high-altitude-pseudo-satellite-market); Spherical Insights 1.13 (https://www.sphericalinsights.com/blogs/top-10-high-altitude-pseudo-satellite-haps-market-companies-advancing-persistent-connectivity-and-surveillance); Aviation & Defense Market Reports (via GII) 3.9 (https://www.giiresearch.com/report/avd1858531-global-high-altitude-pseudo-satellites-market.html). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 1.02,
+      "uncertainty_upper": 3.9,
+      "outdated": true
+    },
+    {
+      "id": "kea_aerospace__market_growth",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "market_growth",
+      "value": 14.865,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 4 publisher estimates: High-altitude pseudo-satellites (HAPS)",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2025-11-01",
+        "description": "Observed (median rule): Reanin 8.3 (https://www.reanin.com/reports/high-altitude-pseudo-satellites-market); SNS Insider 17.0 (https://www.snsinsider.com/press-release/global-high-altitude-pseudo-satellite-market); Spherical Insights 21.65 (https://www.sphericalinsights.com/blogs/top-10-high-altitude-pseudo-satellite-haps-market-companies-advancing-persistent-connectivity-and-surveillance); Aviation & Defense Market Reports (via GII) 12.73 (https://www.giiresearch.com/report/avd1858531-global-high-altitude-pseudo-satellites-market.html). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 8.3,
+      "uncertainty_upper": 21.65,
+      "outdated": true
+    },
+    {
+      "id": "hnry__hq_country",
+      "alternative_id": "hnry",
+      "criterion_id": "hq_country",
+      "value": "New Zealand",
+      "unit": null,
+      "source": {
+        "name": "Hnry news",
+        "reference": "https://hnry.co.nz/resources/news/hnry-raises-30-mil-to-accelerate-growth/",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Observed: Headquarters in Wellington. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__stage",
+      "alternative_id": "hnry",
+      "criterion_id": "stage",
+      "value": "Series B or later",
+      "unit": null,
+      "source": {
+        "name": "Hnry news",
+        "reference": "https://hnry.co.nz/resources/news/hnry-raises-30-mil-to-accelerate-growth/",
+        "location": "Headline",
+        "date": "2025-12-08",
+        "description": "Observed: Series C, December 2025. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__sector",
+      "alternative_id": "hnry",
+      "criterion_id": "sector",
+      "value": "Fintech and B2B software",
+      "unit": null,
+      "source": {
+        "name": "Hnry website",
+        "reference": "https://hnry.co.nz/",
+        "location": "Overview",
+        "date": "2026-11-04",
+        "description": "Judgement: Accounting and tax automation for sole traders. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__founder_problem_fit",
+      "alternative_id": "hnry",
+      "criterion_id": "founder_problem_fit",
+      "value": "Adjacent experience",
+      "unit": null,
+      "source": {
+        "name": "Hnry: About",
+        "reference": "https://hnry.co.nz/about/",
+        "location": "Story",
+        "date": "2026-11-04",
+        "description": "Judgement: Founders were self-employed contractors who lived the problem. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__team_completeness",
+      "alternative_id": "hnry",
+      "criterion_id": "team_completeness",
+      "value": "Two key roles named",
+      "unit": null,
+      "source": {
+        "name": "Hnry news",
+        "reference": "https://hnry.co.nz/resources/news/hnry-raises-30-mil-to-accelerate-growth/",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Judgement: CEO and Head of UK named; other leads not named on the pages read. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__track_record",
+      "alternative_id": "hnry",
+      "criterion_id": "track_record",
+      "value": "None public",
+      "unit": null,
+      "source": {
+        "name": "Hnry: About",
+        "reference": "https://hnry.co.nz/about/",
+        "location": "Story",
+        "date": "2026-11-04",
+        "description": "Judgement: No earlier ventures named for the founders. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__board_advisors",
+      "alternative_id": "hnry",
+      "criterion_id": "board_advisors",
+      "value": "Independent chair or domain advisor",
+      "unit": null,
+      "source": {
+        "name": "Hnry news",
+        "reference": "https://hnry.co.nz/resources/news/hnry-raises-30-mil-to-accelerate-growth/",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Judgement: A Movac partner joins the board. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__problem_severity",
+      "alternative_id": "hnry",
+      "criterion_id": "problem_severity",
+      "value": "Independently confirmed",
+      "unit": null,
+      "source": {
+        "name": "Hnry news",
+        "reference": "https://hnry.co.nz/resources/news/hnry-raises-30-mil-to-accelerate-growth/",
+        "location": "Body",
+        "date": "2025-12-08",
+        "description": "Judgement: Tax filing is a statutory obligation; the 420,000 sole-trader figure is the company's. Published 2025-12-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__defensibility",
+      "alternative_id": "hnry",
+      "criterion_id": "defensibility",
+      "value": "Claimed, no protectable asset",
+      "unit": null,
+      "source": {
+        "name": "Hnry website",
+        "reference": "https://hnry.co.nz/",
+        "location": "Overview",
+        "date": "2026-11-04",
+        "description": "Judgement: Service and app; no IP stated. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__readiness",
+      "alternative_id": "hnry",
+      "criterion_id": "readiness",
+      "value": "Commercial",
+      "unit": null,
+      "source": {
+        "name": "Hnry: About",
+        "reference": "https://hnry.co.nz/about/",
+        "location": "Timeline",
+        "date": "2026-11-04",
+        "description": "Observed: Launched in New Zealand in 2017. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__regulatory_burden",
+      "alternative_id": "hnry",
+      "criterion_id": "regulatory_burden",
+      "value": "Approved in one market or certification only",
+      "unit": null,
+      "source": {
+        "name": "Hnry website",
+        "reference": "https://hnry.co.nz/",
+        "location": "Overview",
+        "date": "2026-11-04",
+        "description": "Judgement: Tax-intermediary status not stated on the pages read. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__competitive_intensity",
+      "alternative_id": "hnry",
+      "criterion_id": "competitive_intensity",
+      "value": "One or two funded leaders",
+      "unit": null,
+      "source": {
+        "name": "Hnry: compare with Xero",
+        "reference": "https://hnry.co.nz/compare/xero/",
+        "location": "Headline",
+        "date": "2026-11-04",
+        "description": "Judgement: Positions itself against Xero (ASX-listed, Startup Daily) and MYOB. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__route_to_market",
+      "alternative_id": "hnry",
+      "criterion_id": "route_to_market",
+      "value": "Operating in 2+ offshore markets",
+      "unit": null,
+      "source": {
+        "name": "Hnry: About",
+        "reference": "https://hnry.co.nz/about/",
+        "location": "Timeline",
+        "date": "2026-11-04",
+        "description": "Observed: Australia since 2020 and the UK since February 2025, with staff in each. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__customer_validation",
+      "alternative_id": "hnry",
+      "criterion_id": "customer_validation",
+      "value": "Production customers",
+      "unit": null,
+      "source": {
+        "name": "Hnry: About",
+        "reference": "https://hnry.co.nz/about/",
+        "location": "Timeline",
+        "date": "2026-11-04",
+        "description": "Observed: Tens of thousands of sole traders. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__commercial_stage",
+      "alternative_id": "hnry",
+      "criterion_id": "commercial_stage",
+      "value": "Scaling",
+      "unit": null,
+      "source": {
+        "name": "Hnry: About",
+        "reference": "https://hnry.co.nz/about/",
+        "location": "Milestones",
+        "date": "2026-11-04",
+        "description": "Observed: NZ$2bn annualised payments across three markets. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__partnerships",
+      "alternative_id": "hnry",
+      "criterion_id": "partnerships",
+      "value": "None public",
+      "unit": null,
+      "source": {
+        "name": "Hnry website",
+        "reference": "https://hnry.co.nz/",
+        "location": "Partners link",
+        "date": "2026-11-04",
+        "description": "Judgement: Partners page linked without named partners; stadium naming rights are marketing. Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__milestone_delivery",
+      "alternative_id": "hnry",
+      "criterion_id": "milestone_delivery",
+      "value": "Delivered on or near plan",
+      "unit": null,
+      "source": {
+        "name": "Hnry: About",
+        "reference": "https://hnry.co.nz/about/",
+        "location": "Timeline",
+        "date": "2026-11-04",
+        "description": "Judgement: Sequential launches in Australia (2020) and the UK (2025). Undated page. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "hnry__market_size",
+      "alternative_id": "hnry",
+      "criterion_id": "market_size",
+      "value": 8.91,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Median of 2 publisher estimates: Small-business accounting software",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated 2025 value",
+        "date": "2026-06-21",
+        "description": "Observed (median rule): Market Research Future 8.22 (https://marketresearchfuture.com/reports/small-business-accounting-software-market-32881); Market Intelo 9.6 (https://marketintelo.com/report/small-business-accounting-software-market). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 8.22,
+      "uncertainty_upper": 9.6,
+      "outdated": false
+    },
+    {
+      "id": "hnry__market_growth",
+      "alternative_id": "hnry",
+      "criterion_id": "market_growth",
+      "value": 8.36,
+      "unit": "% CAGR",
+      "source": {
+        "name": "Median of 2 publisher estimates: Small-business accounting software",
+        "reference": "examples/nz_venture_screening/README.md#market-estimates",
+        "location": "Each publisher's stated forecast CAGR",
+        "date": "2026-06-21",
+        "description": "Observed (median rule): Market Research Future 6.92 (https://marketresearchfuture.com/reports/small-business-accounting-software-market-32881); Market Intelo 9.8 (https://marketintelo.com/report/small-business-accounting-software-market). Retrieved 4 November 2026.",
+        "classification": "independent"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Study author (illustrative review)",
+        "reviewed_at": "2026-11-04T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Illustrative review by the study author; not an independent verification."
+      },
+      "uncertainty_lower": 6.92,
+      "uncertainty_upper": 9.8,
+      "outdated": false
+    },
+    {
+      "id": "disputed_kea_stage",
+      "alternative_id": "kea_aerospace",
+      "criterion_id": "stage",
+      "value": "Seed",
+      "unit": null,
+      "source": {
+        "name": "Caplight company page",
+        "reference": "https://www.caplight.com/company/keaaerospace",
+        "location": "Summary fields",
+        "date": "2026-11-04",
+        "description": "Judgement: Aggregator lists the last round as crowdfunding (Nov 2025) with no stage label; read as seed. Undated page. Retrieved 4 November 2026.",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": null,
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    },
+    {
+      "id": "disputed_scentian_market",
+      "alternative_id": "scentian_bio",
+      "criterion_id": "market_size",
+      "value": 8.0,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Scoop press release",
+        "reference": "https://www.scoop.co.nz/stories/SC2604/S00014.htm",
+        "location": "Body",
+        "date": "2026-04-08",
+        "description": "Proxy: Company-stated food quality control market of over US$8bn. Published 2026-04-08. Retrieved 4 November 2026.",
+        "classification": "self_reported"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Study author",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": null,
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": false
+    }
+  ]
+}

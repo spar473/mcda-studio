@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "project_fingerprint": "e4bd4cf52e1e6e8861e99694836aa177e4425dcb5d8a06fce299c95f6a1066de",
+  "claims": [
+    {
+      "id": "reviewed_example",
+      "alternative_id": "hyades",
+      "criterion_id": "market_size",
+      "value": 24.0,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Synthetic demonstration",
+        "reference": "example:synthetic",
+        "location": "Illustrative claim",
+        "date": "2026-10-01",
+        "description": "Fabricated only to demonstrate the review workflow; not a factual source.",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Example analyst",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "status": "accepted",
+        "reviewer": "Example reviewer",
+        "reviewed_at": "2026-10-31T12:00:00+13:00",
+        "corrected_value": null,
+        "note": "Synthetic example only."
+      },
+      "uncertainty_lower": 18.0,
+      "uncertainty_upper": 30.0,
+      "outdated": false
+    },
+    {
+      "id": "unreviewed_example",
+      "alternative_id": "hyades",
+      "criterion_id": "market_size",
+      "value": 30.0,
+      "unit": "US$ bn",
+      "source": {
+        "name": "Synthetic demonstration",
+        "reference": "example:synthetic",
+        "location": "Illustrative claim",
+        "date": "2026-10-01",
+        "description": "Fabricated only to demonstrate the review workflow; not a factual source.",
+        "classification": "unknown"
+      },
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Example analyst",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": null,
+      "uncertainty_lower": null,
+      "uncertainty_upper": null,
+      "outdated": true
+    }
+  ]
+}

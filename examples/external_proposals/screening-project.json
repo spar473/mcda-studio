@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "proposal_screening",
+  "title": "Invented screening intake",
+  "description": "Invented Option A/B data and sources. Illustrative review, not factual evidence.",
+  "decision_maker": "",
+  "alternatives": [
+    {
+      "id": "a",
+      "name": "Option A",
+      "metadata": {}
+    },
+    {
+      "id": "b",
+      "name": "Option B",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "sector",
+      "name": "Sector",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "categorical",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "hardware",
+          "software"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "hardware": 0.0,
+          "software": 1.0
+        }
+      }
+    },
+    {
+      "id": "readiness",
+      "name": "Stage",
+      "parent_id": null,
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "early",
+          "ready"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "early": 0.0,
+          "ready": 1.0
+        }
+      }
+    },
+    {
+      "id": "measure",
+      "name": "Reviewed numeric measure",
+      "parent_id": null,
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "interval",
+        "unit": "1",
+        "lower": 0.0,
+        "upper": 1.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "direct_rating",
+        "min_rating": 0.0,
+        "max_rating": 1.0
+      }
+    }
+  ],
+  "performances": [
+    {
+      "alternative_id": "a",
+      "criterion_id": "sector",
+      "value": "hardware"
+    },
+    {
+      "alternative_id": "a",
+      "criterion_id": "readiness",
+      "value": "ready"
+    },
+    {
+      "alternative_id": "a",
+      "criterion_id": "measure",
+      "value": 0.5
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "sector",
+      "value": "hardware"
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "readiness",
+      "value": "ready"
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "measure",
+      "value": 0.5
+    }
+  ],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Default",
+      "method": "swing",
+      "judgements": {
+        "sector": 100.0,
+        "readiness": 70.0,
+        "measure": 40.0
+      }
+    }
+  ],
+  "scenarios": [],
+  "analysis": {
+    "method": "mavt",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  }
+}

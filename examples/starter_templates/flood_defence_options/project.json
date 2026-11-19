@@ -1,0 +1,545 @@
+{
+  "schema_version": 6,
+  "id": "flood_defence_options_example",
+  "title": "Flood defence options (example)",
+  "description": "Invented feasibility and PROMETHEE II example: five ways for a small coastal town to reduce flood risk, with a hard protection standard that no score can offset. All names and figures are invented.",
+  "decision_maker": "Planning team",
+  "alternatives": [
+    {
+      "id": "sea_wall",
+      "name": "Raised sea wall",
+      "metadata": {}
+    },
+    {
+      "id": "dune_pumping",
+      "name": "Dune restoration with pumping",
+      "metadata": {}
+    },
+    {
+      "id": "gates_road",
+      "name": "Flood gates and raised road",
+      "metadata": {}
+    },
+    {
+      "id": "managed_retreat",
+      "name": "Managed retreat of the lowest street",
+      "metadata": {}
+    },
+    {
+      "id": "maintain_existing",
+      "name": "Maintain the existing defences",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "protection",
+      "name": "Protection",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "protection_standard",
+      "name": "Flood protection standard",
+      "parent_id": "protection",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "years",
+        "lower": 10.0,
+        "upper": 250.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    },
+    {
+      "id": "residual_risk",
+      "name": "Residual risk if overtopped",
+      "parent_id": "protection",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "high": 0.0,
+          "medium": 0.5,
+          "low": 1.0
+        }
+      }
+    },
+    {
+      "id": "cost",
+      "name": "Cost",
+      "parent_id": null,
+      "order": 1,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "capital_cost",
+      "name": "Capital cost",
+      "parent_id": "cost",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD m",
+        "lower": 0.0,
+        "upper": 50.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "maintenance_cost",
+      "name": "50-year maintenance cost",
+      "parent_id": "cost",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD m",
+        "lower": 0.0,
+        "upper": 35.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "environment",
+      "name": "Environment and community",
+      "parent_id": null,
+      "order": 2,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "habitat",
+      "name": "Habitat disturbed",
+      "parent_id": "environment",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "ha",
+        "lower": 0.0,
+        "upper": 5.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "consent",
+      "name": "Consent pathway",
+      "parent_id": "environment",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "not consentable",
+          "contested",
+          "notified",
+          "routine"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "not consentable": 0.0,
+          "contested": 0.3,
+          "notified": 0.7,
+          "routine": 1.0
+        }
+      }
+    },
+    {
+      "id": "disruption",
+      "name": "Construction disruption",
+      "parent_id": "environment",
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "months",
+        "lower": 0.0,
+        "upper": 24.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    }
+  ],
+  "performances": [
+    {
+      "alternative_id": "sea_wall",
+      "criterion_id": "protection_standard",
+      "value": 200.0
+    },
+    {
+      "alternative_id": "sea_wall",
+      "criterion_id": "residual_risk",
+      "value": "medium"
+    },
+    {
+      "alternative_id": "sea_wall",
+      "criterion_id": "capital_cost",
+      "value": 42.0
+    },
+    {
+      "alternative_id": "sea_wall",
+      "criterion_id": "maintenance_cost",
+      "value": 9.0
+    },
+    {
+      "alternative_id": "sea_wall",
+      "criterion_id": "habitat",
+      "value": 3.2
+    },
+    {
+      "alternative_id": "sea_wall",
+      "criterion_id": "consent",
+      "value": "contested"
+    },
+    {
+      "alternative_id": "sea_wall",
+      "criterion_id": "disruption",
+      "value": 18.0
+    },
+    {
+      "alternative_id": "dune_pumping",
+      "criterion_id": "protection_standard",
+      "value": 100.0
+    },
+    {
+      "alternative_id": "dune_pumping",
+      "criterion_id": "residual_risk",
+      "value": "medium"
+    },
+    {
+      "alternative_id": "dune_pumping",
+      "criterion_id": "capital_cost",
+      "value": 24.0
+    },
+    {
+      "alternative_id": "dune_pumping",
+      "criterion_id": "maintenance_cost",
+      "value": 22.0
+    },
+    {
+      "alternative_id": "dune_pumping",
+      "criterion_id": "habitat",
+      "value": 0.4
+    },
+    {
+      "alternative_id": "dune_pumping",
+      "criterion_id": "consent",
+      "value": "notified"
+    },
+    {
+      "alternative_id": "dune_pumping",
+      "criterion_id": "disruption",
+      "value": 9.0
+    },
+    {
+      "alternative_id": "gates_road",
+      "criterion_id": "protection_standard",
+      "value": 150.0
+    },
+    {
+      "alternative_id": "gates_road",
+      "criterion_id": "residual_risk",
+      "value": "low"
+    },
+    {
+      "alternative_id": "gates_road",
+      "criterion_id": "capital_cost",
+      "value": 31.0
+    },
+    {
+      "alternative_id": "gates_road",
+      "criterion_id": "maintenance_cost",
+      "value": 15.0
+    },
+    {
+      "alternative_id": "gates_road",
+      "criterion_id": "habitat",
+      "value": 1.1
+    },
+    {
+      "alternative_id": "gates_road",
+      "criterion_id": "consent",
+      "value": "notified"
+    },
+    {
+      "alternative_id": "gates_road",
+      "criterion_id": "disruption",
+      "value": 14.0
+    },
+    {
+      "alternative_id": "managed_retreat",
+      "criterion_id": "protection_standard",
+      "value": 120.0
+    },
+    {
+      "alternative_id": "managed_retreat",
+      "criterion_id": "residual_risk",
+      "value": "low"
+    },
+    {
+      "alternative_id": "managed_retreat",
+      "criterion_id": "capital_cost",
+      "value": 18.5
+    },
+    {
+      "alternative_id": "managed_retreat",
+      "criterion_id": "maintenance_cost",
+      "value": 4.0
+    },
+    {
+      "alternative_id": "managed_retreat",
+      "criterion_id": "habitat",
+      "value": 0.8
+    },
+    {
+      "alternative_id": "managed_retreat",
+      "criterion_id": "consent",
+      "value": "not consentable"
+    },
+    {
+      "alternative_id": "managed_retreat",
+      "criterion_id": "disruption",
+      "value": 10.0
+    },
+    {
+      "alternative_id": "maintain_existing",
+      "criterion_id": "protection_standard",
+      "value": 25.0
+    },
+    {
+      "alternative_id": "maintain_existing",
+      "criterion_id": "residual_risk",
+      "value": "high"
+    },
+    {
+      "alternative_id": "maintain_existing",
+      "criterion_id": "capital_cost",
+      "value": 3.0
+    },
+    {
+      "alternative_id": "maintain_existing",
+      "criterion_id": "maintenance_cost",
+      "value": 28.0
+    },
+    {
+      "alternative_id": "maintain_existing",
+      "criterion_id": "habitat",
+      "value": 0.2
+    },
+    {
+      "alternative_id": "maintain_existing",
+      "criterion_id": "consent",
+      "value": "routine"
+    },
+    {
+      "alternative_id": "maintain_existing",
+      "criterion_id": "disruption",
+      "value": 1.0
+    }
+  ],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Safety-first",
+      "method": "swing",
+      "judgements": {
+        "protection": 100.0,
+        "cost": 40.0,
+        "environment": 30.0,
+        "protection_standard": 100.0,
+        "residual_risk": 60.0,
+        "capital_cost": 100.0,
+        "maintenance_cost": 70.0,
+        "habitat": 100.0,
+        "consent": 80.0,
+        "disruption": 40.0
+      }
+    },
+    {
+      "id": "cost_conscious",
+      "name": "Cost-conscious",
+      "method": "swing",
+      "judgements": {
+        "protection": 60.0,
+        "cost": 100.0,
+        "environment": 40.0,
+        "protection_standard": 100.0,
+        "residual_risk": 60.0,
+        "capital_cost": 100.0,
+        "maintenance_cost": 90.0,
+        "habitat": 80.0,
+        "consent": 70.0,
+        "disruption": 60.0
+      }
+    }
+  ],
+  "scenarios": [],
+  "analysis": {
+    "method": "mavt",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  },
+  "promethee": {
+    "criteria": [
+      {
+        "criterion_id": "protection_standard",
+        "direction": "maximise",
+        "weight": 25.0,
+        "function": {
+          "kind": "linear",
+          "q": 10.0,
+          "p": 60.0
+        }
+      },
+      {
+        "criterion_id": "residual_risk",
+        "direction": "minimise",
+        "weight": 10.0,
+        "function": {
+          "kind": "usual"
+        },
+        "coding": {
+          "low": 1.0,
+          "medium": 2.0,
+          "high": 3.0
+        }
+      },
+      {
+        "criterion_id": "capital_cost",
+        "direction": "minimise",
+        "weight": 20.0,
+        "function": {
+          "kind": "v_shape",
+          "p": 20.0
+        }
+      },
+      {
+        "criterion_id": "maintenance_cost",
+        "direction": "minimise",
+        "weight": 10.0,
+        "function": {
+          "kind": "linear",
+          "q": 2.0,
+          "p": 10.0
+        }
+      },
+      {
+        "criterion_id": "habitat",
+        "direction": "minimise",
+        "weight": 10.0,
+        "function": {
+          "kind": "u_shape",
+          "q": 0.4
+        }
+      },
+      {
+        "criterion_id": "consent",
+        "direction": "minimise",
+        "weight": 15.0,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "routine": 1.0,
+          "notified": 2.0,
+          "contested": 3.0,
+          "not consentable": 4.0
+        }
+      },
+      {
+        "criterion_id": "disruption",
+        "direction": "minimise",
+        "weight": 10.0,
+        "function": {
+          "kind": "linear",
+          "q": 2.0,
+          "p": 8.0
+        }
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "kind": "bound",
+      "id": "protection_standard_min",
+      "name": "Protection standard of at least 100 years",
+      "criterion_id": "protection_standard",
+      "unit": "years",
+      "minimum": 100.0,
+      "minimum_inclusive": true,
+      "maximum": null,
+      "maximum_inclusive": true,
+      "rationale": "An invented design standard for the town's planning rules."
+    },
+    {
+      "kind": "labels",
+      "id": "consent_possible",
+      "name": "A consent pathway exists",
+      "criterion_id": "consent",
+      "allowed": [
+        "routine",
+        "notified",
+        "contested"
+      ],
+      "rationale": "An option that cannot be consented cannot be built."
+    }
+  ]
+}

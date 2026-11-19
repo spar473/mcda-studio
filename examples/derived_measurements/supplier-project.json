@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "derived-supplier",
+  "title": "Illustrative supplier total cost",
+  "description": "",
+  "decision_maker": "",
+  "alternatives": [
+    {
+      "id": "a",
+      "name": "Option A",
+      "metadata": {}
+    },
+    {
+      "id": "b",
+      "name": "Option B",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "result",
+      "name": "Three-year total cost of ownership",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD",
+        "lower": 0.0,
+        "upper": 250000.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    }
+  ],
+  "performances": [],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Default",
+      "method": "swing",
+      "judgements": {}
+    }
+  ],
+  "scenarios": [],
+  "analysis": {
+    "method": "mavt",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  }
+}

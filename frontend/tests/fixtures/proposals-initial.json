@@ -1,0 +1,939 @@
+{
+  "workspace": {
+    "workspace_version": 1,
+    "source_project": {
+      "schema_version": 1,
+      "id": "proposal_screening",
+      "title": "Invented screening intake",
+      "description": "Invented Option A/B data and sources. Illustrative review, not factual evidence.",
+      "decision_maker": "",
+      "alternatives": [
+        {
+          "id": "a",
+          "name": "Option A",
+          "metadata": {}
+        },
+        {
+          "id": "b",
+          "name": "Option B",
+          "metadata": {}
+        }
+      ],
+      "criteria": [
+        {
+          "id": "sector",
+          "name": "Sector",
+          "parent_id": null,
+          "order": 0,
+          "description": "",
+          "scale": {
+            "type": "categorical",
+            "unit": null,
+            "lower": null,
+            "upper": null,
+            "anchor_mode": "fixed",
+            "labels": [
+              "hardware",
+              "software"
+            ]
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "hardware": 0.0,
+              "software": 1.0
+            }
+          }
+        },
+        {
+          "id": "readiness",
+          "name": "Stage",
+          "parent_id": null,
+          "order": 1,
+          "description": "",
+          "scale": {
+            "type": "ordinal",
+            "unit": null,
+            "lower": null,
+            "upper": null,
+            "anchor_mode": "fixed",
+            "labels": [
+              "early",
+              "ready"
+            ]
+          },
+          "value_function": {
+            "kind": "qualitative",
+            "mapping": {
+              "early": 0.0,
+              "ready": 1.0
+            }
+          }
+        },
+        {
+          "id": "measure",
+          "name": "Reviewed numeric measure",
+          "parent_id": null,
+          "order": 2,
+          "description": "",
+          "scale": {
+            "type": "interval",
+            "unit": "1",
+            "lower": 0.0,
+            "upper": 1.0,
+            "anchor_mode": "fixed",
+            "labels": []
+          },
+          "value_function": {
+            "out_of_domain": "error",
+            "kind": "direct_rating",
+            "min_rating": 0.0,
+            "max_rating": 1.0
+          }
+        }
+      ],
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "sector",
+          "value": "hardware"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "measure",
+          "value": 0.5
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "sector",
+          "value": "hardware"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "readiness",
+          "value": "ready"
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "measure",
+          "value": 0.5
+        }
+      ],
+      "weight_profiles": [
+        {
+          "id": "default",
+          "name": "Default",
+          "method": "swing",
+          "judgements": {
+            "sector": 100.0,
+            "readiness": 70.0,
+            "measure": 40.0
+          }
+        }
+      ],
+      "scenarios": [],
+      "analysis": {
+        "method": "mavt",
+        "weight_profile_id": null,
+        "scenario_id": null,
+        "parameters": {}
+      }
+    },
+    "intake": {
+      "schema_version": 1,
+      "project_fingerprint": "88c5c73d8674103279bc9796b8d255963f49caeff42b36d95f77ef09aceb6318",
+      "sources": {
+        "brief_a": {
+          "name": "Invented brief A",
+          "reference": "local:invented-brief-a",
+          "location": "table 1",
+          "date": "2026-11-01",
+          "description": "Every statement and value is invented for this demonstration.",
+          "classification": "self_reported"
+        },
+        "brief_b": {
+          "name": "Invented brief B",
+          "reference": "local:invented-brief-b",
+          "location": "table 1",
+          "date": "2026-11-01",
+          "description": "Every statement and value is invented for this demonstration.",
+          "classification": "independent"
+        }
+      },
+      "model_cards": {
+        "card": {
+          "version": 1,
+          "purpose": "Propose labels and local measurements for review",
+          "limitations": "Invented outputs; no accuracy, calibration or outcome claim.",
+          "model_version": "1",
+          "details": {}
+        }
+      },
+      "proposals": [
+        {
+          "proposal_version": 1,
+          "id": "cell_a_first",
+          "subject": {
+            "alternative_id": "a",
+            "criterion_id": "sector"
+          },
+          "payload": {
+            "kind": "categorical_cell",
+            "value": "software",
+            "unit": null
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_a"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "cell_a_second",
+          "subject": {
+            "alternative_id": "a",
+            "criterion_id": "sector"
+          },
+          "payload": {
+            "kind": "categorical_cell",
+            "value": "hardware",
+            "unit": null
+          },
+          "tool_id": "external_b",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_a"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "numeric_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": "measure"
+          },
+          "payload": {
+            "kind": "numeric_cell",
+            "value": 0.91,
+            "unit": "1"
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "readiness_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": "readiness"
+          },
+          "payload": {
+            "kind": "categorical_cell",
+            "value": "early",
+            "unit": null
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "source_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": null
+          },
+          "payload": {
+            "kind": "source_claim",
+            "source_id": "brief_b",
+            "assertion": "A pilot is reported",
+            "excerpt": "Invented statement",
+            "location": "table 1",
+            "measurement": null
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "tag_a",
+          "subject": {
+            "alternative_id": "a",
+            "criterion_id": null
+          },
+          "payload": {
+            "kind": "alternative_tag",
+            "namespace": "follow_up",
+            "label": "check",
+            "text": "Investigate the invented claim"
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_a"
+          ],
+          "replaces_proposal_id": null
+        },
+        {
+          "proposal_version": 1,
+          "id": "tag_b",
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": null
+          },
+          "payload": {
+            "kind": "alternative_tag",
+            "namespace": "capacity",
+            "label": "check",
+            "text": "Reviewed annotation only"
+          },
+          "tool_id": "external_a",
+          "tool_version": "1",
+          "model_card_id": "card",
+          "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+          "run_at": "2026-11-01T00:00:00Z",
+          "confidence": {
+            "value": 0.83,
+            "scale": "unit_interval",
+            "meaning": "Invented tool-reported confidence; metadata only"
+          },
+          "source_ids": [
+            "brief_b"
+          ],
+          "replaces_proposal_id": null
+        }
+      ],
+      "human_dossier": {
+        "schema_version": 1,
+        "project_fingerprint": "88c5c73d8674103279bc9796b8d255963f49caeff42b36d95f77ef09aceb6318",
+        "claims": [
+          {
+            "id": "human_a",
+            "alternative_id": "a",
+            "criterion_id": "sector",
+            "value": "hardware",
+            "unit": null,
+            "source": {
+              "name": "Invented brief A",
+              "reference": "local:invented-brief-a",
+              "location": "table 1",
+              "date": "2026-11-01",
+              "description": "Every statement and value is invented for this demonstration.",
+              "classification": "self_reported"
+            },
+            "origin": {
+              "kind": "human",
+              "proposed_by": "Illustrative reviewer",
+              "tool_id": null,
+              "tool_version": null
+            },
+            "review": null,
+            "uncertainty_lower": null,
+            "uncertainty_upper": null,
+            "outdated": false
+          }
+        ]
+      }
+    },
+    "reviews": [],
+    "registry_supplies": [],
+    "digest": "b957bbc9965e7d826cb675200dacda85dd2f3696b755fafd36285bf2849adcff"
+  },
+  "current_fingerprint": "88c5c73d8674103279bc9796b8d255963f49caeff42b36d95f77ef09aceb6318",
+  "stale": false,
+  "rows": [
+    {
+      "original": {
+        "proposal_version": 1,
+        "id": "cell_a_first",
+        "subject": {
+          "alternative_id": "a",
+          "criterion_id": "sector"
+        },
+        "payload": {
+          "kind": "categorical_cell",
+          "value": "software",
+          "unit": null
+        },
+        "tool_id": "external_a",
+        "tool_version": "1",
+        "model_card_id": "card",
+        "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+        "run_at": "2026-11-01T00:00:00Z",
+        "confidence": {
+          "value": 0.83,
+          "scale": "unit_interval",
+          "meaning": "Invented tool-reported confidence; metadata only"
+        },
+        "source_ids": [
+          "brief_a"
+        ],
+        "replaces_proposal_id": null
+      },
+      "effective": {
+        "kind": "categorical_cell",
+        "value": "software",
+        "unit": null
+      },
+      "review": null,
+      "issues": [],
+      "bulk_eligible": true,
+      "original_relation": null,
+      "original_relations": [],
+      "effective_relations": [],
+      "effective_relation": null
+    },
+    {
+      "original": {
+        "proposal_version": 1,
+        "id": "cell_a_second",
+        "subject": {
+          "alternative_id": "a",
+          "criterion_id": "sector"
+        },
+        "payload": {
+          "kind": "categorical_cell",
+          "value": "hardware",
+          "unit": null
+        },
+        "tool_id": "external_b",
+        "tool_version": "1",
+        "model_card_id": "card",
+        "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+        "run_at": "2026-11-01T00:00:00Z",
+        "confidence": {
+          "value": 0.83,
+          "scale": "unit_interval",
+          "meaning": "Invented tool-reported confidence; metadata only"
+        },
+        "source_ids": [
+          "brief_a"
+        ],
+        "replaces_proposal_id": null
+      },
+      "effective": {
+        "kind": "categorical_cell",
+        "value": "hardware",
+        "unit": null
+      },
+      "review": null,
+      "issues": [],
+      "bulk_eligible": true,
+      "original_relation": null,
+      "original_relations": [],
+      "effective_relations": [],
+      "effective_relation": null
+    },
+    {
+      "original": {
+        "proposal_version": 1,
+        "id": "numeric_b",
+        "subject": {
+          "alternative_id": "b",
+          "criterion_id": "measure"
+        },
+        "payload": {
+          "kind": "numeric_cell",
+          "value": 0.91,
+          "unit": "1"
+        },
+        "tool_id": "external_a",
+        "tool_version": "1",
+        "model_card_id": "card",
+        "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+        "run_at": "2026-11-01T00:00:00Z",
+        "confidence": {
+          "value": 0.83,
+          "scale": "unit_interval",
+          "meaning": "Invented tool-reported confidence; metadata only"
+        },
+        "source_ids": [
+          "brief_b"
+        ],
+        "replaces_proposal_id": null
+      },
+      "effective": {
+        "kind": "numeric_cell",
+        "value": 0.91,
+        "unit": "1"
+      },
+      "review": null,
+      "issues": [],
+      "bulk_eligible": true,
+      "original_relation": null,
+      "original_relations": [],
+      "effective_relations": [],
+      "effective_relation": null
+    },
+    {
+      "original": {
+        "proposal_version": 1,
+        "id": "readiness_b",
+        "subject": {
+          "alternative_id": "b",
+          "criterion_id": "readiness"
+        },
+        "payload": {
+          "kind": "categorical_cell",
+          "value": "early",
+          "unit": null
+        },
+        "tool_id": "external_a",
+        "tool_version": "1",
+        "model_card_id": "card",
+        "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+        "run_at": "2026-11-01T00:00:00Z",
+        "confidence": {
+          "value": 0.83,
+          "scale": "unit_interval",
+          "meaning": "Invented tool-reported confidence; metadata only"
+        },
+        "source_ids": [
+          "brief_b"
+        ],
+        "replaces_proposal_id": null
+      },
+      "effective": {
+        "kind": "categorical_cell",
+        "value": "early",
+        "unit": null
+      },
+      "review": null,
+      "issues": [],
+      "bulk_eligible": true,
+      "original_relation": null,
+      "original_relations": [],
+      "effective_relations": [],
+      "effective_relation": null
+    },
+    {
+      "original": {
+        "proposal_version": 1,
+        "id": "source_b",
+        "subject": {
+          "alternative_id": "b",
+          "criterion_id": null
+        },
+        "payload": {
+          "kind": "source_claim",
+          "source_id": "brief_b",
+          "assertion": "A pilot is reported",
+          "excerpt": "Invented statement",
+          "location": "table 1",
+          "measurement": null
+        },
+        "tool_id": "external_a",
+        "tool_version": "1",
+        "model_card_id": "card",
+        "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+        "run_at": "2026-11-01T00:00:00Z",
+        "confidence": {
+          "value": 0.83,
+          "scale": "unit_interval",
+          "meaning": "Invented tool-reported confidence; metadata only"
+        },
+        "source_ids": [
+          "brief_b"
+        ],
+        "replaces_proposal_id": null
+      },
+      "effective": {
+        "kind": "source_claim",
+        "source_id": "brief_b",
+        "assertion": "A pilot is reported",
+        "excerpt": "Invented statement",
+        "location": "table 1",
+        "measurement": null
+      },
+      "review": null,
+      "issues": [],
+      "bulk_eligible": true,
+      "original_relation": null,
+      "original_relations": [],
+      "effective_relations": [],
+      "effective_relation": null
+    },
+    {
+      "original": {
+        "proposal_version": 1,
+        "id": "tag_a",
+        "subject": {
+          "alternative_id": "a",
+          "criterion_id": null
+        },
+        "payload": {
+          "kind": "alternative_tag",
+          "namespace": "follow_up",
+          "label": "check",
+          "text": "Investigate the invented claim"
+        },
+        "tool_id": "external_a",
+        "tool_version": "1",
+        "model_card_id": "card",
+        "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+        "run_at": "2026-11-01T00:00:00Z",
+        "confidence": {
+          "value": 0.83,
+          "scale": "unit_interval",
+          "meaning": "Invented tool-reported confidence; metadata only"
+        },
+        "source_ids": [
+          "brief_a"
+        ],
+        "replaces_proposal_id": null
+      },
+      "effective": {
+        "kind": "alternative_tag",
+        "namespace": "follow_up",
+        "label": "check",
+        "text": "Investigate the invented claim"
+      },
+      "review": null,
+      "issues": [],
+      "bulk_eligible": true,
+      "original_relation": null,
+      "original_relations": [],
+      "effective_relations": [],
+      "effective_relation": null
+    },
+    {
+      "original": {
+        "proposal_version": 1,
+        "id": "tag_b",
+        "subject": {
+          "alternative_id": "b",
+          "criterion_id": null
+        },
+        "payload": {
+          "kind": "alternative_tag",
+          "namespace": "capacity",
+          "label": "check",
+          "text": "Reviewed annotation only"
+        },
+        "tool_id": "external_a",
+        "tool_version": "1",
+        "model_card_id": "card",
+        "model_card_digest": "aeb303a0d2405bea4b7c57d644033522b8398a2b67c0d81b74215de3e31cd805",
+        "run_at": "2026-11-01T00:00:00Z",
+        "confidence": {
+          "value": 0.83,
+          "scale": "unit_interval",
+          "meaning": "Invented tool-reported confidence; metadata only"
+        },
+        "source_ids": [
+          "brief_b"
+        ],
+        "replaces_proposal_id": null
+      },
+      "effective": {
+        "kind": "alternative_tag",
+        "namespace": "capacity",
+        "label": "check",
+        "text": "Reviewed annotation only"
+      },
+      "review": null,
+      "issues": [],
+      "bulk_eligible": true,
+      "original_relation": null,
+      "original_relations": [],
+      "effective_relations": [],
+      "effective_relation": null
+    }
+  ],
+  "comparisons": [
+    {
+      "alternative_id": "a",
+      "criterion_id": "sector",
+      "columns": [
+        {
+          "id": "cell_a_first",
+          "origin": "tool",
+          "tool_id": "external_a",
+          "original_value": "software",
+          "effective_value": "software",
+          "original_unit": null,
+          "effective_unit": null,
+          "status": "pending",
+          "sources": [
+            "local:invented-brief-a"
+          ],
+          "source_classifications": [
+            "self_reported"
+          ],
+          "range_lower": null,
+          "range_upper": null
+        },
+        {
+          "id": "cell_a_second",
+          "origin": "tool",
+          "tool_id": "external_b",
+          "original_value": "hardware",
+          "effective_value": "hardware",
+          "original_unit": null,
+          "effective_unit": null,
+          "status": "pending",
+          "sources": [
+            "local:invented-brief-a"
+          ],
+          "source_classifications": [
+            "self_reported"
+          ],
+          "range_lower": null,
+          "range_upper": null
+        },
+        {
+          "id": "human:human_a",
+          "origin": "human",
+          "tool_id": null,
+          "original_value": "hardware",
+          "effective_value": "hardware",
+          "original_unit": null,
+          "effective_unit": null,
+          "status": "pending",
+          "sources": [
+            "local:invented-brief-a"
+          ],
+          "source_classifications": [
+            "self_reported"
+          ],
+          "range_lower": null,
+          "range_upper": null
+        }
+      ]
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "measure",
+      "columns": [
+        {
+          "id": "numeric_b",
+          "origin": "tool",
+          "tool_id": "external_a",
+          "original_value": 0.91,
+          "effective_value": 0.91,
+          "original_unit": "1",
+          "effective_unit": "1",
+          "status": "pending",
+          "sources": [
+            "local:invented-brief-b"
+          ],
+          "source_classifications": [
+            "independent"
+          ],
+          "range_lower": null,
+          "range_upper": null
+        }
+      ]
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "readiness",
+      "columns": [
+        {
+          "id": "readiness_b",
+          "origin": "tool",
+          "tool_id": "external_a",
+          "original_value": "early",
+          "effective_value": "early",
+          "original_unit": null,
+          "effective_unit": null,
+          "status": "pending",
+          "sources": [
+            "local:invented-brief-b"
+          ],
+          "source_classifications": [
+            "independent"
+          ],
+          "range_lower": null,
+          "range_upper": null
+        }
+      ]
+    }
+  ],
+  "comparison_target": null,
+  "comparison_targets": [
+    "tool:external_a",
+    "tool:external_b",
+    "human"
+  ],
+  "preview": {
+    "project_fingerprint": "88c5c73d8674103279bc9796b8d255963f49caeff42b36d95f77ef09aceb6318",
+    "evidence_digest": "ca82876d8a7ac9048db9fcd3a95553ae486ca0c5e5512db6d66430e68283a844",
+    "review_digest": "c6fa17520af202526b01f92848d4d5031ce86bb56a25164976f2f18610710ea0",
+    "changes": [],
+    "issues": [],
+    "missing_measurements": [],
+    "unreviewed_claims": [],
+    "outdated_claims": [],
+    "conflicting_cells": []
+  },
+  "dossier": {
+    "schema_version": 1,
+    "project_fingerprint": "88c5c73d8674103279bc9796b8d255963f49caeff42b36d95f77ef09aceb6318",
+    "claims": []
+  },
+  "annotations": [],
+  "questions": [
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_PENDING",
+      "question": "Should proposal cell_a_first be accepted, corrected or rejected?",
+      "why": "Imported output awaits a human review.",
+      "evidence": "Inspect the local model card and cited sources; record a review.",
+      "alternative_id": "a",
+      "criterion_id": "sector",
+      "requirement_id": null,
+      "measurement_range": null
+    },
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_PENDING",
+      "question": "Should proposal cell_a_second be accepted, corrected or rejected?",
+      "why": "Imported output awaits a human review.",
+      "evidence": "Inspect the local model card and cited sources; record a review.",
+      "alternative_id": "a",
+      "criterion_id": "sector",
+      "requirement_id": null,
+      "measurement_range": null
+    },
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_PENDING",
+      "question": "Should proposal numeric_b be accepted, corrected or rejected?",
+      "why": "Imported output awaits a human review.",
+      "evidence": "Inspect the local model card and cited sources; record a review.",
+      "alternative_id": "b",
+      "criterion_id": "measure",
+      "requirement_id": null,
+      "measurement_range": null
+    },
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_PENDING",
+      "question": "Should proposal readiness_b be accepted, corrected or rejected?",
+      "why": "Imported output awaits a human review.",
+      "evidence": "Inspect the local model card and cited sources; record a review.",
+      "alternative_id": "b",
+      "criterion_id": "readiness",
+      "requirement_id": null,
+      "measurement_range": null
+    },
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_PENDING",
+      "question": "Should proposal source_b be accepted, corrected or rejected?",
+      "why": "Imported output awaits a human review.",
+      "evidence": "Inspect the local model card and cited sources; record a review.",
+      "alternative_id": "b",
+      "criterion_id": null,
+      "requirement_id": null,
+      "measurement_range": null
+    },
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_PENDING",
+      "question": "Should proposal tag_a be accepted, corrected or rejected?",
+      "why": "Imported output awaits a human review.",
+      "evidence": "Inspect the local model card and cited sources; record a review.",
+      "alternative_id": "a",
+      "criterion_id": null,
+      "requirement_id": null,
+      "measurement_range": null
+    },
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_PENDING",
+      "question": "Should proposal tag_b be accepted, corrected or rejected?",
+      "why": "Imported output awaits a human review.",
+      "evidence": "Inspect the local model card and cited sources; record a review.",
+      "alternative_id": "b",
+      "criterion_id": null,
+      "requirement_id": null,
+      "measurement_range": null
+    },
+    {
+      "group": "evidence_quality",
+      "code": "PROPOSAL_DISAGREEMENT",
+      "question": "Which differing proposal is supported?",
+      "why": "Original comparable values differ; reviews do not erase this comparison.",
+      "evidence": "Compare originals, reviews and sources side by side; never average.",
+      "alternative_id": "a",
+      "criterion_id": "sector",
+      "requirement_id": null,
+      "measurement_range": null
+    }
+  ],
+  "review_digest": "a6d0ef217316a27ac69f4b114613a0afb6f266eb92123b2f6b213911e0dbad95",
+  "limitations": [
+    "Agreement is descriptive; shared sources remain disclosed.",
+    "Confidence is metadata only; review identities and times are local assertions.",
+    "Digests detect accidental changes, not deliberate rewriting or authenticity."
+  ]
+}

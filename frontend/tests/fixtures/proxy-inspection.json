@@ -1,0 +1,2303 @@
+{
+  "baseline": {
+    "alternatives": [
+      {
+        "id": "a",
+        "metadata": {},
+        "name": "Option A"
+      },
+      {
+        "id": "b",
+        "metadata": {},
+        "name": "Option B"
+      }
+    ],
+    "analysis": {
+      "method": "mavt",
+      "parameters": {},
+      "scenario_id": null,
+      "weight_profile_id": null
+    },
+    "criteria": [
+      {
+        "description": "",
+        "id": "quality",
+        "name": "Quality",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "capacity",
+        "name": "Capacity",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      }
+    ],
+    "decision_maker": "",
+    "description": "",
+    "id": "proxy_fixture",
+    "performances": [
+      {
+        "alternative_id": "a",
+        "criterion_id": "quality",
+        "value": 0.75
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "capacity",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "quality",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "capacity",
+        "value": 0.75
+      }
+    ],
+    "scenarios": [],
+    "schema_version": 2,
+    "sorting": {
+      "audit": null,
+      "classes": [
+        {
+          "description": "",
+          "id": "high",
+          "lower_boundary": 0.5,
+          "name": "High"
+        },
+        {
+          "description": "",
+          "id": "low",
+          "lower_boundary": null,
+          "name": "Low"
+        }
+      ]
+    },
+    "title": "Illustrative optional proxy",
+    "weight_profiles": [
+      {
+        "id": "balanced",
+        "judgements": {
+          "capacity": 1.0,
+          "quality": 1.0
+        },
+        "method": "swing",
+        "name": "Balanced"
+      },
+      {
+        "id": "quality_led",
+        "judgements": {
+          "capacity": 1.0,
+          "quality": 3.0
+        },
+        "method": "swing",
+        "name": "Quality led"
+      }
+    ]
+  },
+  "calculation": {
+    "compilation_version": 1,
+    "compiled_fingerprint": "7401fae578139e9bb4cbb15cfbe4b710c8dd435440f387f1ea82bbf0815216ee",
+    "digest": "0b233a8ec144146f9fbb73a766ad73ab0bd56f8ded6228deff76c45836990ca2",
+    "preview": {
+      "calculations": [
+        {
+          "alternative_id": "a",
+          "before": null,
+          "criterion_id": "disclosed_proxy_score",
+          "dependencies": [
+            "proxy_score_0"
+          ],
+          "dimension": {},
+          "expression": "proxy_score_0",
+          "id": "proxy_measure_0",
+          "source_ids": [
+            "proxy_score_0"
+          ],
+          "unit": "1",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "before": null,
+          "criterion_id": "disclosed_proxy_score",
+          "dependencies": [
+            "proxy_score_1"
+          ],
+          "dimension": {},
+          "expression": "proxy_score_1",
+          "id": "proxy_measure_1",
+          "source_ids": [
+            "proxy_score_1"
+          ],
+          "unit": "1",
+          "value": 0.75
+        }
+      ],
+      "issues": [],
+      "limitations": [
+        "Deterministic calculation only; no distribution is inferred or propagated.",
+        "Units have analyst-declared dimensions; no implicit scaling or conversion.",
+        "Shared sources are evaluated once and traced; uncertain factors are unsupported.",
+        "Compiling makes a static copy; retain this preview to preserve the formula trace."
+      ],
+      "model": {
+        "formulas": [
+          {
+            "alternative_id": "a",
+            "criterion_id": "disclosed_proxy_score",
+            "expression": "proxy_score_0",
+            "id": "proxy_measure_0",
+            "origin": {
+              "kind": "tool",
+              "proposed_by": "Local model",
+              "tool_id": "Local model",
+              "tool_version": "1"
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "unit": "1"
+          },
+          {
+            "alternative_id": "b",
+            "criterion_id": "disclosed_proxy_score",
+            "expression": "proxy_score_1",
+            "id": "proxy_measure_1",
+            "origin": {
+              "kind": "tool",
+              "proposed_by": "Local model",
+              "tool_id": "Local model",
+              "tool_version": "1"
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "unit": "1"
+          }
+        ],
+        "project_fingerprint": "b88b49a1a66c86815cb0b15b6bb7a79793f24e45d40a9b3f3781c7f563e1de61",
+        "schema_version": 1,
+        "sources": [
+          {
+            "id": "proxy_score_0",
+            "origin": {
+              "kind": "tool",
+              "proposed_by": "Local model",
+              "tool_id": "Local model",
+              "tool_version": "1"
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "source": {
+              "classification": "self_reported",
+              "date": "2026-10-01",
+              "description": "Invented data for a generic verification fixture",
+              "location": "",
+              "name": "Invented evidence",
+              "reference": "local:illustrative"
+            },
+            "unit": "1",
+            "value": 0.25
+          },
+          {
+            "id": "proxy_score_1",
+            "origin": {
+              "kind": "tool",
+              "proposed_by": "Local model",
+              "tool_id": "Local model",
+              "tool_version": "1"
+            },
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "source": {
+              "classification": "self_reported",
+              "date": "2026-10-01",
+              "description": "Invented data for a generic verification fixture",
+              "location": "",
+              "name": "Invented evidence",
+              "reference": "local:illustrative"
+            },
+            "unit": "1",
+            "value": 0.75
+          }
+        ],
+        "units": {}
+      },
+      "model_digest": "1ec9f6810c7e8ed0766963ba94258cc51d71c98533c45e1fba6f2ae6a43471cb",
+      "project_fingerprint": "b88b49a1a66c86815cb0b15b6bb7a79793f24e45d40a9b3f3781c7f563e1de61",
+      "review_digest": "15fa9c5c5c412657e25579c404746b4cffe4a5469f8919c0f5a8dd21abc7bd45"
+    },
+    "project": {
+      "alternatives": [
+        {
+          "id": "a",
+          "metadata": {},
+          "name": "Option A"
+        },
+        {
+          "id": "b",
+          "metadata": {},
+          "name": "Option B"
+        }
+      ],
+      "analysis": {
+        "method": "mavt",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "criteria": [
+        {
+          "description": "",
+          "id": "quality",
+          "name": "Quality",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "capacity",
+          "name": "Capacity",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "disclosed_proxy_score",
+          "name": "Disclosed model proxy: fixed score",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        }
+      ],
+      "decision_maker": "",
+      "description": "",
+      "id": "proxy_e1d440fb03b816d8d15db05a",
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "quality",
+          "value": 0.75
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "capacity",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "quality",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "capacity",
+          "value": 0.75
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "disclosed_proxy_score",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "disclosed_proxy_score",
+          "value": 0.75
+        }
+      ],
+      "scenarios": [],
+      "schema_version": 2,
+      "sorting": {
+        "audit": null,
+        "classes": [
+          {
+            "description": "",
+            "id": "high",
+            "lower_boundary": 0.5,
+            "name": "High"
+          },
+          {
+            "description": "",
+            "id": "low",
+            "lower_boundary": null,
+            "name": "Low"
+          }
+        ]
+      },
+      "title": "Illustrative optional proxy",
+      "weight_profiles": [
+        {
+          "id": "balanced",
+          "judgements": {
+            "capacity": 1.0,
+            "disclosed_proxy_score": 2.0,
+            "quality": 1.0
+          },
+          "method": "swing",
+          "name": "Balanced"
+        },
+        {
+          "id": "quality_led",
+          "judgements": {
+            "capacity": 1.0,
+            "disclosed_proxy_score": 4.0,
+            "quality": 3.0
+          },
+          "method": "swing",
+          "name": "Quality led"
+        }
+      ]
+    },
+    "source_project": {
+      "alternatives": [
+        {
+          "id": "a",
+          "metadata": {},
+          "name": "Option A"
+        },
+        {
+          "id": "b",
+          "metadata": {},
+          "name": "Option B"
+        }
+      ],
+      "analysis": {
+        "method": "mavt",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "criteria": [
+        {
+          "description": "",
+          "id": "quality",
+          "name": "Quality",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "capacity",
+          "name": "Capacity",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "disclosed_proxy_score",
+          "name": "Disclosed model proxy: fixed score",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        }
+      ],
+      "decision_maker": "",
+      "description": "",
+      "id": "proxy_e1d440fb03b816d8d15db05a",
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "quality",
+          "value": 0.75
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "capacity",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "quality",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "capacity",
+          "value": 0.75
+        }
+      ],
+      "scenarios": [],
+      "schema_version": 2,
+      "sorting": {
+        "audit": null,
+        "classes": [
+          {
+            "description": "",
+            "id": "high",
+            "lower_boundary": 0.5,
+            "name": "High"
+          },
+          {
+            "description": "",
+            "id": "low",
+            "lower_boundary": null,
+            "name": "Low"
+          }
+        ]
+      },
+      "title": "Illustrative optional proxy",
+      "weight_profiles": [
+        {
+          "id": "balanced",
+          "judgements": {
+            "capacity": 1.0,
+            "disclosed_proxy_score": 2.0,
+            "quality": 1.0
+          },
+          "method": "swing",
+          "name": "Balanced"
+        },
+        {
+          "id": "quality_led",
+          "judgements": {
+            "capacity": 1.0,
+            "disclosed_proxy_score": 4.0,
+            "quality": 3.0
+          },
+          "method": "swing",
+          "name": "Quality led"
+        }
+      ]
+    }
+  },
+  "inputs": {
+    "configuration": {
+      "method": "mavt",
+      "parameters": {},
+      "scenario_id": null,
+      "weight_profile_id": null
+    },
+    "factor_parameters": null,
+    "model": null,
+    "plan": {
+      "digest": "384966879244a26f979b1f3416300b56e196c2252a478c90c38d5512d6fde9ff",
+      "initial": {
+        "card_digest": "36665f4ec715d99bdbb11d25462041d3a5b3f39b86bc602cb26233213f2ffd8a",
+        "card_facts": {
+          "base_rate": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared base_rate"
+          },
+          "calibration_evidence": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared calibration_evidence"
+          },
+          "calibration_period": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared calibration_period"
+          },
+          "calibration_population": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared calibration_population"
+          },
+          "label_definition": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared label_definition"
+          },
+          "licence": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared licence"
+          },
+          "model_version": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "1"
+          },
+          "observation_cutoff": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "2026-10-31"
+          },
+          "population_denominator": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared population_denominator"
+          },
+          "purpose": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative fixed proxy"
+          },
+          "selection_bias": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared selection_bias"
+          },
+          "source_references": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared source_references"
+          },
+          "survivorship_bias": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared survivorship_bias"
+          },
+          "training_period": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared training_period"
+          },
+          "training_population": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared training_population"
+          },
+          "use_restrictions": {
+            "reason": "",
+            "review": null,
+            "source_ids": [
+              "source"
+            ],
+            "unknown": false,
+            "value": "Illustrative declared use_restrictions"
+          }
+        },
+        "card_id": "card",
+        "compared_profile_ids": [
+          "balanced",
+          "quality_led"
+        ],
+        "criterion": {
+          "description": "",
+          "id": "disclosed_proxy_score",
+          "name": "Disclosed model proxy: fixed score",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        "enabled": false,
+        "features": [
+          {
+            "criterion_ids": [
+              "quality"
+            ],
+            "description": "A declared quality input",
+            "factor_ids": [],
+            "id": "reported_quality",
+            "observed_at": "2026-10-01",
+            "review": null,
+            "source_ids": [
+              "source"
+            ]
+          }
+        ],
+        "licence_compatible": null,
+        "licence_review": null,
+        "overlaps": [
+          {
+            "feature_id": "reported_quality",
+            "rationale": "Retain both explicitly to demonstrate the weight consequence",
+            "relation": "same_concept",
+            "remove_criterion_ids": [],
+            "resolution": "retain_with_rationale",
+            "review": null
+          }
+        ],
+        "plan_review": null,
+        "project_fingerprint": "16b19f2b4f66bbe1d94f7ae849faeb5091d4d7a6b5ccc3deb3fa1c9e9645cb72",
+        "score_meaning": "Illustrative external score; no probability meaning",
+        "score_workspace_digest": null,
+        "swing_ratings": {
+          "balanced": 2.0,
+          "quality_led": 4.0
+        }
+      },
+      "revisions": [
+        {
+          "operation": {
+            "enabled": null,
+            "id": "purpose",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "cf27bf38d7759111d0495e223a06ffe746e79ee76245f6ea149b3cb4fed0bc26"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "training_period",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "0b8a1937428b9ffc63bf2d86f7ba0926299c23b068ca2253c461bcbd6300a574"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "training_population",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "b2a186692a8a18b542d5747e649ed5881b0c49bf380444066704e881926c4f6d"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "observation_cutoff",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "b9f97aae6b4832317b3308e60bfdbdff5ac79b75f686ece7338b38e43a8f7a7d"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "label_definition",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "a0c9e1c73dc4d6ad58fd95fccedfced4066b3f175309fa2af9b87d7e7679ed08"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "base_rate",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "797ec02a4e6d0e1f2d8456193eefd46733180a98df4c4edc2b58a934fe42c0ea"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "population_denominator",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "7190b001f3df8fae11d2c8c83b91234fc09acaf660214e204ad6aa9ddf1b1d3d"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "selection_bias",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "faf86400c5d2b1caef113c3ee16537005f578970a700d1726c9ac7ad855c2239"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "survivorship_bias",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "faf6fb254c34cdad4caa07493d3eeae8248da9701600ff9c3db7232abe0c9b61"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "calibration_evidence",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "871ab8ab48d36c905da359fe825ae6de2fd19113e82210d676438803b8b8ab6c"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "calibration_population",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "bc6f0203202cc6cf59ac1454b1dec69c5941a511baa0dcf3f6f6cc9db3c643c3"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "calibration_period",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "512c4a0ba4fe2f7508ac0692afa9fe3da3db8ea3582b05f471946ac17a6a307c"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "licence",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "50b933505e0c00e4dba91f08f411265fac98211ae9ebc4608de77c0b44679bb1"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "use_restrictions",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "eddd1978d43648c547823430e37d795e7c3f17b5f693924c77af4a3854bd5ff6"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "model_version",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "75c5ee47752ab04ddf2ed3967f5c3e4d727b2e9ccbcbba5eb85e815628ae08d7"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "source_references",
+            "kind": "review_card_fact",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "42b9ae2fd6b07454d5b3a7999b62682265870bc2a7e9a259f2691bbd0e8713b6"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "reported_quality",
+            "kind": "review_feature",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "c82daa9d46fb17a96007232bbc5fe1d5585cc6e62e320586f9cf6d4a0654ab07"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": "reported_quality",
+            "kind": "review_overlap",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "5352016f379d9ad3661ff1a16ca4a3632c08e00f90a7e8674f63068add726926"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": null,
+            "kind": "review_licence",
+            "licence_compatible": true,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "84d028f906e1f0c249509938cc71e8651756737736e03823258d39597e440305"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": null,
+            "kind": "bind_scores",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": "153ca057b8fba4711a8463d35f2c0d8f5b5a82ef4b8163e3edce28ca39b4e669"
+          },
+          "previous_digest": "18d184fcbc6cee565b6f52687da08c63a2d8305d1830acfb2d17c4e3d004cc11"
+        },
+        {
+          "operation": {
+            "enabled": null,
+            "id": null,
+            "kind": "review_plan",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "97048309bb08ae4ef56ee130cb5deebbcf56e646c3b5add326668393d1c32e53"
+        },
+        {
+          "operation": {
+            "enabled": true,
+            "id": null,
+            "kind": "set_enabled",
+            "licence_compatible": null,
+            "review": {
+              "corrected_value": null,
+              "note": "Illustrative review of stated inputs and disclosed limitations",
+              "reviewed_at": "2026-11-01T00:00:00Z",
+              "reviewer": "Local reviewer",
+              "status": "accepted"
+            },
+            "state": null,
+            "workspace_digest": null
+          },
+          "previous_digest": "b3f4052276c1fba818d6e464364d98bb89a5ff58e37e746b8b89172038337d10"
+        }
+      ],
+      "version": 1
+    },
+    "project": {
+      "alternatives": [
+        {
+          "id": "a",
+          "metadata": {},
+          "name": "Option A"
+        },
+        {
+          "id": "b",
+          "metadata": {},
+          "name": "Option B"
+        }
+      ],
+      "analysis": {
+        "method": "mavt",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "criteria": [
+        {
+          "description": "",
+          "id": "quality",
+          "name": "Quality",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "capacity",
+          "name": "Capacity",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        }
+      ],
+      "decision_maker": "",
+      "description": "",
+      "id": "proxy_fixture",
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "quality",
+          "value": 0.75
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "capacity",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "quality",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "capacity",
+          "value": 0.75
+        }
+      ],
+      "scenarios": [],
+      "schema_version": 2,
+      "sorting": {
+        "audit": null,
+        "classes": [
+          {
+            "description": "",
+            "id": "high",
+            "lower_boundary": 0.5,
+            "name": "High"
+          },
+          {
+            "description": "",
+            "id": "low",
+            "lower_boundary": null,
+            "name": "Low"
+          }
+        ]
+      },
+      "title": "Illustrative optional proxy",
+      "weight_profiles": [
+        {
+          "id": "balanced",
+          "judgements": {
+            "capacity": 1.0,
+            "quality": 1.0
+          },
+          "method": "swing",
+          "name": "Balanced"
+        },
+        {
+          "id": "quality_led",
+          "judgements": {
+            "capacity": 1.0,
+            "quality": 3.0
+          },
+          "method": "swing",
+          "name": "Quality led"
+        }
+      ]
+    },
+    "scores": {
+      "digest": "153ca057b8fba4711a8463d35f2c0d8f5b5a82ef4b8163e3edce28ca39b4e669",
+      "intake": {
+        "human_dossier": null,
+        "model_cards": {
+          "card": {
+            "details": {
+              "base_rate": "Illustrative declared base_rate",
+              "calibration_evidence": "Illustrative declared calibration_evidence",
+              "calibration_period": "Illustrative declared calibration_period",
+              "calibration_population": "Illustrative declared calibration_population",
+              "label_definition": "Illustrative declared label_definition",
+              "licence": "Illustrative declared licence",
+              "observation_cutoff": "2026-10-31",
+              "population_denominator": "Illustrative declared population_denominator",
+              "selection_bias": "Illustrative declared selection_bias",
+              "source_references": "Illustrative declared source_references",
+              "survivorship_bias": "Illustrative declared survivorship_bias",
+              "training_period": "Illustrative declared training_period",
+              "training_population": "Illustrative declared training_population",
+              "use_restrictions": "Illustrative declared use_restrictions"
+            },
+            "limitations": "Invented fixture; no predictive claim",
+            "model_version": "1",
+            "purpose": "Illustrative fixed proxy",
+            "version": 1
+          }
+        },
+        "project_fingerprint": "b88b49a1a66c86815cb0b15b6bb7a79793f24e45d40a9b3f3781c7f563e1de61",
+        "proposals": [
+          {
+            "confidence": null,
+            "id": "score_a",
+            "model_card_digest": "36665f4ec715d99bdbb11d25462041d3a5b3f39b86bc602cb26233213f2ffd8a",
+            "model_card_id": "card",
+            "payload": {
+              "kind": "numeric_cell",
+              "unit": null,
+              "value": 0.25
+            },
+            "proposal_version": 1,
+            "replaces_proposal_id": null,
+            "run_at": "2026-11-01T00:00:00Z",
+            "source_ids": [
+              "source"
+            ],
+            "subject": {
+              "alternative_id": "a",
+              "criterion_id": "disclosed_proxy_score"
+            },
+            "tool_id": "Local model",
+            "tool_version": "1"
+          },
+          {
+            "confidence": null,
+            "id": "score_b",
+            "model_card_digest": "36665f4ec715d99bdbb11d25462041d3a5b3f39b86bc602cb26233213f2ffd8a",
+            "model_card_id": "card",
+            "payload": {
+              "kind": "numeric_cell",
+              "unit": null,
+              "value": 0.75
+            },
+            "proposal_version": 1,
+            "replaces_proposal_id": null,
+            "run_at": "2026-11-01T00:00:00Z",
+            "source_ids": [
+              "source"
+            ],
+            "subject": {
+              "alternative_id": "b",
+              "criterion_id": "disclosed_proxy_score"
+            },
+            "tool_id": "Local model",
+            "tool_version": "1"
+          }
+        ],
+        "schema_version": 1,
+        "sources": {
+          "source": {
+            "classification": "self_reported",
+            "date": "2026-10-01",
+            "description": "Invented data for a generic verification fixture",
+            "location": "",
+            "name": "Invented evidence",
+            "reference": "local:illustrative"
+          }
+        }
+      },
+      "registry_supplies": [],
+      "reviews": [
+        {
+          "proposal_id": "score_a",
+          "review": {
+            "corrected_payload": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "primary_source_id": "source",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted",
+            "supporting_source_ids": []
+          }
+        },
+        {
+          "proposal_id": "score_b",
+          "review": {
+            "corrected_payload": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "primary_source_id": "source",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted",
+            "supporting_source_ids": []
+          }
+        }
+      ],
+      "source_project": {
+        "alternatives": [
+          {
+            "id": "a",
+            "metadata": {},
+            "name": "Option A"
+          },
+          {
+            "id": "b",
+            "metadata": {},
+            "name": "Option B"
+          }
+        ],
+        "analysis": {
+          "method": "mavt",
+          "parameters": {},
+          "scenario_id": null,
+          "weight_profile_id": null
+        },
+        "criteria": [
+          {
+            "description": "",
+            "id": "quality",
+            "name": "Quality",
+            "order": 0,
+            "parent_id": null,
+            "scale": {
+              "anchor_mode": "fixed",
+              "labels": [],
+              "lower": 0.0,
+              "type": "interval",
+              "unit": null,
+              "upper": 1.0
+            },
+            "value_function": {
+              "direction": "increasing",
+              "kind": "linear",
+              "out_of_domain": "error"
+            }
+          },
+          {
+            "description": "",
+            "id": "capacity",
+            "name": "Capacity",
+            "order": 0,
+            "parent_id": null,
+            "scale": {
+              "anchor_mode": "fixed",
+              "labels": [],
+              "lower": 0.0,
+              "type": "interval",
+              "unit": null,
+              "upper": 1.0
+            },
+            "value_function": {
+              "direction": "increasing",
+              "kind": "linear",
+              "out_of_domain": "error"
+            }
+          },
+          {
+            "description": "",
+            "id": "disclosed_proxy_score",
+            "name": "Disclosed model proxy: fixed score",
+            "order": 0,
+            "parent_id": null,
+            "scale": {
+              "anchor_mode": "fixed",
+              "labels": [],
+              "lower": 0.0,
+              "type": "interval",
+              "unit": null,
+              "upper": 1.0
+            },
+            "value_function": {
+              "direction": "increasing",
+              "kind": "linear",
+              "out_of_domain": "error"
+            }
+          }
+        ],
+        "decision_maker": "",
+        "description": "",
+        "id": "proxy_e1d440fb03b816d8d15db05a",
+        "performances": [
+          {
+            "alternative_id": "a",
+            "criterion_id": "quality",
+            "value": 0.75
+          },
+          {
+            "alternative_id": "a",
+            "criterion_id": "capacity",
+            "value": 0.25
+          },
+          {
+            "alternative_id": "b",
+            "criterion_id": "quality",
+            "value": 0.25
+          },
+          {
+            "alternative_id": "b",
+            "criterion_id": "capacity",
+            "value": 0.75
+          }
+        ],
+        "scenarios": [],
+        "schema_version": 2,
+        "sorting": {
+          "audit": null,
+          "classes": [
+            {
+              "description": "",
+              "id": "high",
+              "lower_boundary": 0.5,
+              "name": "High"
+            },
+            {
+              "description": "",
+              "id": "low",
+              "lower_boundary": null,
+              "name": "Low"
+            }
+          ]
+        },
+        "title": "Illustrative optional proxy",
+        "weight_profiles": [
+          {
+            "id": "balanced",
+            "judgements": {
+              "capacity": 1.0,
+              "disclosed_proxy_score": 2.0,
+              "quality": 1.0
+            },
+            "method": "swing",
+            "name": "Balanced"
+          },
+          {
+            "id": "quality_led",
+            "judgements": {
+              "capacity": 1.0,
+              "disclosed_proxy_score": 4.0,
+              "quality": 3.0
+            },
+            "method": "swing",
+            "name": "Quality led"
+          }
+        ]
+      },
+      "workspace_version": 1
+    },
+    "uncertainty": null
+  },
+  "issues": [],
+  "limitations": [
+    "The external score is fixed reviewed input, never an engine prediction or outcome probability.",
+    "PROMETHEE II and AHP proxy pairs are unavailable; ordinary method comparisons remain separate."
+  ],
+  "model_card": {
+    "details": {
+      "base_rate": "Illustrative declared base_rate",
+      "calibration_evidence": "Illustrative declared calibration_evidence",
+      "calibration_period": "Illustrative declared calibration_period",
+      "calibration_population": "Illustrative declared calibration_population",
+      "label_definition": "Illustrative declared label_definition",
+      "licence": "Illustrative declared licence",
+      "observation_cutoff": "2026-10-31",
+      "population_denominator": "Illustrative declared population_denominator",
+      "selection_bias": "Illustrative declared selection_bias",
+      "source_references": "Illustrative declared source_references",
+      "survivorship_bias": "Illustrative declared survivorship_bias",
+      "training_period": "Illustrative declared training_period",
+      "training_population": "Illustrative declared training_population",
+      "use_restrictions": "Illustrative declared use_restrictions"
+    },
+    "limitations": "Invented fixture; no predictive claim",
+    "model_version": "1",
+    "purpose": "Illustrative fixed proxy",
+    "version": 1
+  },
+  "overlap_findings": [
+    "reported_quality: criteria ['quality']; factors []; shared IDs require explicit review"
+  ],
+  "overlap_removed": null,
+  "questions": [],
+  "review_digest": "3d2af9ac7a415f0edba2e9d6d91ddc988426c7896a25df7d05fa0a3abe8316cb",
+  "score_draft": {
+    "alternatives": [
+      {
+        "id": "a",
+        "metadata": {},
+        "name": "Option A"
+      },
+      {
+        "id": "b",
+        "metadata": {},
+        "name": "Option B"
+      }
+    ],
+    "analysis": {
+      "method": "mavt",
+      "parameters": {},
+      "scenario_id": null,
+      "weight_profile_id": null
+    },
+    "criteria": [
+      {
+        "description": "",
+        "id": "quality",
+        "name": "Quality",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "capacity",
+        "name": "Capacity",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "disclosed_proxy_score",
+        "name": "Disclosed model proxy: fixed score",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      }
+    ],
+    "decision_maker": "",
+    "description": "",
+    "id": "proxy_e1d440fb03b816d8d15db05a",
+    "performances": [
+      {
+        "alternative_id": "a",
+        "criterion_id": "quality",
+        "value": 0.75
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "capacity",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "quality",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "capacity",
+        "value": 0.75
+      }
+    ],
+    "scenarios": [],
+    "schema_version": 2,
+    "sorting": {
+      "audit": null,
+      "classes": [
+        {
+          "description": "",
+          "id": "high",
+          "lower_boundary": 0.5,
+          "name": "High"
+        },
+        {
+          "description": "",
+          "id": "low",
+          "lower_boundary": null,
+          "name": "Low"
+        }
+      ]
+    },
+    "title": "Illustrative optional proxy",
+    "weight_profiles": [
+      {
+        "id": "balanced",
+        "judgements": {
+          "capacity": 1.0,
+          "disclosed_proxy_score": 2.0,
+          "quality": 1.0
+        },
+        "method": "swing",
+        "name": "Balanced"
+      },
+      {
+        "id": "quality_led",
+        "judgements": {
+          "capacity": 1.0,
+          "disclosed_proxy_score": 4.0,
+          "quality": 3.0
+        },
+        "method": "swing",
+        "name": "Quality led"
+      }
+    ]
+  },
+  "score_draft_fingerprint": "b88b49a1a66c86815cb0b15b6bb7a79793f24e45d40a9b3f3781c7f563e1de61",
+  "state": {
+    "card_digest": "36665f4ec715d99bdbb11d25462041d3a5b3f39b86bc602cb26233213f2ffd8a",
+    "card_facts": {
+      "base_rate": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared base_rate"
+      },
+      "calibration_evidence": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared calibration_evidence"
+      },
+      "calibration_period": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared calibration_period"
+      },
+      "calibration_population": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared calibration_population"
+      },
+      "label_definition": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared label_definition"
+      },
+      "licence": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared licence"
+      },
+      "model_version": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "1"
+      },
+      "observation_cutoff": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "2026-10-31"
+      },
+      "population_denominator": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared population_denominator"
+      },
+      "purpose": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative fixed proxy"
+      },
+      "selection_bias": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared selection_bias"
+      },
+      "source_references": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared source_references"
+      },
+      "survivorship_bias": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared survivorship_bias"
+      },
+      "training_period": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared training_period"
+      },
+      "training_population": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared training_population"
+      },
+      "use_restrictions": {
+        "reason": "",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ],
+        "unknown": false,
+        "value": "Illustrative declared use_restrictions"
+      }
+    },
+    "card_id": "card",
+    "compared_profile_ids": [
+      "balanced",
+      "quality_led"
+    ],
+    "criterion": {
+      "description": "",
+      "id": "disclosed_proxy_score",
+      "name": "Disclosed model proxy: fixed score",
+      "order": 0,
+      "parent_id": null,
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "interval",
+        "unit": null,
+        "upper": 1.0
+      },
+      "value_function": {
+        "direction": "increasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    "enabled": true,
+    "features": [
+      {
+        "criterion_ids": [
+          "quality"
+        ],
+        "description": "A declared quality input",
+        "factor_ids": [],
+        "id": "reported_quality",
+        "observed_at": "2026-10-01",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        },
+        "source_ids": [
+          "source"
+        ]
+      }
+    ],
+    "licence_compatible": true,
+    "licence_review": {
+      "corrected_value": null,
+      "note": "Illustrative review of stated inputs and disclosed limitations",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "reviewer": "Local reviewer",
+      "status": "accepted"
+    },
+    "overlaps": [
+      {
+        "feature_id": "reported_quality",
+        "rationale": "Retain both explicitly to demonstrate the weight consequence",
+        "relation": "same_concept",
+        "remove_criterion_ids": [],
+        "resolution": "retain_with_rationale",
+        "review": {
+          "corrected_value": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted"
+        }
+      }
+    ],
+    "plan_review": {
+      "corrected_value": null,
+      "note": "Illustrative review of stated inputs and disclosed limitations",
+      "reviewed_at": "2026-11-01T00:00:00Z",
+      "reviewer": "Local reviewer",
+      "status": "accepted"
+    },
+    "project_fingerprint": "16b19f2b4f66bbe1d94f7ae849faeb5091d4d7a6b5ccc3deb3fa1c9e9645cb72",
+    "score_meaning": "Illustrative external score; no probability meaning",
+    "score_workspace_digest": "153ca057b8fba4711a8463d35f2c0d8f5b5a82ef4b8163e3edce28ca39b4e669",
+    "swing_ratings": {
+      "balanced": 2.0,
+      "quality_led": 4.0
+    }
+  },
+  "unknown_facts": [],
+  "weight_shares": {
+    "balanced": {
+      "after": {
+        "capacity": 0.25,
+        "disclosed_proxy_score": 0.5,
+        "quality": 0.25
+      },
+      "before": {
+        "capacity": 0.5,
+        "quality": 0.5
+      }
+    },
+    "quality_led": {
+      "after": {
+        "capacity": 0.125,
+        "disclosed_proxy_score": 0.5,
+        "quality": 0.375
+      },
+      "before": {
+        "capacity": 0.25,
+        "quality": 0.75
+      }
+    }
+  },
+  "with_proxy": {
+    "alternatives": [
+      {
+        "id": "a",
+        "metadata": {},
+        "name": "Option A"
+      },
+      {
+        "id": "b",
+        "metadata": {},
+        "name": "Option B"
+      }
+    ],
+    "analysis": {
+      "method": "mavt",
+      "parameters": {},
+      "scenario_id": null,
+      "weight_profile_id": null
+    },
+    "criteria": [
+      {
+        "description": "",
+        "id": "quality",
+        "name": "Quality",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "capacity",
+        "name": "Capacity",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "disclosed_proxy_score",
+        "name": "Disclosed model proxy: fixed score",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      }
+    ],
+    "decision_maker": "",
+    "description": "",
+    "id": "proxy_e1d440fb03b816d8d15db05a",
+    "performances": [
+      {
+        "alternative_id": "a",
+        "criterion_id": "quality",
+        "value": 0.75
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "capacity",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "quality",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "capacity",
+        "value": 0.75
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "disclosed_proxy_score",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "disclosed_proxy_score",
+        "value": 0.75
+      }
+    ],
+    "scenarios": [],
+    "schema_version": 2,
+    "sorting": {
+      "audit": null,
+      "classes": [
+        {
+          "description": "",
+          "id": "high",
+          "lower_boundary": 0.5,
+          "name": "High"
+        },
+        {
+          "description": "",
+          "id": "low",
+          "lower_boundary": null,
+          "name": "Low"
+        }
+      ]
+    },
+    "title": "Illustrative optional proxy",
+    "weight_profiles": [
+      {
+        "id": "balanced",
+        "judgements": {
+          "capacity": 1.0,
+          "disclosed_proxy_score": 2.0,
+          "quality": 1.0
+        },
+        "method": "swing",
+        "name": "Balanced"
+      },
+      {
+        "id": "quality_led",
+        "judgements": {
+          "capacity": 1.0,
+          "disclosed_proxy_score": 4.0,
+          "quality": 3.0
+        },
+        "method": "swing",
+        "name": "Quality led"
+      }
+    ]
+  }
+}

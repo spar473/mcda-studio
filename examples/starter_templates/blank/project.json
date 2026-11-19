@@ -1,0 +1,25 @@
+{
+  "alternatives": [],
+  "analysis": {
+    "method": "mavt",
+    "parameters": {},
+    "scenario_id": null,
+    "weight_profile_id": null
+  },
+  "criteria": [],
+  "decision_maker": "",
+  "description": "",
+  "id": "blank_starter",
+  "performances": [],
+  "scenarios": [],
+  "schema_version": 1,
+  "title": "Blank",
+  "weight_profiles": [
+    {
+      "id": "default",
+      "judgements": {},
+      "method": "swing",
+      "name": "Default"
+    }
+  ]
+}

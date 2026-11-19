@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "study": "nz_venture_screening",
+  "as_of": "2026-11-04",
+  "scored_leaves": [
+    {
+      "id": "founder_problem_fit",
+      "name": "Founder-problem expertise",
+      "parent_id": "team",
+      "parent_name": "Team",
+      "scale_type": "ordinal",
+      "labels": [
+        "No public evidence",
+        "Adjacent experience",
+        "3+ years in the domain",
+        "Recognised domain expert",
+        "Core inventor with commercial experience"
+      ],
+      "rubric": "1 no public evidence of domain experience; 2 adjacent field or under 3 years; 3 at least 3 years in the target industry or its research field; 4 recognised expert (doctorate plus 5 years, or senior operating role in the industry); 5 the founder's own work is the basis of the core product, plus commercial experience in the target industry.",
+      "numeric": false
+    },
+    {
+      "id": "team_completeness",
+      "name": "Team completeness",
+      "parent_id": "team",
+      "parent_name": "Team",
+      "scale_type": "ordinal",
+      "labels": [
+        "One key role named",
+        "Two key roles named",
+        "All three, one part-time",
+        "All three full-time",
+        "Next-stage leads named"
+      ],
+      "rubric": "Technical, commercial and domain/regulatory leads, each a named person: 1 one; 2 two; 3 all three, one part-time or advisory; 4 all three full-time; 5 plus named leads for the next stage's main function.",
+      "numeric": false
+    },
+    {
+      "id": "track_record",
+      "name": "Prior venture or operating track record",
+      "parent_id": "team",
+      "parent_name": "Team",
+      "scale_type": "ordinal",
+      "labels": [
+        "None public",
+        "Prior venture or 5+ years operating",
+        "Senior role at scale or funded venture",
+        "Prior exit or scaled-company executive",
+        "Several founders at that level"
+      ],
+      "rubric": "1 none public; 2 prior venture with no known outcome, or 5+ years operating; 3 senior role in a company of 100+ staff, or a prior venture that raised outside capital; 4 a prior venture with a known exit, or executive of a scaled company; 5 two or more at 4.",
+      "numeric": false
+    },
+    {
+      "id": "board_advisors",
+      "name": "Advisors, board and key hires",
+      "parent_id": "team",
+      "parent_name": "Team",
+      "scale_type": "ordinal",
+      "labels": [
+        "None named",
+        "Named, not domain-relevant",
+        "Independent chair or domain advisor",
+        "Sector and investor directors",
+        "Directors plus senior industry hire"
+      ],
+      "rubric": "1 none named; 2 named without relevant domain or investor experience; 3 an independent chair or one relevant domain advisor; 4 sector and investor directors; 5 level 4 plus a named senior hire from a leading firm in the target industry.",
+      "numeric": false
+    },
+    {
+      "id": "problem_severity",
+      "name": "Problem severity and willingness to pay",
+      "parent_id": "problem_solution",
+      "parent_name": "Problem and solution",
+      "scale_type": "ordinal",
+      "labels": [
+        "Company statement only",
+        "Independently confirmed",
+        "Cost independently quantified",
+        "Quantified with a budget holder",
+        "Customers already pay for a substitute"
+      ],
+      "rubric": "1 stated only by the company; 2 an independent source confirms it; 3 an independent source quantifies its cost or impact; 4 plus a named budget holder or obligation; 5 plus evidence that customers already pay for an inferior substitute.",
+      "numeric": false
+    },
+    {
+      "id": "defensibility",
+      "name": "Differentiation and defensibility",
+      "parent_id": "problem_solution",
+      "parent_name": "Problem and solution",
+      "scale_type": "ordinal",
+      "labels": [
+        "None stated",
+        "Claimed, no protectable asset",
+        "Filed patent or proprietary data",
+        "Granted patent or exclusive licence",
+        "Granted IP plus compounding advantage"
+      ],
+      "rubric": "1 none stated; 2 differentiation claimed, no protectable asset; 3 filed patent, exclusive licence or proprietary dataset; 4 granted patent or exclusive licence in a major market; 5 plus a publicly evidenced compounding advantage.",
+      "numeric": false
+    },
+    {
+      "id": "readiness",
+      "name": "Product or technology readiness",
+      "parent_id": "problem_solution",
+      "parent_name": "Problem and solution",
+      "scale_type": "ordinal",
+      "labels": [
+        "Concept",
+        "Prototype",
+        "Pilot-ready",
+        "Commercial"
+      ],
+      "rubric": "Concept, prototype, pilot-ready (in pilots or trials), commercial (sold and delivered).",
+      "numeric": false
+    },
+    {
+      "id": "regulatory_burden",
+      "name": "Regulatory and certification burden (minimise)",
+      "parent_id": "problem_solution",
+      "parent_name": "Problem and solution",
+      "scale_type": "ordinal",
+      "labels": [
+        "Approval required, not started",
+        "Approval required, under way",
+        "Approved in one market or certification only",
+        "No approval required"
+      ],
+      "rubric": "Worst to best: approval required and not started; required and under way; obtained in one major market or certification only; no product approval required.",
+      "numeric": false
+    },
+    {
+      "id": "market_size",
+      "name": "Addressable market size",
+      "parent_id": "market",
+      "parent_name": "Market",
+      "scale_type": "ratio",
+      "labels": [],
+      "rubric": "US$ bn, 2025, the median of distinct publishers' public estimates for the narrowest named segment containing the core product.",
+      "numeric": true
+    },
+    {
+      "id": "market_growth",
+      "name": "Market growth",
+      "parent_id": "market",
+      "parent_name": "Market",
+      "scale_type": "ratio",
+      "labels": [],
+      "rubric": "% CAGR, the median of the same publishers' stated forecast CAGRs.",
+      "numeric": true
+    },
+    {
+      "id": "competitive_intensity",
+      "name": "Competitive intensity (minimise)",
+      "parent_id": "market",
+      "parent_name": "Market",
+      "scale_type": "ordinal",
+      "labels": [
+        "Several funded leaders",
+        "One or two funded leaders",
+        "Unfunded direct competitors",
+        "No direct competitor identified"
+      ],
+      "rubric": "A funded leader is a direct competitor with US$10m+ disclosed funding or a public listing: three or more; one or two; direct competitors below that; none identified.",
+      "numeric": false
+    },
+    {
+      "id": "route_to_market",
+      "name": "Route to global markets",
+      "parent_id": "market",
+      "parent_name": "Market",
+      "scale_type": "ordinal",
+      "labels": [
+        "No offshore route stated",
+        "Offshore markets named",
+        "Offshore process under way",
+        "Offshore approval or entity",
+        "Operating in 2+ offshore markets"
+      ],
+      "rubric": "Access, not customers: 1 none stated; 2 target markets named; 3 offshore approval, accreditation or channel process under way; 4 obtained, or an offshore entity; 5 operating in two or more offshore markets with local staff.",
+      "numeric": false
+    },
+    {
+      "id": "customer_validation",
+      "name": "Customer validation",
+      "parent_id": "traction",
+      "parent_name": "Traction",
+      "scale_type": "ordinal",
+      "labels": [
+        "Company claim only",
+        "Unpaid trial",
+        "Paid pilot",
+        "Production customers"
+      ],
+      "rubric": "The strongest independently verifiable customer evidence.",
+      "numeric": false
+    },
+    {
+      "id": "commercial_stage",
+      "name": "Commercial stage",
+      "parent_id": "traction",
+      "parent_name": "Traction",
+      "scale_type": "ordinal",
+      "labels": [
+        "Pre-revenue",
+        "First revenue",
+        "Repeatable revenue",
+        "Scaling"
+      ],
+      "rubric": "Breadth and repeatability of revenue: none; first; multiple recurring customers; stated growth with revenue in several markets.",
+      "numeric": false
+    },
+    {
+      "id": "partnerships",
+      "name": "Strategic partnerships and channels",
+      "parent_id": "traction",
+      "parent_name": "Traction",
+      "scale_type": "ordinal",
+      "labels": [
+        "None public",
+        "MoU or research collaboration",
+        "Partner in an active programme",
+        "Commercial agreement with an established firm",
+        "Two or more commercial agreements"
+      ],
+      "rubric": "Non-customer partners: 1 none; 2 MoU or research collaboration; 3 a named partner in an active programme; 4 a commercial, distribution or manufacturing agreement with an established firm; 5 two or more at 4.",
+      "numeric": false
+    },
+    {
+      "id": "milestone_delivery",
+      "name": "Milestone delivery",
+      "parent_id": "traction",
+      "parent_name": "Traction",
+      "scale_type": "ordinal",
+      "labels": [
+        "No dated public milestone",
+        "Announced, none yet due",
+        "Delivered, some late or missed",
+        "Delivered on or near plan",
+        "Two or more delivered on plan"
+      ],
+      "rubric": "Earlier public plans compared with later outcomes.",
+      "numeric": false
+    }
+  ],
+  "screened_excluded": [
+    {
+      "id": "hq_country",
+      "name": "HQ country",
+      "parent_id": "mandate",
+      "parent_name": "Mandate (screened, not scored)",
+      "reason": "Mandate leaf: screened, not scored"
+    },
+    {
+      "id": "stage",
+      "name": "Stage",
+      "parent_id": "mandate",
+      "parent_name": "Mandate (screened, not scored)",
+      "reason": "Mandate leaf: screened, not scored"
+    },
+    {
+      "id": "sector",
+      "name": "Sector",
+      "parent_id": "mandate",
+      "parent_name": "Mandate (screened, not scored)",
+      "reason": "Mandate leaf: screened, not scored"
+    }
+  ]
+}

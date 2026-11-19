@@ -1,0 +1,539 @@
+{
+  "alternatives": [
+    {
+      "id": "option_a",
+      "metadata": {},
+      "name": "Option A"
+    },
+    {
+      "id": "option_b",
+      "metadata": {},
+      "name": "Option B"
+    },
+    {
+      "id": "option_c",
+      "metadata": {},
+      "name": "Option C"
+    },
+    {
+      "id": "option_d",
+      "metadata": {},
+      "name": "Option D"
+    }
+  ],
+  "analysis": {
+    "method": "mavt",
+    "parameters": {},
+    "scenario_id": null,
+    "weight_profile_id": null
+  },
+  "criteria": [
+    {
+      "description": "",
+      "id": "lifecycle_cost",
+      "name": "Lifecycle cost",
+      "order": 0,
+      "parent_id": null,
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "capital_cost",
+      "name": "Capital cost",
+      "order": 0,
+      "parent_id": "lifecycle_cost",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 40.0,
+        "type": "ratio",
+        "unit": "NZD m",
+        "upper": 100.0
+      },
+      "value_function": {
+        "direction": "decreasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "operating_cost",
+      "name": "Operating cost",
+      "order": 1,
+      "parent_id": "lifecycle_cost",
+      "scale": {
+        "anchor_mode": "local",
+        "labels": [],
+        "lower": null,
+        "type": "ratio",
+        "unit": "NZD m/yr",
+        "upper": null
+      },
+      "value_function": {
+        "direction": "decreasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "funding_premium",
+      "name": "Funding risk premium",
+      "order": 2,
+      "parent_id": "lifecycle_cost",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "ratio",
+        "unit": "%",
+        "upper": 4.0
+      },
+      "value_function": {
+        "direction": "decreasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "service",
+      "name": "Service performance",
+      "order": 1,
+      "parent_id": null,
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "reliability",
+      "name": "Reliability",
+      "order": 0,
+      "parent_id": "service",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "capacity_margin",
+      "name": "Design capacity margin",
+      "order": 0,
+      "parent_id": "reliability",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 10.0,
+        "type": "ratio",
+        "unit": "%",
+        "upper": 50.0
+      },
+      "value_function": {
+        "direction": "increasing",
+        "kind": "linear",
+        "out_of_domain": "error"
+      }
+    },
+    {
+      "description": "",
+      "id": "outage_hours",
+      "name": "Unplanned outage hours",
+      "order": 1,
+      "parent_id": "reliability",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "ratio",
+        "unit": "h/yr",
+        "upper": 40.0
+      },
+      "value_function": {
+        "kind": "piecewise_linear",
+        "out_of_domain": "error",
+        "points": [
+          {
+            "value": 1.0,
+            "x": 0.0
+          },
+          {
+            "value": 0.85,
+            "x": 8.0
+          },
+          {
+            "value": 0.4,
+            "x": 20.0
+          },
+          {
+            "value": 0.0,
+            "x": 40.0
+          }
+        ]
+      }
+    },
+    {
+      "description": "",
+      "id": "compliance",
+      "name": "Water quality compliance",
+      "order": 1,
+      "parent_id": "service",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [
+          "marginal",
+          "compliant",
+          "exceeds"
+        ],
+        "lower": null,
+        "type": "ordinal",
+        "unit": null,
+        "upper": null
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "compliant": 0.6,
+          "exceeds": 1.0,
+          "marginal": 0.0
+        }
+      }
+    },
+    {
+      "description": "",
+      "id": "consent",
+      "name": "Consent and community",
+      "order": 2,
+      "parent_id": null,
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "community",
+      "name": "Community acceptance",
+      "order": 0,
+      "parent_id": "consent",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [
+          "divided",
+          "neutral",
+          "supportive"
+        ],
+        "lower": null,
+        "type": "ordinal",
+        "unit": null,
+        "upper": null
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "divided": 0.0,
+          "neutral": 0.5,
+          "supportive": 1.0
+        }
+      }
+    },
+    {
+      "description": "",
+      "id": "footprint",
+      "name": "Ecological footprint",
+      "order": 1,
+      "parent_id": "consent",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [
+          "greenfield",
+          "brownfield",
+          "existing_site"
+        ],
+        "lower": null,
+        "type": "categorical",
+        "unit": null,
+        "upper": null
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "brownfield": 0.45,
+          "existing_site": 1.0,
+          "greenfield": 0.0
+        }
+      }
+    },
+    {
+      "description": "",
+      "id": "delivery",
+      "name": "Delivery capability",
+      "order": 3,
+      "parent_id": null,
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "description": "",
+      "id": "track_record",
+      "name": "Contractor track record",
+      "order": 0,
+      "parent_id": "delivery",
+      "scale": {
+        "anchor_mode": "fixed",
+        "labels": [],
+        "lower": 0.0,
+        "type": "interval",
+        "unit": null,
+        "upper": 100.0
+      },
+      "value_function": {
+        "kind": "direct_rating",
+        "max_rating": 100.0,
+        "min_rating": 0.0,
+        "out_of_domain": "error"
+      }
+    }
+  ],
+  "decision_maker": "Illustrative analyst",
+  "description": "Wholly invented inputs for reviewing a decision workflow.",
+  "id": "infrastructure_procurement_starter",
+  "performances": [
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "capital_cost",
+      "value": 48.0
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "operating_cost",
+      "value": 3.9
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "funding_premium",
+      "value": 0.8
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "capacity_margin",
+      "value": 18.0
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "outage_hours",
+      "value": 26.0
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "compliance",
+      "value": "compliant"
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "community",
+      "value": "supportive"
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "footprint",
+      "value": "existing_site"
+    },
+    {
+      "alternative_id": "option_a",
+      "criterion_id": "track_record",
+      "value": 85.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "capital_cost",
+      "value": 95.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "operating_cost",
+      "value": 2.6
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "funding_premium",
+      "value": 2.4
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "capacity_margin",
+      "value": 45.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "outage_hours",
+      "value": 9.0
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "compliance",
+      "value": "exceeds"
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "community",
+      "value": "divided"
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "footprint",
+      "value": "greenfield"
+    },
+    {
+      "alternative_id": "option_b",
+      "criterion_id": "track_record",
+      "value": 65.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "capital_cost",
+      "value": 66.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "operating_cost",
+      "value": 3.2
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "funding_premium",
+      "value": 1.5
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "capacity_margin",
+      "value": 30.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "outage_hours",
+      "value": 15.0
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "compliance",
+      "value": "exceeds"
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "community",
+      "value": "neutral"
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "footprint",
+      "value": "brownfield"
+    },
+    {
+      "alternative_id": "option_c",
+      "criterion_id": "track_record",
+      "value": 88.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "capital_cost",
+      "value": 58.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "operating_cost",
+      "value": 4.6
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "funding_premium",
+      "value": 3.1
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "capacity_margin",
+      "value": 24.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "outage_hours",
+      "value": 34.0
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "compliance",
+      "value": "marginal"
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "community",
+      "value": "supportive"
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "footprint",
+      "value": "brownfield"
+    },
+    {
+      "alternative_id": "option_d",
+      "criterion_id": "track_record",
+      "value": 45.0
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "consent_review",
+      "name": "Consent review (linear outage hours)",
+      "value_function_overrides": {
+        "outage_hours": {
+          "direction": "decreasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      "weight_profile_id": "consent_led"
+    }
+  ],
+  "schema_version": 1,
+  "title": "Infrastructure procurement",
+  "weight_profiles": [
+    {
+      "id": "default",
+      "judgements": {
+        "capacity_margin": 60.0,
+        "capital_cost": 100.0,
+        "community": 100.0,
+        "compliance": 85.0,
+        "consent": 60.0,
+        "delivery": 45.0,
+        "footprint": 0.0,
+        "funding_premium": 30.0,
+        "lifecycle_cost": 100.0,
+        "operating_cost": 70.0,
+        "outage_hours": 100.0,
+        "reliability": 100.0,
+        "service": 95.0
+      },
+      "method": "swing",
+      "name": "Balanced"
+    },
+    {
+      "id": "consent_led",
+      "judgements": {
+        "capacity_margin": 60.0,
+        "capital_cost": 100.0,
+        "community": 100.0,
+        "compliance": 85.0,
+        "consent": 100.0,
+        "delivery": 35.0,
+        "footprint": 55.0,
+        "funding_premium": 30.0,
+        "lifecycle_cost": 40.0,
+        "operating_cost": 70.0,
+        "outage_hours": 100.0,
+        "reliability": 100.0,
+        "service": 70.0
+      },
+      "method": "swing",
+      "name": "Consent led"
+    }
+  ]
+}

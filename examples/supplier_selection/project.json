@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "id": "supplier_selection_example",
+  "title": "Supplier selection (example)",
+  "description": "Independent reusability example: cost, performance and risk of 5 suppliers.",
+  "decision_maker": "Procurement team",
+  "alternatives": [
+    {
+      "id": "apex",
+      "name": "Apex Components",
+      "metadata": {}
+    },
+    {
+      "id": "brightline",
+      "name": "Brightline Supply",
+      "metadata": {}
+    },
+    {
+      "id": "cobalt",
+      "name": "Cobalt Industrial",
+      "metadata": {}
+    },
+    {
+      "id": "delta",
+      "name": "Delta Parts",
+      "metadata": {}
+    },
+    {
+      "id": "evergreen",
+      "name": "Evergreen Materials",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "cost",
+      "name": "Cost",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "unit_price",
+      "name": "Unit price",
+      "parent_id": "cost",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD",
+        "lower": 20.0,
+        "upper": 60.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "logistics_cost",
+      "name": "Logistics cost",
+      "parent_id": "cost",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD/unit",
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "local",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "performance",
+      "name": "Performance",
+      "parent_id": null,
+      "order": 1,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "quality",
+      "name": "Quality",
+      "parent_id": "performance",
+      "order": 0,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "defect_rate",
+      "name": "Defect rate",
+      "parent_id": "quality",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "%",
+        "lower": 0.0,
+        "upper": 10.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "piecewise_linear",
+        "points": [
+          {
+            "x": 0.0,
+            "value": 1.0
+          },
+          {
+            "x": 1.0,
+            "value": 0.9
+          },
+          {
+            "x": 3.0,
+            "value": 0.5
+          },
+          {
+            "x": 8.0,
+            "value": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "certification",
+      "name": "Certification",
+      "parent_id": "quality",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "none",
+          "iso9001",
+          "iso9001_14001"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "none": 0.0,
+          "iso9001": 0.55,
+          "iso9001_14001": 1.0
+        }
+      }
+    },
+    {
+      "id": "delivery",
+      "name": "Delivery",
+      "parent_id": "performance",
+      "order": 1,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "on_time",
+      "name": "On-time delivery",
+      "parent_id": "delivery",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "%",
+        "lower": 70.0,
+        "upper": 100.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    },
+    {
+      "id": "lead_time",
+      "name": "Lead time",
+      "parent_id": "delivery",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "days",
+        "lower": 3.0,
+        "upper": 30.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "risk",
+      "name": "Risk",
+      "parent_id": null,
+      "order": 2,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "financial_stability",
+      "name": "Financial stability",
+      "parent_id": "risk",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "interval",
+        "unit": null,
+        "lower": 0.0,
+        "upper": 100.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "direct_rating",
+        "min_rating": 0.0,
+        "max_rating": 100.0
+      }
+    },
+    {
+      "id": "region",
+      "name": "Sourcing region",
+      "parent_id": "risk",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "categorical",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "overseas",
+          "regional",
+          "domestic"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "overseas": 0.0,
+          "regional": 0.5,
+          "domestic": 1.0
+        }
+      }
+    }
+  ],
+  "performances": [
+    {
+      "alternative_id": "apex",
+      "criterion_id": "unit_price",
+      "value": 42.0
+    },
+    {
+      "alternative_id": "apex",
+      "criterion_id": "logistics_cost",
+      "value": 1.8
+    },
+    {
+      "alternative_id": "apex",
+      "criterion_id": "defect_rate",
+      "value": 1.2
+    },
+    {
+      "alternative_id": "apex",
+      "criterion_id": "certification",
+      "value": "iso9001_14001"
+    },
+    {
+      "alternative_id": "apex",
+      "criterion_id": "on_time",
+      "value": 96.0
+    },
+    {
+      "alternative_id": "apex",
+      "criterion_id": "lead_time",
+      "value": 7.0
+    },
+    {
+      "alternative_id": "apex",
+      "criterion_id": "financial_stability",
+      "value": 80.0
+    },
+    {
+      "alternative_id": "apex",
+      "criterion_id": "region",
+      "value": "domestic"
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "unit_price",
+      "value": 35.0
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "logistics_cost",
+      "value": 3.5
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "defect_rate",
+      "value": 3.1
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "certification",
+      "value": "iso9001"
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "on_time",
+      "value": 91.0
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "lead_time",
+      "value": 12.0
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "financial_stability",
+      "value": 65.0
+    },
+    {
+      "alternative_id": "brightline",
+      "criterion_id": "region",
+      "value": "regional"
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "unit_price",
+      "value": 28.0
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "logistics_cost",
+      "value": 5.9
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "defect_rate",
+      "value": 6.4
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "certification",
+      "value": "none"
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "on_time",
+      "value": 82.0
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "lead_time",
+      "value": 21.0
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "financial_stability",
+      "value": 45.0
+    },
+    {
+      "alternative_id": "cobalt",
+      "criterion_id": "region",
+      "value": "overseas"
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "unit_price",
+      "value": 51.0
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "logistics_cost",
+      "value": 1.1
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "defect_rate",
+      "value": 0.8
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "certification",
+      "value": "iso9001_14001"
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "on_time",
+      "value": 99.0
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "lead_time",
+      "value": 4.0
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "financial_stability",
+      "value": 90.0
+    },
+    {
+      "alternative_id": "delta",
+      "criterion_id": "region",
+      "value": "domestic"
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "unit_price",
+      "value": 38.0
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "logistics_cost",
+      "value": 2.7
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "defect_rate",
+      "value": 2.2
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "certification",
+      "value": "iso9001"
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "on_time",
+      "value": 88.0
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "lead_time",
+      "value": 9.0
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "financial_stability",
+      "value": 70.0
+    },
+    {
+      "alternative_id": "evergreen",
+      "criterion_id": "region",
+      "value": "regional"
+    }
+  ],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Default",
+      "method": "swing",
+      "judgements": {
+        "cost": 100.0,
+        "performance": 90.0,
+        "risk": 50.0,
+        "unit_price": 100.0,
+        "logistics_cost": 40.0,
+        "quality": 100.0,
+        "delivery": 80.0,
+        "defect_rate": 100.0,
+        "certification": 30.0,
+        "on_time": 100.0,
+        "lead_time": 60.0,
+        "financial_stability": 100.0,
+        "region": 25.0
+      }
+    },
+    {
+      "id": "cost_focus",
+      "name": "Cost focus",
+      "method": "swing",
+      "judgements": {
+        "cost": 100.0,
+        "performance": 40.0,
+        "risk": 20.0,
+        "unit_price": 100.0,
+        "logistics_cost": 40.0,
+        "quality": 100.0,
+        "delivery": 80.0,
+        "defect_rate": 100.0,
+        "certification": 30.0,
+        "on_time": 100.0,
+        "lead_time": 60.0,
+        "financial_stability": 100.0,
+        "region": 25.0
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "linear_defects",
+      "name": "Defect rate as linear (0-10 %)",
+      "weight_profile_id": null,
+      "value_function_overrides": {
+        "defect_rate": {
+          "out_of_domain": "error",
+          "kind": "linear",
+          "direction": "decreasing"
+        }
+      }
+    }
+  ],
+  "analysis": {
+    "method": "mavt",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  }
+}

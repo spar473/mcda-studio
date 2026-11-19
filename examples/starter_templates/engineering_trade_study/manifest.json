@@ -1,0 +1,28 @@
+{
+  "artifacts": [
+    {
+      "for_model": null,
+      "id": "project",
+      "kind": "project",
+      "label": "Project",
+      "optional": false,
+      "path": "project.json",
+      "reset_policy": "draft",
+      "schema_version": 6,
+      "sha256": "f99cfeb7895d9262f07fa9ebd2172d6c62616fad99e58ef801ebc3bd5c6fe1bf"
+    }
+  ],
+  "description": "Invented trade study: five inspection-vehicle concepts, seven criteria, two weight profiles and a scenario, classes, SMAA-2 uncertainty, PROMETHEE II, 78 AHP judgements and two requirements, so every method reads one model. All names and figures are invented.",
+  "digest": "a02fd34522ebc02f80a6ae962d95b5ebab209e85d5a8f530830cdb68f262e255",
+  "id": "engineering_trade_study",
+  "schema_version": 1,
+  "source_example": "examples/engineering_trade_study",
+  "source_version": "1",
+  "tasks": [
+    "Read each concept's class and its requirement status",
+    "Compare all five methods and read where their leaders differ",
+    "Read how a concept near a class boundary spreads across classes under SMAA-2"
+  ],
+  "title": "Engineering trade study",
+  "version": "1"
+}

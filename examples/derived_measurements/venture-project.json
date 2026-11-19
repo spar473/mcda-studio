@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "derived-venture",
+  "title": "Illustrative bottom-up market sizing",
+  "description": "",
+  "decision_maker": "",
+  "alternatives": [
+    {
+      "id": "a",
+      "name": "Option A",
+      "metadata": {}
+    },
+    {
+      "id": "b",
+      "name": "Option B",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "result",
+      "name": "Annual addressable revenue",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD/year",
+        "lower": 0.0,
+        "upper": 1000000.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    }
+  ],
+  "performances": [],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Default",
+      "method": "swing",
+      "judgements": {}
+    }
+  ],
+  "scenarios": [],
+  "analysis": {
+    "method": "mavt",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  }
+}

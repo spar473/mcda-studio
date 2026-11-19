@@ -1,0 +1,84 @@
+import { expect, test } from "@playwright/test";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { openTab, readJson, REPO, storedFile } from "./helpers";
+import type { DerivedCompilation, DerivedPreview, Project, ProjectCopyReceipt } from "../src/api/types";
+
+for (const name of ["venture", "supplier"] as const) {
+  test(`${name} calculated measurement preview explains formulas and shared sources without changing saved bytes`, async ({ page, request }, testInfo) => {
+    const project = readJson(resolve(REPO, `examples/derived_measurements/${name}-project.json`)) as Project;
+    const modelPath = resolve(REPO, `examples/derived_measurements/${name}-model.json`);
+    const model = readJson(modelPath) as DerivedPreview["model"];
+    const imported = await request.post("/api/projects/import", { data: project });
+    expect(imported.status()).toBe(201);
+    expect((await imported.json() as { fingerprint: string }).fingerprint).toBe(model.project_fingerprint);
+    const before = await storedFile(request, project.id);
+    await page.goto(`/#/p/${project.id}`);
+    await openTab(page, "Measurements");
+    await page.getByText("Calculated measurements", { exact: true }).click();
+    const panel = page.getByLabel("Calculated measurements preview", { exact: true });
+    await panel.getByLabel("Calculation model", { exact: true }).setInputFiles(modelPath);
+    await expect(panel.getByRole("alert")).toHaveCount(0);
+    await expect(panel.getByLabel("Calculated measurements", { exact: true })).toContainText(name === "venture" ? "600,000" : "155,000");
+    await expect(panel.getByLabel("Calculated measurements", { exact: true })).toContainText(name === "venture" ? "addressable_customers * adoption_a" : "purchase_volume * price_a");
+    await panel.getByText("Source inputs and review", { exact: true }).click();
+    await expect(panel.getByLabel("Calculation source inputs").getByText(/Synthetic example reviewer/).first()).toBeVisible();
+    const download = page.waitForEvent("download");
+    await panel.getByRole("button", { name: "Download calculation preview" }).click();
+    const file = await download;
+    const path = await file.path();
+    if (!path) throw new Error("Preview download missing");
+    const exported = JSON.parse(readFileSync(path, "utf8")) as DerivedPreview;
+    expect(exported.model).toEqual(model);
+    expect(exported.calculations.some(c => c.source_ids.includes(name === "venture" ? "addressable_customers" : "annual_units"))).toBe(true);
+    await expect(panel.getByRole("button", { name: "Compile reviewed copy" })).toBeDisabled();
+    await panel.getByLabel("I reviewed all target changes for the separate copy").check();
+    await panel.getByRole("button", { name: "Compile reviewed copy" }).click();
+    await expect(panel.getByRole("region", { name: "Compiled calculation copy" })).toBeVisible();
+    await panel.getByRole("region", { name: "Compiled calculation copy" }).screenshot({ path: testInfo.outputPath("compiled-copy.png") });
+    const bundleEvent = page.waitForEvent("download");
+    await panel.getByRole("button", { name: "Export calculation bundle", exact: true }).click();
+    const bundlePath = await (await bundleEvent).path();
+    if (!bundlePath) throw Error("Calculation bundle download missing");
+    const bundle = JSON.parse(readFileSync(bundlePath, "utf8")) as DerivedCompilation;
+    expect(bundle.preview).toEqual(exported);
+    expect(bundle.preview.model).toEqual(model);
+    expect(bundle.project.performances.map(p => p.value)).toEqual(name === "venture" ? [600000, 640000] : [155000, 161000]);
+    const projectEvent = page.waitForEvent("download");
+    await panel.getByRole("button", { name: "Export compiled project copy", exact: true }).click();
+    const projectPath = await (await projectEvent).path();
+    if (!projectPath) throw Error("Compiled project download missing");
+    expect(JSON.parse(readFileSync(projectPath, "utf8")) as Project).toEqual(bundle.project);
+    // Switching tabs keeps the calculation available; reopening a bundle verifies it in Python.
+    await openTab(page, "Project"); await openTab(page, "Measurements");
+    await expect(panel.getByRole("button", { name: "Export calculation bundle", exact: true })).toBeVisible();
+    await page.reload(); await openTab(page, "Measurements");
+    await page.getByText("Calculated measurements", { exact: true }).click();
+    await panel.getByLabel("Calculation model", { exact: true }).setInputFiles(bundlePath);
+    await expect(panel.getByLabel("Calculated measurements", { exact: true })).toContainText(name === "venture" ? "600,000" : "155,000");
+    await expect(panel.getByRole("alert")).toHaveCount(0);
+    expect((await storedFile(request, project.id)).equals(before)).toBe(true);
+    await expect(page.getByRole("button", { name: "Undo", exact: true })).toBeDisabled();
+    // Import through the actual UI, choosing a separate copy on ID conflict; the source survives.
+    await page.getByRole("button", { name: "← Projects", exact: true }).click();
+    await page.getByLabel("Project file to import", { exact: true }).setInputFiles(projectPath);
+    await page.getByRole("button", { name: "Import as a separate copy", exact: true }).click();
+    await expect(page.getByText(/Imported as a separate copy/)).toBeVisible();
+    expect((await storedFile(request, project.id)).equals(before)).toBe(true);
+    // The copy has a new ID; only the import's receipt relates it to the calculation bundle.
+    const receiptEvent = page.waitForEvent("download");
+    await page.getByRole("region", { name: "Copy receipt" }).getByRole("button", { name: "Download copy receipt" }).click();
+    const receiptPath = await (await receiptEvent).path();
+    if (!receiptPath) throw Error("Copy receipt download missing");
+    const receipt = JSON.parse(readFileSync(receiptPath, "utf8")) as ProjectCopyReceipt;
+    expect(receipt.original_fingerprint).toBe(bundle.compiled_fingerprint);
+    await page.goto(`/#/p/${receipt.copy_project_id}`); await openTab(page, "Measurements");
+    await page.getByText("Calculated measurements", { exact: true }).click();
+    await panel.getByLabel("Calculation model", { exact: true }).setInputFiles(bundlePath);
+    const provenance = panel.getByRole("region", { name: "Calculation bundle provenance" });
+    await expect(provenance).toContainText("historical inspection only");
+    await provenance.getByLabel("Copy receipt (optional)").setInputFiles(receiptPath);
+    await expect(provenance).toContainText(`Import replaced project ID ${project.id} with ${receipt.copy_project_id}`);
+    expect((await storedFile(request, project.id)).equals(before)).toBe(true);
+  });
+}

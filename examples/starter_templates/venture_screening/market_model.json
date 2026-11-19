@@ -1,0 +1,238 @@
+{
+  "formulas": [
+    {
+      "alternative_id": "a",
+      "criterion_id": "annual",
+      "expression": "customers * adoption * price",
+      "id": "bottom_a",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "unit": "money/year"
+    },
+    {
+      "alternative_id": "b",
+      "criterion_id": "annual",
+      "expression": "other_customers * adoption * price",
+      "id": "bottom_b",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "unit": "money/year"
+    },
+    {
+      "alternative_id": null,
+      "criterion_id": null,
+      "expression": "total * share",
+      "id": "top_a",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "unit": "money/year"
+    }
+  ],
+  "project_fingerprint": "02c50b0b401111b3a53e4724ee03263f7d31cd3077f9933fe62a7be88ecb1a80",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "customers",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "independent",
+        "date": "2026-11-01",
+        "description": "Invented model input",
+        "location": "",
+        "name": "Invented customers",
+        "reference": "local:invented-customers"
+      },
+      "unit": "customer",
+      "value": 10000.0
+    },
+    {
+      "id": "adoption",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "unknown",
+        "date": "2026-11-01",
+        "description": "Invented model input",
+        "location": "",
+        "name": "Invented adoption",
+        "reference": "local:invented-adoption"
+      },
+      "unit": "1",
+      "value": 0.05
+    },
+    {
+      "id": "price",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "self_reported",
+        "date": "2026-11-01",
+        "description": "Invented model input",
+        "location": "",
+        "name": "Invented price",
+        "reference": "local:invented-price"
+      },
+      "unit": "money/customer/year",
+      "value": 1200.0
+    },
+    {
+      "id": "other_customers",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "independent",
+        "date": "2026-11-01",
+        "description": "Invented model input",
+        "location": "",
+        "name": "Invented other_customers",
+        "reference": "local:invented-other_customers"
+      },
+      "unit": "customer",
+      "value": 8000.0
+    },
+    {
+      "id": "total",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "unknown",
+        "date": "2026-11-01",
+        "description": "Invented model input",
+        "location": "",
+        "name": "Invented total",
+        "reference": "local:invented-total"
+      },
+      "unit": "money/year",
+      "value": 100000000.0
+    },
+    {
+      "id": "share",
+      "origin": {
+        "kind": "human",
+        "proposed_by": "Illustrative modeller",
+        "tool_id": null,
+        "tool_version": null
+      },
+      "review": {
+        "corrected_value": null,
+        "note": "Reviewed invented assumptions",
+        "reviewed_at": "2026-11-01T12:00:00Z",
+        "reviewer": "Illustrative reviewer",
+        "status": "accepted"
+      },
+      "source": {
+        "classification": "unknown",
+        "date": "2026-11-01",
+        "description": "Invented model input",
+        "location": "",
+        "name": "Invented share",
+        "reference": "local:invented-share"
+      },
+      "unit": "1",
+      "value": 0.01
+    }
+  ],
+  "units": {
+    "customer": {
+      "customer": 1
+    },
+    "money/customer/year": {
+      "customer": -1,
+      "money": 1,
+      "time": -1
+    },
+    "money/year": {
+      "money": 1,
+      "time": -1
+    }
+  }
+}

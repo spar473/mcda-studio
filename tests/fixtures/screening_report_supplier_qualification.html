@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Supplier qualification (example) screening report</title><style>
+@page { size: A4; margin: 15mm; }
+* { box-sizing: border-box; }
+body { font: 10.5pt/1.45 system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #1b1b1b; background: #fff; margin: 0 auto; max-width: 190mm; padding: 8mm 0; }
+h1 { font-size: 20pt; margin: 0 0 4pt; }
+h2 { font-size: 13pt; margin: 18pt 0 6pt; padding-top: 6pt; border-top: 1.5pt solid #1b1b1b;
+  break-after: avoid; }
+h3 { font-size: 11pt; margin: 12pt 0 4pt; break-after: avoid; }
+p, li { margin: 3pt 0; }
+table { border-collapse: collapse; width: 100%; font-size: 9pt; margin: 4pt 0 8pt; }
+th, td { border: 0.5pt solid #777; padding: 3pt 4pt; text-align: left; vertical-align: top; }
+th { background: #eee; }
+tr { break-inside: avoid; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.disclaimer { border: 1.5pt solid #1b1b1b; padding: 6pt 10pt; margin: 10pt 0; }
+.disclaimer p.statement { margin: 0 0 6pt; padding-bottom: 6pt; border-bottom: 0.5pt solid #777; }
+.muted { color: #444; font-size: 9pt; }
+.fail { font-weight: 700; }
+footer { margin-top: 18pt; border-top: 1pt solid #777; padding-top: 6pt; font-size: 8.5pt;
+  color: #333; }
+footer dt { font-weight: 700; float: left; clear: left; width: 38mm; }
+footer dd { margin: 0 0 2pt 38mm; word-break: break-all; }
+@media print { body { padding: 0; } }
+</style></head><body>
+<h1>Supplier qualification (example)</h1>
+<p class="muted">Screening report</p>
+<p><strong>Decision maker:</strong> Procurement team</p>
+<p><strong>Evidence reviewed as of:</strong> not stated
+ · <strong>Generated on:</strong> 2026-11-07
+</p>
+<div class="disclaimer"><p class="statement">Value-based sorting variant of the supplier selection example: five suppliers sorted into Qualified, Conditional and Not qualified by their overall value.</p><strong>Read this first</strong><ul><li>This report supports a screening decision. It is not advice and does not recommend any option.</li><li>An overall value is a preference value under the stated weights, never a probability or a forecast.</li><li>It rests on the information recorded in the project and, where supplied, its evidence dossier.</li><li>No evidence dossier was supplied, so the share of judgement-only ratings is not shown.</li></ul></div>
+<h2>Screening summary by profile</h2>
+<h3>Default</h3>
+<table><thead><tr><th class="num">Rank</th><th>Alternative</th><th class="num">Overall value</th><th>Class (margin)</th><th>Two largest contributions</th><th>Closest change</th><th class="num">Open questions</th></tr></thead><tbody><tr><td class="num">1</td><td>Apex Components</td><td class="num">0.7383</td><td>Qualified (0.03834)</td><td>Defect rate 0.1378; Unit price 0.1339</td><td>−0.01823 weight on Unit price → swaps with Delta Parts</td><td class="num">4</td></tr><tr><td class="num">2</td><td>Delta Parts</td><td class="num">0.7317</td><td>Qualified (0.03169)</td><td>Financial stability 0.15; Defect rate 0.1474</td><td>−0.01823 weight on Unit price → swaps with Apex Components</td><td class="num">12</td></tr><tr><td class="num">3</td><td>Evergreen Materials</td><td class="num">0.6231</td><td>Conditional (0.02308)</td><td>Unit price 0.1637; Financial stability 0.1167</td><td>−0.1154 weight on Financial stability → moves to Not qualified</td><td class="num">3</td></tr><tr><td class="num">4</td><td>Brightline Supply</td><td class="num">0.5943</td><td>Not qualified (0.005746)</td><td>Unit price 0.186; Financial stability 0.1083</td><td>−0.03129 weight on Quality → moves to Conditional</td><td class="num">10</td></tr><tr><td class="num">5</td><td>Cobalt Industrial</td><td class="num">0.4036</td><td>Not qualified (0.1964)</td><td>Unit price 0.2381; Financial stability 0.075</td><td>+0.412 weight on Cost → swaps with Delta Parts</td><td class="num">0</td></tr></tbody></table>
+<p class="muted">Requirements: No requirements are stated.</p>
+<h3>Cost focus</h3>
+<table><thead><tr><th class="num">Rank</th><th>Alternative</th><th class="num">Overall value</th><th>Class (margin)</th><th>Two largest contributions</th><th>Closest change</th><th class="num">Open questions</th></tr></thead><tbody><tr><td class="num">1</td><td>Apex Components</td><td class="num">0.6755</td><td>Conditional (0.0245)</td><td>Unit price 0.2009; Logistics cost 0.15</td><td>−0.06281 weight on Unit price → moves to Qualified</td><td class="num">6</td></tr><tr><td class="num">2</td><td>Delta Parts</td><td class="num">0.628</td><td>Conditional (0.02804)</td><td>Logistics cost 0.175; Unit price 0.1004</td><td>+0.0309 weight on Unit price → swaps with Evergreen Materials</td><td class="num">15</td></tr><tr><td class="num">3</td><td>Evergreen Materials</td><td class="num">0.6081</td><td>Conditional (0.008108)</td><td>Unit price 0.2455; Logistics cost 0.1179</td><td>+0.0309 weight on Unit price → swaps with Delta Parts</td><td class="num">8</td></tr><tr><td class="num">4</td><td>Brightline Supply</td><td class="num">0.5922</td><td>Not qualified (0.007829)</td><td>Unit price 0.279; Logistics cost 0.08929</td><td>+0.04076 weight on Unit price → swaps with Delta Parts</td><td class="num">8</td></tr><tr><td class="num">5</td><td>Cobalt Industrial</td><td class="num">0.4645</td><td>Not qualified (0.1355)</td><td>Unit price 0.3571; Financial stability 0.045</td><td>+0.1066 weight on Unit price → swaps with Delta Parts</td><td class="num">2</td></tr></tbody></table>
+<p class="muted">Requirements: No requirements are stated.</p>
+<p class="muted">Overall value is a preference value under this profile and scenario, not a probability or a prediction.</p>
+<h2>Profile comparison</h2>
+<table><thead><tr><th>Alternative</th><th class="num">Default: rank</th><th>Default: class</th><th class="num">Cost focus: rank</th><th>Cost focus: class</th></tr></thead><tbody><tr><td>Apex Components</td><td class="num">1</td><td>Qualified</td><td class="num">1</td><td>Conditional</td></tr><tr><td>Delta Parts</td><td class="num">2</td><td>Qualified</td><td class="num">2</td><td>Conditional</td></tr><tr><td>Evergreen Materials</td><td class="num">3</td><td>Conditional</td><td class="num">3</td><td>Conditional</td></tr><tr><td>Brightline Supply</td><td class="num">4</td><td>Not qualified</td><td class="num">4</td><td>Not qualified</td></tr><tr><td>Cobalt Industrial</td><td class="num">5</td><td>Not qualified</td><td class="num">5</td><td>Not qualified</td></tr></tbody></table>
+<p class="muted">Each profile is a separate reading. No combined ranking is made.</p>
+<h2>Mandate failures</h2>
+<p>The project states no mandatory requirements.</p>
+<h2>Method agreement</h2>
+<p>Leader by method under Default: MAVT (additive value): Apex Components; Value-based sorting (MAVT): Apex Components.</p><p class="muted">Each is that method’s own reading. No consensus is claimed, and methods that share inputs do not validate one another.</p>
+<p class="muted">Not run: SMAA-2 (sampled acceptability), PROMETHEE II (outranking flows), AHP (pairwise priorities).</p>
+<h2>Evidence freshness</h2>
+<p>No evidence dossier was supplied.</p>
+<h2>Top open questions</h2>
+<p class="muted">Under Default, in the order Open Questions gives them.</p>
+<h3>Could change the decision (10 of 29 shown)</h3><ol><li>How strongly should Cost be weighted? [Delta Parts]<br><span class="muted">At local weight 0.3826, MAVT first place can change between Apex Components and Delta Parts.</span></li><li>How strongly should Cost be weighted? [Brightline Supply]<br><span class="muted">At local weight 0.9055, MAVT first place can change between Apex Components and Brightline Supply.</span></li><li>How strongly should Unit price be weighted? [Delta Parts]<br><span class="muted">At local weight 0.6705, MAVT first place can change between Apex Components and Delta Parts.</span></li><li>How strongly should Logistics cost be weighted? [Delta Parts]<br><span class="muted">At local weight 0.3295, MAVT first place can change between Apex Components and Delta Parts.</span></li><li>How strongly should Performance be weighted? [Delta Parts]<br><span class="muted">At local weight 0.4279, MAVT first place can change between Apex Components and Delta Parts.</span></li><li>How strongly should Quality be weighted? [Delta Parts]<br><span class="muted">At local weight 0.2497, MAVT first place can change between Apex Components and Delta Parts.</span></li><li>How strongly should Delivery be weighted? [Delta Parts]<br><span class="muted">At local weight 0.7503, MAVT first place can change between Apex Components and Delta Parts.</span></li><li>How strongly should Risk be weighted? [Delta Parts]<br><span class="muted">At local weight 0.2691, MAVT first place can change between Apex Components and Delta Parts.</span></li><li>Could Apex Components&#x27;s class change? [Apex Components]<br><span class="muted">Varying Cost&#x27;s local weight crosses a class boundary at 0.5431, between Qualified and Conditional. At the boundary the higher class applies.</span></li><li>Could Delta Parts&#x27;s class change? [Delta Parts]<br><span class="muted">Varying Cost&#x27;s local weight crosses a class boundary at 0.4802, between Qualified and Conditional. At the boundary the higher class applies.</span></li></ol>
+<footer><strong>Provenance</strong><dl><dt>Project fingerprint</dt><dd>9dc0b07cf1c04465de5b7168c356cce59bcf658a0460a7b68c9b26a693f2b079</dd><dt>Application version</dt><dd>0.1.0</dd><dt>Profiles</dt><dd>Default (default), Cost focus (cost_focus)</dd><dt>Scenario</dt><dd>base</dd><dt>Evidence dossier digest</dt><dd>none loaded</dd><dt>Generation options</dt><dd>{&quot;evidence_supplied&quot;: false, &quot;evidence_used&quot;: false, &quot;generated_on&quot;: &quot;2026-11-07&quot;, &quot;notes&quot;: 0, &quot;profiles&quot;: [&quot;default&quot;, &quot;cost_focus&quot;], &quot;questions_per_type&quot;: 10, &quot;report_version&quot;: 2, &quot;scenario&quot;: null}</dd></dl></footer>
+</body></html>

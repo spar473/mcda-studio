@@ -1,0 +1,1197 @@
+{
+  "schema_version": 6,
+  "id": "engineering_trade_study_example",
+  "title": "Engineering trade study (example)",
+  "description": "Invented trade study: five concepts for an autonomous inspection vehicle, read through MAVT, value-based sorting, SMAA-2, PROMETHEE II and AHP, with two requirements checked outside every score. All names and figures are invented.",
+  "decision_maker": "Design team",
+  "alternatives": [
+    {
+      "id": "wheeled_rover",
+      "name": "Wheeled rover",
+      "metadata": {}
+    },
+    {
+      "id": "tracked_crawler",
+      "name": "Tracked crawler",
+      "metadata": {}
+    },
+    {
+      "id": "legged_walker",
+      "name": "Legged walker",
+      "metadata": {}
+    },
+    {
+      "id": "tethered_crawler",
+      "name": "Tethered crawler",
+      "metadata": {}
+    },
+    {
+      "id": "small_drone",
+      "name": "Small aerial drone",
+      "metadata": {}
+    }
+  ],
+  "criteria": [
+    {
+      "id": "performance",
+      "name": "Performance",
+      "parent_id": null,
+      "order": 0,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "endurance",
+      "name": "Endurance",
+      "parent_id": "performance",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "min",
+        "lower": 0.0,
+        "upper": 300.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    },
+    {
+      "id": "payload",
+      "name": "Payload capacity",
+      "parent_id": "performance",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "kg",
+        "lower": 0.0,
+        "upper": 12.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "increasing"
+      }
+    },
+    {
+      "id": "obstacle",
+      "name": "Obstacle capability",
+      "parent_id": "performance",
+      "order": 2,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "low",
+          "medium",
+          "high"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "low": 0.0,
+          "medium": 0.5,
+          "high": 1.0
+        }
+      }
+    },
+    {
+      "id": "cost",
+      "name": "Cost",
+      "parent_id": null,
+      "order": 1,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "unit_cost",
+      "name": "Unit cost",
+      "parent_id": "cost",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD k",
+        "lower": 10.0,
+        "upper": 200.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "maintenance",
+      "name": "Annual maintenance cost",
+      "parent_id": "cost",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ratio",
+        "unit": "NZD k/year",
+        "lower": 0.0,
+        "upper": 40.0,
+        "anchor_mode": "fixed",
+        "labels": []
+      },
+      "value_function": {
+        "out_of_domain": "error",
+        "kind": "linear",
+        "direction": "decreasing"
+      }
+    },
+    {
+      "id": "risk",
+      "name": "Risk",
+      "parent_id": null,
+      "order": 2,
+      "description": "",
+      "scale": null,
+      "value_function": null
+    },
+    {
+      "id": "maturity",
+      "name": "Technology maturity",
+      "parent_id": "risk",
+      "order": 0,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "concept",
+          "prototype",
+          "proven"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "concept": 0.0,
+          "prototype": 0.5,
+          "proven": 1.0
+        }
+      }
+    },
+    {
+      "id": "operator_skill",
+      "name": "Operator skill needed",
+      "parent_id": "risk",
+      "order": 1,
+      "description": "",
+      "scale": {
+        "type": "ordinal",
+        "unit": null,
+        "lower": null,
+        "upper": null,
+        "anchor_mode": "fixed",
+        "labels": [
+          "high",
+          "medium",
+          "low"
+        ]
+      },
+      "value_function": {
+        "kind": "qualitative",
+        "mapping": {
+          "high": 0.0,
+          "medium": 0.5,
+          "low": 1.0
+        }
+      }
+    }
+  ],
+  "performances": [
+    {
+      "alternative_id": "wheeled_rover",
+      "criterion_id": "endurance",
+      "value": 180.0
+    },
+    {
+      "alternative_id": "wheeled_rover",
+      "criterion_id": "payload",
+      "value": 4.2
+    },
+    {
+      "alternative_id": "wheeled_rover",
+      "criterion_id": "obstacle",
+      "value": "low"
+    },
+    {
+      "alternative_id": "wheeled_rover",
+      "criterion_id": "unit_cost",
+      "value": 45.0
+    },
+    {
+      "alternative_id": "wheeled_rover",
+      "criterion_id": "maintenance",
+      "value": 6.0
+    },
+    {
+      "alternative_id": "wheeled_rover",
+      "criterion_id": "maturity",
+      "value": "proven"
+    },
+    {
+      "alternative_id": "wheeled_rover",
+      "criterion_id": "operator_skill",
+      "value": "low"
+    },
+    {
+      "alternative_id": "tracked_crawler",
+      "criterion_id": "endurance",
+      "value": 150.0
+    },
+    {
+      "alternative_id": "tracked_crawler",
+      "criterion_id": "payload",
+      "value": 8.0
+    },
+    {
+      "alternative_id": "tracked_crawler",
+      "criterion_id": "obstacle",
+      "value": "medium"
+    },
+    {
+      "alternative_id": "tracked_crawler",
+      "criterion_id": "unit_cost",
+      "value": 70.0
+    },
+    {
+      "alternative_id": "tracked_crawler",
+      "criterion_id": "maintenance",
+      "value": 11.0
+    },
+    {
+      "alternative_id": "tracked_crawler",
+      "criterion_id": "maturity",
+      "value": "proven"
+    },
+    {
+      "alternative_id": "tracked_crawler",
+      "criterion_id": "operator_skill",
+      "value": "low"
+    },
+    {
+      "alternative_id": "legged_walker",
+      "criterion_id": "endurance",
+      "value": 110.0
+    },
+    {
+      "alternative_id": "legged_walker",
+      "criterion_id": "payload",
+      "value": 3.5
+    },
+    {
+      "alternative_id": "legged_walker",
+      "criterion_id": "obstacle",
+      "value": "high"
+    },
+    {
+      "alternative_id": "legged_walker",
+      "criterion_id": "unit_cost",
+      "value": 160.0
+    },
+    {
+      "alternative_id": "legged_walker",
+      "criterion_id": "maintenance",
+      "value": 28.0
+    },
+    {
+      "alternative_id": "legged_walker",
+      "criterion_id": "maturity",
+      "value": "concept"
+    },
+    {
+      "alternative_id": "legged_walker",
+      "criterion_id": "operator_skill",
+      "value": "high"
+    },
+    {
+      "alternative_id": "tethered_crawler",
+      "criterion_id": "endurance",
+      "value": 280.0
+    },
+    {
+      "alternative_id": "tethered_crawler",
+      "criterion_id": "payload",
+      "value": 2.0
+    },
+    {
+      "alternative_id": "tethered_crawler",
+      "criterion_id": "obstacle",
+      "value": "medium"
+    },
+    {
+      "alternative_id": "tethered_crawler",
+      "criterion_id": "unit_cost",
+      "value": 90.0
+    },
+    {
+      "alternative_id": "tethered_crawler",
+      "criterion_id": "maintenance",
+      "value": 9.0
+    },
+    {
+      "alternative_id": "tethered_crawler",
+      "criterion_id": "maturity",
+      "value": "prototype"
+    },
+    {
+      "alternative_id": "tethered_crawler",
+      "criterion_id": "operator_skill",
+      "value": "medium"
+    },
+    {
+      "alternative_id": "small_drone",
+      "criterion_id": "endurance",
+      "value": 35.0
+    },
+    {
+      "alternative_id": "small_drone",
+      "criterion_id": "payload",
+      "value": 1.2
+    },
+    {
+      "alternative_id": "small_drone",
+      "criterion_id": "obstacle",
+      "value": "high"
+    },
+    {
+      "alternative_id": "small_drone",
+      "criterion_id": "unit_cost",
+      "value": 30.0
+    },
+    {
+      "alternative_id": "small_drone",
+      "criterion_id": "maintenance",
+      "value": 14.0
+    },
+    {
+      "alternative_id": "small_drone",
+      "criterion_id": "maturity",
+      "value": "prototype"
+    },
+    {
+      "alternative_id": "small_drone",
+      "criterion_id": "operator_skill",
+      "value": "high"
+    }
+  ],
+  "weight_profiles": [
+    {
+      "id": "default",
+      "name": "Performance-led",
+      "method": "swing",
+      "judgements": {
+        "performance": 100.0,
+        "cost": 50.0,
+        "risk": 40.0,
+        "endurance": 100.0,
+        "payload": 70.0,
+        "obstacle": 60.0,
+        "unit_cost": 100.0,
+        "maintenance": 60.0,
+        "maturity": 100.0,
+        "operator_skill": 50.0
+      }
+    },
+    {
+      "id": "cost_led",
+      "name": "Cost-led",
+      "method": "swing",
+      "judgements": {
+        "performance": 60.0,
+        "cost": 100.0,
+        "risk": 40.0,
+        "endurance": 100.0,
+        "payload": 70.0,
+        "obstacle": 60.0,
+        "unit_cost": 100.0,
+        "maintenance": 80.0,
+        "maturity": 100.0,
+        "operator_skill": 50.0
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "diminishing_endurance",
+      "name": "Diminishing returns on endurance",
+      "weight_profile_id": null,
+      "value_function_overrides": {
+        "endurance": {
+          "out_of_domain": "error",
+          "kind": "piecewise_linear",
+          "points": [
+            {
+              "x": 0.0,
+              "value": 0.0
+            },
+            {
+              "x": 120.0,
+              "value": 0.5
+            },
+            {
+              "x": 200.0,
+              "value": 0.85
+            },
+            {
+              "x": 300.0,
+              "value": 1.0
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "analysis": {
+    "method": "mavt",
+    "weight_profile_id": null,
+    "scenario_id": null,
+    "parameters": {}
+  },
+  "sorting": {
+    "classes": [
+      {
+        "id": "shortlist",
+        "name": "Shortlist",
+        "description": "",
+        "lower_boundary": 0.65
+      },
+      {
+        "id": "reserve",
+        "name": "Reserve",
+        "description": "",
+        "lower_boundary": 0.5
+      },
+      {
+        "id": "drop",
+        "name": "Drop",
+        "description": "",
+        "lower_boundary": null
+      }
+    ],
+    "audit": null
+  },
+  "smaa": {
+    "dependence": "independent",
+    "cells": [
+      {
+        "alternative_id": "wheeled_rover",
+        "criterion_id": "endurance",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 165.0,
+          "upper": 195.0
+        }
+      },
+      {
+        "alternative_id": "tracked_crawler",
+        "criterion_id": "endurance",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 135.0,
+          "upper": 165.0
+        }
+      },
+      {
+        "alternative_id": "legged_walker",
+        "criterion_id": "endurance",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 90.0,
+          "upper": 130.0
+        }
+      },
+      {
+        "alternative_id": "small_drone",
+        "criterion_id": "endurance",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 28.0,
+          "upper": 42.0
+        }
+      },
+      {
+        "alternative_id": "wheeled_rover",
+        "criterion_id": "payload",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 3.9,
+          "upper": 4.5
+        }
+      },
+      {
+        "alternative_id": "tracked_crawler",
+        "criterion_id": "payload",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 7.7,
+          "upper": 8.3
+        }
+      },
+      {
+        "alternative_id": "legged_walker",
+        "criterion_id": "payload",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 3.2,
+          "upper": 3.8
+        }
+      },
+      {
+        "alternative_id": "tethered_crawler",
+        "criterion_id": "payload",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 1.8,
+          "upper": 2.2
+        }
+      },
+      {
+        "alternative_id": "small_drone",
+        "criterion_id": "payload",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 1.0,
+          "upper": 1.4
+        }
+      },
+      {
+        "alternative_id": "tracked_crawler",
+        "criterion_id": "unit_cost",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 60.0,
+          "upper": 80.0
+        }
+      },
+      {
+        "alternative_id": "legged_walker",
+        "criterion_id": "unit_cost",
+        "distribution": {
+          "kind": "uniform",
+          "lower": 140.0,
+          "upper": 180.0
+        }
+      },
+      {
+        "alternative_id": "tethered_crawler",
+        "criterion_id": "maturity",
+        "distribution": {
+          "kind": "categorical",
+          "labels": [
+            "prototype",
+            "proven"
+          ],
+          "probabilities": [
+            0.6,
+            0.4
+          ]
+        }
+      }
+    ],
+    "groups": [
+      {
+        "parent_id": null,
+        "kind": "rating_intervals",
+        "intervals": {
+          "performance": [
+            80.0,
+            100.0
+          ],
+          "cost": [
+            30.0,
+            70.0
+          ],
+          "risk": [
+            20.0,
+            60.0
+          ]
+        }
+      }
+    ],
+    "shared_draws": []
+  },
+  "promethee": {
+    "criteria": [
+      {
+        "criterion_id": "endurance",
+        "direction": "maximise",
+        "weight": 20.0,
+        "function": {
+          "kind": "linear",
+          "q": 15.0,
+          "p": 90.0
+        }
+      },
+      {
+        "criterion_id": "payload",
+        "direction": "maximise",
+        "weight": 15.0,
+        "function": {
+          "kind": "linear",
+          "q": 0.5,
+          "p": 3.0
+        }
+      },
+      {
+        "criterion_id": "obstacle",
+        "direction": "maximise",
+        "weight": 10.0,
+        "function": {
+          "kind": "usual"
+        },
+        "coding": {
+          "low": 1.0,
+          "medium": 2.0,
+          "high": 3.0
+        }
+      },
+      {
+        "criterion_id": "unit_cost",
+        "direction": "minimise",
+        "weight": 20.0,
+        "function": {
+          "kind": "v_shape",
+          "p": 60.0
+        }
+      },
+      {
+        "criterion_id": "maintenance",
+        "direction": "minimise",
+        "weight": 10.0,
+        "function": {
+          "kind": "linear",
+          "q": 2.0,
+          "p": 12.0
+        }
+      },
+      {
+        "criterion_id": "maturity",
+        "direction": "maximise",
+        "weight": 15.0,
+        "function": {
+          "kind": "v_shape",
+          "p": 2.0
+        },
+        "coding": {
+          "concept": 1.0,
+          "prototype": 2.0,
+          "proven": 3.0
+        }
+      },
+      {
+        "criterion_id": "operator_skill",
+        "direction": "minimise",
+        "weight": 10.0,
+        "function": {
+          "kind": "u_shape",
+          "q": 1.0
+        },
+        "coding": {
+          "low": 1.0,
+          "medium": 2.0,
+          "high": 3.0
+        }
+      }
+    ]
+  },
+  "ahp": {
+    "criteria": [
+      {
+        "parent_id": null,
+        "judgements": [
+          {
+            "row": "performance",
+            "column": "cost",
+            "value": 2.0
+          },
+          {
+            "row": "performance",
+            "column": "risk",
+            "value": 3.0
+          },
+          {
+            "row": "cost",
+            "column": "risk",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "parent_id": "performance",
+        "judgements": [
+          {
+            "row": "endurance",
+            "column": "payload",
+            "value": 1.0
+          },
+          {
+            "row": "endurance",
+            "column": "obstacle",
+            "value": 2.0
+          },
+          {
+            "row": "payload",
+            "column": "obstacle",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "parent_id": "cost",
+        "judgements": [
+          {
+            "row": "unit_cost",
+            "column": "maintenance",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "parent_id": "risk",
+        "judgements": [
+          {
+            "row": "maturity",
+            "column": "operator_skill",
+            "value": 2.0
+          }
+        ]
+      }
+    ],
+    "alternatives": [
+      {
+        "criterion_id": "endurance",
+        "judgements": [
+          {
+            "row": "wheeled_rover",
+            "column": "tracked_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "legged_walker",
+            "value": 3.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "wheeled_rover",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "small_drone",
+            "value": 5.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "legged_walker",
+            "value": 2.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "tracked_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "small_drone",
+            "value": 4.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "legged_walker",
+            "value": 5.0
+          },
+          {
+            "row": "legged_walker",
+            "column": "small_drone",
+            "value": 2.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "small_drone",
+            "value": 9.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "payload",
+        "judgements": [
+          {
+            "row": "tracked_crawler",
+            "column": "wheeled_rover",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "legged_walker",
+            "value": 1.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "small_drone",
+            "value": 4.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "legged_walker",
+            "value": 3.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "tethered_crawler",
+            "value": 4.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "small_drone",
+            "value": 8.0
+          },
+          {
+            "row": "legged_walker",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "legged_walker",
+            "column": "small_drone",
+            "value": 3.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "small_drone",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "obstacle",
+        "judgements": [
+          {
+            "row": "tracked_crawler",
+            "column": "wheeled_rover",
+            "value": 4.0
+          },
+          {
+            "row": "legged_walker",
+            "column": "wheeled_rover",
+            "value": 9.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "wheeled_rover",
+            "value": 4.0
+          },
+          {
+            "row": "small_drone",
+            "column": "wheeled_rover",
+            "value": 7.0
+          },
+          {
+            "row": "legged_walker",
+            "column": "tracked_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "tethered_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "small_drone",
+            "column": "tracked_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "legged_walker",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "legged_walker",
+            "column": "small_drone",
+            "value": 1.0
+          },
+          {
+            "row": "small_drone",
+            "column": "tethered_crawler",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "unit_cost",
+        "judgements": [
+          {
+            "row": "wheeled_rover",
+            "column": "tracked_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "legged_walker",
+            "value": 8.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "small_drone",
+            "value": 1.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "legged_walker",
+            "value": 5.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "tethered_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "small_drone",
+            "column": "tracked_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "legged_walker",
+            "value": 4.0
+          },
+          {
+            "row": "small_drone",
+            "column": "legged_walker",
+            "value": 7.0
+          },
+          {
+            "row": "small_drone",
+            "column": "tethered_crawler",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "maintenance",
+        "judgements": [
+          {
+            "row": "wheeled_rover",
+            "column": "tracked_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "legged_walker",
+            "value": 8.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "tethered_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "small_drone",
+            "value": 3.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "legged_walker",
+            "value": 5.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "tracked_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "small_drone",
+            "value": 2.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "legged_walker",
+            "value": 6.0
+          },
+          {
+            "row": "small_drone",
+            "column": "legged_walker",
+            "value": 3.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "small_drone",
+            "value": 2.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "maturity",
+        "judgements": [
+          {
+            "row": "wheeled_rover",
+            "column": "tracked_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "legged_walker",
+            "value": 9.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "small_drone",
+            "value": 2.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "legged_walker",
+            "value": 9.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "small_drone",
+            "value": 2.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "legged_walker",
+            "value": 4.0
+          },
+          {
+            "row": "small_drone",
+            "column": "legged_walker",
+            "value": 4.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "small_drone",
+            "value": 1.0
+          }
+        ]
+      },
+      {
+        "criterion_id": "operator_skill",
+        "judgements": [
+          {
+            "row": "wheeled_rover",
+            "column": "tracked_crawler",
+            "value": 1.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "legged_walker",
+            "value": 8.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "wheeled_rover",
+            "column": "small_drone",
+            "value": 4.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "legged_walker",
+            "value": 8.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "tethered_crawler",
+            "value": 2.0
+          },
+          {
+            "row": "tracked_crawler",
+            "column": "small_drone",
+            "value": 4.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "legged_walker",
+            "value": 4.0
+          },
+          {
+            "row": "small_drone",
+            "column": "legged_walker",
+            "value": 2.0
+          },
+          {
+            "row": "tethered_crawler",
+            "column": "small_drone",
+            "value": 2.0
+          }
+        ]
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "kind": "bound",
+      "id": "payload_min",
+      "name": "Payload capacity of at least 2 kg",
+      "criterion_id": "payload",
+      "unit": "kg",
+      "minimum": 2.0,
+      "minimum_inclusive": true,
+      "maximum": null,
+      "maximum_inclusive": true,
+      "rationale": "An invented minimum for the survey instrument package."
+    },
+    {
+      "kind": "labels",
+      "id": "maturity_floor",
+      "name": "Technology at least at prototype stage",
+      "criterion_id": "maturity",
+      "allowed": [
+        "prototype",
+        "proven"
+      ],
+      "rationale": "A concept-stage technology cannot be fielded within the project's time."
+    }
+  ]
+}

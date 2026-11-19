@@ -1,0 +1,1045 @@
+{
+  "configuration": {
+    "method": "mavt",
+    "parameters": {},
+    "scenario_id": null,
+    "weight_profile_id": null
+  },
+  "factor_parameters": null,
+  "model": null,
+  "plan": {
+    "digest": "2439f63bdd7a50acc8b2304462d718d0b465dadb1e3b8e0f62bdf1d273a25abd",
+    "initial": {
+      "card_digest": "36665f4ec715d99bdbb11d25462041d3a5b3f39b86bc602cb26233213f2ffd8a",
+      "card_facts": {
+        "base_rate": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared base_rate"
+        },
+        "calibration_evidence": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared calibration_evidence"
+        },
+        "calibration_period": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared calibration_period"
+        },
+        "calibration_population": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared calibration_population"
+        },
+        "label_definition": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared label_definition"
+        },
+        "licence": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared licence"
+        },
+        "model_version": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "1"
+        },
+        "observation_cutoff": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "2026-10-31"
+        },
+        "population_denominator": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared population_denominator"
+        },
+        "purpose": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative fixed proxy"
+        },
+        "selection_bias": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared selection_bias"
+        },
+        "source_references": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared source_references"
+        },
+        "survivorship_bias": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared survivorship_bias"
+        },
+        "training_period": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared training_period"
+        },
+        "training_population": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared training_population"
+        },
+        "use_restrictions": {
+          "reason": "",
+          "review": null,
+          "source_ids": [
+            "source"
+          ],
+          "unknown": false,
+          "value": "Illustrative declared use_restrictions"
+        }
+      },
+      "card_id": "card",
+      "compared_profile_ids": [
+        "balanced",
+        "quality_led"
+      ],
+      "criterion": {
+        "description": "",
+        "id": "disclosed_proxy_score",
+        "name": "Disclosed model proxy: fixed score",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      "enabled": false,
+      "features": [
+        {
+          "criterion_ids": [
+            "quality"
+          ],
+          "description": "A declared quality input",
+          "factor_ids": [],
+          "id": "reported_quality",
+          "observed_at": "2026-10-01",
+          "review": null,
+          "source_ids": [
+            "source"
+          ]
+        }
+      ],
+      "licence_compatible": null,
+      "licence_review": null,
+      "overlaps": [
+        {
+          "feature_id": "reported_quality",
+          "rationale": "Retain both explicitly to demonstrate the weight consequence",
+          "relation": "same_concept",
+          "remove_criterion_ids": [],
+          "resolution": "retain_with_rationale",
+          "review": null
+        }
+      ],
+      "plan_review": null,
+      "project_fingerprint": "f87579751e63032a423078d7c3d579d222c4d30dbad40361f4fae7a1fc606cc9",
+      "score_meaning": "Illustrative external score; no probability meaning",
+      "score_workspace_digest": null,
+      "swing_ratings": {
+        "balanced": 2.0,
+        "quality_led": 4.0
+      }
+    },
+    "revisions": [
+      {
+        "operation": {
+          "enabled": null,
+          "id": "purpose",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "4f557c6d63dd5c7fe8f1558133a7df908de97b31c7d2e25f9849eae68f68aa48"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "training_period",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "7631515a5731abed571471d600ac36211fa50956d13115976fc08dcd7ee5b76f"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "training_population",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "45a42dd096b1af7ee8c21295d19694ecff74ad396b21ef1c16c9970f0966aa96"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "observation_cutoff",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "e5142bef1c3ebfee3c962e7e24fb6bbb90b96c2d3a1f36e42afce48fba94376f"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "label_definition",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "c818c10f718b70ebeb216003da43cadf25cf0acc857077ad1b6ed33e18edb38f"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "base_rate",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "50ee0f0d8a64f14fdbb549f1f66d976f258bdfb441e7dfc4de36a93b9f857bca"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "population_denominator",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "e37286dde3ad7e67db9101fcfbd70f9f6cc070ca7c280af5e99c948b1ad42c4a"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "selection_bias",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "343d6351d21f9beca11f4207aac76c8a0b1c8db09881a359b7a874f1c1b71035"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "survivorship_bias",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "163537716ef2fd83c078962cb43a305021d753a5fe5137af9d87d0e834587c65"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "calibration_evidence",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "07d85c4107ed9373041312da1104c1683e29e0f4abecac45012f7f77a5367dfd"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "calibration_population",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "ba3f7ec3d0789952689994ef1d2b13e324d2899712052dadfd62c2267ece5cbc"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "calibration_period",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "79e249064237dc6d5db85c07b33527f4303737dad5c13c8d1a986a55b4313b8c"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "licence",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "ad803af73f8bb26d3f63d4cb45a1f49bc5e05ab646fbb8265f8867b84f635d66"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "use_restrictions",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "986f24437c198dc48b348682003755b330f5621f7b2c90d481fe967b921db0b6"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "model_version",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "de9b67f5080ebdad5eab8f6fc2e83505f4e9bc32acac04709ed8792ff272551e"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "source_references",
+          "kind": "review_card_fact",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "e84025233276d77baa8f50d55b988ec19209800ffbd873c6269b037710e99d3d"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "reported_quality",
+          "kind": "review_feature",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "da1a592c38bbbc929d4d7a28988c294165942e469f2ea3e6f9622e5352e00475"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": "reported_quality",
+          "kind": "review_overlap",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "5bd584e44a2f3741223dc534b0cca43ef09359cf54f19d2a7932f7fd5c3a50fc"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": null,
+          "kind": "review_licence",
+          "licence_compatible": true,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "26f4da2424a66ff3c62e516a37db75bae58caba5796e4ba8721fa732e468a506"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": null,
+          "kind": "bind_scores",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": "8a0b125052031155bad3d81e09bbac31082fa2eae4ac10a66bea88a9435b77e7"
+        },
+        "previous_digest": "18a24d87ae035178029bb5d0717e2f2798b299bdb11c2a1da6c9f7aaf30a4111"
+      },
+      {
+        "operation": {
+          "enabled": null,
+          "id": null,
+          "kind": "review_plan",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "42c4a2bf6bc4845277c79b14e1aec5e15a92645be6b0b6bba5a33db9b99b0e26"
+      },
+      {
+        "operation": {
+          "enabled": true,
+          "id": null,
+          "kind": "set_enabled",
+          "licence_compatible": null,
+          "review": {
+            "corrected_value": null,
+            "note": "Illustrative review of stated inputs and disclosed limitations",
+            "reviewed_at": "2026-11-01T00:00:00Z",
+            "reviewer": "Local reviewer",
+            "status": "accepted"
+          },
+          "state": null,
+          "workspace_digest": null
+        },
+        "previous_digest": "3b5035f0346210ec37f17517fb145403c81522d7068876e8e6ce40ff26708005"
+      }
+    ],
+    "version": 1
+  },
+  "project": {
+    "alternatives": [
+      {
+        "id": "a",
+        "metadata": {},
+        "name": "Option A"
+      },
+      {
+        "id": "b",
+        "metadata": {},
+        "name": "Option B"
+      }
+    ],
+    "analysis": {
+      "method": "mavt",
+      "parameters": {},
+      "scenario_id": null,
+      "weight_profile_id": null
+    },
+    "criteria": [
+      {
+        "description": "",
+        "id": "quality",
+        "name": "Quality",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      },
+      {
+        "description": "",
+        "id": "capacity",
+        "name": "Capacity",
+        "order": 0,
+        "parent_id": null,
+        "scale": {
+          "anchor_mode": "fixed",
+          "labels": [],
+          "lower": 0.0,
+          "type": "interval",
+          "unit": null,
+          "upper": 1.0
+        },
+        "value_function": {
+          "direction": "increasing",
+          "kind": "linear",
+          "out_of_domain": "error"
+        }
+      }
+    ],
+    "decision_maker": "",
+    "description": "",
+    "id": "proxy_requirements_fixture",
+    "performances": [
+      {
+        "alternative_id": "a",
+        "criterion_id": "quality",
+        "value": 1.0
+      },
+      {
+        "alternative_id": "a",
+        "criterion_id": "capacity",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "quality",
+        "value": 0.25
+      },
+      {
+        "alternative_id": "b",
+        "criterion_id": "capacity",
+        "value": 0.75
+      }
+    ],
+    "requirements": [
+      {
+        "criterion_id": "quality",
+        "id": "minimum_quality",
+        "kind": "bound",
+        "maximum": 1.0,
+        "maximum_inclusive": true,
+        "minimum": 0.5,
+        "minimum_inclusive": true,
+        "name": "Minimum quality",
+        "rationale": "",
+        "unit": null
+      }
+    ],
+    "scenarios": [],
+    "schema_version": 6,
+    "sorting": {
+      "audit": null,
+      "classes": [
+        {
+          "description": "",
+          "id": "high",
+          "lower_boundary": 0.5,
+          "name": "High"
+        },
+        {
+          "description": "",
+          "id": "low",
+          "lower_boundary": null,
+          "name": "Low"
+        }
+      ]
+    },
+    "title": "Illustrative proxy and mandatory requirements",
+    "weight_profiles": [
+      {
+        "id": "balanced",
+        "judgements": {
+          "capacity": 1.0,
+          "quality": 1.0
+        },
+        "method": "swing",
+        "name": "Balanced"
+      },
+      {
+        "id": "quality_led",
+        "judgements": {
+          "capacity": 1.0,
+          "quality": 3.0
+        },
+        "method": "swing",
+        "name": "Quality led"
+      }
+    ]
+  },
+  "scores": {
+    "digest": "8a0b125052031155bad3d81e09bbac31082fa2eae4ac10a66bea88a9435b77e7",
+    "intake": {
+      "human_dossier": null,
+      "model_cards": {
+        "card": {
+          "details": {
+            "base_rate": "Illustrative declared base_rate",
+            "calibration_evidence": "Illustrative declared calibration_evidence",
+            "calibration_period": "Illustrative declared calibration_period",
+            "calibration_population": "Illustrative declared calibration_population",
+            "label_definition": "Illustrative declared label_definition",
+            "licence": "Illustrative declared licence",
+            "observation_cutoff": "2026-10-31",
+            "population_denominator": "Illustrative declared population_denominator",
+            "selection_bias": "Illustrative declared selection_bias",
+            "source_references": "Illustrative declared source_references",
+            "survivorship_bias": "Illustrative declared survivorship_bias",
+            "training_period": "Illustrative declared training_period",
+            "training_population": "Illustrative declared training_population",
+            "use_restrictions": "Illustrative declared use_restrictions"
+          },
+          "limitations": "Invented fixture; no predictive claim",
+          "model_version": "1",
+          "purpose": "Illustrative fixed proxy",
+          "version": 1
+        }
+      },
+      "project_fingerprint": "95e0deef45e6d4f6d16b7a43b228f9d1c9578cda64685a3ef5d2e6c402e0169c",
+      "proposals": [
+        {
+          "confidence": null,
+          "id": "score_a",
+          "model_card_digest": "36665f4ec715d99bdbb11d25462041d3a5b3f39b86bc602cb26233213f2ffd8a",
+          "model_card_id": "card",
+          "payload": {
+            "kind": "numeric_cell",
+            "unit": null,
+            "value": 0.25
+          },
+          "proposal_version": 1,
+          "replaces_proposal_id": null,
+          "run_at": "2026-11-01T00:00:00Z",
+          "source_ids": [
+            "source"
+          ],
+          "subject": {
+            "alternative_id": "a",
+            "criterion_id": "disclosed_proxy_score"
+          },
+          "tool_id": "Local model",
+          "tool_version": "1"
+        },
+        {
+          "confidence": null,
+          "id": "score_b",
+          "model_card_digest": "36665f4ec715d99bdbb11d25462041d3a5b3f39b86bc602cb26233213f2ffd8a",
+          "model_card_id": "card",
+          "payload": {
+            "kind": "numeric_cell",
+            "unit": null,
+            "value": 0.75
+          },
+          "proposal_version": 1,
+          "replaces_proposal_id": null,
+          "run_at": "2026-11-01T00:00:00Z",
+          "source_ids": [
+            "source"
+          ],
+          "subject": {
+            "alternative_id": "b",
+            "criterion_id": "disclosed_proxy_score"
+          },
+          "tool_id": "Local model",
+          "tool_version": "1"
+        }
+      ],
+      "schema_version": 1,
+      "sources": {
+        "source": {
+          "classification": "self_reported",
+          "date": "2026-10-01",
+          "description": "Invented data for a generic verification fixture",
+          "location": "",
+          "name": "Invented evidence",
+          "reference": "local:illustrative"
+        }
+      }
+    },
+    "registry_supplies": [],
+    "reviews": [
+      {
+        "proposal_id": "score_a",
+        "review": {
+          "corrected_payload": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "primary_source_id": "source",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted",
+          "supporting_source_ids": []
+        }
+      },
+      {
+        "proposal_id": "score_b",
+        "review": {
+          "corrected_payload": null,
+          "note": "Illustrative review of stated inputs and disclosed limitations",
+          "primary_source_id": "source",
+          "reviewed_at": "2026-11-01T00:00:00Z",
+          "reviewer": "Local reviewer",
+          "status": "accepted",
+          "supporting_source_ids": []
+        }
+      }
+    ],
+    "source_project": {
+      "alternatives": [
+        {
+          "id": "a",
+          "metadata": {},
+          "name": "Option A"
+        },
+        {
+          "id": "b",
+          "metadata": {},
+          "name": "Option B"
+        }
+      ],
+      "analysis": {
+        "method": "mavt",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "criteria": [
+        {
+          "description": "",
+          "id": "quality",
+          "name": "Quality",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "capacity",
+          "name": "Capacity",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        },
+        {
+          "description": "",
+          "id": "disclosed_proxy_score",
+          "name": "Disclosed model proxy: fixed score",
+          "order": 0,
+          "parent_id": null,
+          "scale": {
+            "anchor_mode": "fixed",
+            "labels": [],
+            "lower": 0.0,
+            "type": "interval",
+            "unit": null,
+            "upper": 1.0
+          },
+          "value_function": {
+            "direction": "increasing",
+            "kind": "linear",
+            "out_of_domain": "error"
+          }
+        }
+      ],
+      "decision_maker": "",
+      "description": "",
+      "id": "proxy_8cd822f2fe3eb17bb32c1409",
+      "performances": [
+        {
+          "alternative_id": "a",
+          "criterion_id": "quality",
+          "value": 1.0
+        },
+        {
+          "alternative_id": "a",
+          "criterion_id": "capacity",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "quality",
+          "value": 0.25
+        },
+        {
+          "alternative_id": "b",
+          "criterion_id": "capacity",
+          "value": 0.75
+        }
+      ],
+      "requirements": [
+        {
+          "criterion_id": "quality",
+          "id": "minimum_quality",
+          "kind": "bound",
+          "maximum": 1.0,
+          "maximum_inclusive": true,
+          "minimum": 0.5,
+          "minimum_inclusive": true,
+          "name": "Minimum quality",
+          "rationale": "",
+          "unit": null
+        }
+      ],
+      "scenarios": [],
+      "schema_version": 6,
+      "sorting": {
+        "audit": null,
+        "classes": [
+          {
+            "description": "",
+            "id": "high",
+            "lower_boundary": 0.5,
+            "name": "High"
+          },
+          {
+            "description": "",
+            "id": "low",
+            "lower_boundary": null,
+            "name": "Low"
+          }
+        ]
+      },
+      "title": "Illustrative proxy and mandatory requirements",
+      "weight_profiles": [
+        {
+          "id": "balanced",
+          "judgements": {
+            "capacity": 1.0,
+            "disclosed_proxy_score": 2.0,
+            "quality": 1.0
+          },
+          "method": "swing",
+          "name": "Balanced"
+        },
+        {
+          "id": "quality_led",
+          "judgements": {
+            "capacity": 1.0,
+            "disclosed_proxy_score": 4.0,
+            "quality": 3.0
+          },
+          "method": "swing",
+          "name": "Quality led"
+        }
+      ]
+    },
+    "workspace_version": 1
+  },
+  "uncertainty": null
+}

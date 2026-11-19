@@ -1,0 +1,60 @@
+name: Quality and installed distribution
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 8 * * 1'
+permissions:
+  contents: read
+jobs:
+  linux-python312:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '26.12.1'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install pinned build and development tools
+        run: |
+          python -m pip install --require-hashes -r requirements/build-py312.txt -r requirements/dev-py312.txt
+          python -m pip install --no-deps --no-build-isolation -e '.[dev]'
+          python -m pip check
+          npm --prefix frontend ci
+      - name: Python and contracts
+        run: |
+          python -m pytest -q
+          ruff check src tests scripts hatch_build.py
+          ruff format --check src tests scripts hatch_build.py
+          mypy
+          python scripts/export_openapi.py --check
+          python scripts/acceptance_demo.py
+          python scripts/acceptance_evidence.py dist/acceptance-evidence
+      - name: Frontend and browser workflows
+        run: |
+          npm --prefix frontend run check
+          cd frontend
+          npx playwright install --with-deps chromium
+          cd ..
+          MCDA_PYTHON="$(command -v python)" npm --prefix frontend run test:e2e
+      - name: Both distribution routes and offline installed GUI
+        run: |
+          python scripts/build_release.py --skip-frontend
+          python -m pip download --require-hashes --only-binary=:all: -r requirements/runtime-py312.txt -r requirements/build-py312.txt --dest "$RUNNER_TEMP/mcda-wheels"
+          python scripts/smoke_install.py --browser --wheelhouse "$RUNNER_TEMP/mcda-wheels"
+      - name: Mutation checks on demand or weekly
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
+        run: python scripts/mutation_check.py
+      - uses: actions/upload-artifact@v7.0.2
+        if: always()
+        with:
+          name: linux-python312-evidence
+          path: |
+            dist/
+            frontend/test-results/

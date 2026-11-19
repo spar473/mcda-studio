@@ -1,0 +1,27 @@
+{
+  "artifacts": [
+    {
+      "for_model": null,
+      "id": "project",
+      "kind": "project",
+      "label": "Project",
+      "optional": false,
+      "path": "project.json",
+      "reset_policy": "draft",
+      "schema_version": 1,
+      "sha256": "a44e3c7ef4425e8edb9d142cf052ef44054b60ac5aed8ab345d3176549577687"
+    }
+  ],
+  "description": "Illustrative alternatives, criteria, measurements, two profiles and one scenario.",
+  "digest": "9fc4db6f875059e51e13d07dd197c735b01aa668bc0187e1de7372a0c9579f32",
+  "id": "supplier_selection",
+  "schema_version": 1,
+  "source_example": "invented local starter fixtures",
+  "source_version": "1",
+  "tasks": [
+    "Review cost, quality and delivery inputs",
+    "Compare two preference profiles and a scenario"
+  ],
+  "title": "Supplier selection",
+  "version": "1"
+}

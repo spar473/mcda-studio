@@ -1,0 +1,40 @@
+# Environments
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Temporary exports and generated outputs
+exports/
+*.tmp
+results*.json
+!examples/**/results*.json
+
+# Sensitive material: raw DECERNS installation files, proprietary assets, private research
+decerns-install/
+docs/research/decerns-rea/private/
+*.dcm
+
+# Local archive of an earlier delivery (never versioned)
+_stage2a_transfer/
+
+# Empty R session history
+.Rhistory

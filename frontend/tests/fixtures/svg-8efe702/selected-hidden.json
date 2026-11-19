@@ -1,0 +1,339 @@
+{
+  "baseline": "8efe702",
+  "props": {
+    "record": {
+      "record_version": "2",
+      "record_digest": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "method": "mavt_sorting",
+      "method_label": "Value-based sorting (MAVT)",
+      "calculation_path": "mavt_sorting.math_fsum.v1",
+      "comparison_calculation_path": "mavt.math_fsum.v1",
+      "numerical_tolerance": 1e-12,
+      "csv_text_policy": "text-prefix-controls-v1",
+      "project_title": "P",
+      "scenario_name": "Base model",
+      "resolved_profile_name": "First profile",
+      "alternative_order": [
+        "c",
+        "a",
+        "b"
+      ],
+      "configuration": {
+        "method": "mavt_sorting",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "criteria": [
+        {
+          "criterion_id": "cost",
+          "name": "Cost",
+          "description": "A long criterion description for the selected performance range",
+          "path_ids": [
+            "g",
+            "cost"
+          ],
+          "path_names": [
+            "G",
+            "Cost"
+          ],
+          "scale": {
+            "type": "ratio",
+            "unit": "kg",
+            "lower": 0,
+            "upper": 10,
+            "anchor_mode": "fixed",
+            "labels": []
+          },
+          "value_function": {
+            "kind": "linear",
+            "direction": "increasing",
+            "out_of_domain": "error"
+          },
+          "function_source": "base",
+          "resolved_domain": {
+            "lower": 0,
+            "upper": 10,
+            "source": "fixed"
+          }
+        },
+        {
+          "criterion_id": "quality",
+          "name": "Quality",
+          "description": "",
+          "path_ids": [
+            "g",
+            "quality"
+          ],
+          "path_names": [
+            "G",
+            "Quality"
+          ],
+          "scale": {
+            "type": "ratio",
+            "unit": "%",
+            "lower": 0,
+            "upper": 10,
+            "anchor_mode": "fixed",
+            "labels": []
+          },
+          "value_function": {
+            "kind": "linear",
+            "direction": "increasing",
+            "out_of_domain": "error"
+          },
+          "function_source": "base",
+          "resolved_domain": {
+            "lower": 0,
+            "upper": 10,
+            "source": "fixed"
+          }
+        }
+      ],
+      "path_shares": {
+        "g": 1,
+        "cost": 0.5,
+        "quality": 0.5
+      },
+      "contribution_totals": {
+        "a": 0.7,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "dominance_enabled": true,
+      "dominance_relations": {
+        "a": {
+          "a": "same_alternative",
+          "b": "incomparable",
+          "c": "dominates"
+        },
+        "b": {
+          "a": "incomparable",
+          "b": "same_alternative",
+          "c": "dominates"
+        },
+        "c": {
+          "a": "dominated_by",
+          "b": "dominated_by",
+          "c": "same_alternative"
+        }
+      },
+      "result": {
+        "method": "mavt_sorting",
+        "schema_version": 1,
+        "project_id": "p1",
+        "project_fingerprint": "fp",
+        "configuration": {
+          "method": "mavt_sorting",
+          "parameters": {},
+          "scenario_id": null,
+          "weight_profile_id": "first"
+        },
+        "weight_profile_id": "first",
+        "scenario_id": null,
+        "ranking": [
+          {
+            "alternative_id": "a",
+            "name": "Same",
+            "rank": 1,
+            "value": 0.7
+          },
+          {
+            "alternative_id": "b",
+            "name": "Same",
+            "rank": 1,
+            "value": 0.7
+          },
+          {
+            "alternative_id": "c",
+            "name": "An unusually long alternative name for rendering and overflow checks",
+            "rank": 3,
+            "value": 0.2
+          }
+        ],
+        "leaf_order": [
+          "cost",
+          "quality"
+        ],
+        "local_weights": {
+          "g": 1,
+          "cost": 0.5,
+          "quality": 0.5
+        },
+        "global_weights": {
+          "cost": 0.5,
+          "quality": 0.5
+        },
+        "resolved_domains": {
+          "cost": {
+            "lower": 0,
+            "upper": 10,
+            "source": "fixed"
+          },
+          "quality": {
+            "lower": 0,
+            "upper": 10,
+            "source": "fixed"
+          }
+        },
+        "weight_basis": "Swing over the stated ranges",
+        "assumptions": [
+          "Compensatory MAVT"
+        ],
+        "diagnostics": [],
+        "alternatives": [
+          {
+            "alternative_id": "a",
+            "name": "Same",
+            "rank": 1,
+            "overall_value": 0.7,
+            "raw_measurements": {
+              "cost": 8,
+              "quality": 6
+            },
+            "partial_values": {
+              "cost": 0.8,
+              "quality": 0.6
+            },
+            "weighted_contributions": {
+              "cost": 0.4,
+              "quality": 0.3
+            },
+            "clamped_criteria": []
+          },
+          {
+            "alternative_id": "b",
+            "name": "Same",
+            "rank": 1,
+            "overall_value": 0.7,
+            "raw_measurements": {
+              "cost": 6,
+              "quality": 8
+            },
+            "partial_values": {
+              "cost": 0.6,
+              "quality": 0.8
+            },
+            "weighted_contributions": {
+              "cost": 0.3,
+              "quality": 0.4
+            },
+            "clamped_criteria": []
+          },
+          {
+            "alternative_id": "c",
+            "name": "An unusually long alternative name for rendering and overflow checks",
+            "rank": 3,
+            "overall_value": 0.2,
+            "raw_measurements": {
+              "cost": 2,
+              "quality": 2
+            },
+            "partial_values": {
+              "cost": 0.2,
+              "quality": 0.2
+            },
+            "weighted_contributions": {
+              "cost": 0.1,
+              "quality": 0.1
+            },
+            "clamped_criteria": []
+          }
+        ],
+        "dominance": [
+          {
+            "dominator_id": "a",
+            "dominated_id": "c"
+          },
+          {
+            "dominator_id": "b",
+            "dominated_id": "c"
+          }
+        ],
+        "boundary_tolerance": 1e-12,
+        "classes": [
+          {
+            "class_id": "go",
+            "name": "Go",
+            "rank": 1,
+            "lower_boundary": 0.5,
+            "upper_boundary": null,
+            "alternative_ids": [
+              "a",
+              "b"
+            ]
+          },
+          {
+            "class_id": "stop",
+            "name": "Stop",
+            "rank": 2,
+            "lower_boundary": null,
+            "upper_boundary": 0.5,
+            "alternative_ids": [
+              "c"
+            ]
+          }
+        ],
+        "assignments": [
+          {
+            "alternative_id": "a",
+            "class_id": "go",
+            "class_rank": 1,
+            "on_boundary": false,
+            "nearest_boundary_class_id": "go",
+            "distance_to_nearest_boundary": 0.2
+          },
+          {
+            "alternative_id": "b",
+            "class_id": "go",
+            "class_rank": 1,
+            "on_boundary": false,
+            "nearest_boundary_class_id": "go",
+            "distance_to_nearest_boundary": 0.2
+          },
+          {
+            "alternative_id": "c",
+            "class_id": "stop",
+            "class_rank": 2,
+            "on_boundary": false,
+            "nearest_boundary_class_id": "go",
+            "distance_to_nearest_boundary": 0.3
+          }
+        ],
+        "audit_sample": {
+          "below_class_id": "go",
+          "seed": 7,
+          "requested_size": 1,
+          "pool_size": 1,
+          "alternative_ids": [
+            "c"
+          ],
+          "selection_rule": "sha256(seed:alternative_id) ascending, then id"
+        }
+      },
+      "comparison": null,
+      "comparison_diagnostics": []
+    },
+    "view": {
+      "sort": "rank",
+      "precision": "full",
+      "hidden_alternative_ids": [
+        "c"
+      ],
+      "hidden_criterion_ids": [
+        "cost"
+      ]
+    },
+    "order": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selectedAlternative": "a",
+    "selectedCriterion": "cost"
+  },
+  "exports": [
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1100 371\" role=\"group\" aria-labelledby=\"_r_fixture_\" class=\"results-chart\"><title id=\"_r_fixture_\">Overall MAVT values</title><desc>Project: p1 · P. Revision: fp. Method: mavt_sorting · Scenario: Base · Resolved profile: first · Explicit profile: first. Hidden alternatives: c. Hidden criteria: cost. Model totals and ranks are unchanged.. Classes (best first): Go from 0.5, Stop below. A value within 1e-12 of a boundary goes to the higher class. Common preference-value axis from zero to one. Numerical tables accompany this chart.</desc><metadata>{\"record_digest\":\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"result\":{\"method\":\"mavt_sorting\",\"schema_version\":1,\"project_id\":\"p1\",\"project_fingerprint\":\"fp\",\"configuration\":{\"method\":\"mavt_sorting\",\"parameters\":{},\"scenario_id\":null,\"weight_profile_id\":\"first\"},\"weight_profile_id\":\"first\",\"scenario_id\":null,\"ranking\":[{\"alternative_id\":\"a\",\"name\":\"Same\",\"rank\":1,\"value\":0.7},{\"alternative_id\":\"b\",\"name\":\"Same\",\"rank\":1,\"value\":0.7},{\"alternative_id\":\"c\",\"name\":\"An unusually long alternative name for rendering and overflow checks\",\"rank\":3,\"value\":0.2}],\"leaf_order\":[\"cost\",\"quality\"],\"local_weights\":{\"g\":1,\"cost\":0.5,\"quality\":0.5},\"global_weights\":{\"cost\":0.5,\"quality\":0.5},\"resolved_domains\":{\"cost\":{\"lower\":0,\"upper\":10,\"source\":\"fixed\"},\"quality\":{\"lower\":0,\"upper\":10,\"source\":\"fixed\"}},\"weight_basis\":\"Swing over the stated ranges\",\"assumptions\":[\"Compensatory MAVT\"],\"diagnostics\":[],\"alternatives\":[{\"alternative_id\":\"a\",\"name\":\"Same\",\"rank\":1,\"overall_value\":0.7,\"raw_measurements\":{\"cost\":8,\"quality\":6},\"partial_values\":{\"cost\":0.8,\"quality\":0.6},\"weighted_contributions\":{\"cost\":0.4,\"quality\":0.3},\"clamped_criteria\":[]},{\"alternative_id\":\"b\",\"name\":\"Same\",\"rank\":1,\"overall_value\":0.7,\"raw_measurements\":{\"cost\":6,\"quality\":8},\"partial_values\":{\"cost\":0.6,\"quality\":0.8},\"weighted_contributions\":{\"cost\":0.3,\"quality\":0.4},\"clamped_criteria\":[]},{\"alternative_id\":\"c\",\"name\":\"An unusually long alternative name for rendering and overflow checks\",\"rank\":3,\"overall_value\":0.2,\"raw_measurements\":{\"cost\":2,\"quality\":2},\"partial_values\":{\"cost\":0.2,\"quality\":0.2},\"weighted_contributions\":{\"cost\":0.1,\"quality\":0.1},\"clamped_criteria\":[]}],\"dominance\":[{\"dominator_id\":\"a\",\"dominated_id\":\"c\"},{\"dominator_id\":\"b\",\"dominated_id\":\"c\"}],\"boundary_tolerance\":1e-12,\"classes\":[{\"class_id\":\"go\",\"name\":\"Go\",\"rank\":1,\"lower_boundary\":0.5,\"upper_boundary\":null,\"alternative_ids\":[\"a\",\"b\"]},{\"class_id\":\"stop\",\"name\":\"Stop\",\"rank\":2,\"lower_boundary\":null,\"upper_boundary\":0.5,\"alternative_ids\":[\"c\"]}],\"assignments\":[{\"alternative_id\":\"a\",\"class_id\":\"go\",\"class_rank\":1,\"on_boundary\":false,\"nearest_boundary_class_id\":\"go\",\"distance_to_nearest_boundary\":0.2},{\"alternative_id\":\"b\",\"class_id\":\"go\",\"class_rank\":1,\"on_boundary\":false,\"nearest_boundary_class_id\":\"go\",\"distance_to_nearest_boundary\":0.2},{\"alternative_id\":\"c\",\"class_id\":\"stop\",\"class_rank\":2,\"on_boundary\":false,\"nearest_boundary_class_id\":\"go\",\"distance_to_nearest_boundary\":0.3}],\"audit_sample\":{\"below_class_id\":\"go\",\"seed\":7,\"requested_size\":1,\"pool_size\":1,\"alternative_ids\":[\"c\"],\"selection_rule\":\"sha256(seed:alternative_id) ascending, then id\"}},\"presentation\":{\"sort\":\"rank\",\"precision\":\"full\",\"hidden_alternative_ids\":[\"c\"],\"hidden_criterion_ids\":[\"cost\"]}}</metadata><rect width=\"1100\" height=\"371\" fill=\"white\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\" fill=\"#1c2025\"><text x=\"12\" y=\"20\" font-size=\"15\" font-weight=\"600\">Overall MAVT values</text><text x=\"12\" y=\"40\">Project: p1 · P</text><text x=\"12\" y=\"57\">Revision: fp</text><text x=\"12\" y=\"74\">Method: mavt_sorting · Scenario: Base · Resolved profile: first · Explicit profile: first</text><text x=\"12\" y=\"91\">Hidden alternatives: c. Hidden criteria: cost. Model totals and ranks are unchanged.</text><text x=\"12\" y=\"108\">Classes (best first): Go from 0.5, Stop below. A value within 1e-12 of a boundary goes to </text><text x=\"12\" y=\"125\">the higher class.</text><g transform=\"translate(0 147)\"><g aria-label=\"Class bands\" data-testid=\"class-bands\"><g data-class-id=\"go\"><rect x=\"605\" y=\"0\" width=\"325\" height=\"124\" fill=\"#f6f8fa\"/><line x1=\"605\" x2=\"605\" y1=\"0\" y2=\"124\" stroke=\"#596773\" stroke-dasharray=\"4 3\"/><text x=\"767.5\" y=\"186\" text-anchor=\"middle\">Go</text></g><g data-class-id=\"stop\"><rect x=\"280\" y=\"0\" width=\"325\" height=\"124\" fill=\"#e8eef3\"/><text x=\"442.5\" y=\"186\" text-anchor=\"middle\">Stop</text></g></g><g aria-label=\"Preference value axis zero to one\"><g><line x1=\"280\" x2=\"280\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"280\" y=\"142\" text-anchor=\"middle\">0</text></g><g><line x1=\"442.5\" x2=\"442.5\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"442.5\" y=\"142\" text-anchor=\"middle\">0.25</text></g><g><line x1=\"605\" x2=\"605\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"605\" y=\"142\" text-anchor=\"middle\">0.5</text></g><g><line x1=\"767.5\" x2=\"767.5\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"767.5\" y=\"142\" text-anchor=\"middle\">0.75</text></g><g><line x1=\"930\" x2=\"930\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"930\" y=\"142\" text-anchor=\"middle\">1</text></g><text x=\"605\" y=\"166\" text-anchor=\"middle\">MAVT preference value (0–1, dimensionless)</text></g><g role=\"button\" tabindex=\"0\" aria-label=\"Inspect alternative Same (a), rank 1, value 0.7\" data-alternative-id=\"a\"><text x=\"8\" y=\"16\" font-weight=\"700\"><title>Same</title><tspan x=\"8\" dy=\"0\">Same</tspan><tspan x=\"8\" dy=\"15\">Selected</tspan></text><rect x=\"280\" y=\"7\" width=\"454.99999999999994\" height=\"27\" fill=\"#236b8e\" stroke=\"#111\" stroke-width=\"3\"/><text x=\"945\" y=\"25\">0.7 · rank 1</text></g><g role=\"button\" tabindex=\"0\" aria-label=\"Inspect alternative Same (b), rank 1, value 0.7\" data-alternative-id=\"b\"><text x=\"8\" y=\"78\" font-weight=\"400\"><title>Same</title><tspan x=\"8\" dy=\"0\">Same</tspan></text><rect x=\"280\" y=\"69\" width=\"454.99999999999994\" height=\"27\" fill=\"#236b8e\" stroke=\"none\" stroke-width=\"3\"/><text x=\"945\" y=\"87\">0.7 · rank 1</text></g></g></g></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1100 349\" role=\"group\" aria-labelledby=\"_r_fixture_\" class=\"results-chart\"><title id=\"_r_fixture_\">Weighted leaf contributions</title><desc>Project: p1 · P. Revision: fp. Method: mavt_sorting · Scenario: Base · Resolved profile: first · Explicit profile: first. Hidden alternatives: c. Hidden criteria: cost. Model totals and ranks are unchanged. Common preference-value axis from zero to one. Numerical tables accompany this chart.</desc><metadata>{\"record_digest\":\"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\",\"result\":{\"method\":\"mavt_sorting\",\"schema_version\":1,\"project_id\":\"p1\",\"project_fingerprint\":\"fp\",\"configuration\":{\"method\":\"mavt_sorting\",\"parameters\":{},\"scenario_id\":null,\"weight_profile_id\":\"first\"},\"weight_profile_id\":\"first\",\"scenario_id\":null,\"ranking\":[{\"alternative_id\":\"a\",\"name\":\"Same\",\"rank\":1,\"value\":0.7},{\"alternative_id\":\"b\",\"name\":\"Same\",\"rank\":1,\"value\":0.7},{\"alternative_id\":\"c\",\"name\":\"An unusually long alternative name for rendering and overflow checks\",\"rank\":3,\"value\":0.2}],\"leaf_order\":[\"cost\",\"quality\"],\"local_weights\":{\"g\":1,\"cost\":0.5,\"quality\":0.5},\"global_weights\":{\"cost\":0.5,\"quality\":0.5},\"resolved_domains\":{\"cost\":{\"lower\":0,\"upper\":10,\"source\":\"fixed\"},\"quality\":{\"lower\":0,\"upper\":10,\"source\":\"fixed\"}},\"weight_basis\":\"Swing over the stated ranges\",\"assumptions\":[\"Compensatory MAVT\"],\"diagnostics\":[],\"alternatives\":[{\"alternative_id\":\"a\",\"name\":\"Same\",\"rank\":1,\"overall_value\":0.7,\"raw_measurements\":{\"cost\":8,\"quality\":6},\"partial_values\":{\"cost\":0.8,\"quality\":0.6},\"weighted_contributions\":{\"cost\":0.4,\"quality\":0.3},\"clamped_criteria\":[]},{\"alternative_id\":\"b\",\"name\":\"Same\",\"rank\":1,\"overall_value\":0.7,\"raw_measurements\":{\"cost\":6,\"quality\":8},\"partial_values\":{\"cost\":0.6,\"quality\":0.8},\"weighted_contributions\":{\"cost\":0.3,\"quality\":0.4},\"clamped_criteria\":[]},{\"alternative_id\":\"c\",\"name\":\"An unusually long alternative name for rendering and overflow checks\",\"rank\":3,\"overall_value\":0.2,\"raw_measurements\":{\"cost\":2,\"quality\":2},\"partial_values\":{\"cost\":0.2,\"quality\":0.2},\"weighted_contributions\":{\"cost\":0.1,\"quality\":0.1},\"clamped_criteria\":[]}],\"dominance\":[{\"dominator_id\":\"a\",\"dominated_id\":\"c\"},{\"dominator_id\":\"b\",\"dominated_id\":\"c\"}],\"boundary_tolerance\":1e-12,\"classes\":[{\"class_id\":\"go\",\"name\":\"Go\",\"rank\":1,\"lower_boundary\":0.5,\"upper_boundary\":null,\"alternative_ids\":[\"a\",\"b\"]},{\"class_id\":\"stop\",\"name\":\"Stop\",\"rank\":2,\"lower_boundary\":null,\"upper_boundary\":0.5,\"alternative_ids\":[\"c\"]}],\"assignments\":[{\"alternative_id\":\"a\",\"class_id\":\"go\",\"class_rank\":1,\"on_boundary\":false,\"nearest_boundary_class_id\":\"go\",\"distance_to_nearest_boundary\":0.2},{\"alternative_id\":\"b\",\"class_id\":\"go\",\"class_rank\":1,\"on_boundary\":false,\"nearest_boundary_class_id\":\"go\",\"distance_to_nearest_boundary\":0.2},{\"alternative_id\":\"c\",\"class_id\":\"stop\",\"class_rank\":2,\"on_boundary\":false,\"nearest_boundary_class_id\":\"go\",\"distance_to_nearest_boundary\":0.3}],\"audit_sample\":{\"below_class_id\":\"go\",\"seed\":7,\"requested_size\":1,\"pool_size\":1,\"alternative_ids\":[\"c\"],\"selection_rule\":\"sha256(seed:alternative_id) ascending, then id\"}},\"presentation\":{\"sort\":\"rank\",\"precision\":\"full\",\"hidden_alternative_ids\":[\"c\"],\"hidden_criterion_ids\":[\"cost\"]}}</metadata><rect width=\"1100\" height=\"349\" fill=\"white\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\" fill=\"#1c2025\"><text x=\"12\" y=\"20\" font-size=\"15\" font-weight=\"600\">Weighted leaf contributions</text><text x=\"12\" y=\"40\">Project: p1 · P</text><text x=\"12\" y=\"57\">Revision: fp</text><text x=\"12\" y=\"74\">Method: mavt_sorting · Scenario: Base · Resolved profile: first · Explicit profile: first</text><text x=\"12\" y=\"91\">Hidden alternatives: c. Hidden criteria: cost. Model totals and ranks are unchanged.</text><g role=\"list\" aria-label=\"Leaf criterion legend\"><g role=\"listitem\" aria-label=\"[hidden] Cost (cost)\" transform=\"translate(10 113)\"><title>[hidden] Cost (cost)</title><rect width=\"12\" height=\"12\" fill=\"#eee\" stroke=\"#596773\"/><text x=\"18\" y=\"11\"><tspan x=\"18\" dy=\"0\">[hidden] Cost (cost)</tspan></text></g><g role=\"listitem\" aria-label=\"Quality (quality)\" transform=\"translate(280 113)\"><title>Quality (quality)</title><rect width=\"12\" height=\"12\" fill=\"#a86114\" stroke=\"#596773\"/><text x=\"18\" y=\"11\"><tspan x=\"18\" dy=\"0\">Quality (quality)</tspan></text></g></g><g transform=\"translate(0 155)\"><defs><pattern id=\"hidden-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\" width=\"6\" height=\"6\" patternUnits=\"userSpaceOnUse\"><path d=\"M0 6L6 0\" stroke=\"#9da8b0\" stroke-width=\"1\"/></pattern></defs><g aria-label=\"Preference value axis zero to one\"><g><line x1=\"280\" x2=\"280\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"280\" y=\"142\" text-anchor=\"middle\">0</text></g><g><line x1=\"442.5\" x2=\"442.5\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"442.5\" y=\"142\" text-anchor=\"middle\">0.25</text></g><g><line x1=\"605\" x2=\"605\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"605\" y=\"142\" text-anchor=\"middle\">0.5</text></g><g><line x1=\"767.5\" x2=\"767.5\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"767.5\" y=\"142\" text-anchor=\"middle\">0.75</text></g><g><line x1=\"930\" x2=\"930\" y1=\"0\" y2=\"124\" stroke=\"#e3e7eb\"/><text x=\"930\" y=\"142\" text-anchor=\"middle\">1</text></g><text x=\"605\" y=\"166\" text-anchor=\"middle\">MAVT preference value (0–1, dimensionless)</text></g><g data-alternative-id=\"a\"><text x=\"8\" y=\"16\" font-weight=\"700\"><title>Same</title><tspan x=\"8\" dy=\"0\">Same</tspan><tspan x=\"8\" dy=\"15\">Selected</tspan></text><rect x=\"280\" y=\"7\" width=\"260\" height=\"27\" data-criterion-id=\"cost\" data-contribution=\"0.4\" data-hidden=\"true\" fill=\"url(#hidden-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb)\" stroke=\"#111\" stroke-width=\"2\" role=\"button\" tabindex=\"0\" aria-label=\"Hidden criterion Cost (cost) for Same: 0.4\"><title>G / Cost: 0.4; partial 0.8; global weight 0.5 (hidden, unrenormalised gap)</title></rect><rect x=\"540\" y=\"7\" width=\"195\" height=\"27\" data-criterion-id=\"quality\" data-contribution=\"0.3\" data-hidden=\"false\" fill=\"#a86114\" stroke=\"white\" stroke-width=\"1\" role=\"button\" tabindex=\"0\" aria-label=\"Inspect contribution Quality (quality) for Same: 0.3\"><title>G / Quality: 0.3; partial 0.6; global weight 0.5</title></rect><text x=\"945\" y=\"25\">0.7 · rank 1</text></g><g data-alternative-id=\"b\"><text x=\"8\" y=\"78\" font-weight=\"400\"><title>Same</title><tspan x=\"8\" dy=\"0\">Same</tspan></text><rect x=\"280\" y=\"69\" width=\"195\" height=\"27\" data-criterion-id=\"cost\" data-contribution=\"0.3\" data-hidden=\"true\" fill=\"url(#hidden-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb)\" stroke=\"#111\" stroke-width=\"2\" role=\"button\" tabindex=\"0\" aria-label=\"Hidden criterion Cost (cost) for Same: 0.3\"><title>G / Cost: 0.3; partial 0.6; global weight 0.5 (hidden, unrenormalised gap)</title></rect><rect x=\"475\" y=\"69\" width=\"260\" height=\"27\" data-criterion-id=\"quality\" data-contribution=\"0.4\" data-hidden=\"false\" fill=\"#a86114\" stroke=\"white\" stroke-width=\"1\" role=\"button\" tabindex=\"0\" aria-label=\"Inspect contribution Quality (quality) for Same: 0.4\"><title>G / Quality: 0.4; partial 0.8; global weight 0.5</title></rect><text x=\"945\" y=\"87\">0.7 · rank 1</text></g></g></g></svg>"
+  ]
+}

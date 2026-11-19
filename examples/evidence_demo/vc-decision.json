@@ -1,0 +1,20 @@
+{
+  "owner": "Example analyst",
+  "date": "2026-10-31",
+  "chosen_alternative_id": "hyades",
+  "rationale": "Illustrative choice for a synthetic workflow; not a recommendation.",
+  "configurations": [
+    {
+      "method": "mavt",
+      "weight_profile_id": null,
+      "scenario_id": null,
+      "parameters": {}
+    }
+  ],
+  "unresolved_assumptions": [
+    "Review the conflicting synthetic claim."
+  ],
+  "review_triggers": [
+    "Revisit when the claim is reviewed."
+  ]
+}

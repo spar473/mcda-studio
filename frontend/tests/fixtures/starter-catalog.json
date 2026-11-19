@@ -1,0 +1,324 @@
+[
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "48c6e09293f7837e930b4fd00e67136bf7022ff823b0be985245287a93ae61b4"
+      }
+    ],
+    "description": "Define your alternatives, criteria, measurements and swing judgements.",
+    "digest": "e848300e730393e08d131e866504e9fd44e614051d188b650cf8df090f5ef270",
+    "id": "blank",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Create alternatives and criteria",
+      "Enter measurements and swing ratings"
+    ],
+    "title": "Blank",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 5,
+        "sha256": "da8203421e636fb19c945dab499dc758d24628454577544c1eb5d335ed9aa79b"
+      }
+    ],
+    "description": "Invented AHP example: four candidate clinic sites, six criteria, 42 pairwise judgements (one matrix deliberately a little inconsistent) and, separately, two MAVT weight profiles. All names and figures are invented.",
+    "digest": "6708542067911b2b4d3366c4d7e5b98594ab63ed0785cdbb8fcbbb9d5791ef72",
+    "id": "clinic_site_selection",
+    "schema_version": 1,
+    "source_example": "examples/clinic_site_selection",
+    "source_version": "1",
+    "tasks": [
+      "Read each site's AHP priority and the consistency of every matrix",
+      "Open the one inconsistent matrix and its most inconsistent triad",
+      "Compare AHP priorities with the MAVT ranking under each profile"
+    ],
+    "title": "Clinic site selection",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 6,
+        "sha256": "f99cfeb7895d9262f07fa9ebd2172d6c62616fad99e58ef801ebc3bd5c6fe1bf"
+      }
+    ],
+    "description": "Invented trade study: five inspection-vehicle concepts, seven criteria, two weight profiles and a scenario, classes, SMAA-2 uncertainty, PROMETHEE II, 78 AHP judgements and two requirements, so every method reads one model. All names and figures are invented.",
+    "digest": "a02fd34522ebc02f80a6ae962d95b5ebab209e85d5a8f530830cdb68f262e255",
+    "id": "engineering_trade_study",
+    "schema_version": 1,
+    "source_example": "examples/engineering_trade_study",
+    "source_version": "1",
+    "tasks": [
+      "Read each concept's class and its requirement status",
+      "Compare all five methods and read where their leaders differ",
+      "Read how a concept near a class boundary spreads across classes under SMAA-2"
+    ],
+    "title": "Engineering trade study",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 6,
+        "sha256": "0a78cdae614b24da988b09b17e9b8e03fc0eb3614be0ce27beec6e248e741bf5"
+      }
+    ],
+    "description": "Invented feasibility and PROMETHEE II example: five flood defence options, seven criteria, a hard protection standard and a consent requirement checked beside every ranking, PROMETHEE II's own weights and thresholds, and two MAVT weight profiles. All names and figures are invented.",
+    "digest": "75406408f98aa2cf8169e575fe507fc1e39b93cc417937d6687aa912737a7c60",
+    "id": "flood_defence_options",
+    "schema_version": 1,
+    "source_example": "examples/flood_defence_options",
+    "source_version": "1",
+    "tasks": [
+      "Read each option's requirement status beside its ranking",
+      "Compare MAVT with PROMETHEE II and read why any pair differs",
+      "Check how a large cost advantage is capped by its preference threshold"
+    ],
+    "title": "Flood defence options",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "e3ea526d32db7eb1ffbbaf98903c7f9fd0964918029c4feb42f55374d8be2b20"
+      }
+    ],
+    "description": "Illustrative alternatives, criteria, measurements, two profiles and one scenario.",
+    "digest": "fd3c33a9a4b69840ffc7446e701394f08cb608eb2fbc811f3cd12b8be09bb3e3",
+    "id": "infrastructure_procurement",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Review procurement costs and service trade-offs",
+      "Compare balanced and consent-led profiles and a scenario"
+    ],
+    "title": "Infrastructure procurement",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "a44e3c7ef4425e8edb9d142cf052ef44054b60ac5aed8ab345d3176549577687"
+      }
+    ],
+    "description": "Illustrative alternatives, criteria, measurements, two profiles and one scenario.",
+    "digest": "9fc4db6f875059e51e13d07dd197c735b01aa668bc0187e1de7372a0c9579f32",
+    "id": "supplier_selection",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Review cost, quality and delivery inputs",
+      "Compare two preference profiles and a scenario"
+    ],
+    "title": "Supplier selection",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "b843613dc964a9e609cd9ff28a8ac092850e61dc03de58de71fb6e7fb2d88059"
+      },
+      {
+        "for_model": null,
+        "id": "market_model",
+        "kind": "derived_model",
+        "label": "Market model",
+        "optional": false,
+        "path": "market_model.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "5f66a3650bd0e1d80deff6b51c17329c0beb358746e81ffe9bd7e1bb44c9dc21"
+      },
+      {
+        "for_model": "market_model",
+        "id": "market_uncertainty",
+        "kind": "factor_uncertainty",
+        "label": "Market uncertainty",
+        "optional": false,
+        "path": "market_uncertainty.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "2c03dc6390500578cdd5c18edd2c74d98edef79591306444c740ca76d9218f65"
+      },
+      {
+        "for_model": "market_model",
+        "id": "market_checks",
+        "kind": "model_checks",
+        "label": "Market checks",
+        "optional": false,
+        "path": "market_checks.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "3c1e8a5044d3f8c01493490790fd1b2642cb614c780700995653be1d2123294c"
+      },
+      {
+        "for_model": null,
+        "id": "model_comparison",
+        "kind": "model_comparison",
+        "label": "Model comparison",
+        "optional": false,
+        "path": "model_comparison.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "711ed2104c84452c1297065609ef36cfdbee8ce65b9f88cc34587c7df5a28965"
+      },
+      {
+        "for_model": null,
+        "id": "external_proposals",
+        "kind": "external_proposals",
+        "label": "External proposals",
+        "optional": false,
+        "path": "external_proposals.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "60d071ecd17459db4990bcfa9a14206f056f2032f23d939bfb8fb0c27997e8eb"
+      },
+      {
+        "for_model": null,
+        "id": "ownership_model",
+        "kind": "derived_model",
+        "label": "Ownership model",
+        "optional": true,
+        "path": "ownership_model.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "ee5456ba8e68ed0dc58c7af9d97ecc3000cbae17f3333ea86960b65f602b2b5f"
+      },
+      {
+        "for_model": "ownership_model",
+        "id": "ownership_checks",
+        "kind": "model_checks",
+        "label": "Ownership checks",
+        "optional": true,
+        "path": "ownership_checks.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "17ccbf288c92ef918f801a2cf245d7f808bc14bcc09374c1179d4679400babbf"
+      },
+      {
+        "for_model": null,
+        "id": "model_output",
+        "kind": "model_output_run",
+        "label": "Model output",
+        "optional": false,
+        "path": "model_output.json",
+        "reset_policy": "omit",
+        "schema_version": 1,
+        "sha256": "a59681548b9638f1efa74e72b67a19bb4cf1c711286097fb9f303ea682b7af0d"
+      }
+    ],
+    "description": "Review invented classifier proposals, explicit factor uncertainty, bottom-up and top-down models; choose one reviewed output.",
+    "digest": "490af9fa375ca1a2d8517daca95cdb5e5d1684b3768f93851cb6fed48eea6bf9",
+    "id": "venture_screening",
+    "schema_version": 1,
+    "source_example": "invented local starter fixtures",
+    "source_version": "1",
+    "tasks": [
+      "Accept, correct or reject external proposals",
+      "Inspect two labelled market model ranges and their disagreement",
+      "Review factor assumptions and select one compatible model output",
+      "Optionally inspect unattached simple-round arithmetic"
+    ],
+    "title": "Venture screening: evidence and model workflows (invented data)",
+    "version": "1"
+  },
+  {
+    "artifacts": [
+      {
+        "for_model": null,
+        "id": "project",
+        "kind": "project",
+        "label": "Project",
+        "optional": false,
+        "path": "project.json",
+        "reset_policy": "draft",
+        "schema_version": 6,
+        "sha256": "0e2a53782da25c61ba4bff98b8eb3655ec9a79235163f7eda6fcbc43d5ce1a35"
+      },
+      {
+        "for_model": null,
+        "id": "evidence",
+        "kind": "evidence_dossier",
+        "label": "Study evidence",
+        "optional": false,
+        "path": "evidence.json",
+        "reset_policy": "draft",
+        "schema_version": 1,
+        "sha256": "7ba5dea2655ff20924cd7d3cca608bed427754cda246e79d4f4f4fcd614db04f"
+      }
+    ],
+    "description": "Eight real New Zealand startups from public information (as of 4 November 2026): mandate check, two partner profiles, classes, SMAA-2, PROMETHEE II and sourced evidence. Not investment advice.",
+    "digest": "cfc9d04d013c94fd4e4a97447adce8a720804ed6edba8ad54e78f534be7bd84b",
+    "id": "venture_screening_study",
+    "schema_version": 1,
+    "source_example": "examples/nz_venture_screening",
+    "source_version": "1",
+    "tasks": [
+      "Read the screening summary and the requirements beside the ranking",
+      "Switch between the Technical/IP-led and Commercial/traction-led profiles",
+      "Compare classes, SMAA-2 acceptabilities and the PROMETHEE II cross-check",
+      "Review the study's evidence and its open questions"
+    ],
+    "title": "Venture screening",
+    "version": "1"
+  }
+]

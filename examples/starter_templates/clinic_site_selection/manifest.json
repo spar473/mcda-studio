@@ -1,0 +1,28 @@
+{
+  "artifacts": [
+    {
+      "for_model": null,
+      "id": "project",
+      "kind": "project",
+      "label": "Project",
+      "optional": false,
+      "path": "project.json",
+      "reset_policy": "draft",
+      "schema_version": 5,
+      "sha256": "da8203421e636fb19c945dab499dc758d24628454577544c1eb5d335ed9aa79b"
+    }
+  ],
+  "description": "Invented AHP example: four candidate clinic sites, six criteria, 42 pairwise judgements (one matrix deliberately a little inconsistent) and, separately, two MAVT weight profiles. All names and figures are invented.",
+  "digest": "6708542067911b2b4d3366c4d7e5b98594ab63ed0785cdbb8fcbbb9d5791ef72",
+  "id": "clinic_site_selection",
+  "schema_version": 1,
+  "source_example": "examples/clinic_site_selection",
+  "source_version": "1",
+  "tasks": [
+    "Read each site's AHP priority and the consistency of every matrix",
+    "Open the one inconsistent matrix and its most inconsistent triad",
+    "Compare AHP priorities with the MAVT ranking under each profile"
+  ],
+  "title": "Clinic site selection",
+  "version": "1"
+}

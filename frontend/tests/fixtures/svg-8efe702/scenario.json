@@ -1,0 +1,104 @@
+{
+  "baseline": "8efe702",
+  "comparison": {
+    "project_fingerprint": "fp",
+    "configuration": {
+      "method": "mavt",
+      "parameters": {},
+      "scenario_id": null,
+      "weight_profile_id": null
+    },
+    "scenario_ids": [
+      "s"
+    ],
+    "baseline": {
+      "scenario_id": null,
+      "scenario_name": "Base",
+      "configuration": {
+        "method": "mavt",
+        "parameters": {},
+        "scenario_id": null,
+        "weight_profile_id": null
+      },
+      "weight_profile_id": "first",
+      "applied_overrides": {},
+      "resolved_domains": {},
+      "diagnostics": [],
+      "ranking": [
+        "a",
+        "b",
+        "c"
+      ],
+      "values": {
+        "a": 0.7,
+        "b": 0.7,
+        "c": 0.2
+      },
+      "rank_by_alternative": {
+        "a": 1,
+        "b": 1,
+        "c": 3
+      },
+      "delta_from_baseline": {
+        "a": 0,
+        "b": 0,
+        "c": 0
+      },
+      "ranking_differs_from_baseline": false,
+      "winner_differs_from_baseline": false
+    },
+    "scenarios": [
+      {
+        "scenario_id": "s",
+        "scenario_name": "Experiment",
+        "configuration": {
+          "method": "mavt",
+          "parameters": {},
+          "scenario_id": null,
+          "weight_profile_id": null
+        },
+        "weight_profile_id": "first",
+        "applied_overrides": {},
+        "resolved_domains": {},
+        "diagnostics": [],
+        "ranking": [
+          "a",
+          "b",
+          "c"
+        ],
+        "values": {
+          "a": 0.6,
+          "b": 0.8,
+          "c": 0.3
+        },
+        "rank_by_alternative": {
+          "a": 2,
+          "b": 1,
+          "c": 3
+        },
+        "delta_from_baseline": {
+          "a": -0.1,
+          "b": 0.1,
+          "c": 0.1
+        },
+        "ranking_differs_from_baseline": true,
+        "winner_differs_from_baseline": true
+      }
+    ]
+  },
+  "alternatives": [
+    {
+      "id": "a",
+      "name": "Same"
+    },
+    {
+      "id": "b",
+      "name": "Same"
+    },
+    {
+      "id": "c",
+      "name": "An unusually long alternative name for rendering and overflow checks"
+    }
+  ],
+  "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1100 445\" role=\"group\" aria-labelledby=\"_r_fixture_\" class=\"results-chart\"><title id=\"_r_fixture_\">Base versus selected scenario</title><desc>Project: p1. Revision: fp. Base profile: first · Scenario: s · Scenario profile: first. Winner change: yes; ranking change: yes. Hidden alternatives: none.. Base clears the scenario and retains any explicitly selected profile. Blue: Base. Amber: scenario. All values are engine preference values. Common preference-value axis from zero to one. Numerical tables accompany this chart.</desc><metadata>{\"project_id\":\"p1\",\"comparison\":{\"project_fingerprint\":\"fp\",\"configuration\":{\"method\":\"mavt\",\"parameters\":{},\"scenario_id\":null,\"weight_profile_id\":null},\"scenario_ids\":[\"s\"],\"baseline\":{\"scenario_id\":null,\"scenario_name\":\"Base\",\"configuration\":{\"method\":\"mavt\",\"parameters\":{},\"scenario_id\":null,\"weight_profile_id\":null},\"weight_profile_id\":\"first\",\"applied_overrides\":{},\"resolved_domains\":{},\"diagnostics\":[],\"ranking\":[\"a\",\"b\",\"c\"],\"values\":{\"a\":0.7,\"b\":0.7,\"c\":0.2},\"rank_by_alternative\":{\"a\":1,\"b\":1,\"c\":3},\"delta_from_baseline\":{\"a\":0,\"b\":0,\"c\":0},\"ranking_differs_from_baseline\":false,\"winner_differs_from_baseline\":false},\"scenarios\":[{\"scenario_id\":\"s\",\"scenario_name\":\"Experiment\",\"configuration\":{\"method\":\"mavt\",\"parameters\":{},\"scenario_id\":null,\"weight_profile_id\":null},\"weight_profile_id\":\"first\",\"applied_overrides\":{},\"resolved_domains\":{},\"diagnostics\":[],\"ranking\":[\"a\",\"b\",\"c\"],\"values\":{\"a\":0.6,\"b\":0.8,\"c\":0.3},\"rank_by_alternative\":{\"a\":2,\"b\":1,\"c\":3},\"delta_from_baseline\":{\"a\":-0.1,\"b\":0.1,\"c\":0.1},\"ranking_differs_from_baseline\":true,\"winner_differs_from_baseline\":true}]},\"hidden_alternative_ids\":[],\"calculation_path\":\"mavt.math_fsum.v1\"}</metadata><rect width=\"1100\" height=\"445\" fill=\"white\"/><g font-family=\"system-ui, sans-serif\" font-size=\"12\" fill=\"#1c2025\"><text x=\"12\" y=\"20\" font-size=\"15\" font-weight=\"600\">Base versus selected scenario</text><text x=\"12\" y=\"40\">Project: p1</text><text x=\"12\" y=\"57\">Revision: fp</text><text x=\"12\" y=\"74\">Base profile: first · Scenario: s · Scenario profile: first</text><text x=\"12\" y=\"91\">Winner change: yes; ranking change: yes. Hidden alternatives: none.</text><text x=\"12\" y=\"108\">Base clears the scenario and retains any explicitly selected profile. Blue: Base. Amber: s</text><text x=\"12\" y=\"125\">cenario. All values are engine preference values.</text><g transform=\"translate(0 147)\"><g aria-label=\"Preference value axis zero to one\"><g><line x1=\"280\" x2=\"280\" y1=\"0\" y2=\"228\" stroke=\"#e3e7eb\"/><text x=\"280\" y=\"246\" text-anchor=\"middle\">0</text></g><g><line x1=\"442.5\" x2=\"442.5\" y1=\"0\" y2=\"228\" stroke=\"#e3e7eb\"/><text x=\"442.5\" y=\"246\" text-anchor=\"middle\">0.25</text></g><g><line x1=\"605\" x2=\"605\" y1=\"0\" y2=\"228\" stroke=\"#e3e7eb\"/><text x=\"605\" y=\"246\" text-anchor=\"middle\">0.5</text></g><g><line x1=\"767.5\" x2=\"767.5\" y1=\"0\" y2=\"228\" stroke=\"#e3e7eb\"/><text x=\"767.5\" y=\"246\" text-anchor=\"middle\">0.75</text></g><g><line x1=\"930\" x2=\"930\" y1=\"0\" y2=\"228\" stroke=\"#e3e7eb\"/><text x=\"930\" y=\"246\" text-anchor=\"middle\">1</text></g><text x=\"605\" y=\"270\" text-anchor=\"middle\">MAVT preference value (0–1, dimensionless)</text></g><g data-alternative-id=\"a\" role=\"button\" tabindex=\"0\" aria-label=\"Same: Base 0.7; scenario 0.6; change -0.1\"><text x=\"8\" y=\"18\" font-weight=\"700\"><title>Same</title><tspan x=\"8\" dy=\"0\">Same</tspan><tspan x=\"8\" dy=\"15\">Selected</tspan></text><rect x=\"280\" y=\"5\" width=\"454.99999999999994\" height=\"17\" fill=\"#236b8e\"/><rect x=\"280\" y=\"27\" width=\"390\" height=\"17\" fill=\"#a86114\"/><text x=\"945\" y=\"18\">Base 0.7000 · r1</text><text x=\"945\" y=\"38\">Scenario 0.6000 · r2</text><text x=\"945\" y=\"58\">Δ -0.1000</text></g><g data-alternative-id=\"b\" role=\"button\" tabindex=\"0\" aria-label=\"Same: Base 0.7; scenario 0.8; change 0.1\"><text x=\"8\" y=\"94\" font-weight=\"400\"><title>Same</title><tspan x=\"8\" dy=\"0\">Same</tspan></text><rect x=\"280\" y=\"81\" width=\"454.99999999999994\" height=\"17\" fill=\"#236b8e\"/><rect x=\"280\" y=\"103\" width=\"520\" height=\"17\" fill=\"#a86114\"/><text x=\"945\" y=\"94\">Base 0.7000 · r1</text><text x=\"945\" y=\"114\">Scenario 0.8000 · r1</text><text x=\"945\" y=\"134\">Δ 0.1000</text></g><g data-alternative-id=\"c\" role=\"button\" tabindex=\"0\" aria-label=\"An unusually long alternative name for rendering and overflow checks: Base 0.2; scenario 0.3; change 0.1\"><text x=\"8\" y=\"170\" font-weight=\"400\"><title>An unusually long alternative name for rendering and overflow checks</title><tspan x=\"8\" dy=\"0\">An unusually long alternative na</tspan><tspan x=\"8\" dy=\"15\">me for rendering and overflow ch</tspan></text><rect x=\"280\" y=\"157\" width=\"130\" height=\"17\" fill=\"#236b8e\"/><rect x=\"280\" y=\"179\" width=\"195\" height=\"17\" fill=\"#a86114\"/><text x=\"945\" y=\"170\">Base 0.2000 · r3</text><text x=\"945\" y=\"190\">Scenario 0.3000 · r3</text><text x=\"945\" y=\"210\">Δ 0.1000</text></g></g></g></svg>"
+}
